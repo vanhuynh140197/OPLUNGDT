@@ -12,7 +12,7 @@
 <!-- favicon
         ============================================ -->
 <link rel="shortcut icon" type="image/x-icon"
-	href="<c:url value="/resources/images/favicon.ico"/>">
+	href="<c:url value="/resources/admin/images/favicon.ico"/>">
 <!-- Google Fonts
         ============================================ -->
 <link
@@ -21,69 +21,69 @@
 <!-- Bootstrap CSS
         ============================================ -->
 <link rel="stylesheet"
-	href="<c:url value="/resources/css/bootstrap.min.css"/>">
+	href="<c:url value="/resources/admin/css/bootstrap.min.css"/>">
 <!-- Bootstrap CSS
         ============================================ -->
 <link rel="stylesheet"
-	href="<c:url value="/resources/css/font-awesome.min.css"/>">
+	href="<c:url value="/resources/admin/css/font-awesome.min.css"/>">
 <!-- owl.carousel CSS
         ============================================ -->
 <link rel="stylesheet"
-	href="<c:url value="/resources/css/owl.carousel.css"/>">
+	href="<c:url value="/resources/admin/css/owl.carousel.css"/>">
 <link rel="stylesheet"
-	href="<c:url value="/resources/css/owl.theme.css"/>">
+	href="<c:url value="/resources/admin/css/owl.theme.css"/>">
 <link rel="stylesheet"
-	href="<c:url value="/resources/css/owl.transitions.css"/>">
+	href="<c:url value="/resources/admin/css/owl.transitions.css"/>">
 <!-- animate CSS
         ============================================ -->
 <link rel="stylesheet"
-	href="<c:url value="/resources/css/animate.css"/>">
+	href="<c:url value="/resources/admin/css/animate.css"/>">
 <!-- normalize CSS
         ============================================ -->
 <link rel="stylesheet"
-	href="<c:url value="/resources/css/normalize.css"/>">
+	href="<c:url value="/resources/admin/css/normalize.css"/>">
 <!-- meanmenu icon CSS
         ============================================ -->
 <link rel="stylesheet"
-	href="<c:url value="/resources/css/meanmenu.min.css"/>">
+	href="<c:url value="/resources/admin/css/meanmenu.min.css"/>">
 <!-- main CSS
         ============================================ -->
-<link rel="stylesheet" href="<c:url value="/resources/css/main.css"/>">
+<link rel="stylesheet" href="<c:url value="/resources/admin/css/main.css"/>">
 <!-- educate icon CSS
         ============================================ -->
 <link rel="stylesheet"
-	href="<c:url value="/resources/css/educate-custon-icon.css"/>">
+	href="<c:url value="/resources/admin/css/educate-custon-icon.css"/>">
 <!-- morrisjs CSS
         ============================================ -->
 <link rel="stylesheet"
-	href="<c:url value="/resources/css/morrisjs/morris.css"/>">
+	href="<c:url value="/resources/admin/css/morrisjs/morris.css"/>">
 <!-- mCustomScrollbar CSS
         ============================================ -->
 <link rel="stylesheet"
-	href="<c:url value="/resources/css/scrollbar/jquery.mCustomScrollbar.min.css"/>">
+	href="<c:url value="/resources/admin/css/scrollbar/jquery.mCustomScrollbar.min.css"/>">
 <!-- metisMenu CSS
         ============================================ -->
 <link rel="stylesheet"
-	href="<c:url value="/resources/css/metisMenu/metisMenu.min.css"/>">
+	href="<c:url value="/resources/admin/css/metisMenu/metisMenu.min.css"/>">
 <link rel="stylesheet"
-	href="<c:url value="/resources/css/metisMenu/metisMenu-vertical.css"/>">
+	href="<c:url value="/resources/admin/css/metisMenu/metisMenu-vertical.css"/>">
 <!-- calendar CSS
         ============================================ -->
 <link rel="stylesheet"
-	href="<c:url value="/resources/css/calendar/fullcalendar.min.css"/>">
+	href="<c:url value="/resources/admin/css/calendar/fullcalendar.min.css"/>">
 <link rel="stylesheet"
-	href="<c:url value="/resources/css/calendar/fullcalendar.print.min.css"/>">
+	href="<c:url value="/resources/admin/css/calendar/fullcalendar.print.min.css"/>">
 <!-- style CSS
         ============================================ -->
-<link rel="stylesheet" href="<c:url value="/resources/css/style.css"/>">
+<link rel="stylesheet" href="<c:url value="/resources/admin/css/style.css"/>">
 <!-- responsive CSS
         ============================================ -->
 <link rel="stylesheet"
-	href="<c:url value="/resources/css/responsive.css"/>">
+	href="<c:url value="/resources/admin/css/responsive.css"/>">
 <!-- modernizr JS
         ============================================ -->
 <script
-	src="<c:url value="/resources/js/vendor/modernizr-2.8.3.min.js"/>"></script>
+	src="<c:url value="/resources/admin/js/vendor/modernizr-2.8.3.min.js"/>"></script>
 </head>
 
 <body>
@@ -95,9 +95,9 @@
 		<nav id="sidebar" class="">
 		<div class="sidebar-header">
 			<a href="index.html"><img class="main-logo"
-				src="<c:url value="/resources/images/logo/logo.png"/>" alt="" /></a> <strong><a
+				src="<c:url value="/resources/admin/images/logo/logo.png"/>" alt="" /></a> <strong><a
 				href="index.html"><img
-					src="<c:url value="/resources/images/logo/logosn.png"/>" alt="" /></a></strong>
+					src="<c:url value="/resources/admin/images/logo/logosn.png"/>" alt="" /></a></strong>
 		</div>
 		<div class="left-custom-menu-adp-wrap comment-scrollbar">
 			<nav class="sidebar-nav left-sidebar-menu-pro">
@@ -109,7 +109,7 @@
 					<ul class="submenu-angle" aria-expanded="true">
 						<li><a title="Dashboard v.1" href="index.html"><span
 								class="mini-sub-pro">Dashboard v.1</span></a></li>
-						<li><a title="Dashboard v.2" href="index-1.html"><span
+						<li><a title="Dashboard v.2" href="<c:url value="/admin/oplungdienthoai/dashboardv.2"/>"><span
 								class="mini-sub-pro">Dashboard v.2</span></a></li>
 						<li><a title="Dashboard v.3" href="index-2.html"><span
 								class="mini-sub-pro">Dashboard v.3</span></a></li>
@@ -143,7 +143,7 @@
 						class="educate-icon educate-student icon-wrap"></span> <span
 						class="mini-click-non">Students</span></a>
 					<ul class="submenu-angle" aria-expanded="false">
-						<li><a title="All Students" href="all-students.html"><span
+						<li><a title="All Students" href="<c:url value="/admin/oplungdienthoai/all-students"/>"><span
 								class="mini-sub-pro">All Students</span></a></li>
 						<li><a title="Add Students" href="add-student.html"><span
 								class="mini-sub-pro">Add Student</span></a></li>
@@ -250,11 +250,11 @@
 				<li><a class="has-arrow" href="mailbox.html"
 					aria-expanded="false"><span
 						class="educate-icon educate-data-table icon-wrap"></span> <span
-						class="mini-click-non">Data Tables</span></a>
+						class="mini-click-non">Tables</span></a>
 					<ul class="submenu-angle" aria-expanded="false">
-						<li><a title="Peity Charts" href="static-table.html"><span
+						<li><a title="Peity Charts" href="<c:url value="/admin/oplungdienthoai/static-table"/>"><span
 								class="mini-sub-pro">Static Table</span></a></li>
-						<li><a title="Data Table" href="data-table.html"><span
+						<li><a title="Data Table" href="<c:url value="/admin/oplungdienthoai/data-table"/>"><span
 								class="mini-sub-pro">Data Table</span></a></li>
 					</ul></li>
 				<li><a class="has-arrow" href="mailbox.html"
@@ -327,7 +327,7 @@
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 					<div class="logo-pro">
 						<a href="index.html"><img class="main-logo"
-							src="<c:url value="/resources/images/logo/logo.png"/>" alt="" /></a>
+							src="<c:url value="/resources/admin/images/logo/logo.png"/>" alt="" /></a>
 					</div>
 				</div>
 			</div>
@@ -389,7 +389,7 @@
 															<li><a href="#">
 																	<div class="message-img">
 																		<img
-																			src="<c:url value="/resources/images/contact/1.jpg"/>"
+																			src="<c:url value="/resources/admin/images/contact/1.jpg"/>"
 																			alt="">
 																	</div>
 																	<div class="message-content">
@@ -401,7 +401,7 @@
 															<li><a href="#">
 																	<div class="message-img">
 																		<img
-																			src="<c:url value="/resources/images/contact/4.jpg"/>"
+																			src="<c:url value="/resources/admin/images/contact/4.jpg"/>"
 																			alt="">
 																	</div>
 																	<div class="message-content">
@@ -413,7 +413,7 @@
 															<li><a href="#">
 																	<div class="message-img">
 																		<img
-																			src="<c:url value="/resources/images/contact/3.jpg"/>"
+																			src="<c:url value="/resources/admin/images/contact/3.jpg"/>"
 																			alt="">
 																	</div>
 																	<div class="message-content">
@@ -425,7 +425,7 @@
 															<li><a href="#">
 																	<div class="message-img">
 																		<img
-																			src="<c:url value="/resources/images/contact/2.jpg"/>"
+																			src="<c:url value="/resources/admin/images/contact/2.jpg"/>"
 																			alt="">
 																	</div>
 																	<div class="message-content">
@@ -502,7 +502,7 @@
 												<li class="nav-item"><a href="#" data-toggle="dropdown"
 													role="button" aria-expanded="false"
 													class="nav-link dropdown-toggle"> <img
-														src="<c:url value="/resources/images/product/pro4.jpg"/>"
+														src="<c:url value="/resources/admin/images/product/pro4.jpg"/>"
 														alt="" /> <span class="admin-name">Prof.Anderson</span> <i
 														class="fa fa-angle-down edu-icon edu-down-arrow"></i>
 												</a>
@@ -555,7 +555,7 @@
 																					<div class="notes-list-flow">
 																						<div class="notes-img">
 																							<img
-																								src="<c:url value="/resources/images/contact/4.jpg"/>"
+																								src="<c:url value="/resources/admin/images/contact/4.jpg"/>"
 																								alt="" />
 																						</div>
 																						<div class="notes-content">
@@ -569,7 +569,7 @@
 																					<div class="notes-list-flow">
 																						<div class="notes-img">
 																							<img
-																								src="<c:url value="/resources/images/contact/1.jpg"/>"
+																								src="<c:url value="/resources/admin/images/contact/1.jpg"/>"
 																								alt="" />
 																						</div>
 																						<div class="notes-content">
@@ -583,7 +583,7 @@
 																					<div class="notes-list-flow">
 																						<div class="notes-img">
 																							<img
-																								src="<c:url value="/resources/images/contact/2.jpg"/>"
+																								src="<c:url value="/resources/admin/images/contact/2.jpg"/>"
 																								alt="" />
 																						</div>
 																						<div class="notes-content">
@@ -597,7 +597,7 @@
 																					<div class="notes-list-flow">
 																						<div class="notes-img">
 																							<img
-																								src="<c:url value="/resources/images/contact/3.jpg"/>"
+																								src="<c:url value="/resources/admin/images/contact/3.jpg"/>"
 																								alt="" />
 																						</div>
 																						<div class="notes-content">
@@ -611,7 +611,7 @@
 																					<div class="notes-list-flow">
 																						<div class="notes-img">
 																							<img
-																								src="<c:url value="/resources/images/contact/4.jpg"/>"
+																								src="<c:url value="/resources/admin/images/contact/4.jpg"/>"
 																								alt="" />
 																						</div>
 																						<div class="notes-content">
@@ -625,7 +625,7 @@
 																					<div class="notes-list-flow">
 																						<div class="notes-img">
 																							<img
-																								src="<c:url value="/resources/images/contact/1.jpg"/>"
+																								src="<c:url value="/resources/admin/images/contact/1.jpg"/>"
 																								alt="" />
 																						</div>
 																						<div class="notes-content">
@@ -639,7 +639,7 @@
 																					<div class="notes-list-flow">
 																						<div class="notes-img">
 																							<img
-																								src="<c:url value="/resources/images/contact/2.jpg"/>"
+																								src="<c:url value="/resources/admin/images/contact/2.jpg"/>"
 																								alt="" />
 																						</div>
 																						<div class="notes-content">
@@ -653,7 +653,7 @@
 																					<div class="notes-list-flow">
 																						<div class="notes-img">
 																							<img
-																								src="<c:url value="/resources/images/contact/1.jpg"/>"
+																								src="<c:url value="/resources/admin/images/contact/1.jpg"/>"
 																								alt="" />
 																						</div>
 																						<div class="notes-content">
@@ -667,7 +667,7 @@
 																					<div class="notes-list-flow">
 																						<div class="notes-img">
 																							<img
-																								src="<c:url value="/resources/images/contact/2.jpg"/>"
+																								src="<c:url value="/resources/admin/images/contact/2.jpg"/>"
 																								alt="" />
 																						</div>
 																						<div class="notes-content">
@@ -681,7 +681,7 @@
 																					<div class="notes-list-flow">
 																						<div class="notes-img">
 																							<img
-																								src="<c:url value="/resources/images/contact/3.jpg"/>"
+																								src="<c:url value="/resources/admin/images/contact/3.jpg"/>"
 																								alt="" />
 																						</div>
 																						<div class="notes-content">
@@ -1410,11 +1410,11 @@
 						<div class="single-cards-item">
 							<div class="single-product-image">
 								<a href="#"><img
-									src="<c:url value="/resources/images/product/profile-bg.jpg"/>"
+									src="<c:url value="/resources/admin/images/product/profile-bg.jpg"/>"
 									alt=""></a>
 							</div>
 							<div class="single-product-text">
-								<img src="<c:url value="/resources/images/product/pro4.jpg"/>"
+								<img src="<c:url value="/resources/admin/images/product/pro4.jpg"/>"
 									alt="">
 								<h4>
 									<a class="cards-hd-dn" href="#">Angela Dominic</a>
@@ -1458,7 +1458,7 @@
 								<h2>Reviews</h2>
 							</div>
 							<div class="single-review-st-text">
-								<img src="<c:url value="/resources/images/notification/1.jpg"/>"
+								<img src="<c:url value="/resources/admin/images/notification/1.jpg"/>"
 									alt="">
 								<div class="review-ctn-hf">
 									<h3>Sarah Graves</h3>
@@ -1473,7 +1473,7 @@
 								</div>
 							</div>
 							<div class="single-review-st-text">
-								<img src="<c:url value="/resources/images/notification/2.jpg"/>"
+								<img src="<c:url value="/resources/admin/images/notification/2.jpg"/>"
 									alt="">
 								<div class="review-ctn-hf">
 									<h3>Garbease sha</h3>
@@ -1488,7 +1488,7 @@
 								</div>
 							</div>
 							<div class="single-review-st-text">
-								<img src="<c:url value="/resources/images/notification/3.jpg"/>"
+								<img src="<c:url value="/resources/admin/images/notification/3.jpg"/>"
 									alt="">
 								<div class="review-ctn-hf">
 									<h3>Gobetro pro</h3>
@@ -1503,7 +1503,7 @@
 								</div>
 							</div>
 							<div class="single-review-st-text">
-								<img src="<c:url value="/resources/images/notification/4.jpg"/>"
+								<img src="<c:url value="/resources/admin/images/notification/4.jpg"/>"
 									alt="">
 								<div class="review-ctn-hf">
 									<h3>Siam Graves</h3>
@@ -1518,7 +1518,7 @@
 								</div>
 							</div>
 							<div class="single-review-st-text">
-								<img src="<c:url value="/resources/images/notification/5.jpg"/>"
+								<img src="<c:url value="/resources/admin/images/notification/5.jpg"/>"
 									alt="">
 								<div class="review-ctn-hf">
 									<h3>Sarah Graves</h3>
@@ -1533,7 +1533,7 @@
 								</div>
 							</div>
 							<div class="single-review-st-text">
-								<img src="<c:url value="/resources/images/notification/6.jpg"/>"
+								<img src="<c:url value="/resources/admin/images/notification/6.jpg"/>"
 									alt="">
 								<div class="review-ctn-hf">
 									<h3>Julsha Grav</h3>
@@ -1554,7 +1554,7 @@
 							class="single-product-item res-mg-t-30 table-mg-t-pro-n tb-sm-res-d-n dk-res-t-d-n">
 							<div class="single-product-image">
 								<a href="#"><img
-									src="<c:url value="/resources/images/product/book-4.jpg"/>"
+									src="<c:url value="/resources/admin/images/product/book-4.jpg"/>"
 									alt=""></a>
 							</div>
 							<div class="single-product-text edu-pro-tx">
@@ -1814,7 +1814,7 @@
 							class="courses-inner res-mg-t-30 table-mg-t-pro-n tb-sm-res-d-n dk-res-t-d-n">
 							<div class="courses-title">
 								<a href="#"><img
-									src="<c:url value="/resources/images/courses/1.jpg"/>" alt="" /></a>
+									src="<c:url value="/resources/admin/images/courses/1.jpg"/>" alt="" /></a>
 								<h2>Apps Development</h2>
 							</div>
 							<div class="courses-alaltic">
@@ -1865,75 +1865,75 @@
 	<!-- jquery
         ============================================ -->
 	<script
-		src="<c:url value="/resources/js/vendor/jquery-1.12.4.min.js"/>"></script>
+		src="<c:url value="/resources/admin/js/vendor/jquery-1.12.4.min.js"/>"></script>
 	<!-- bootstrap JS
         ============================================ -->
-	<script src="<c:url value="/resources/js/bootstrap.min.js"/>"></script>
+	<script src="<c:url value="/resources/admin/js/bootstrap.min.js"/>"></script>
 	<!-- wow JS
         ============================================ -->
-	<script src="<c:url value="/resources/js/wow.min.js"/>"></script>
+	<script src="<c:url value="/resources/admin/js/wow.min.js"/>"></script>
 	<!-- price-slider JS
         ============================================ -->
-	<script src="<c:url value="/resources/js/jquery-price-slider.js"/>"></script>
+	<script src="<c:url value="/resources/admin/js/jquery-price-slider.js"/>"></script>
 	<!-- meanmenu JS
         ============================================ -->
-	<script src="<c:url value="/resources/js/jquery.meanmenu.js"/>"></script>
+	<script src="<c:url value="/resources/admin/js/jquery.meanmenu.js"/>"></script>
 	<!-- owl.carousel JS
         ============================================ -->
-	<script src="<c:url value="/resources/js/owl.carousel.min.js"/>"></script>
+	<script src="<c:url value="/resources/admin/js/owl.carousel.min.js"/>"></script>
 	<!-- sticky JS
         ============================================ -->
-	<script src="<c:url value="/resources/js/jquery.sticky.js"/>"></script>
+	<script src="<c:url value="/resources/admin/js/jquery.sticky.js"/>"></script>
 	<!-- scrollUp JS
         ============================================ -->
-	<script src="<c:url value="/resources/js/jquery.scrollUp.min.js"/>"></script>
+	<script src="<c:url value="/resources/admin/js/jquery.scrollUp.min.js"/>"></script>
 	<!-- counterup JS
         ============================================ -->
 	<script
-		src="<c:url value="/resources/js/counterup/jquery.counterup.min.js"/>"></script>
-	<script src="<c:url value="/resources/js/counterup/waypoints.min.js"/>"></script>
+		src="<c:url value="/resources/admin/js/counterup/jquery.counterup.min.js"/>"></script>
+	<script src="<c:url value="/resources/admin/js/counterup/waypoints.min.js"/>"></script>
 	<script
-		src="<c:url value="/resources/js/counterup/counterup-active.js"/>"></script>
+		src="<c:url value="/resources/admin/js/counterup/counterup-active.js"/>"></script>
 	<!-- mCustomScrollbar JS
         ============================================ -->
 	<script
-		src="<c:url value="/resources/js/scrollbar/jquery.mCustomScrollbar.concat.min.js"/>"></script>
+		src="<c:url value="/resources/admin/js/scrollbar/jquery.mCustomScrollbar.concat.min.js"/>"></script>
 	<script
-		src="<c:url value="/resources/js/scrollbar/mCustomScrollbar-active.js"/>"></script>
+		src="<c:url value="/resources/admin/js/scrollbar/mCustomScrollbar-active.js"/>"></script>
 	<!-- metisMenu JS
         ============================================ -->
-	<script src="<c:url value="/resources/js/metisMenu/metisMenu.min.js"/>"></script>
+	<script src="<c:url value="/resources/admin/js/metisMenu/metisMenu.min.js"/>"></script>
 	<script
-		src="<c:url value="/resources/js/metisMenu/metisMenu-active.js"/>"></script>
+		src="<c:url value="/resources/admin/js/metisMenu/metisMenu-active.js"/>"></script>
 	<!-- morrisjs JS
         ============================================ -->
-	<script src="<c:url value="/resources/js/morrisjs/raphael-min.js"/>"></script>
-	<script src="<c:url value="/resources/js/morrisjs/morris.js"/>"></script>
-	<script src="<c:url value="/resources/js/morrisjs/morris-active.js"/>"></script>
+	<script src="<c:url value="/resources/admin/js/morrisjs/raphael-min.js"/>"></script>
+	<script src="<c:url value="/resources/admin/js/morrisjs/morris.js"/>"></script>
+	<script src="<c:url value="/resources/admin/js/morrisjs/morris-active.js"/>"></script>
 	<!-- morrisjs JS
         ============================================ -->
 	<script
-		src="<c:url value="/resources/js/sparkline/jquery.sparkline.min.js"/>"></script>
+		src="<c:url value="/resources/admin/js/sparkline/jquery.sparkline.min.js"/>"></script>
 	<script
-		src="<c:url value="/resources/js/sparkline/jquery.charts-sparkline.js"/>"></script>
+		src="<c:url value="/resources/admin/js/sparkline/jquery.charts-sparkline.js"/>"></script>
 	<script
-		src="<c:url value="/resources/js/sparkline/sparkline-active.js"/>"></script>
+		src="<c:url value="/resources/admin/js/sparkline/sparkline-active.js"/>"></script>
 	<!-- calendar JS
         ============================================ -->
-	<script src="<c:url value="/resources/js/calendar/moment.min.js"/>"></script>
+	<script src="<c:url value="/resources/admin/js/calendar/moment.min.js"/>"></script>
 	<script
-		src="<c:url value="/resources/js/calendar/fullcalendar.min.js"/>"></script>
+		src="<c:url value="/resources/admin/js/calendar/fullcalendar.min.js"/>"></script>
 	<script
-		src="<c:url value="/resources/js/calendar/fullcalendar-active.js"/>"></script>
+		src="<c:url value="/resources/admin/js/calendar/fullcalendar-active.js"/>"></script>
 	<!-- plugins JS
         ============================================ -->
-	<script src="<c:url value="/resources/js/plugins.js"/>"></script>
+	<script src="<c:url value="/resources/admin/js/plugins.js"/>"></script>
 	<!-- main JS
         ============================================ -->
-	<script src="<c:url value="/resources/js/main.js"/>"></script>
+	<script src="<c:url value="/resources/admin/js/main.js"/>"></script>
 	<!-- tawk chat JS
         ============================================ -->
-	<script src="<c:url value="/resources/js/tawk-chat.js"/>"></script>
+	<script src="<c:url value="/resources/admin/js/tawk-chat.js"/>"></script>
 </body>
 
 </html>

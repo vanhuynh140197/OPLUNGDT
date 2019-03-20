@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -10,7 +11,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- favicon
         ============================================ -->
-<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+<link rel="shortcut icon" type="image/x-icon"
+	href="<c:url value="/resources/admin/images/favicon.ico"/>">
 <!-- Google Fonts
         ============================================ -->
 <link
@@ -18,64 +20,86 @@
 	rel="stylesheet">
 <!-- Bootstrap CSS
         ============================================ -->
-<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet"
+	href="<c:url value="/resources/admin/css/bootstrap.min.css" />">
 <!-- Bootstrap CSS
         ============================================ -->
-<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet"
+	href="<c:url value="/resources/admin/css/font-awesome.min.css" />">
 <!-- owl.carousel CSS
         ============================================ -->
-<link rel="stylesheet" href="css/owl.carousel.css">
-<link rel="stylesheet" href="css/owl.theme.css">
-<link rel="stylesheet" href="css/owl.transitions.css">
+<link rel="stylesheet"
+	href="<c:url value="/resources/admin/css/owl.carousel.css" />">
+<link rel="stylesheet"
+	href="<c:url value="/resources/admin/css/owl.theme.css"/>">
+<link rel="stylesheet"
+	href="<c:url value="/resources/admin/css/owl.transitions.css"/>">
 <!-- animate CSS
         ============================================ -->
-<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet"
+	href="<c:url value="/resources/admin/css/animate.css"/> ">
 <!-- normalize CSS
         ============================================ -->
-<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet"
+	href="<c:url value="/resources/admin/css/normalize.css"/>">
 <!-- meanmenu icon CSS
         ============================================ -->
-<link rel="stylesheet" href="css/meanmenu.min.css">
+<link rel="stylesheet"
+	href="<c:url value="/resources/admin/css/meanmenu.min.css"/>">
 <!-- main CSS
         ============================================ -->
-<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="<c:url value="/resources/admin/css/main.css"/>">
 <!-- educate icon CSS
         ============================================ -->
-<link rel="stylesheet" href="css/educate-custon-icon.css">
+<link rel="stylesheet"
+	href="<c:url value="/resources/admin/css/educate-custon-icon.css"/>">
 <!-- morrisjs CSS
         ============================================ -->
-<link rel="stylesheet" href="css/morrisjs/morris.css">
+<link rel="stylesheet"
+	href="<c:url value="/resources/admin/css/morrisjs/morris.css"/>">
 <!-- mCustomScrollbar CSS
         ============================================ -->
 <link rel="stylesheet"
-	href="css/scrollbar/jquery.mCustomScrollbar.min.css">
+	href="<c:url value="/resources/admin/css/scrollbar/jquery.mCustomScrollbar.min.css"/>">
 <!-- metisMenu CSS
         ============================================ -->
-<link rel="stylesheet" href="css/metisMenu/metisMenu.min.css">
-<link rel="stylesheet" href="css/metisMenu/metisMenu-vertical.css">
+<link rel="stylesheet"
+	href="<c:url value="/resources/admin/css/metisMenu/metisMenu.min.css"/>">
+<link rel="stylesheet"
+	href="<c:url value="/resources/admin/css/metisMenu/metisMenu-vertical.css"/>">
 <!-- calendar CSS
         ============================================ -->
-<link rel="stylesheet" href="css/calendar/fullcalendar.min.css">
-<link rel="stylesheet" href="css/calendar/fullcalendar.print.min.css">
+<link rel="stylesheet"
+	href="<c:url value="/resources/admin/css/calendar/fullcalendar.min.css"/>">
+<link rel="stylesheet"
+	href="<c:url value="/resources/admin/css/calendar/fullcalendar.print.min.css"/>">
 <!-- x-editor CSS
         ============================================ -->
-<link rel="stylesheet" href="css/editor/select2.css">
-<link rel="stylesheet" href="css/editor/datetimepicker.css">
-<link rel="stylesheet" href="css/editor/bootstrap-editable.css">
-<link rel="stylesheet" href="css/editor/x-editor-style.css">
+<link rel="stylesheet"
+	href="<c:url value="/resources/admin/css/editor/select2.css"/>">
+<link rel="stylesheet"
+	href="<c:url value="/resources/admin/css/editor/datetimepicker.css"/>">
+<link rel="stylesheet"
+	href="<c:url value="/resources/admin/css/editor/bootstrap-editable.css"/>">
+<link rel="stylesheet"
+	href="<c:url value="/resources/admin/css/editor/x-editor-style.css"/>">
 <!-- normalize CSS
         ============================================ -->
-<link rel="stylesheet" href="css/data-table/bootstrap-table.css">
-<link rel="stylesheet" href="css/data-table/bootstrap-editable.css">
+<link rel="stylesheet"
+	href="<c:url value="/resources/admin/css/data-table/bootstrap-table.css"/>">
+<link rel="stylesheet"
+	href="<c:url value="/resources/admin/css/data-table/bootstrap-editable.css"/>">
 <!-- style CSS
         ============================================ -->
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="<c:url value="/resources/admin/css/style.css"/>">
 <!-- responsive CSS
         ============================================ -->
-<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet"
+	href="<c:url value="/resources/admin/css/responsive.css"/>">
 <!-- modernizr JS
         ============================================ -->
-<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+<script
+	src="<c:url value="/resources/admin/js/vendor/modernizr-2.8.3.min.js"/>"></script>
 </head>
 
 <body>
@@ -1474,71 +1498,85 @@
 
 	<!-- jquery
         ============================================ -->
-	<script src="js/vendor/jquery-1.12.4.min.js"></script>
+	<script
+		src="<c:url value="/resources/admin/js/vendor/jquery-1.12.4.min.js"/>"></script>
 	<!-- bootstrap JS
         ============================================ -->
-	<script src="js/bootstrap.min.js"></script>
+	<script src="<c:url value="/resources/admin/js/bootstrap.min.js"/>"></script>
 	<!-- wow JS
         ============================================ -->
-	<script src="js/wow.min.js"></script>
+	<script src="<c:url value="/resources/admin/js/wow.min.js"/>"></script>
 	<!-- price-slider JS
         ============================================ -->
-	<script src="js/jquery-price-slider.js"></script>
+	<script src="<c:url value="/resources/admin/js/jquery-price-slider.js"/>"></script>
 	<!-- meanmenu JS
         ============================================ -->
-	<script src="js/jquery.meanmenu.js"></script>
+	<script src="<c:url value="/resources/admin/js/jquery.meanmenu.js"/>"></script>
 	<!-- owl.carousel JS
         ============================================ -->
-	<script src="js/owl.carousel.min.js"></script>
+	<script src="<c:url value="/resources/admin/js/owl.carousel.min.js"/>"></script>
 	<!-- sticky JS
         ============================================ -->
-	<script src="js/jquery.sticky.js"></script>
+	<script src="<c:url value="/resources/admin/js/jquery.sticky.js"/>"></script>
 	<!-- scrollUp JS
         ============================================ -->
-	<script src="js/jquery.scrollUp.min.js"></script>
+	<script src="<c:url value="/resources/admin/js/jquery.scrollUp.min.js"/>"></script>
 	<!-- mCustomScrollbar JS
         ============================================ -->
-	<script src="js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
-	<script src="js/scrollbar/mCustomScrollbar-active.js"></script>
+	<script
+		src="<c:url value="/resources/admin/js/scrollbar/jquery.mCustomScrollbar.concat.min.js"/>"></script>
+	<script
+		src="<c:url value="/resources/admin/js/scrollbar/mCustomScrollbar-active.js"/>"></script>
 	<!-- metisMenu JS
         ============================================ -->
-	<script src="js/metisMenu/metisMenu.min.js"></script>
-	<script src="js/metisMenu/metisMenu-active.js"></script>
+	<script src="<c:url value="/resources/admin/js/metisMenu/metisMenu.min.js"/>"></script>
+	<script
+		src="<c:url value="/resources/admin/js/metisMenu/metisMenu-active.js"/>"></script>
 	<!-- data table JS
         ============================================ -->
-	<script src="js/data-table/bootstrap-table.js"></script>
-	<script src="js/data-table/tableExport.js"></script>
-	<script src="js/data-table/data-table-active.js"></script>
-	<script src="js/data-table/bootstrap-table-editable.js"></script>
-	<script src="js/data-table/bootstrap-editable.js"></script>
-	<script src="js/data-table/bootstrap-table-resizable.js"></script>
-	<script src="js/data-table/colResizable-1.5.source.js"></script>
-	<script src="js/data-table/bootstrap-table-export.js"></script>
+	<script
+		src="<c:url value="/resources/admin/js/data-table/bootstrap-table.js"/>"></script>
+	<script src="<c:url value="/resources/admin/js/data-table/tableExport.js"/>"></script>
+	<script
+		src="<c:url value="/resources/admin/js/data-table/data-table-active.js"/>"></script>
+	<script
+		src="<c:url value="/resources/admin/js/data-table/bootstrap-table-editable.js"/>"></script>
+	<script
+		src="<c:url value="/resources/admin/js/data-table/bootstrap-editable.js"/>"></script>
+	<script
+		src="<c:url value="/resources/admin/js/data-table/bootstrap-table-resizable.js"/>"></script>
+	<script
+		src="<c:url value="/resources/admin/js/data-table/colResizable-1.5.source.js"/>"></script>
+	<script
+		src="<c:url value="/resources/admin/js/data-table/bootstrap-table-export.js"/>"></script>
 	<!--  editable JS
         ============================================ -->
-	<script src="js/editable/jquery.mockjax.js"></script>
-	<script src="js/editable/mock-active.js"></script>
-	<script src="js/editable/select2.js"></script>
-	<script src="js/editable/moment.min.js"></script>
-	<script src="js/editable/bootstrap-datetimepicker.js"></script>
-	<script src="js/editable/bootstrap-editable.js"></script>
-	<script src="js/editable/xediable-active.js"></script>
+	<script src="<c:url value="/resources/admin/js/editable/jquery.mockjax.js"/>"></script>
+	<script src="<c:url value="/resources/admin/js/editable/mock-active.js"/>"></script>
+	<script src="<c:url value="/resources/admin/js/editable/select2.js"/>"></script>
+	<script src="<c:url value="/resources/admin/js/editable/moment.min.js"/>"></script>
+	<script
+		src="<c:url value="/resources/admin/js/editable/bootstrap-datetimepicker.js"/>"></script>
+	<script
+		src="<c:url value="/resources/admin/js/editable/bootstrap-editable.js"/>"></script>
+	<script
+		src="<c:url value="/resources/admin/js/editable/xediable-active.js"/>"></script>
 	<!-- Chart JS
         ============================================ -->
-	<script src="js/chart/jquery.peity.min.js"></script>
-	<script src="js/peity/peity-active.js"></script>
+	<script src="<c:url value="/resources/admin/js/chart/jquery.peity.min.js"/>"></script>
+	<script src="<c:url value="/resources/admin/js/peity/peity-active.js"/>"></script>
 	<!-- tab JS
         ============================================ -->
-	<script src="js/tab.js"></script>
+	<script src="<c:url value="/resources/admin/js/tab.js"/>"></script>
 	<!-- plugins JS
         ============================================ -->
-	<script src="js/plugins.js"></script>
+	<script src="<c:url value="/resources/admin/js/plugins.js"/>"></script>
 	<!-- main JS
         ============================================ -->
-	<script src="js/main.js"></script>
+	<script src="<c:url value="/resources/admin/js/main.js"/>"></script>
 	<!-- tawk chat JS
         ============================================ -->
-	<script src="js/tawk-chat.js"></script>
+	<script src="<c:url value="/resources/admin/js/tawk-chat.js"/>"></script>
 </body>
 
 </html>
