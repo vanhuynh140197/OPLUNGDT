@@ -6,10 +6,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Obaju : e-commerce template</title>
+<title>Ốp lưng điện thoại giá rẻ|Home</title>
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="all,follow">
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
 <!-- Bootstrap CSS-->
 <link rel="stylesheet"
 	href="<c:url value="/resources/ui/vendor/bootstrap/css/bootstrap.min.css"/>">
@@ -25,16 +27,21 @@
 <link rel="stylesheet"
 	href="<c:url value="/resources/ui/vendor/owl.carousel/assets/owl.theme.default.css"/>">
 <!-- theme stylesheet-->
-<link rel="stylesheet" href="<c:url value="/resources/ui/css/style.default.css"/>"
+<link rel="stylesheet"
+	href="<c:url value="/resources/ui/css/style.default.css"/>"
 	id="theme-stylesheet">
 <!-- Custom stylesheet - for your changes-->
-<link rel="stylesheet" href="<c:url value="/resources/ui/css/custom.css"/>">
+<link rel="stylesheet"
+	href="<c:url value="/resources/ui/css/custom.css"/>">
 <!-- Favicon-->
-<link rel="shortcut icon" href="<c:url value="/resources/ui/img/favicon.png"/>">
+<link rel="shortcut icon"
+	href="<c:url value="/resources/ui/img/favicon.png"/>">
 <!-- Tweaks for older IEs-->
 <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+
+
 </head>
 <body>
 	<!-- navbar-->
@@ -46,16 +53,19 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 offer mb-3 mb-lg-0">
-					<a href="#" class="btn btn-success btn-sm">Offer of the day</a><a
-						href="#" class="ml-1">Get flat 35% off on orders over $50!</a>
+					<a class="ml-1"> HOTLINE: +1900 63 22 46 </a>
 				</div>
 				<div class="col-lg-6 text-center text-lg-right">
 					<ul class="menu list-inline mb-0">
+						<li class="list-inline-item"><a href="#"><i
+								class="fas fa-map-marker-alt"></i> Địa chỉ cửa hàng</a></li>
+						<li class="list-inline-item"><a href="#"><i
+								class="fas fa-phone-volume"></i> Chăm sóc khách hàng</a></li>
+						<li class="list-inline-item"><a href="register.html"><i
+								class="fas fa-user-edit"></i> Đăng ký</a></li>
 						<li class="list-inline-item"><a href="#" data-toggle="modal"
-							data-target="#login-modal">Login</a></li>
-						<li class="list-inline-item"><a href="register.html">Register</a></li>
-						<li class="list-inline-item"><a href="contact.html">Contact</a></li>
-						<li class="list-inline-item"><a href="#">Recently viewed</a></li>
+							data-target="#login-modal"><i class="fas fa-user-tag"></i>
+								Đăng nhập</a></li>
 					</ul>
 				</div>
 			</div>
@@ -104,10 +114,11 @@
 	<nav class="navbar navbar-expand-lg">
 	<div class="container">
 		<a href="index.html" class="navbar-brand home"><img
-			src="<c:url value="/resources/ui/img/logo.png"/>" alt="Obaju logo" class="d-none d-md-inline-block"><img
-			src="<c:url value="/resources/ui/img/logo-small.png"/>" alt="Obaju logo"
-			class="d-inline-block d-md-none"><span class="sr-only">Obaju
-				- go to homepage</span></a>
+			src="<c:url value="/resources/ui/img/logo.png"/>" alt="Obaju logo"
+			class="d-none d-md-inline-block"><img
+			src="<c:url value="/resources/ui/img/logo-small.png"/>"
+			alt="Obaju logo" class="d-inline-block d-md-none"><span
+			class="sr-only">Obaju - go to homepage</span></a>
 		<div class="navbar-buttons">
 			<button type="button" data-toggle="collapse"
 				data-target="#navigation"
@@ -125,74 +136,211 @@
 		</div>
 		<div id="navigation" class="collapse navbar-collapse">
 			<ul class="navbar-nav mr-auto">
-				<li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+				<!-- <li class="nav-item"><a href="#" class="nav-link active">Home</a></li> -->
 				<li class="nav-item dropdown menu-large"><a href="#"
 					data-toggle="dropdown" data-hover="dropdown" data-delay="200"
-					class="dropdown-toggle nav-link">Men<b class="caret"></b></a>
+					class="dropdown-toggle nav-link">Phụ kiện Apple<b class="caret"></b></a>
 					<ul class="dropdown-menu megamenu">
 						<li>
 							<div class="row">
 								<div class="col-md-6 col-lg-3">
-									<h5>Clothing</h5>
+									<h5>Phụ kiện Iphone</h5>
 									<ul class="list-unstyled mb-3">
 										<li class="nav-item"><a href="category.html"
-											class="nav-link">T-shirts</a></li>
+											class="nav-link">Iphone XS Max</a></li>
 										<li class="nav-item"><a href="category.html"
-											class="nav-link">Shirts</a></li>
+											class="nav-link">Iphone XS/X</a></li>
 										<li class="nav-item"><a href="category.html"
-											class="nav-link">Pants</a></li>
+											class="nav-link">Iphone XR</a></li>
 										<li class="nav-item"><a href="category.html"
-											class="nav-link">Accessories</a></li>
+											class="nav-link">Iphone X</a></li>
+										<li class="nav-item"><a href="category.html"
+											class="nav-link">Iphone 8 Plus</a></li>
+										<li class="nav-item"><a href="category.html"
+											class="nav-link">Iphone 8</a></li>
+										<li class="nav-item"><a href="category.html"
+											class="nav-link">Iphone 7 Plus</a></li>
+										<li class="nav-item"><a href="category.html"
+											class="nav-link">Iphone 7</a></li>
+										<li class="nav-item"><a href="category.html"
+											class="nav-link">Iphone 6/6S Plus</a></li>
+										<li class="nav-item"><a href="category.html"
+											class="nav-link">Iphone 6/6S</a></li>
+										<li class="nav-item"><a href="category.html"
+											class="nav-link">Iphone 5C</a></li>
+										<li class="nav-item"><a href="category.html"
+											class="nav-link">Iphone 5/5S</a></li>
 									</ul>
 								</div>
 								<div class="col-md-6 col-lg-3">
-									<h5>Shoes</h5>
+									<h5>Phụ kiện iPad</h5>
 									<ul class="list-unstyled mb-3">
 										<li class="nav-item"><a href="category.html"
-											class="nav-link">Trainers</a></li>
+											class="nav-link">iPad Pro 12.9 inch (2018)</a></li>
 										<li class="nav-item"><a href="category.html"
-											class="nav-link">Sandals</a></li>
+											class="nav-link">iPad Pro 11 inch</a></li>
 										<li class="nav-item"><a href="category.html"
-											class="nav-link">Hiking shoes</a></li>
+											class="nav-link">iPad 9.7 (2018)</a></li>
 										<li class="nav-item"><a href="category.html"
-											class="nav-link">Casual</a></li>
+											class="nav-link">iPad Pro 12.9 2017</a></li>
+										<li class="nav-item"><a href="category.html"
+											class="nav-link">iPad 9.7 (2017)</a></li>
+										<li class="nav-item"><a href="category.html"
+											class="nav-link">iPad Pro 10.5 inch</a></li>
+										<li class="nav-item"><a href="category.html"
+											class="nav-link">iPad Pro 12.9 inch 2015</a></li>
+										<li class="nav-item"><a href="category.html"
+											class="nav-link">iPad Pro 9.7 inch</a></li>
+										<li class="nav-item"><a href="category.html"
+											class="nav-link">iPad Mini 4</a></li>
+										<li class="nav-item"><a href="category.html"
+											class="nav-link">iPad Mini 1/2/3</a></li>
 									</ul>
 								</div>
 								<div class="col-md-6 col-lg-3">
-									<h5>Accessories</h5>
+									<h5>Phụ kiện Macbook</h5>
 									<ul class="list-unstyled mb-3">
 										<li class="nav-item"><a href="category.html"
-											class="nav-link">Trainers</a></li>
+											class="nav-link">Macbook Air 13 inch (2018)</a></li>
 										<li class="nav-item"><a href="category.html"
-											class="nav-link">Sandals</a></li>
+											class="nav-link"> Macbook Pro 15 inch <br> Touch Bar
+												2016/2017/2018
+										</a></li>
 										<li class="nav-item"><a href="category.html"
-											class="nav-link">Hiking shoes</a></li>
+											class="nav-link">Macbook Pro 13 inch <br>Touch Bar
+												2016/2017/2018
+										</a></li>
 										<li class="nav-item"><a href="category.html"
-											class="nav-link">Casual</a></li>
+											class="nav-link">Macbook Retina 12 inch</a></li>
 										<li class="nav-item"><a href="category.html"
-											class="nav-link">Hiking shoes</a></li>
+											class="nav-link">Macbook Air 13.3 inch</a></li>
 										<li class="nav-item"><a href="category.html"
-											class="nav-link">Casual</a></li>
+											class="nav-link">Macbook Air 11.6 inch</a></li>
+										<li class="nav-item"><a href="category.html"
+											class="nav-link">Macbook Pro Retina 15.4 inch</a></li>
+										<li class="nav-item"><a href="category.html"
+											class="nav-link">Macbook Pro Retina 13.3 inch</a></li>
+										<li class="nav-item"><a href="category.html"
+											class="nav-link">Macbook Pro 15.4 inch <br>With CD
+												ROM
+										</a></li>
+										<li class="nav-item"><a href="category.html"
+											class="nav-link">iPad 2/3/4</a></li>
 									</ul>
 								</div>
 								<div class="col-md-6 col-lg-3">
-									<h5>Featured</h5>
+									<h5>Apple Watch</h5>
 									<ul class="list-unstyled mb-3">
 										<li class="nav-item"><a href="category.html"
-											class="nav-link">Trainers</a></li>
+											class="nav-link">Apple Watch Series 1</a></li>
 										<li class="nav-item"><a href="category.html"
-											class="nav-link">Sandals</a></li>
+											class="nav-link">Apple Watch Series 2</a></li>
 										<li class="nav-item"><a href="category.html"
-											class="nav-link">Hiking shoes</a></li>
+											class="nav-link">Apple Watch Series 3</a></li>
+										<li class="nav-item"><a href="category.html"
+											class="nav-link">Apple Watch Series 4</a></li>
 									</ul>
-									<h5>Looks and trends</h5>
+									<h5>Phụ kiện Air Pods</h5>
+								</div>
+							</div>
+						</li>
+					</ul></li>
+				<li class="nav-item dropdown menu-large"><a href="#"
+					data-toggle="dropdown" data-hover="dropdown" data-delay="200"
+					class="dropdown-toggle nav-link">Phụ kiện Samsung<b
+						class="caret"></b></a>
+					<ul class="dropdown-menu megamenu">
+						<li>
+							<div class="row">
+								<div class="col-md-6 col-lg-4">
+									<h5>Galaxy 2019</h5>
 									<ul class="list-unstyled mb-3">
 										<li class="nav-item"><a href="category.html"
-											class="nav-link">Trainers</a></li>
+											class="nav-link">Galaxy S10 Plus</a></li>
 										<li class="nav-item"><a href="category.html"
-											class="nav-link">Sandals</a></li>
+											class="nav-link">Samsung Galaxy S10</a></li>
 										<li class="nav-item"><a href="category.html"
-											class="nav-link">Hiking shoes</a></li>
+											class="nav-link">Samsung Galaxy S10E</a></li>
+										<li class="nav-item"><a href="category.html"
+											class="nav-link">Samsung Galaxy M20</a></li>
+										<li class="nav-item"><a href="category.html"
+											class="nav-link">Samsung Galaxy M10</a></li>
+										<li class="nav-item"><a href="category.html"
+											class="nav-link">Samsung Galaxy M30</a></li>
+										<li class="nav-item"><a href="category.html"
+											class="nav-link">Samsung Galaxy A50</a></li>
+										<li class="nav-item"><a href="category.html"
+											class="nav-link">Samsung Galaxy A30</a></li>
+										<li class="nav-item"><a href="category.html"
+											class="nav-link">Samsung Galaxy A10</a></li>
+									</ul>
+								</div>
+								<div class="col-md-6 col-lg-4">
+									<h5>Galaxy 2018</h5>
+									<ul class="list-unstyled mb-3">
+										<li class="nav-item"><a href="category.html"
+											class="nav-link">Samsung Galaxy J4 Core</a></li>
+										<li class="nav-item"><a href="category.html"
+											class="nav-link">Samsung Galaxy J2 Core</a></li>
+										<li class="nav-item"><a href="category.html"
+											class="nav-link">Samsung Galaxy A9s</a></li>
+										<li class="nav-item"><a href="category.html"
+											class="nav-link">Samsung Galaxy A8s</a></li>
+										<li class="nav-item"><a href="category.html"
+											class="nav-link">Samsung Galaxy A6s</a></li>
+										<li class="nav-item"><a href="category.html"
+											class="nav-link">Samsung Galaxy A9 (2018)</a></li>
+										<li class="nav-item"><a href="category.html"
+											class="nav-link">Samsung Galaxy A7 (2018)</a></li>
+										<li class="nav-item"><a href="category.html"
+											class="nav-link">Samsung Galaxy J6 Plus</a></li>
+										<li class="nav-item"><a href="category.html"
+											class="nav-link">Samsung Galaxy J4 Plus</a></li>
+										<li class="nav-item"><a href="category.html"
+											class="nav-link">Samsung Galaxy Note 9</a></li>
+										<li class="nav-item"><a href="category.html"
+											class="nav-link">Samsung Galaxy J8 (2018)</a></li>
+										<li class="nav-item"><a href="category.html"
+											class="nav-link">Samsung Galaxy J4</a></li>
+										<li class="nav-item"><a href="category.html"
+											class="nav-link">Samsung Galaxy A6 Plus (2018)</a></li>
+										<li class="nav-item"><a href="category.html"
+											class="nav-link">Samsung Galaxy J3 Pro (2018)</a></li>
+									</ul>
+								</div>
+								<div class="col-md-6 col-lg-4">
+									<h5>Galaxy 2017</h5>
+									<ul class="list-unstyled mb-3">
+										<li class="nav-item"><a href="category.html"
+											class="nav-link">Samsung Galaxy C10</a></li>
+										<li class="nav-item"><a href="category.html"
+											class="nav-link">Samsung Galaxy Note 8</a></li>
+										<li class="nav-item"><a href="category.html"
+											class="nav-link">Samsung Galaxy Note FE</a></li>
+										<li class="nav-item"><a href="category.html"
+											class="nav-link">Samsung Galaxy J7 Plus</a></li>
+										<li class="nav-item"><a href="category.html"
+											class="nav-link">Samsung Galaxy J7 Pro</a></li>
+										<li class="nav-item"><a href="category.html"
+											class="nav-link">Samsung Galaxy S8 Plus</a></li>
+										<li class="nav-item"><a href="category.html"
+											class="nav-link">Samsung Galaxy S8</a></li>
+										<li class="nav-item"><a href="category.html"
+											class="nav-link">Samsung Galaxy J7 2017</a></li>
+										<li class="nav-item"><a href="category.html"
+											class="nav-link">Samsung Galaxy J5 2017</a></li>
+										<li class="nav-item"><a href="category.html"
+											class="nav-link">Samsung Galaxy A7 2017</a></li>
+										<li class="nav-item"><a href="category.html"
+											class="nav-link">Samsung Galaxy J7 Prime</a></li>
+										<li class="nav-item"><a href="category.html"
+											class="nav-link">Samsung Galaxy J5 Prime</a></li>
+										<li class="nav-item"><a href="category.html"
+											class="nav-link">Samsung Galaxy J2 Prime</a></li>
+										<li class="nav-item"><a href="category.html"
+											class="nav-link">Samsung Galaxy J3 Pro</a></li>
+										<li class="nav-item"><a href="category.html"
+											class="nav-link">Samsung Galaxy J2 Pro</a></li>
 									</ul>
 								</div>
 							</div>
@@ -200,142 +348,333 @@
 					</ul></li>
 				<li class="nav-item dropdown menu-large"><a href="#"
 					data-toggle="dropdown" data-hover="dropdown" data-delay="200"
-					class="dropdown-toggle nav-link">Ladies<b class="caret"></b></a>
+					class="dropdown-toggle nav-link">Phụ kiện Sonny<b class="caret"></b></a>
 					<ul class="dropdown-menu megamenu">
 						<li>
 							<div class="row">
-								<div class="col-md-6 col-lg-3">
-									<h5>Clothing</h5>
-									<ul class="list-unstyled mb-3">
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">T-shirts</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Shirts</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Pants</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Accessories</a></li>
-									</ul>
-								</div>
-								<div class="col-md-6 col-lg-3">
-									<h5>Shoes</h5>
-									<ul class="list-unstyled mb-3">
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Trainers</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Sandals</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Hiking shoes</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Casual</a></li>
-									</ul>
-								</div>
-								<div class="col-md-6 col-lg-3">
-									<h5>Accessories</h5>
-									<ul class="list-unstyled mb-3">
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Trainers</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Sandals</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Hiking shoes</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Casual</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Hiking shoes</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Casual</a></li>
-									</ul>
-									<h5>Looks and trends</h5>
-									<ul class="list-unstyled mb-3">
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Trainers</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Sandals</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Hiking shoes</a></li>
-									</ul>
-								</div>
-								<div class="col-md-6 col-lg-3">
-									<div class="banner">
-										<a href="#"><img src="<c:url value="/resources/ui/img/banner.jpg"/>" alt=""
-											class="img img-fluid"></a>
-									</div>
-									<div class="banner">
-										<a href="#"><img src="<c:url value="/resources/ui/img/banner2.jpg"/>" alt=""
-											class="img img-fluid"></a>
-									</div>
-								</div>
-							</div>
-						</li>
-					</ul></li>
-				<li class="nav-item dropdown menu-large"><a href="#"
-					data-toggle="dropdown" data-hover="dropdown" data-delay="200"
-					class="dropdown-toggle nav-link">Template<b class="caret"></b></a>
-					<ul class="dropdown-menu megamenu">
-						<li>
-							<div class="row">
-								<div class="col-md-6 col-lg-3">
-									<h5>Shop</h5>
+								<div class="col-md-3 col-lg-3">
+									<h5>Xperia 2019</h5>
 									<ul class="list-unstyled mb-3">
 										<li class="nav-item"><a href="index.html"
-											class="nav-link">Homepage</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Category - sidebar left</a></li>
-										<li class="nav-item"><a href="category-right.html"
-											class="nav-link">Category - sidebar right</a></li>
-										<li class="nav-item"><a href="category-full.html"
-											class="nav-link">Category - full width</a></li>
-										<li class="nav-item"><a href="detail.html"
-											class="nav-link">Product detail</a></li>
+											class="nav-link">Phụ Kiện Sony Xperia 1</a></li>
 									</ul>
 								</div>
-								<div class="col-md-6 col-lg-3">
-									<h5>User</h5>
+								<div class="col-md-3 col-lg-3">
+									<h5>Xperia 2018</h5>
 									<ul class="list-unstyled mb-3">
 										<li class="nav-item"><a href="register.html"
-											class="nav-link">Register / login</a></li>
+											class="nav-link">Sony Xperia XZ3</a></li>
 										<li class="nav-item"><a href="customer-orders.html"
-											class="nav-link">Orders history</a></li>
+											class="nav-link">Sony Xperia XZ2 Premium</a></li>
 										<li class="nav-item"><a href="customer-order.html"
-											class="nav-link">Order history detail</a></li>
+											class="nav-link">Sony Xperia XA2 Plus</a></li>
 										<li class="nav-item"><a href="customer-wishlist.html"
-											class="nav-link">Wishlist</a></li>
+											class="nav-link">Sony Xperia XZ2</a></li>
 										<li class="nav-item"><a href="customer-account.html"
-											class="nav-link">Customer account / change password</a></li>
+											class="nav-link">Sony Xperia XZ2 Compact</a></li>
+										<li class="nav-item"><a href="customer-account.html"
+											class="nav-link">Sony Xperia XA2</a></li>
+										<li class="nav-item"><a href="customer-account.html"
+											class="nav-link">Sony Xperia XA2 Ultra</a></li>
+										<li class="nav-item"><a href="customer-account.html"
+											class="nav-link">Sony Xperia L2</a></li>
 									</ul>
 								</div>
-								<div class="col-md-6 col-lg-3">
-									<h5>Order process</h5>
+								<div class="col-md-3 col-lg-3">
+									<h5>Xperia 2017</h5>
 									<ul class="list-unstyled mb-3">
 										<li class="nav-item"><a href="basket.html"
-											class="nav-link">Shopping cart</a></li>
+											class="nav-link">Sony Xperia XZ1</a></li>
 										<li class="nav-item"><a href="checkout1.html"
-											class="nav-link">Checkout - step 1</a></li>
+											class="nav-link">Sony Xperia XA1 Plus</a></li>
 										<li class="nav-item"><a href="checkout2.html"
-											class="nav-link">Checkout - step 2</a></li>
+											class="nav-link">Sony Xperia XZ1 Compact</a></li>
 										<li class="nav-item"><a href="checkout3.html"
-											class="nav-link">Checkout - step 3</a></li>
+											class="nav-link">Sony Xperia X1</a></li>
 										<li class="nav-item"><a href="checkout4.html"
-											class="nav-link">Checkout - step 4</a></li>
+											class="nav-link">Sony Xperia XZ Premium</a></li>
+										<li class="nav-item"><a href="checkout4.html"
+											class="nav-link">Sony Xperia XZs</a></li>
+										<li class="nav-item"><a href="checkout4.html"
+											class="nav-link">Sony Xperia XA1</a></li>
+										<li class="nav-item"><a href="checkout4.html"
+											class="nav-link">Sony Xperia XA1 Ultra</a></li>
+
+									</ul>
+								</div>
+								<div class="col-md-3 col-lg-3">
+									<h5>Xperia 2016</h5>
+									<ul class="list-unstyled mb-3">
+										<li class="nav-item"><a href="checkout4.html"
+											class="nav-link">Sony Xperia XZ</a></li>
+										<li class="nav-item"><a href="checkout4.html"
+											class="nav-link">Sony Xperia XA Ultra</a></li>
+										<li class="nav-item"><a href="checkout4.html"
+											class="nav-link">Sony Xperia XA</a></li>
+										<li class="nav-item"><a href="checkout4.html"
+											class="nav-link">Sony Xperia X</a></li>
+										<li class="nav-item"><a href="checkout4.html"
+											class="nav-link">Sony Xperia X Performance</a></li>
+										<li class="nav-item"><a href="checkout4.html"
+											class="nav-link">Sony Xperia E5</a></li>
+										<li class="nav-item"><a href="checkout4.html"
+											class="nav-link">Sony Xperia Z5 Mini</a></li>
+									</ul>
+								</div>
+								<div class="col-md-3 col-lg-3">
+									<h5>Xperia 2015</h5>
+									<ul class="list-unstyled mb-3">
+										<li class="nav-item"><a href="checkout4.html"
+											class="nav-link">Sony Xperia Z5 Premium</a></li>
+										<li class="nav-item"><a href="checkout4.html"
+											class="nav-link">Sony Xperia Z5</a></li>
+										<li class="nav-item"><a href="checkout4.html"
+											class="nav-link">Sony Xperia Z5 Mini</a></li>
+										<li class="nav-item"><a href="checkout4.html"
+											class="nav-link">Sony Xperia C5 Ultra</a></li>
+										<li class="nav-item"><a href="checkout4.html"
+											class="nav-link">Sony Xperia Z3+/Z4</a></li>
+										<li class="nav-item"><a href="checkout4.html"
+											class="nav-link">Sony Xperia Z4 Mini</a></li>
+										<li class="nav-item"><a href="checkout4.html"
+											class="nav-link">Sony Xperia C4</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul></li>
+				<li class="nav-item dropdown menu-large"><a href="#"
+					data-toggle="dropdown" data-hover="dropdown" data-delay="200"
+					class="dropdown-toggle nav-link">Phụ kiện HTC<b class="caret"></b></a>
+					<ul class="dropdown-menu megamenu">
+						<li>
+							<div class="row">
+								<div class="col-md-6 col-lg-4">
+									<h5>HTC 2018</h5>
+									<ul class="list-unstyled mb-3">
+										<li class="nav-item"><a href="index.html"
+											class="nav-link">HTC Desire 12 Plus</a></li>
+										<li class="nav-item"><a href="category.html"
+											class="nav-link">HTC Desire 12</a></li>
+									</ul>
+								</div>
+								<div class="col-md-6 col-lg-4">
+									<h5>HTC 2017</h5>
+									<ul class="list-unstyled mb-3">
+										<li class="nav-item"><a href="register.html"
+											class="nav-link">HTC U11 Plus</a></li>
+										<li class="nav-item"><a href="customer-orders.html"
+											class="nav-link">HTC U11</a></li>
+										<li class="nav-item"><a href="customer-order.html"
+											class="nav-link">HTC 10 Evo</a></li>
+										<li class="nav-item"><a href="customer-wishlist.html"
+											class="nav-link">HTC U Play</a></li>
+										<li class="nav-item"><a href="customer-account.html"
+											class="nav-link">HTC U Ultra</a></li>
+										<li class="nav-item"><a href="customer-account.html"
+											class="nav-link">HTC Ocean</a></li>
+										<li class="nav-item"><a href="customer-account.html"
+											class="nav-link">HTC Ocean Note</a></li>
+										<li class="nav-item"><a href="customer-account.html"
+											class="nav-link">HTC 10 Pro</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul></li>
+				<li class="nav-item dropdown menu-large"><a href="#"
+					data-toggle="dropdown" data-hover="dropdown" data-delay="200"
+					class="dropdown-toggle nav-link">Phụ kiện LG<b class="caret"></b></a>
+					<ul class="dropdown-menu megamenu">
+						<li>
+							<div class="row">
+								<div class="col-md-6 col-lg-3">
+									<h5>LG 2018</h5>
+									<ul class="list-unstyled mb-3">
+										<li class="nav-item"><a href="index.html"
+											class="nav-link">LG G7 ThinQ</a></li>
 									</ul>
 								</div>
 								<div class="col-md-6 col-lg-3">
-									<h5>Pages and blog</h5>
+									<h5>LG 2017</h5>
 									<ul class="list-unstyled mb-3">
-										<li class="nav-item"><a href="blog.html" class="nav-link">Blog
-												listing</a></li>
-										<li class="nav-item"><a href="post.html" class="nav-link">Blog
-												Post</a></li>
-										<li class="nav-item"><a href="faq.html" class="nav-link">FAQ</a></li>
-										<li class="nav-item"><a href="text.html" class="nav-link">Text
-												page</a></li>
+										<li class="nav-item"><a href="register.html"
+											class="nav-link">LG X Power 2</a></li>
+										<li class="nav-item"><a href="customer-orders.html"
+											class="nav-link">LG V30</a></li>
+										<li class="nav-item"><a href="customer-order.html"
+											class="nav-link">LG K10 2017</a></li>
+										<li class="nav-item"><a href="customer-wishlist.html"
+											class="nav-link">LG G6</a></li>
+									</ul>
+								</div>
+								<div class="col-md-6 col-lg-3">
+									<h5>LG 2016</h5>
+									<ul class="list-unstyled mb-3">
+										<li class="nav-item"><a href="basket.html"
+											class="nav-link">LG K7</a></li>
+										<li class="nav-item"><a href="checkout1.html"
+											class="nav-link">LG K10</a></li>
+										<li class="nav-item"><a href="checkout2.html"
+											class="nav-link">LG V20</a></li>
+										<li class="nav-item"><a href="checkout3.html"
+											class="nav-link">LG X Power</a></li>
+									</ul>
+								</div>
+								<div class="col-md-6 col-lg-3">
+									<h5>LG 2015</h5>
+									<ul class="list-unstyled mb-3">
+										<li class="nav-item"><a href="blog.html" class="nav-link">LG
+												G5</a></li>
+										<li class="nav-item"><a href="post.html" class="nav-link">LG
+												V10</a></li>
+										<li class="nav-item"><a href="faq.html" class="nav-link">LG
+												Magna</a></li>
+										<li class="nav-item"><a href="text.html" class="nav-link">LG
+												G4</a></li>
 										<li class="nav-item"><a href="text-right.html"
-											class="nav-link">Text page - right sidebar</a></li>
-										<li class="nav-item"><a href="404.html" class="nav-link">404
-												page</a></li>
+											class="nav-link">LG G4 Stylus G Stylo</a></li>
+										<li class="nav-item"><a href="404.html" class="nav-link">LG
+												Nexus 5X</a></li>
 										<li class="nav-item"><a href="contact.html"
-											class="nav-link">Contact</a></li>
+											class="nav-link">LG G3</a></li>
+										<li class="nav-item"><a href="contact.html"
+											class="nav-link">LG G3 Beat</a></li>
+										<li class="nav-item"><a href="contact.html"
+											class="nav-link">LG G3 Stylus</a></li>
+										<li class="nav-item"><a href="contact.html"
+											class="nav-link">LG L Fino</a></li>
+										<li class="nav-item"><a href="contact.html"
+											class="nav-link">LG G Flex 2</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul></li>
+				<li class="nav-item dropdown menu-large"><a href="#"
+					data-toggle="dropdown" data-hover="dropdown" data-delay="200"
+					class="dropdown-toggle nav-link">Phụ kiện ốp lưng hãng khác<b
+						class="caret"></b></a>
+					<ul class="dropdown-menu megamenu">
+						<li>
+							<div class="row">
+								<div class="col-md-6 col-lg-3">
+									<h5>Phụ kiện OPPO</h5>
+									<ul class="list-unstyled mb-3">
+										<li class="nav-item"><a href="index.html"
+											class="nav-link">OPPO R17 Pro</a></li>
+										<li class="nav-item"><a href="category.html"
+											class="nav-link">OPPO A3s</a></li>
+										<li class="nav-item"><a href="category-right.html"
+											class="nav-link">OPPO F9</a></li>
+										<li class="nav-item"><a href="category-full.html"
+											class="nav-link">OPPO Find X</a></li>
+										<li class="nav-item"><a href="detail.html"
+											class="nav-link">OPPO F7</a></li>
+										<li class="nav-item"><a href="index.html"
+											class="nav-link">OPPO A83</a></li>
+										<li class="nav-item"><a href="category.html"
+											class="nav-link">OPPO F5 Youth</a></li>
+										<li class="nav-item"><a href="category-right.html"
+											class="nav-link">OPPO F5</a></li>
+										<li class="nav-item"><a href="category-full.html"
+											class="nav-link">OPPO A71</a></li>
+										<li class="nav-item"><a href="detail.html"
+											class="nav-link">OPPO F3</a></li>
+									</ul>
+								</div>
+								<div class="col-md-6 col-lg-3">
+									<h5>Phụ kiện Xiaomi</h5>
+									<ul class="list-unstyled mb-3">
+										<li class="nav-item"><a href="register.html"
+											class="nav-link">Xiaomi Redmi Note 7</a></li>
+										<li class="nav-item"><a href="customer-orders.html"
+											class="nav-link">Xiaomi Mi Play</a></li>
+										<li class="nav-item"><a href="customer-order.html"
+											class="nav-link">Xiaomi Mi Mix 3</a></li>
+										<li class="nav-item"><a href="customer-wishlist.html"
+											class="nav-link">Xiaomi Redmi Note 6 Pro</a></li>
+										<li class="nav-item"><a href="customer-account.html"
+											class="nav-link">Xiaomi Mi 8 Pro</a></li>
+										<li class="nav-item"><a href="register.html"
+											class="nav-link">Xiaomi Mi 8 Lite</a></li>
+										<li class="nav-item"><a href="customer-orders.html"
+											class="nav-link">Xiaomi Mi 8 Explorer</a></li>
+										<li class="nav-item"><a href="customer-order.html"
+											class="nav-link">Xiaomi Mi A2 Lite</a></li>
+										<li class="nav-item"><a href="customer-wishlist.html"
+											class="nav-link">Xiaomi Mi 8</a></li>
+										<li class="nav-item"><a href="customer-account.html"
+											class="nav-link">Xiaomi Mi 8 SE</a></li>
+
+									</ul>
+								</div>
+								<div class="col-md-6 col-lg-3">
+									<h5>Phụ kiện Huawei</h5>
+									<ul class="list-unstyled mb-3">
+										<li class="nav-item"><a href="basket.html"
+											class="nav-link">Huawei Y7 Pro 2019</a></li>
+										<li class="nav-item"><a href="checkout1.html"
+											class="nav-link">Huawei Mate 20 Pro</a></li>
+										<li class="nav-item"><a href="checkout2.html"
+											class="nav-link">Huawei Mate 20</a></li>
+										<li class="nav-item"><a href="checkout3.html"
+											class="nav-link">Huawei Y9 (2019)</a></li>
+										<li class="nav-item"><a href="checkout4.html"
+											class="nav-link">Huawei Nova 3i</a></li>
+										<li class="nav-item"><a href="basket.html"
+											class="nav-link">Huawei Nova 3</a></li>
+										<li class="nav-item"><a href="checkout1.html"
+											class="nav-link">Huawei P20 Pro</a></li>
+										<li class="nav-item"><a href="checkout2.html"
+											class="nav-link">Huawei Nova 3e</a></li>
+										<li class="nav-item"><a href="checkout3.html"
+											class="nav-link">Huawei Y7 Pro 2018</a></li>
+										<li class="nav-item"><a href="checkout4.html"
+											class="nav-link">Huawei Y7 Prime 2018</a></li>
+									</ul>
+								</div>
+								<div class="col-md-6 col-lg-3">
+									<h5>Phụ kiện Honor</h5>
+									<ul class="list-unstyled mb-3">
+										<li class="nav-item"><a href="blog.html" class="nav-link">Huawei
+												Honor 10</a></li>
+										<li class="nav-item"><a href="post.html" class="nav-link">Huawei
+												Honor View10</a></li>
+										<li class="nav-item"><a href="faq.html" class="nav-link">FAQ</a></li>
+										<li class="nav-item"><a href="text.html" class="nav-link">Huawei
+												Honor 9 Lite</a></li>
+										<li class="nav-item"><a href="text-right.html"
+											class="nav-link">Huawei Honor 7X</a></li>
+										<li class="nav-item"><a href="404.html" class="nav-link">Huawei
+												Honor 8X</a></li>
+										<li class="nav-item"><a href="contact.html"
+											class="nav-link">Huawei Honor 7</a></li>
+										<li class="nav-item"><a href="blog.html" class="nav-link">Huawei
+												Honor 6 Plus</a></li>
+										<li class="nav-item"><a href="post.html" class="nav-link">Huawei
+												Honor 4X</a></li>
+										<li class="nav-item"><a href="faq.html" class="nav-link">Huawei
+												Honor 4C</a></li>
+									</ul>
+								</div>
+								<div class="col-md-6 col-lg-3">
+									<h5>Phụ kiện Vivo</h5>
+									<ul class="list-unstyled mb-3">
+										<li class="nav-item"><a href="blog.html" class="nav-link">Vivo
+												V9</a></li>
+										<li class="nav-item"><a href="post.html" class="nav-link">Vivo
+												V3</a></li>
+										<li class="nav-item"><a href="faq.html" class="nav-link">Vivo
+												Y51</a></li>
+										<li class="nav-item"><a href="text.html" class="nav-link">Vivo
+												Y31</a></li>
+										<li class="nav-item"><a href="text-right.html"
+											class="nav-link">Vivo V1</a></li>
+										<li class="nav-item"><a href="404.html" class="nav-link">Vivo
+												V1 Max</a></li>
+										<li class="nav-item"><a href="contact.html"
+											class="nav-link">Vivo V3 Max</a></li>
 									</ul>
 								</div>
 							</div>
@@ -351,7 +690,7 @@
 				<div id="basket-overview"
 					class="navbar-collapse collapse d-none d-lg-block">
 					<a href="basket.html" class="btn btn-primary navbar-btn"><i
-						class="fa fa-shopping-cart"></i><span>3 items in cart</span></a>
+						class="fa fa-shopping-cart"></i></a>
 				</div>
 			</div>
 		</div>
@@ -374,24 +713,37 @@
 	</header>
 	<div id="all">
 		<div id="content">
-			<div class="container">
+			<div class="container" style="margin-top: -2%;">
 				<div class="row">
-					<div class="col-md-12">
+					<div class="col-md-8">
 						<div id="main-slider" class="owl-carousel owl-theme">
 							<div class="item">
-								<img src="<c:url value="/resources/ui/img/main-slider1.jpg"/>" alt="" class="img-fluid">
+								<img src="<c:url value="/resources/ui/img/oplungdt/op.jpg"/>"
+									alt="" class="img-fluid">
 							</div>
 							<div class="item">
-								<img src="<c:url value="/resources/ui/img/main-slider2.jpg"/>" alt="" class="img-fluid">
+								<img
+									src="<c:url value="/resources/ui/img/oplungdt/iphone1.jpg"/>"
+									alt="" class="img-fluid">
 							</div>
 							<div class="item">
-								<img src="<c:url value="/resources/ui/img/main-slider3.jpg"/>" alt="" class="img-fluid">
+								<img
+									src="<c:url value="/resources/ui/img/oplungdt/4500737slide2.jpg"/>"
+									alt="" class="img-fluid">
 							</div>
 							<div class="item">
-								<img src="<c:url value="/resources/ui/img/main-slider4.jpg"/>" alt="" class="img-fluid">
+								<img
+									src="<c:url value="/resources/ui/img/oplungdt/4501283slide3.jpg"/>"
+									alt="" class="img-fluid">
 							</div>
 						</div>
 						<!-- /#main-slider-->
+					</div>
+					<div class="col-md-4">
+						<img src="<c:url value="/resources/ui/img/oplungdt/call(1).png"/>"
+							alt="" class="img-fluid"> <br> <br> <img
+							src="<c:url value="/resources/ui/img/oplungdt/giaohang2.png"/>"
+							alt="" class="img-fluid">
 					</div>
 				</div>
 			</div>
@@ -409,10 +761,11 @@
 									<i class="fa fa-heart"></i>
 								</div>
 								<h3>
-									<a href="#">We love our customers</a>
+									<a href="#"><i class="fab fa-asymmetrik"></i> Uy tín hàng
+										đầu</a>
 								</h3>
-								<p class="mb-0">We are known to provide best possible
-									service ever</p>
+								<p class="mb-0">Thành lập hơn 5 Năm, đã phục vụ hơn 300.000
+									khách hàng trên cả nước...</p>
 							</div>
 						</div>
 						<div class="col-md-4">
@@ -422,10 +775,11 @@
 									<i class="fa fa-tags"></i>
 								</div>
 								<h3>
-									<a href="#">Best prices</a>
+									<a href="#"><i class="fas fa-shipping-fast"></i> Giao hàng
+										nhanh chóng</a>
 								</h3>
-								<p class="mb-0">You can check that the height of the boxes
-									adjust when longer text like this one is used in one of them.</p>
+								<p class="mb-0">Giao hàng 24h trong nội thành và giao hàng
+									qua bưu điện ở tỉnh khác...</p>
 							</div>
 						</div>
 						<div class="col-md-4">
@@ -435,9 +789,11 @@
 									<i class="fa fa-thumbs-up"></i>
 								</div>
 								<h3>
-									<a href="#">100% satisfaction guaranteed</a>
+									<a href="#"><i class="fab fa-stack-overflow"></i> Sản phẩm
+										đa dạng</a>
 								</h3>
-								<p class="mb-0">Free returns on everything for 3 months.</p>
+								<p class="mb-0">Cung cấp tất cả các phụ kiện, bao da, thẻ
+									nhớ cho điện thoại, Tablet...</p>
 							</div>
 						</div>
 					</div>
@@ -449,14 +805,14 @@
 			<!-- *** ADVANTAGES END ***-->
 			<!--
         *** HOT PRODUCT SLIDESHOW ***
-        _________________________________________________________
-        -->
+<!--         _________________________________________________________ -->
+
 			<div id="hot">
 				<div class="box py-4">
 					<div class="container">
 						<div class="row">
 							<div class="col-md-12">
-								<h2 class="mb-0">Hot this week</h2>
+								<h2 class="mb-0">Phụ kiện ốp lưng điện thoại mới nhất</h2>
 							</div>
 						</div>
 					</div>
@@ -468,17 +824,20 @@
 								<div class="flip-container">
 									<div class="flipper">
 										<div class="front">
-											<a href="detail.html"><img src="<c:url value="/resources/ui/img/product1.jpg"/>" alt=""
+											<a href="detail.html"><img
+												src="<c:url value="/resources/ui/img/oplungdt/op-lung-iphone-xs-max.jpg"/>" alt=""
 												class="img-fluid"></a>
 										</div>
 										<div class="back">
-											<a href="detail.html"><img src="<c:url value="/resources/ui/img/product1_2.jpg"/>"
+											<a href="detail.html"><img
+												src="<c:url value="/resources/ui/img/oplungdt/oppo-find-x.jpg"/>"
 												alt="" class="img-fluid"></a>
 										</div>
 									</div>
 								</div>
 								<a href="detail.html" class="invisible"><img
-									src="<c:url value="/resources/ui/img/product1.jpg"/>" alt="" class="img-fluid"></a>
+									src="<c:url value="/resources/ui/img/oplungdt/zenfone-max-pro-m2.jpg"/>" alt=""
+									class="img-fluid"></a>
 								<div class="text">
 									<h3>
 										<a href="detail.html">Fur coat with very but very very
@@ -513,18 +872,20 @@
 								<div class="flip-container">
 									<div class="flipper">
 										<div class="front">
-											<a href="detail.html">
-											<img src="<c:url value="/resources/ui/img/product2.jpg"/>" alt=""
+											<a href="detail.html"> <img
+												src="<c:url value="/resources/ui/img/oplungdt/huawei-mate-20-pro.jpg"/>" alt=""
 												class="img-fluid"></a>
 										</div>
 										<div class="back">
-											<a href="detail.html"><img src="<c:url value="/resources/ui/img/product2_2.jpg"/>"
+											<a href="detail.html"><img
+												src="<c:url value="/resources/ui/img/oplungdt/galaxy-s10-plus.jpg"/>"
 												alt="" class="img-fluid"></a>
 										</div>
 									</div>
 								</div>
 								<a href="detail.html" class="invisible"><img
-									src="<c:url value="/resources/ui/img/product2.jpg"/>" alt="" class="img-fluid"></a>
+									src="<c:url value="/resources/ui/img/product2.jpg"/>" alt=""
+									class="img-fluid"></a>
 								<div class="text">
 									<h3>
 										<a href="detail.html">White Blouse Armani</a>
@@ -558,17 +919,20 @@
 								<div class="flip-container">
 									<div class="flipper">
 										<div class="front">
-											<a href="detail.html"><img src="<c:url value="/resources/ui/img/product3.jpg"/>" alt=""
+											<a href="detail.html"><img
+												src="<c:url value="/resources/ui/img/product3.jpg"/>" alt=""
 												class="img-fluid"></a>
 										</div>
 										<div class="back">
-											<a href="detail.html"><img src="<c:url value="/resources/ui/img/product3_2.jpg"/>"
+											<a href="detail.html"><img
+												src="<c:url value="/resources/ui/img/product3_2.jpg"/>"
 												alt="" class="img-fluid"></a>
 										</div>
 									</div>
 								</div>
 								<a href="detail.html" class="invisible"><img
-									src="<c:url value="/resources/ui/img/product3.jpg"/>" alt="" class="img-fluid"></a>
+									src="<c:url value="/resources/ui/img/product3.jpg"/>" alt=""
+									class="img-fluid"></a>
 								<div class="text">
 									<h3>
 										<a href="detail.html">Black Blouse Versace</a>
@@ -587,17 +951,20 @@
 								<div class="flip-container">
 									<div class="flipper">
 										<div class="front">
-											<a href="detail.html"><img src="<c:url value="/resources/ui/img/product3.jpg"/>" alt=""
+											<a href="detail.html"><img
+												src="<c:url value="/resources/ui/img/product3.jpg"/>" alt=""
 												class="img-fluid"></a>
 										</div>
 										<div class="back">
-											<a href="detail.html"><img src="<c:url value="/resources/ui/img/product3_2.jpg"/>"
+											<a href="detail.html"><img
+												src="<c:url value="/resources/ui/img/product3_2.jpg"/>"
 												alt="" class="img-fluid"></a>
 										</div>
 									</div>
 								</div>
 								<a href="detail.html" class="invisible"><img
-									src="<c:url value="/resources/ui/img/product3.jpg"/>" alt="" class="img-fluid"></a>
+									src="<c:url value="/resources/ui/img/product3.jpg"/>" alt=""
+									class="img-fluid"></a>
 								<div class="text">
 									<h3>
 										<a href="detail.html">Black Blouse Versace</a>
@@ -616,17 +983,20 @@
 								<div class="flip-container">
 									<div class="flipper">
 										<div class="front">
-											<a href="detail.html"><img src="<c:url value="/resources/ui/img/product2.jpg"/>" alt=""
+											<a href="detail.html"><img
+												src="<c:url value="/resources/ui/img/product2.jpg"/>" alt=""
 												class="img-fluid"></a>
 										</div>
 										<div class="back">
-											<a href="detail.html"><img src="<c:url value="/resources/ui/img/product2_2.jpg"/>"
+											<a href="detail.html"><img
+												src="<c:url value="/resources/ui/img/product2_2.jpg"/>"
 												alt="" class="img-fluid"></a>
 										</div>
 									</div>
 								</div>
 								<a href="detail.html" class="invisible"><img
-									src="<c:url value="/resources/ui/img/product2.jpg"/>" alt="" class="img-fluid"></a>
+									src="<c:url value="/resources/ui/img/product2.jpg"/>" alt=""
+									class="img-fluid"></a>
 								<div class="text">
 									<h3>
 										<a href="detail.html">White Blouse Versace</a>
@@ -650,17 +1020,20 @@
 								<div class="flip-container">
 									<div class="flipper">
 										<div class="front">
-											<a href="detail.html"><img src="<c:url value="/resources/ui/img/product1.jpg"/>" alt=""
+											<a href="detail.html"><img
+												src="<c:url value="/resources/ui/img/product1.jpg"/>" alt=""
 												class="img-fluid"></a>
 										</div>
 										<div class="back">
-											<a href="detail.html"><img src="<c:url value="/resources/ui/img/product1_2.jpg"/>"
+											<a href="detail.html"><img
+												src="<c:url value="/resources/ui/img/product1_2.jpg"/>"
 												alt="" class="img-fluid"></a>
 										</div>
 									</div>
 								</div>
 								<a href="detail.html" class="invisible"><img
-									src="<c:url value="/resources/ui/img/product1.jpg"/>" alt="" class="img-fluid"></a>
+									src="<c:url value="/resources/ui/img/product1.jpg"/>" alt=""
+									class="img-fluid"></a>
 								<div class="text">
 									<h3>
 										<a href="detail.html">Fur coat</a>
@@ -684,17 +1057,20 @@
 								<div class="flip-container">
 									<div class="flipper">
 										<div class="front">
-											<a href="detail.html"><img src="<c:url value="/resources/ui/img/product2.jpg"/>" alt=""
+											<a href="detail.html"><img
+												src="<c:url value="/resources/ui/img/product2.jpg"/>" alt=""
 												class="img-fluid"></a>
 										</div>
 										<div class="back">
-											<a href="detail.html"><img src="<c:url value="/resources/ui/img/product2_2.jpg"/>"
+											<a href="detail.html"><img
+												src="<c:url value="/resources/ui/img/product2_2.jpg"/>"
 												alt="" class="img-fluid"></a>
 										</div>
 									</div>
 								</div>
 								<a href="detail.html" class="invisible"><img
-									src="<c:url value="/resources/ui/img/product2.jpg"/>" alt="" class="img-fluid"></a>
+									src="<c:url value="/resources/ui/img/product2.jpg"/>" alt=""
+									class="img-fluid"></a>
 								<div class="text">
 									<h3>
 										<a href="detail.html">White Blouse Armani</a>
@@ -728,17 +1104,20 @@
 								<div class="flip-container">
 									<div class="flipper">
 										<div class="front">
-											<a href="detail.html"><img src="<c:url value="/resources/ui/img/product3.jpg"/>" alt=""
+											<a href="detail.html"><img
+												src="<c:url value="/resources/ui/img/product3.jpg"/>" alt=""
 												class="img-fluid"></a>
 										</div>
 										<div class="back">
-											<a href="detail.html"><img src="<c:url value="/resources/ui/img/product3_2.jpg"/>"
+											<a href="detail.html"><img
+												src="<c:url value="/resources/ui/img/product3_2.jpg"/>"
 												alt="" class="img-fluid"></a>
 										</div>
 									</div>
 								</div>
 								<a href="detail.html" class="invisible"><img
-									src="<c:url value="/resources/ui/img/product3.jpg"/>" alt="" class="img-fluid"></a>
+									src="<c:url value="/resources/ui/img/product3.jpg"/>" alt=""
+									class="img-fluid"></a>
 								<div class="text">
 									<h3>
 										<a href="detail.html">Black Blouse Versace</a>
@@ -760,216 +1139,582 @@
 				<!-- *** HOT END ***-->
 			</div>
 			<!--
-        *** GET INSPIRED ***
-        _________________________________________________________
-        -->
-			<div class="container">
-				<div class="col-md-12">
-					<div class="box slideshow">
-						<h3>Get Inspired</h3>
-						<p class="lead">Get the inspiration from our world class
-							designers</p>
-						<div id="get-inspired" class="owl-carousel owl-theme">
-							<div class="item">
-								<a href="#"><img src="<c:url value="/resources/ui/img/getinspired1.jpg"/>"
-									alt="Get inspired" class="img-fluid"></a>
+			
+			<!-- --------------------------------------------------------- -->
+			<!-- NOI DUNG -->
+			<div id="all">
+				<div id="content">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12">
+								<!-- breadcrumb-->
+								<nav aria-label="breadcrumb">
+								<ol class="breadcrumb">
+									<li class="breadcrumb-item"><a href="#">Home</a></li>
+									<li aria-current="page" class="breadcrumb-item active">Ladies</li>
+								</ol>
+								</nav>
 							</div>
-							<div class="item">
-								<a href="#"><img src="<c:url value="/resources/ui/img/getinspired2.jpg"/>"
-									alt="Get inspired" class="img-fluid"></a>
+							<div class="col-lg-3">
+								<!--
+              *** MENUS AND FILTERS ***
+              _________________________________________________________
+              -->
+								<div class="card sidebar-menu mb-4">
+									<div class="card-header">
+										<h3 class="h4 card-title">Categories</h3>
+									</div>
+									<div class="card-body">
+										<ul class="nav nav-pills flex-column category-menu">
+											<li><a href="category.html" class="nav-link">Men <span
+													class="badge badge-secondary">42</span></a>
+												<ul class="list-unstyled">
+													<li><a href="category.html" class="nav-link">T-shirts</a></li>
+													<li><a href="category.html" class="nav-link">Shirts</a></li>
+													<li><a href="category.html" class="nav-link">Pants</a></li>
+													<li><a href="category.html" class="nav-link">Accessories</a></li>
+												</ul></li>
+											<li><a href="category.html" class="nav-link active">Ladies
+													<span class="badge badge-light">123</span>
+											</a>
+												<ul class="list-unstyled">
+													<li><a href="category.html" class="nav-link">T-shirts</a></li>
+													<li><a href="category.html" class="nav-link">Skirts</a></li>
+													<li><a href="category.html" class="nav-link">Pants</a></li>
+													<li><a href="category.html" class="nav-link">Accessories</a></li>
+												</ul></li>
+											<li><a href="category.html" class="nav-link">Kids <span
+													class="badge badge-secondary">11</span></a>
+												<ul class="list-unstyled">
+													<li><a href="category.html" class="nav-link">T-shirts</a></li>
+													<li><a href="category.html" class="nav-link">Skirts</a></li>
+													<li><a href="category.html" class="nav-link">Pants</a></li>
+													<li><a href="category.html" class="nav-link">Accessories</a></li>
+												</ul></li>
+										</ul>
+									</div>
+								</div>
+								<div class="card sidebar-menu mb-4">
+									<div class="card-header">
+										<h3 class="h4 card-title">
+											Brands <a href="#" class="btn btn-sm btn-danger pull-right"><i
+												class="fa fa-times-circle"></i> Clear</a>
+										</h3>
+									</div>
+									<div class="card-body">
+										<form>
+											<div class="form-group">
+												<div class="checkbox">
+													<label> <input type="checkbox"> Armani (10)
+													</label>
+												</div>
+												<div class="checkbox">
+													<label> <input type="checkbox"> Versace
+														(12)
+													</label>
+												</div>
+												<div class="checkbox">
+													<label> <input type="checkbox"> Carlo Bruni
+														(15)
+													</label>
+												</div>
+												<div class="checkbox">
+													<label> <input type="checkbox"> Jack Honey
+														(14)
+													</label>
+												</div>
+											</div>
+											<button class="btn btn-default btn-sm btn-primary">
+												<i class="fa fa-pencil"></i> Apply
+											</button>
+										</form>
+									</div>
+								</div>
+								<div class="card sidebar-menu mb-4">
+									<div class="card-header">
+										<h3 class="h4 card-title">
+											Colours <a href="#" class="btn btn-sm btn-danger pull-right"><i
+												class="fa fa-times-circle"></i> Clear</a>
+										</h3>
+									</div>
+									<div class="card-body">
+										<form>
+											<div class="form-group">
+												<div class="checkbox">
+													<label> <input type="checkbox"><span
+														class="colour white"></span> White (14)
+													</label>
+												</div>
+												<div class="checkbox">
+													<label> <input type="checkbox"><span
+														class="colour blue"></span> Blue (10)
+													</label>
+												</div>
+												<div class="checkbox">
+													<label> <input type="checkbox"><span
+														class="colour green"></span> Green (20)
+													</label>
+												</div>
+												<div class="checkbox">
+													<label> <input type="checkbox"><span
+														class="colour yellow"></span> Yellow (13)
+													</label>
+												</div>
+												<div class="checkbox">
+													<label> <input type="checkbox"><span
+														class="colour red"></span> Red (10)
+													</label>
+												</div>
+											</div>
+											<button class="btn btn-default btn-sm btn-primary">
+												<i class="fa fa-pencil"></i> Apply
+											</button>
+										</form>
+									</div>
+								</div>
+								<!-- *** MENUS AND FILTERS END ***-->
+								<div class="banner">
+									<a href="#"><img
+										src="<c:url value="/resources/ui/img/banner.jpg"/>"
+										alt="sales 2014" class="img-fluid"></a>
+								</div>
 							</div>
-							<div class="item">
-								<a href="#"><img src="<c:url value="/resources/ui/img/getinspired3.jpg"/>"
-									alt="Get inspired" class="img-fluid"></a>
+							<div class="col-lg-9">
+								<div class="box">
+									<h1>Ladies</h1>
+									<p>In our Ladies department we offer wide selection of the
+										best products we have found and carefully selected worldwide.</p>
+								</div>
+								<div class="box info-bar">
+									<div class="row">
+										<div class="col-md-12 col-lg-4 products-showing">
+											Showing <strong>12</strong> of <strong>25</strong> products
+										</div>
+										<div class="col-md-12 col-lg-7 products-number-sort">
+											<form
+												class="form-inline d-block d-lg-flex justify-content-between flex-column flex-md-row">
+												<div class="products-number">
+													<strong>Show</strong><a href="#"
+														class="btn btn-sm btn-primary">12</a><a href="#"
+														class="btn btn-outline-secondary btn-sm">24</a><a href="#"
+														class="btn btn-outline-secondary btn-sm">All</a><span>products</span>
+												</div>
+												<div class="products-sort-by mt-2 mt-lg-0">
+													<strong>Sort by</strong> <select name="sort-by"
+														class="form-control">
+														<option>Price</option>
+														<option>Name</option>
+														<option>Sales first</option>
+													</select>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="row products">
+									<div class="col-lg-4 col-md-6">
+										<div class="product">
+											<div class="flip-container">
+												<div class="flipper">
+													<div class="front">
+														<a href="detail.html"><img
+															src="<c:url value="/resources/ui/img/product1.jpg"/>"
+															alt="" class="img-fluid"></a>
+													</div>
+													<div class="back">
+														<a href="detail.html"><img
+															src="<c:url value="/resources/ui/img/product1_2.jpg"/>"
+															alt="" class="img-fluid"></a>
+													</div>
+												</div>
+											</div>
+											<a href="detail.html" class="invisible"><img
+												src="<c:url value="/resources/ui/img/product1.jpg"/>" alt=""
+												class="img-fluid"></a>
+											<div class="text">
+												<h3>
+													<a href="detail.html">Fur coat with very but very very
+														long name</a>
+												</h3>
+												<p class="price">
+													<del></del>
+													$143.00
+												</p>
+												<p class="buttons">
+													<a href="detail.html" class="btn btn-outline-secondary">View
+														detail</a><a href="basket.html" class="btn btn-primary"><i
+														class="fa fa-shopping-cart"></i>Add to cart</a>
+												</p>
+											</div>
+											<!-- /.text-->
+										</div>
+										<!-- /.product            -->
+									</div>
+									<div class="col-lg-4 col-md-6">
+										<div class="product">
+											<div class="flip-container">
+												<div class="flipper">
+													<div class="front">
+														<a href="detail.html"><img
+															src="<c:url value="/resources/ui/img/product2.jpg"/>"
+															alt="" class="img-fluid"></a>
+													</div>
+													<div class="back">
+														<a href="detail.html"><img
+															src="<c:url value="/resources/ui/img/product2_2.jpg"/>"
+															alt="" class="img-fluid"></a>
+													</div>
+												</div>
+											</div>
+											<a href="detail.html" class="invisible"><img
+												src="<c:url value="/resources/ui/img/product2.jpg"/>" alt=""
+												class="img-fluid"></a>
+											<div class="text">
+												<h3>
+													<a href="detail.html">White Blouse Armani</a>
+												</h3>
+												<p class="price">
+													<del>$280</del>
+													$143.00
+												</p>
+												<p class="buttons">
+													<a href="detail.html" class="btn btn-outline-secondary">View
+														detail</a><a href="basket.html" class="btn btn-primary"><i
+														class="fa fa-shopping-cart"></i>Add to cart</a>
+												</p>
+											</div>
+											<!-- /.text-->
+											<div class="ribbon sale">
+												<div class="theribbon">SALE</div>
+												<div class="ribbon-background"></div>
+											</div>
+											<!-- /.ribbon-->
+											<div class="ribbon new">
+												<div class="theribbon">NEW</div>
+												<div class="ribbon-background"></div>
+											</div>
+											<!-- /.ribbon-->
+											<div class="ribbon gift">
+												<div class="theribbon">GIFT</div>
+												<div class="ribbon-background"></div>
+											</div>
+											<!-- /.ribbon-->
+										</div>
+										<!-- /.product            -->
+									</div>
+									<div class="col-lg-4 col-md-6">
+										<div class="product">
+											<div class="flip-container">
+												<div class="flipper">
+													<div class="front">
+														<a href="detail.html"><img
+															src="<c:url value="/resources/ui/img/product3.jpg"/>"
+															alt="" class="img-fluid"></a>
+													</div>
+													<div class="back">
+														<a href="detail.html"><img
+															src="<c:url value="/resources/ui/img/product3_2.jpg"/>"
+															alt="" class="img-fluid"></a>
+													</div>
+												</div>
+											</div>
+											<a href="detail.html" class="invisible"><img
+												src="<c:url value="/resources/ui/img/product3.jpg"/>" alt=""
+												class="img-fluid"></a>
+											<div class="text">
+												<h3>
+													<a href="detail.html">Black Blouse Versace</a>
+												</h3>
+												<p class="price">
+													<del></del>
+													$143.00
+												</p>
+												<p class="buttons">
+													<a href="detail.html" class="btn btn-outline-secondary">View
+														detail</a><a href="basket.html" class="btn btn-primary"><i
+														class="fa fa-shopping-cart"></i>Add to cart</a>
+												</p>
+											</div>
+											<!-- /.text-->
+										</div>
+										<!-- /.product            -->
+									</div>
+									<div class="col-lg-4 col-md-6">
+										<div class="product">
+											<div class="flip-container">
+												<div class="flipper">
+													<div class="front">
+														<a href="detail.html"><img
+															src="<c:url value="/resources/ui/img/product3.jpg"/>"
+															alt="" class="img-fluid"></a>
+													</div>
+													<div class="back">
+														<a href="detail.html"><img
+															src="<c:url value="/resources/ui/img/product3_2.jpg"/>"
+															alt="" class="img-fluid"></a>
+													</div>
+												</div>
+											</div>
+											<a href="detail.html" class="invisible"><img
+												src="<c:url value="/resources/ui/img/product3.jpg"/>" alt=""
+												class="img-fluid"></a>
+											<div class="text">
+												<h3>
+													<a href="detail.html">Black Blouse Versace</a>
+												</h3>
+												<p class="price">
+													<del></del>
+													$143.00
+												</p>
+												<p class="buttons">
+													<a href="detail.html" class="btn btn-outline-secondary">View
+														detail</a><a href="basket.html" class="btn btn-primary"><i
+														class="fa fa-shopping-cart"></i>Add to cart</a>
+												</p>
+											</div>
+											<!-- /.text-->
+										</div>
+										<!-- /.product            -->
+									</div>
+									<div class="col-lg-4 col-md-6">
+										<div class="product">
+											<div class="flip-container">
+												<div class="flipper">
+													<div class="front">
+														<a href="detail.html"><img
+															src="<c:url value="/resources/ui/img/product2.jpg"/>"
+															alt="" class="img-fluid"></a>
+													</div>
+													<div class="back">
+														<a href="detail.html"><img
+															src="<c:url value="/resources/ui/img/product2_2.jpg"/>"
+															alt="" class="img-fluid"></a>
+													</div>
+												</div>
+											</div>
+											<a href="detail.html" class="invisible"><img
+												src="<c:url value="/resources/ui/img/product2.jpg"/>" alt=""
+												class="img-fluid"></a>
+											<div class="text">
+												<h3>
+													<a href="detail.html">White Blouse Versace</a>
+												</h3>
+												<p class="price">
+													<del></del>
+													$143.00
+												</p>
+												<p class="buttons">
+													<a href="detail.html" class="btn btn-outline-secondary">View
+														detail</a><a href="basket.html" class="btn btn-primary"><i
+														class="fa fa-shopping-cart"></i>Add to cart</a>
+												</p>
+											</div>
+											<!-- /.text-->
+											<div class="ribbon new">
+												<div class="theribbon">NEW</div>
+												<div class="ribbon-background"></div>
+											</div>
+											<!-- /.ribbon-->
+										</div>
+										<!-- /.product            -->
+									</div>
+									<div class="col-lg-4 col-md-6">
+										<div class="product">
+											<div class="flip-container">
+												<div class="flipper">
+													<div class="front">
+														<a href="detail.html"><img
+															src="<c:url value="/resources/ui/img/product1.jpg"/>"
+															alt="" class="img-fluid"></a>
+													</div>
+													<div class="back">
+														<a href="detail.html"><img
+															src="<c:url value="/resources/ui/img/product1_2.jpg"/>"
+															alt="" class="img-fluid"></a>
+													</div>
+												</div>
+											</div>
+											<a href="detail.html" class="invisible"><img
+												src="<c:url value="/resources/ui/img/product1.jpg"/>" alt=""
+												class="img-fluid"></a>
+											<div class="text">
+												<h3>
+													<a href="detail.html">Fur coat</a>
+												</h3>
+												<p class="price">
+													<del></del>
+													$143.00
+												</p>
+												<p class="buttons">
+													<a href="detail.html" class="btn btn-outline-secondary">View
+														detail</a><a href="basket.html" class="btn btn-primary"><i
+														class="fa fa-shopping-cart"></i>Add to cart</a>
+												</p>
+											</div>
+											<!-- /.text-->
+											<div class="ribbon gift">
+												<div class="theribbon">GIFT</div>
+												<div class="ribbon-background"></div>
+											</div>
+											<!-- /.ribbon-->
+										</div>
+										<!-- /.product            -->
+									</div>
+									<!-- /.products-->
+								</div>
+								<div class="pages">
+									<p class="loadMore">
+										<a href="#" class="btn btn-primary btn-lg"><i
+											class="fa fa-chevron-down"></i> Load more</a>
+									</p>
+									<nav aria-label="Page navigation example"
+										class="d-flex justify-content-center">
+									<ul class="pagination">
+										<li class="page-item"><a href="#" aria-label="Previous"
+											class="page-link"><span aria-hidden="true">«</span><span
+												class="sr-only">Previous</span></a></li>
+										<li class="page-item active"><a href="#"
+											class="page-link">1</a></li>
+										<li class="page-item"><a href="#" class="page-link">2</a></li>
+										<li class="page-item"><a href="#" class="page-link">3</a></li>
+										<li class="page-item"><a href="#" class="page-link">4</a></li>
+										<li class="page-item"><a href="#" class="page-link">5</a></li>
+										<li class="page-item"><a href="#" aria-label="Next"
+											class="page-link"><span aria-hidden="true">»</span><span
+												class="sr-only">Next</span></a></li>
+									</ul>
+									</nav>
+								</div>
 							</div>
+							<!-- /.col-lg-9-->
 						</div>
 					</div>
 				</div>
 			</div>
-			<!-- *** GET INSPIRED END ***-->
-			<!--
-        *** BLOG HOMEPAGE ***
-        _________________________________________________________
-        -->
-			<div class="box text-center">
+			<!-- END:NOI DUNG -->
+
+			<!--   *** FOOTER ***
+    _________________________________________________________ -->
+
+			<div id="footer">
 				<div class="container">
-					<div class="col-md-12">
-						<h3 class="text-uppercase">From our blog</h3>
-						<p class="lead mb-0">
-							What's new in the world of fashion? <a href="blog.html">Check
-								our blog!</a>
-						</p>
+					<div class="row">
+						<div class="col-lg-3 col-md-6">
+							<h4 class="mb-3">Pages</h4>
+							<ul class="list-unstyled">
+								<li><a href="text.html">About us</a></li>
+								<li><a href="text.html">Terms and conditions</a></li>
+								<li><a href="faq.html">FAQ</a></li>
+								<li><a href="contact.html">Contact us</a></li>
+							</ul>
+							<hr>
+							<h4 class="mb-3">User section</h4>
+							<ul class="list-unstyled">
+								<li><a href="#" data-toggle="modal"
+									data-target="#login-modal">Login</a></li>
+								<li><a href="register.html">Regiter</a></li>
+							</ul>
+						</div>
+						<!-- /.col-lg-3-->
+						<div class="col-lg-3 col-md-6">
+							<h4 class="mb-3">Top categories</h4>
+							<h5>Men</h5>
+							<ul class="list-unstyled">
+								<li><a href="category.html">T-shirts</a></li>
+								<li><a href="category.html">Shirts</a></li>
+								<li><a href="category.html">Accessories</a></li>
+							</ul>
+							<h5>Ladies</h5>
+							<ul class="list-unstyled">
+								<li><a href="category.html">T-shirts</a></li>
+								<li><a href="category.html">Skirts</a></li>
+								<li><a href="category.html">Pants</a></li>
+								<li><a href="category.html">Accessories</a></li>
+							</ul>
+						</div>
+						<!-- /.col-lg-3-->
+						<div class="col-lg-3 col-md-6">
+							<h4 class="mb-3">Where to find us</h4>
+							<p>
+								<strong>Obaju Ltd.</strong><br>13/25 New Avenue<br>New
+								Heaven<br>45Y 73J<br>England<br> <strong>Great
+									Britain</strong>
+							</p>
+							<a href="contact.html">Go to contact page</a>
+							<hr class="d-block d-md-none">
+						</div>
+						<!-- /.col-lg-3-->
+						<div class="col-lg-3 col-md-6">
+							<h4 class="mb-3">Get the news</h4>
+							<p class="text-muted">Pellentesque habitant morbi tristique
+								senectus et netus et malesuada fames ac turpis egestas.</p>
+							<form>
+								<div class="input-group">
+									<input type="text" class="form-control"><span
+										class="input-group-append">
+										<button type="button" class="btn btn-outline-secondary">Subscribe!</button>
+									</span>
+								</div>
+								<!-- /input-group-->
+							</form>
+							<hr>
+							<h4 class="mb-3">Stay in touch</h4>
+							<p class="social">
+								<a href="#" class="facebook external"><i
+									class="fa fa-facebook"></i></a><a href="#" class="twitter external"><i
+									class="fa fa-twitter"></i></a><a href="#"
+									class="instagram external"><i class="fa fa-instagram"></i></a><a
+									href="#" class="gplus external"><i
+									class="fa fa-google-plus"></i></a><a href="#"
+									class="email external"><i class="fa fa-envelope"></i></a>
+							</p>
+						</div>
+						<!-- /.col-lg-3-->
 					</div>
+					<!-- /.row-->
 				</div>
+				<!-- /.container-->
 			</div>
-			<div class="container">
-				<div class="col-md-12">
-					<div id="blog-homepage" class="row">
-						<div class="col-sm-6">
-							<div class="post">
-								<h4>
-									<a href="post.html">Fashion now</a>
-								</h4>
-								<p class="author-category">
-									By <a href="#">John Slim</a> in <a href="">Fashion and
-										style</a>
-								</p>
-								<hr>
-								<p class="intro">Pellentesque habitant morbi tristique
-									senectus et netus et malesuada fames ac turpis egestas.
-									Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor
-									sit amet, ante. Donec eu libero sit amet quam egestas semper.
-									Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-								<p class="read-more">
-									<a href="post.html" class="btn btn-primary">Continue
-										reading</a>
-								</p>
-							</div>
-						</div>
-						<div class="col-sm-6">
-							<div class="post">
-								<h4>
-									<a href="post.html">Who is who - example blog post</a>
-								</h4>
-								<p class="author-category">
-									By <a href="#">John Slim</a> in <a href="">About Minimal</a>
-								</p>
-								<hr>
-								<p class="intro">Pellentesque habitant morbi tristique
-									senectus et netus et malesuada fames ac turpis egestas.
-									Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor
-									sit amet, ante. Donec eu libero sit amet quam egestas semper.
-									Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-								<p class="read-more">
-									<a href="post.html" class="btn btn-primary">Continue
-										reading</a>
-								</p>
-							</div>
-						</div>
-					</div>
-					<!-- /#blog-homepage-->
-				</div>
-			</div>
-			<!-- /.container-->
-			<!-- *** BLOG HOMEPAGE END ***-->
-		</div>
-	</div>
-	<!--
-    *** FOOTER ***
-    _________________________________________________________
-    -->
-	<div id="footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-3 col-md-6">
-					<h4 class="mb-3">Pages</h4>
-					<ul class="list-unstyled">
-						<li><a href="text.html">About us</a></li>
-						<li><a href="text.html">Terms and conditions</a></li>
-						<li><a href="faq.html">FAQ</a></li>
-						<li><a href="contact.html">Contact us</a></li>
-					</ul>
-					<hr>
-					<h4 class="mb-3">User section</h4>
-					<ul class="list-unstyled">
-						<li><a href="#" data-toggle="modal"
-							data-target="#login-modal">Login</a></li>
-						<li><a href="register.html">Regiter</a></li>
-					</ul>
-				</div>
-				<!-- /.col-lg-3-->
-				<div class="col-lg-3 col-md-6">
-					<h4 class="mb-3">Top categories</h4>
-					<h5>Men</h5>
-					<ul class="list-unstyled">
-						<li><a href="category.html">T-shirts</a></li>
-						<li><a href="category.html">Shirts</a></li>
-						<li><a href="category.html">Accessories</a></li>
-					</ul>
-					<h5>Ladies</h5>
-					<ul class="list-unstyled">
-						<li><a href="category.html">T-shirts</a></li>
-						<li><a href="category.html">Skirts</a></li>
-						<li><a href="category.html">Pants</a></li>
-						<li><a href="category.html">Accessories</a></li>
-					</ul>
-				</div>
-				<!-- /.col-lg-3-->
-				<div class="col-lg-3 col-md-6">
-					<h4 class="mb-3">Where to find us</h4>
-					<p>
-						<strong>Obaju Ltd.</strong><br>13/25 New Avenue<br>New
-						Heaven<br>45Y 73J<br>England<br>
-						<strong>Great Britain</strong>
-					</p>
-					<a href="contact.html">Go to contact page</a>
-					<hr class="d-block d-md-none">
-				</div>
-				<!-- /.col-lg-3-->
-				<div class="col-lg-3 col-md-6">
-					<h4 class="mb-3">Get the news</h4>
-					<p class="text-muted">Pellentesque habitant morbi tristique
-						senectus et netus et malesuada fames ac turpis egestas.</p>
-					<form>
-						<div class="input-group">
-							<input type="text" class="form-control"><span
-								class="input-group-append">
-								<button type="button" class="btn btn-outline-secondary">Subscribe!</button>
-							</span>
-						</div>
-						<!-- /input-group-->
-					</form>
-					<hr>
-					<h4 class="mb-3">Stay in touch</h4>
-					<p class="social">
-						<a href="#" class="facebook external"><i
-							class="fa fa-facebook"></i></a><a href="#" class="twitter external"><i
-							class="fa fa-twitter"></i></a><a href="#" class="instagram external"><i
-							class="fa fa-instagram"></i></a><a href="#" class="gplus external"><i
-							class="fa fa-google-plus"></i></a><a href="#" class="email external"><i
-							class="fa fa-envelope"></i></a>
-					</p>
-				</div>
-				<!-- /.col-lg-3-->
-			</div>
-			<!-- /.row-->
-		</div>
-		<!-- /.container-->
-	</div>
-	<!-- /#footer-->
-	<!-- *** FOOTER END ***-->
+			<!-- /#footer-->
+			<!-- *** FOOTER END ***-->
 
 
-	<!--
+			<!--
     *** COPYRIGHT ***
     _________________________________________________________
     -->
-	<div id="copyright">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6 mb-2 mb-lg-0">
-					<p class="text-center text-lg-left">©2019 Your name goes here.</p>
-				</div>
-				<div class="col-lg-6">
-					<p class="text-center text-lg-right">
-						Template design by <a
-							href="https://bootstrapious.com/p/big-bootstrap-tutorial">Bootstrapious</a>
-						<!-- If you want to remove this backlink, pls purchase an Attribution-free License @ https://bootstrapious.com/p/obaju-e-commerce-template. Big thanks!-->
-					</p>
+			<div id="copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 mb-2 mb-lg-0">
+							<p class="text-center text-lg-left">©2019 Your name goes
+								here.</p>
+						</div>
+						<div class="col-lg-6">
+							<p class="text-center text-lg-right">
+								Template design by <a
+									href="https://bootstrapious.com/p/big-bootstrap-tutorial">Bootstrapious</a>
+								<!-- If you want to remove this backlink, pls purchase an Attribution-free License @ https://bootstrapious.com/p/obaju-e-commerce-template. Big thanks!-->
+							</p>
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
-	</div>
-	<!-- *** COPYRIGHT END ***-->
-	<!-- JavaScript files-->
-	<script src="<c:url value="/resources/ui/vendor/jquery/jquery.min.js"/>"></script>
-	<script src="<c:url value="/resources/ui/vendor/bootstrap/js/bootstrap.bundle.min.js"/>"></script>
-	<script src="<c:url value="/resources/ui/vendor/jquery.cookie/jquery.cookie.js"/>">
-		
-	</script>
-	<script src="<c:url value="/resources/ui/vendor/owl.carousel/owl.carousel.min.js"/>"></script>
-	<script
-		src="<c:url value="/resources/ui/vendor/owl.carousel2.thumbs/owl.carousel2.thumbs.js"/>"></script>
-	<script src="<c:url value="/resources/ui/js/front.js"/>"></script>
+
+			<!-- *** COPYRIGHT END ***-->
+			<!-- JavaScript files-->
+			<script
+				src="<c:url value="/resources/ui/vendor/jquery/jquery.min.js"/>"></script>
+			<script
+				src="<c:url value="/resources/ui/vendor/bootstrap/js/bootstrap.bundle.min.js"/>"></script>
+			<script
+				src="<c:url value="/resources/ui/vendor/jquery.cookie/jquery.cookie.js"/>">
+				
+			</script>
+			<script
+				src="<c:url value="/resources/ui/vendor/owl.carousel/owl.carousel.min.js"/>"></script>
+			<script
+				src="<c:url value="/resources/ui/vendor/owl.carousel2.thumbs/owl.carousel2.thumbs.js"/>"></script>
+			<script src="<c:url value="/resources/ui/js/front.js"/>"></script>
 </body>
 </html>
