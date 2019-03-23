@@ -53,7 +53,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 offer mb-3 mb-lg-0">
-					<a class="ml-1"> HOTLINE: +1900 63 22 46 </a>
+					<a class="ml-1"><i class="fas fa-bell"></i> HOTLINE: +1900 63
+						22 46 </a>
 				</div>
 				<div class="col-lg-6 text-center text-lg-right">
 					<ul class="menu list-inline mb-0">
@@ -757,9 +758,6 @@
 						<div class="col-md-4">
 							<div
 								class="box clickable d-flex flex-column justify-content-center mb-0 h-100">
-								<div class="icon">
-									<i class="fa fa-heart"></i>
-								</div>
 								<h3>
 									<a href="#"><i class="fab fa-asymmetrik"></i> Uy tín hàng
 										đầu</a>
@@ -771,9 +769,6 @@
 						<div class="col-md-4">
 							<div
 								class="box clickable d-flex flex-column justify-content-center mb-0 h-100">
-								<div class="icon">
-									<i class="fa fa-tags"></i>
-								</div>
 								<h3>
 									<a href="#"><i class="fas fa-shipping-fast"></i> Giao hàng
 										nhanh chóng</a>
@@ -785,9 +780,6 @@
 						<div class="col-md-4">
 							<div
 								class="box clickable d-flex flex-column justify-content-center mb-0 h-100">
-								<div class="icon">
-									<i class="fa fa-thumbs-up"></i>
-								</div>
 								<h3>
 									<a href="#"><i class="fab fa-stack-overflow"></i> Sản phẩm
 										đa dạng</a>
@@ -812,7 +804,9 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-md-12">
-								<h2 class="mb-0">Phụ kiện ốp lưng điện thoại mới nhất</h2>
+								<h2 class="mb-0">
+									<marquee>Phụ kiện ốp lưng điện thoại bán nhất</marquee>
+								</h2>
 							</div>
 						</div>
 					</div>
@@ -825,28 +819,31 @@
 									<div class="flipper">
 										<div class="front">
 											<a href="detail.html"><img
-												src="<c:url value="/resources/ui/img/oplungdt/op-lung-iphone-xs-max.jpg"/>" alt=""
-												class="img-fluid"></a>
+												src="<c:url value="/resources/ui/img/Iphone XS Max/iphone-xs-max-silicone.png"/>"
+												alt="" class="img-fluid"></a>
 										</div>
 										<div class="back">
 											<a href="detail.html"><img
-												src="<c:url value="/resources/ui/img/oplungdt/oppo-find-x.jpg"/>"
+												src="<c:url value="/resources/ui/img/Iphone XS Max/iphone-xs-max.jpg"/>"
 												alt="" class="img-fluid"></a>
 										</div>
 									</div>
 								</div>
 								<a href="detail.html" class="invisible"><img
-									src="<c:url value="/resources/ui/img/oplungdt/zenfone-max-pro-m2.jpg"/>" alt=""
-									class="img-fluid"></a>
+									src="<c:url value="/resources/ui/img/Iphone XS Max/iphone-xs-max-silicone.png" />"
+									alt="" class="img-fluid"></a>
 								<div class="text">
+									<br> <br> <br>
 									<h3>
-										<a href="detail.html">Fur coat with very but very very
-											long name</a>
+										<a href="detail.html">Ốp lưng <br>Iphone XS Max
+										</a>
 									</h3>
 									<p class="price">
 										<del></del>
-										$143.00
+										<i class="fas fa-caret-right"></i> Giá bán:<strong
+											style="color: red;"> 80,000 đ</strong>
 									</p>
+									<br>
 								</div>
 								<!-- /.text-->
 								<div class="ribbon sale">
@@ -873,26 +870,215 @@
 									<div class="flipper">
 										<div class="front">
 											<a href="detail.html"> <img
-												src="<c:url value="/resources/ui/img/oplungdt/huawei-mate-20-pro.jpg"/>" alt=""
-												class="img-fluid"></a>
+												src="<c:url value="/resources/ui/img/Op_Xiaomi Redmi Note 3 Pro/op1.jpg"/>"
+												alt="" class="img-fluid"></a>
 										</div>
 										<div class="back">
 											<a href="detail.html"><img
-												src="<c:url value="/resources/ui/img/oplungdt/galaxy-s10-plus.jpg"/>"
+												src="<c:url value="/resources/ui/img/Op_Xiaomi Redmi Note 3 Pro/op2.jpg"/>"
 												alt="" class="img-fluid"></a>
 										</div>
 									</div>
 								</div>
 								<a href="detail.html" class="invisible"><img
-									src="<c:url value="/resources/ui/img/product2.jpg"/>" alt=""
-									class="img-fluid"></a>
+									src="<c:url value="/resources/ui/img/Op_Xiaomi Redmi Note 3 Pro/op1.jpg"/>"
+									alt="" class="img-fluid"></a>
 								<div class="text">
 									<h3>
-										<a href="detail.html">White Blouse Armani</a>
+										<a href="detail.html">Xiaomi Redmi Note 3 Pro</a>
 									</h3>
 									<p class="price">
-										<del>$280</del>
-										$143.00
+										<i class="fas fa-caret-right"></i> Giá bán:
+										<del>50,000 đ</del>
+										<strong style="color: red;"> 45,000 đ</strong>
+									</p>
+								</div>
+								<!-- /.text-->
+								<div class="ribbon sale">
+									<div class="theribbon">SALE</div>
+									<div class="ribbon-background"></div>
+								</div>
+								<!-- /.ribbon-->
+								<div class="ribbon new">
+									<div class="theribbon">NEW</div>
+									<div class="ribbon-background"></div>
+								</div>
+								<!-- /.ribbon-->
+							</div>
+							<!-- /.product-->
+						</div>
+						<div class="item">
+							<div class="product">
+								<div class="flip-container">
+									<div class="flipper">
+										<div class="front">
+											<a href="detail.html"><img
+												src="<c:url value="/resources/ui/img/Op Zenfone Max/Ốp Lưng Zenfone Max.jpg"/>"
+												alt="" class="img-fluid"></a>
+										</div>
+										<div class="back">
+											<a href="detail.html"><img
+												src="<c:url value="/resources/ui/img/Op Zenfone Max/Ốp Lưng Zenfone Max1.jpg"/>"
+												alt="" class="img-fluid"></a>
+										</div>
+									</div>
+								</div>
+								<a href="detail.html" class="invisible"><img
+									src="<c:url value="/resources/ui/img/Op Zenfone Max/Ốp Lưng Zenfone Max.jpg"/>"
+									alt="" class="img-fluid"></a>
+								<div class="text">
+									<h3>
+										<a href="detail.html">Zenfone Max</a>
+									</h3>
+									<p class="price">
+										<del></del>
+										<i class="fas fa-caret-right"></i> Giá bán: <strong
+											style="color: red;"> 40,000 đ</strong>
+									</p>
+									<br>
+								</div>
+								<!-- /.text-->
+							</div>
+							<!-- /.product-->
+						</div>
+						<div class="item">
+							<div class="product">
+								<div class="flip-container">
+									<div class="flipper">
+										<div class="front">
+											<a href="detail.html"><img
+												src="<c:url value="/resources/ui/img/Huawei novo 3i/huawei novo 3i.jpg"/>"
+												alt="" class="img-fluid"></a>
+										</div>
+										<div class="back">
+											<a href="detail.html"><img
+												src="<c:url value="/resources/ui/img/Huawei novo 3i/novo 3i.jpg"/>"
+												alt="" class="img-fluid"></a>
+										</div>
+									</div>
+								</div>
+								<a href="detail.html" class="invisible"><img
+									src="<c:url value="/resources/ui/img/Huawei novo 3i/huawei novo 3i.jpg"/>"
+									alt="" class="img-fluid"></a>
+								<div class="text">
+									<br> <br>
+									<h3>
+										<a href="detail.html">SamSung Note 9</a>
+									</h3>
+									<p class="price">
+										<del></del>
+										<i class="fas fa-caret-right"></i> Giá bán: <strong
+											style="color: red;"> 60,000 đ</strong>
+									</p>
+									<br>
+								</div>
+								<!-- /.text-->
+							</div>
+							<!-- /.product-->
+						</div>
+						<div class="item">
+							<div class="product">
+								<div class="flip-container">
+									<div class="flipper">
+										<div class="front">
+											<a href="detail.html"><img
+												src="<c:url value="/resources/ui/img/Iphone 7 plus/op_lung_iphone_7_plus_shengo_dinh_da.jpg"/>"
+												alt="" class="img-fluid"></a>
+										</div>
+										<div class="back">
+											<a href="detail.html"><img
+												src="<c:url value="/resources/ui/img/Iphone 7 plus/op-lung-iphone-7-plus-dinh-da.jpg"/>"
+												alt="" class="img-fluid"></a>
+										</div>
+									</div>
+								</div>
+								<a href="detail.html" class="invisible"><img
+									src="<c:url value="/resources/ui/img/Iphone 7 plus/op_lung_iphone_7_plus_shengo_dinh_da.jpg"/>"
+									alt="" class="img-fluid"></a>
+								<div class="text">
+									<br> <br>
+									<h3>
+										<a href="detail.html">Iphone 7 plus</a>
+									</h3>
+									<p class="price">
+										<del></del>
+										<i class="fas fa-caret-right"></i> Giá bán: <strong
+											style="color: red;"> 50,000 đ</strong>
+									</p>
+									<br>
+								</div>
+								<!-- /.text-->
+								<div class="ribbon new">
+									<div class="theribbon">NEW</div>
+									<div class="ribbon-background"></div>
+								</div>
+								<!-- /.ribbon-->
+							</div>
+							<!-- /.product-->
+						</div>
+						<div class="item">
+							<div class="product">
+								<div class="flip-container">
+									<div class="flipper">
+										<div class="front">
+											<a href="detail.html"><img
+												src="<c:url value="/resources/ui/img/SamSung Note 9/samsung galaxy note 9.jpg"/>"
+												alt="" class="img-fluid"></a>
+										</div>
+										<div class="back">
+											<a href="detail.html"><img
+												src="<c:url value="/resources/ui/img/SamSung Note 9/note 9.jpg"/>"
+												alt="" class="img-fluid"></a>
+										</div>
+									</div>
+								</div>
+								<a href="detail.html" class="invisible"><img
+									src="<c:url value="/resources/ui/img/SamSung Note 9/samsung galaxy note 9.jpg"/>"
+									alt="" class="img-fluid"></a>
+								<div class="text">
+									<br>
+									<h3>
+										<a href="detail.html">SamSung Note 9</a>
+									</h3>
+									<p class="price">
+										<del></del>
+										<i class="fas fa-caret-right"></i> Giá bán: <strong
+											style="color: red;"> 60,000 đ</strong>
+									</p>
+									<br>
+								</div>
+								<!-- /.text-->
+							</div>
+							<!-- /.product-->
+						</div>
+						<div class="item">
+							<div class="product">
+								<div class="flip-container">
+									<div class="flipper">
+										<div class="front">
+											<a href="detail.html"><img
+												src="<c:url value="/resources/ui/img/Sony Xperia XA1 Plus/sony-xperia-xa1-plus.jpg"/>"
+												alt="" class="img-fluid"></a>
+										</div>
+										<div class="back">
+											<a href="detail.html"><img
+												src="<c:url value="/resources/ui/img/Sony Xperia XA1 Plus/op-lung-sony-xperia-xa1-plus.jpg"/>"
+												alt="" class="img-fluid"></a>
+										</div>
+									</div>
+								</div>
+								<a href="detail.html" class="invisible"><img
+									src="<c:url value="/resources/ui/img/Sony Xperia XA1 Plus/sony-xperia-xa1-plus.jpg"/>"
+									alt="" class="img-fluid"></a>
+								<div class="text">
+									<br> <br>
+									<h3>
+										<a href="detail.html">Sony Xperia XA1 Plus</a>
+									</h3>
+									<p class="price">
+										<i class="fas fa-caret-right"></i> Giá bán:
+										<del>70,000 đ</del>
+										<strong style="color: red;"> 55,000 đ</strong>
 									</p>
 								</div>
 								<!-- /.text-->
@@ -920,212 +1106,30 @@
 									<div class="flipper">
 										<div class="front">
 											<a href="detail.html"><img
-												src="<c:url value="/resources/ui/img/product3.jpg"/>" alt=""
-												class="img-fluid"></a>
+												src="<c:url value="/resources/ui/img/HTC U11 Plus/$_12.jpg"/>"
+												alt="" class="img-fluid"></a>
 										</div>
 										<div class="back">
 											<a href="detail.html"><img
-												src="<c:url value="/resources/ui/img/product3_2.jpg"/>"
+												src="<c:url value="/resources/ui/img/HTC U11 Plus/op-lung-htc-u11-plus.jpg"/>"
 												alt="" class="img-fluid"></a>
 										</div>
 									</div>
 								</div>
 								<a href="detail.html" class="invisible"><img
-									src="<c:url value="/resources/ui/img/product3.jpg"/>" alt=""
-									class="img-fluid"></a>
+									src="<c:url value="/resources/ui/img/HTC U11 Plus/$_12.jpg"/>"
+									alt="" class="img-fluid"></a>
 								<div class="text">
+									<br> <br>
 									<h3>
-										<a href="detail.html">Black Blouse Versace</a>
+										<a href="detail.html">HTC U11 Plus</a>
 									</h3>
 									<p class="price">
 										<del></del>
-										$143.00
+										<i class="fas fa-caret-right"></i> Giá bán:<strong
+											style="color: red;"> 70,000 đ</strong>
 									</p>
-								</div>
-								<!-- /.text-->
-							</div>
-							<!-- /.product-->
-						</div>
-						<div class="item">
-							<div class="product">
-								<div class="flip-container">
-									<div class="flipper">
-										<div class="front">
-											<a href="detail.html"><img
-												src="<c:url value="/resources/ui/img/product3.jpg"/>" alt=""
-												class="img-fluid"></a>
-										</div>
-										<div class="back">
-											<a href="detail.html"><img
-												src="<c:url value="/resources/ui/img/product3_2.jpg"/>"
-												alt="" class="img-fluid"></a>
-										</div>
-									</div>
-								</div>
-								<a href="detail.html" class="invisible"><img
-									src="<c:url value="/resources/ui/img/product3.jpg"/>" alt=""
-									class="img-fluid"></a>
-								<div class="text">
-									<h3>
-										<a href="detail.html">Black Blouse Versace</a>
-									</h3>
-									<p class="price">
-										<del></del>
-										$143.00
-									</p>
-								</div>
-								<!-- /.text-->
-							</div>
-							<!-- /.product-->
-						</div>
-						<div class="item">
-							<div class="product">
-								<div class="flip-container">
-									<div class="flipper">
-										<div class="front">
-											<a href="detail.html"><img
-												src="<c:url value="/resources/ui/img/product2.jpg"/>" alt=""
-												class="img-fluid"></a>
-										</div>
-										<div class="back">
-											<a href="detail.html"><img
-												src="<c:url value="/resources/ui/img/product2_2.jpg"/>"
-												alt="" class="img-fluid"></a>
-										</div>
-									</div>
-								</div>
-								<a href="detail.html" class="invisible"><img
-									src="<c:url value="/resources/ui/img/product2.jpg"/>" alt=""
-									class="img-fluid"></a>
-								<div class="text">
-									<h3>
-										<a href="detail.html">White Blouse Versace</a>
-									</h3>
-									<p class="price">
-										<del></del>
-										$143.00
-									</p>
-								</div>
-								<!-- /.text-->
-								<div class="ribbon new">
-									<div class="theribbon">NEW</div>
-									<div class="ribbon-background"></div>
-								</div>
-								<!-- /.ribbon-->
-							</div>
-							<!-- /.product-->
-						</div>
-						<div class="item">
-							<div class="product">
-								<div class="flip-container">
-									<div class="flipper">
-										<div class="front">
-											<a href="detail.html"><img
-												src="<c:url value="/resources/ui/img/product1.jpg"/>" alt=""
-												class="img-fluid"></a>
-										</div>
-										<div class="back">
-											<a href="detail.html"><img
-												src="<c:url value="/resources/ui/img/product1_2.jpg"/>"
-												alt="" class="img-fluid"></a>
-										</div>
-									</div>
-								</div>
-								<a href="detail.html" class="invisible"><img
-									src="<c:url value="/resources/ui/img/product1.jpg"/>" alt=""
-									class="img-fluid"></a>
-								<div class="text">
-									<h3>
-										<a href="detail.html">Fur coat</a>
-									</h3>
-									<p class="price">
-										<del></del>
-										$143.00
-									</p>
-								</div>
-								<!-- /.text-->
-								<div class="ribbon gift">
-									<div class="theribbon">GIFT</div>
-									<div class="ribbon-background"></div>
-								</div>
-								<!-- /.ribbon-->
-							</div>
-							<!-- /.product-->
-						</div>
-						<div class="item">
-							<div class="product">
-								<div class="flip-container">
-									<div class="flipper">
-										<div class="front">
-											<a href="detail.html"><img
-												src="<c:url value="/resources/ui/img/product2.jpg"/>" alt=""
-												class="img-fluid"></a>
-										</div>
-										<div class="back">
-											<a href="detail.html"><img
-												src="<c:url value="/resources/ui/img/product2_2.jpg"/>"
-												alt="" class="img-fluid"></a>
-										</div>
-									</div>
-								</div>
-								<a href="detail.html" class="invisible"><img
-									src="<c:url value="/resources/ui/img/product2.jpg"/>" alt=""
-									class="img-fluid"></a>
-								<div class="text">
-									<h3>
-										<a href="detail.html">White Blouse Armani</a>
-									</h3>
-									<p class="price">
-										<del>$280</del>
-										$143.00
-									</p>
-								</div>
-								<!-- /.text-->
-								<div class="ribbon sale">
-									<div class="theribbon">SALE</div>
-									<div class="ribbon-background"></div>
-								</div>
-								<!-- /.ribbon-->
-								<div class="ribbon new">
-									<div class="theribbon">NEW</div>
-									<div class="ribbon-background"></div>
-								</div>
-								<!-- /.ribbon-->
-								<div class="ribbon gift">
-									<div class="theribbon">GIFT</div>
-									<div class="ribbon-background"></div>
-								</div>
-								<!-- /.ribbon-->
-							</div>
-							<!-- /.product-->
-						</div>
-						<div class="item">
-							<div class="product">
-								<div class="flip-container">
-									<div class="flipper">
-										<div class="front">
-											<a href="detail.html"><img
-												src="<c:url value="/resources/ui/img/product3.jpg"/>" alt=""
-												class="img-fluid"></a>
-										</div>
-										<div class="back">
-											<a href="detail.html"><img
-												src="<c:url value="/resources/ui/img/product3_2.jpg"/>"
-												alt="" class="img-fluid"></a>
-										</div>
-									</div>
-								</div>
-								<a href="detail.html" class="invisible"><img
-									src="<c:url value="/resources/ui/img/product3.jpg"/>" alt=""
-									class="img-fluid"></a>
-								<div class="text">
-									<h3>
-										<a href="detail.html">Black Blouse Versace</a>
-									</h3>
-									<p class="price">
-										<del></del>
-										$143.00
-									</p>
+									<br>
 								</div>
 								<!-- /.text-->
 							</div>
@@ -1146,15 +1150,6 @@
 				<div id="content">
 					<div class="container">
 						<div class="row">
-							<div class="col-lg-12">
-								<!-- breadcrumb-->
-								<nav aria-label="breadcrumb">
-								<ol class="breadcrumb">
-									<li class="breadcrumb-item"><a href="#">Home</a></li>
-									<li aria-current="page" class="breadcrumb-item active">Ladies</li>
-								</ol>
-								</nav>
-							</div>
 							<div class="col-lg-3">
 								<!--
               *** MENUS AND FILTERS ***
@@ -1162,128 +1157,89 @@
               -->
 								<div class="card sidebar-menu mb-4">
 									<div class="card-header">
-										<h3 class="h4 card-title">Categories</h3>
+										<h3 class="h4 card-title">
+											<i class="fab fa-fly"></i> Phụ kiện ốp lưng
+										</h3>
 									</div>
 									<div class="card-body">
 										<ul class="nav nav-pills flex-column category-menu">
-											<li><a href="category.html" class="nav-link">Men <span
-													class="badge badge-secondary">42</span></a>
+											<li><a href="category.html" class="nav-link active"><i
+													class="fas fa-caret-right"></i> Apple <span
+													class="badge badge-secondary">42</span> </a>
 												<ul class="list-unstyled">
-													<li><a href="category.html" class="nav-link">T-shirts</a></li>
-													<li><a href="category.html" class="nav-link">Shirts</a></li>
-													<li><a href="category.html" class="nav-link">Pants</a></li>
-													<li><a href="category.html" class="nav-link">Accessories</a></li>
+													<li><a href="category.html" class="nav-link">Iphone
+															XS Max</a></li>
+													<li><a href="category.html" class="nav-link">Iphone
+															XS/X</a></li>
+													<li><a href="category.html" class="nav-link">Iphone
+															8 plus</a></li>
+													<li><a href="category.html" class="nav-link">Iphone
+															8</a></li>
+													<li><a href="category.html" class="nav-link">Iphone
+															7 plus</a></li>
+													<li><a href="category.html" class="nav-link">Iphone
+															7</a></li>
+													<li><a href="category.html" class="nav-link">Iphone
+															6/6s plus</a></li>
+													<li><a href="category.html" class="nav-link">Iphone
+															6/6s</a></li>
 												</ul></li>
-											<li><a href="category.html" class="nav-link active">Ladies
-													<span class="badge badge-light">123</span>
-											</a>
+											<li><a href="category.html" class="nav-link active"><i
+													class="fas fa-caret-right"></i> SamSung <span
+													class="badge badge-light">123</span> </a>
 												<ul class="list-unstyled">
-													<li><a href="category.html" class="nav-link">T-shirts</a></li>
-													<li><a href="category.html" class="nav-link">Skirts</a></li>
-													<li><a href="category.html" class="nav-link">Pants</a></li>
-													<li><a href="category.html" class="nav-link">Accessories</a></li>
+													<li><a href="category.html" class="nav-link">Samsung
+															Galaxy S10</a></li>
+													<li><a href="category.html" class="nav-link">Galaxy
+															S10 Plus</a></li>
+													<li><a href="category.html" class="nav-link">Samsung
+															Galaxy S10E</a></li>
+													<li><a href="category.html" class="nav-link">Samsung
+															Galaxy M20</a></li>
+													<li><a href="category.html" class="nav-link">Samsung
+															Galaxy M10</a></li>
+													<li><a href="category.html" class="nav-link">Samsung
+															Galaxy M30</a></li>
+													<li><a href="category.html" class="nav-link">Samsung
+															Galaxy S10E</a></li>
+													<li><a href="category.html" class="nav-link">Samsung
+															Galaxy A50</a></li>
+													<li><a href="category.html" class="nav-link">Samsung
+															Galaxy A30</a></li>
+													<li><a href="category.html" class="nav-link">Samsung
+															Galaxy A10</a></li>
 												</ul></li>
-											<li><a href="category.html" class="nav-link">Kids <span
-													class="badge badge-secondary">11</span></a>
+											<li><a href="category.html" class="nav-link active"><i
+													class="fas fa-caret-right"></i> Huawei <span
+													class="badge badge-secondary">11</span> </a>
+
 												<ul class="list-unstyled">
-													<li><a href="category.html" class="nav-link">T-shirts</a></li>
-													<li><a href="category.html" class="nav-link">Skirts</a></li>
-													<li><a href="category.html" class="nav-link">Pants</a></li>
-													<li><a href="category.html" class="nav-link">Accessories</a></li>
+													<li><a href="category.html" class="nav-link">Huawei
+															Y7 Pro 2019</a></li>
+													<li><a href="category.html" class="nav-link">Huawei
+															Mate 20 Pro</a></li>
+													<li><a href="category.html" class="nav-link">Huawei
+															Mate 20</a></li>
+													<li><a href="category.html" class="nav-link">Huawei
+															Y9 (2019)</a></li>
+													<li><a href="category.html" class="nav-link">Huawei
+															Nova 3i</a></li>
+													<li><a href="category.html" class="nav-link">Huawei
+															Nova 3</a></li>
+													<li><a href="category.html" class="nav-link">Huawei
+															P20 Pro</a></li>
+													<li><a href="category.html" class="nav-link">Huawei
+															Nova 3e</a></li>
 												</ul></li>
 										</ul>
 									</div>
 								</div>
-								<div class="card sidebar-menu mb-4">
-									<div class="card-header">
-										<h3 class="h4 card-title">
-											Brands <a href="#" class="btn btn-sm btn-danger pull-right"><i
-												class="fa fa-times-circle"></i> Clear</a>
-										</h3>
-									</div>
-									<div class="card-body">
-										<form>
-											<div class="form-group">
-												<div class="checkbox">
-													<label> <input type="checkbox"> Armani (10)
-													</label>
-												</div>
-												<div class="checkbox">
-													<label> <input type="checkbox"> Versace
-														(12)
-													</label>
-												</div>
-												<div class="checkbox">
-													<label> <input type="checkbox"> Carlo Bruni
-														(15)
-													</label>
-												</div>
-												<div class="checkbox">
-													<label> <input type="checkbox"> Jack Honey
-														(14)
-													</label>
-												</div>
-											</div>
-											<button class="btn btn-default btn-sm btn-primary">
-												<i class="fa fa-pencil"></i> Apply
-											</button>
-										</form>
-									</div>
-								</div>
-								<div class="card sidebar-menu mb-4">
-									<div class="card-header">
-										<h3 class="h4 card-title">
-											Colours <a href="#" class="btn btn-sm btn-danger pull-right"><i
-												class="fa fa-times-circle"></i> Clear</a>
-										</h3>
-									</div>
-									<div class="card-body">
-										<form>
-											<div class="form-group">
-												<div class="checkbox">
-													<label> <input type="checkbox"><span
-														class="colour white"></span> White (14)
-													</label>
-												</div>
-												<div class="checkbox">
-													<label> <input type="checkbox"><span
-														class="colour blue"></span> Blue (10)
-													</label>
-												</div>
-												<div class="checkbox">
-													<label> <input type="checkbox"><span
-														class="colour green"></span> Green (20)
-													</label>
-												</div>
-												<div class="checkbox">
-													<label> <input type="checkbox"><span
-														class="colour yellow"></span> Yellow (13)
-													</label>
-												</div>
-												<div class="checkbox">
-													<label> <input type="checkbox"><span
-														class="colour red"></span> Red (10)
-													</label>
-												</div>
-											</div>
-											<button class="btn btn-default btn-sm btn-primary">
-												<i class="fa fa-pencil"></i> Apply
-											</button>
-										</form>
-									</div>
-								</div>
 								<!-- *** MENUS AND FILTERS END ***-->
-								<div class="banner">
-									<a href="#"><img
-										src="<c:url value="/resources/ui/img/banner.jpg"/>"
-										alt="sales 2014" class="img-fluid"></a>
-								</div>
 							</div>
 							<div class="col-lg-9">
 								<div class="box">
-									<h1>Ladies</h1>
-									<p>In our Ladies department we offer wide selection of the
-										best products we have found and carefully selected worldwide.</p>
+									<h3>Obaju- Ốp lưng điện thoại</h3>
+									<p>ĐÚNG HÀNG - ĐÚNG GIÁ - ĐÚNG CHẤT LƯỢNG</p>
 								</div>
 								<div class="box info-bar">
 									<div class="row">
@@ -1599,77 +1555,36 @@
 			<div id="footer">
 				<div class="container">
 					<div class="row">
-						<div class="col-lg-3 col-md-6">
-							<h4 class="mb-3">Pages</h4>
+						<div class="col-lg-4">
+							<h4>
+								<i class="fab fa-galactic-senate"></i> Thông tin cửa hàng
+							</h4>
 							<ul class="list-unstyled">
-								<li><a href="text.html">About us</a></li>
-								<li><a href="text.html">Terms and conditions</a></li>
-								<li><a href="faq.html">FAQ</a></li>
-								<li><a href="contact.html">Contact us</a></li>
-							</ul>
-							<hr>
-							<h4 class="mb-3">User section</h4>
-							<ul class="list-unstyled">
-								<li><a href="#" data-toggle="modal"
-									data-target="#login-modal">Login</a></li>
-								<li><a href="register.html">Regiter</a></li>
+								<li><a href="text.html">Giới thiệu chung</a></li>
+								<li><a href="text.html">Liên hệ</a></li>
 							</ul>
 						</div>
 						<!-- /.col-lg-3-->
-						<div class="col-lg-3 col-md-6">
-							<h4 class="mb-3">Top categories</h4>
-							<h5>Men</h5>
+						<div class="col-lg-4">
+							<h4>
+								<i class="fab fa-galactic-senate"></i> Hỗ trợ khách hàng
+							</h4>
 							<ul class="list-unstyled">
-								<li><a href="category.html">T-shirts</a></li>
-								<li><a href="category.html">Shirts</a></li>
-								<li><a href="category.html">Accessories</a></li>
-							</ul>
-							<h5>Ladies</h5>
-							<ul class="list-unstyled">
-								<li><a href="category.html">T-shirts</a></li>
-								<li><a href="category.html">Skirts</a></li>
-								<li><a href="category.html">Pants</a></li>
-								<li><a href="category.html">Accessories</a></li>
+								<li><a href="category.html">Bảo hành - Đổi trả</a></li>
+								<li><a href="category.html">Hỗ trợ mua hàng online</a></li>
+								<li><a href="category.html">Chính sách vận chuyển</a></li>
 							</ul>
 						</div>
 						<!-- /.col-lg-3-->
-						<div class="col-lg-3 col-md-6">
-							<h4 class="mb-3">Where to find us</h4>
+						<div class="col-lg-4">
+							<h4>
+								<i class="fab fa-galactic-senate"></i> Địa chỉ cửa hàng
+							</h4>
 							<p>
-								<strong>Obaju Ltd.</strong><br>13/25 New Avenue<br>New
-								Heaven<br>45Y 73J<br>England<br> <strong>Great
-									Britain</strong>
+								<strong>Địa chỉ:</strong><br>Thủ Đức, TP Hồ Chí Minh
 							</p>
-							<a href="contact.html">Go to contact page</a>
-							<hr class="d-block d-md-none">
+							<p>Số điện thoại: 1900 63 22 46</p>
 						</div>
-						<!-- /.col-lg-3-->
-						<div class="col-lg-3 col-md-6">
-							<h4 class="mb-3">Get the news</h4>
-							<p class="text-muted">Pellentesque habitant morbi tristique
-								senectus et netus et malesuada fames ac turpis egestas.</p>
-							<form>
-								<div class="input-group">
-									<input type="text" class="form-control"><span
-										class="input-group-append">
-										<button type="button" class="btn btn-outline-secondary">Subscribe!</button>
-									</span>
-								</div>
-								<!-- /input-group-->
-							</form>
-							<hr>
-							<h4 class="mb-3">Stay in touch</h4>
-							<p class="social">
-								<a href="#" class="facebook external"><i
-									class="fa fa-facebook"></i></a><a href="#" class="twitter external"><i
-									class="fa fa-twitter"></i></a><a href="#"
-									class="instagram external"><i class="fa fa-instagram"></i></a><a
-									href="#" class="gplus external"><i
-									class="fa fa-google-plus"></i></a><a href="#"
-									class="email external"><i class="fa fa-envelope"></i></a>
-							</p>
-						</div>
-						<!-- /.col-lg-3-->
 					</div>
 					<!-- /.row-->
 				</div>
@@ -1687,13 +1602,11 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-6 mb-2 mb-lg-0">
-							<p class="text-center text-lg-left">©2019 Your name goes
-								here.</p>
+							<p class="text-center text-lg-left">©2019 H&D_16102016</p>
 						</div>
 						<div class="col-lg-6">
 							<p class="text-center text-lg-right">
-								Template design by <a
-									href="https://bootstrapious.com/p/big-bootstrap-tutorial">Bootstrapious</a>
+								Design by <a href="#">H&D_16102016</a>
 								<!-- If you want to remove this backlink, pls purchase an Attribution-free License @ https://bootstrapious.com/p/obaju-e-commerce-template. Big thanks!-->
 							</p>
 						</div>
