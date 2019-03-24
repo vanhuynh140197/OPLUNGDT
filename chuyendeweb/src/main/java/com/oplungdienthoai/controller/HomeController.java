@@ -14,5 +14,9 @@ public class HomeController {
 	public String chiTiet(){
 		return "/ui/detail";
 	}
+	@RequestMapping(value ="/home/giohang")
+	public String gioHang(){
+		return "/ui/basket";
+	}
 }
 

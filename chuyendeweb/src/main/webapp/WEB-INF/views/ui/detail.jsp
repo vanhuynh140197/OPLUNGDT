@@ -6,7 +6,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Obaju : e-commerce template</title>
+<title>Obaju| Chi tiết sản phẩm</title>
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="all,follow">
@@ -28,7 +28,8 @@
 	href="<c:url value="/resources/ui/vendor/owl.carousel/assets/owl.theme.default.css"/>">
 <!-- theme stylesheet-->
 <link rel="stylesheet"
-	href="<c:url value="/resources/ui/css/style.default.css" id="theme-stylesheet"/>">
+	href="<c:url value="/resources/ui/css/style.default.css"/>"
+	id="theme-stylesheet">
 <!-- Custom stylesheet - for your changes-->
 <link rel="stylesheet"
 	href="<c:url value="/resources/ui/css/custom.css"/>">
@@ -780,34 +781,79 @@
               -->
 						<div class="card sidebar-menu mb-4">
 							<div class="card-header">
-								<h3 class="h4 card-title">Categories</h3>
+								<h3 class="h4 card-title">
+									<i class="fab fa-fly"></i> Phụ kiện ốp lưng
+								</h3>
 							</div>
 							<div class="card-body">
 								<ul class="nav nav-pills flex-column category-menu">
-									<li><a href="category.html" class="nav-link">Men <span
-											class="badge badge-secondary">42</span></a>
+									<li><a href="category.html" class="nav-link active"><i
+											class="fas fa-caret-right"></i> Apple <span
+											class="badge badge-secondary">42</span> </a>
 										<ul class="list-unstyled">
-											<li><a href="category.html" class="nav-link">T-shirts</a></li>
-											<li><a href="category.html" class="nav-link">Shirts</a></li>
-											<li><a href="category.html" class="nav-link">Pants</a></li>
-											<li><a href="category.html" class="nav-link">Accessories</a></li>
+											<li><a href="category.html" class="nav-link">Iphone
+													XS Max</a></li>
+											<li><a href="category.html" class="nav-link">Iphone
+													XS/X</a></li>
+											<li><a href="category.html" class="nav-link">Iphone
+													8 plus</a></li>
+											<li><a href="category.html" class="nav-link">Iphone
+													8</a></li>
+											<li><a href="category.html" class="nav-link">Iphone
+													7 plus</a></li>
+											<li><a href="category.html" class="nav-link">Iphone
+													7</a></li>
+											<li><a href="category.html" class="nav-link">Iphone
+													6/6s plus</a></li>
+											<li><a href="category.html" class="nav-link">Iphone
+													6/6s</a></li>
 										</ul></li>
-									<li><a href="category.html" class="nav-link active">Ladies
-											<span class="badge badge-light">123</span>
-									</a>
+									<li><a href="category.html" class="nav-link active"><i
+											class="fas fa-caret-right"></i> SamSung <span
+											class="badge badge-light">123</span> </a>
 										<ul class="list-unstyled">
-											<li><a href="category.html" class="nav-link">T-shirts</a></li>
-											<li><a href="category.html" class="nav-link">Skirts</a></li>
-											<li><a href="category.html" class="nav-link">Pants</a></li>
-											<li><a href="category.html" class="nav-link">Accessories</a></li>
+											<li><a href="category.html" class="nav-link">Samsung
+													Galaxy S10</a></li>
+											<li><a href="category.html" class="nav-link">Galaxy
+													S10 Plus</a></li>
+											<li><a href="category.html" class="nav-link">Samsung
+													Galaxy S10E</a></li>
+											<li><a href="category.html" class="nav-link">Samsung
+													Galaxy M20</a></li>
+											<li><a href="category.html" class="nav-link">Samsung
+													Galaxy M10</a></li>
+											<li><a href="category.html" class="nav-link">Samsung
+													Galaxy M30</a></li>
+											<li><a href="category.html" class="nav-link">Samsung
+													Galaxy S10E</a></li>
+											<li><a href="category.html" class="nav-link">Samsung
+													Galaxy A50</a></li>
+											<li><a href="category.html" class="nav-link">Samsung
+													Galaxy A30</a></li>
+											<li><a href="category.html" class="nav-link">Samsung
+													Galaxy A10</a></li>
 										</ul></li>
-									<li><a href="category.html" class="nav-link">Kids <span
-											class="badge badge-secondary">11</span></a>
+									<li><a href="category.html" class="nav-link active"><i
+											class="fas fa-caret-right"></i> Huawei <span
+											class="badge badge-secondary">11</span> </a>
+
 										<ul class="list-unstyled">
-											<li><a href="category.html" class="nav-link">T-shirts</a></li>
-											<li><a href="category.html" class="nav-link">Skirts</a></li>
-											<li><a href="category.html" class="nav-link">Pants</a></li>
-											<li><a href="category.html" class="nav-link">Accessories</a></li>
+											<li><a href="category.html" class="nav-link">Huawei
+													Y7 Pro 2019</a></li>
+											<li><a href="category.html" class="nav-link">Huawei
+													Mate 20 Pro</a></li>
+											<li><a href="category.html" class="nav-link">Huawei
+													Mate 20</a></li>
+											<li><a href="category.html" class="nav-link">Huawei
+													Y9 (2019)</a></li>
+											<li><a href="category.html" class="nav-link">Huawei
+													Nova 3i</a></li>
+											<li><a href="category.html" class="nav-link">Huawei
+													Nova 3</a></li>
+											<li><a href="category.html" class="nav-link">Huawei
+													P20 Pro</a></li>
+											<li><a href="category.html" class="nav-link">Huawei
+													Nova 3e</a></li>
 										</ul></li>
 								</ul>
 							</div>
@@ -901,13 +947,16 @@
 								<div data-slider-id="1"
 									class="owl-carousel shop-detail-carousel">
 									<div class="item">
-										<img src="img/detailbig1.jpg" alt="" class="img-fluid">
+										<img src="<c:url value="/resources/ui/img/detailbig1.jpg"/>"
+											alt="" class="img-fluid">
 									</div>
 									<div class="item">
-										<img src="img/detailbig2.jpg" alt="" class="img-fluid">
+										<img src="<c:url value="/resources/ui/img/detailbig2.jpg"/>"
+											alt="" class="img-fluid">
 									</div>
 									<div class="item">
-										<img src="img/detailbig3.jpg" alt="" class="img-fluid">
+										<img src="<c:url value="/resources/ui/img/detailbig3.jpg"/>"
+											alt="" class="img-fluid">
 									</div>
 								</div>
 								<div class="ribbon sale">
@@ -930,10 +979,11 @@
 									</p>
 									<p class="price">$124.00</p>
 									<p class="text-center buttons">
-										<a href="basket.html" class="btn btn-primary"><i
-											class="fa fa-shopping-cart"></i> Add to cart</a><a
-											href="basket.html" class="btn btn-outline-primary"><i
-											class="fa fa-heart"></i> Add to wishlist</a>
+										<a href="<c:url value="/oplungdienthoai/home/giohang"/>"
+											class="btn btn-primary"><i class="fa fa-shopping-cart"></i>
+											Add to cart</a><a href="basket.html"
+											class="btn btn-outline-primary"><i class="fa fa-heart"></i>
+											Add to wishlist</a>
 									</p>
 								</div>
 								<div data-slider-id="1" class="owl-thumbs">
@@ -1150,76 +1200,45 @@
 	<div id="footer">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-3 col-md-6">
-					<h4 class="mb-3">Pages</h4>
+				<div class="col-lg-4">
+					<h4>
+						<i class="fab fa-galactic-senate"></i> Thông tin cửa hàng
+					</h4>
 					<ul class="list-unstyled">
-						<li><a href="text.html">About us</a></li>
-						<li><a href="text.html">Terms and conditions</a></li>
-						<li><a href="faq.html">FAQ</a></li>
-						<li><a href="contact.html">Contact us</a></li>
-					</ul>
-					<hr>
-					<h4 class="mb-3">User section</h4>
-					<ul class="list-unstyled">
-						<li><a href="#" data-toggle="modal"
-							data-target="#login-modal">Login</a></li>
-						<li><a href="register.html">Regiter</a></li>
+						<li><a href="text.html"><i class="fas fa-caret-right"></i>
+								Giới thiệu chung</a></li>
+						<li><a href="text.html"><i class="fas fa-caret-right"></i>
+								Liên hệ</a></li>
 					</ul>
 				</div>
 				<!-- /.col-lg-3-->
-				<div class="col-lg-3 col-md-6">
-					<h4 class="mb-3">Top categories</h4>
-					<h5>Men</h5>
+				<div class="col-lg-4">
+					<h4>
+						<i class="fab fa-galactic-senate"></i> Hỗ trợ khách hàng
+					</h4>
 					<ul class="list-unstyled">
-						<li><a href="category.html">T-shirts</a></li>
-						<li><a href="category.html">Shirts</a></li>
-						<li><a href="category.html">Accessories</a></li>
-					</ul>
-					<h5>Ladies</h5>
-					<ul class="list-unstyled">
-						<li><a href="category.html">T-shirts</a></li>
-						<li><a href="category.html">Skirts</a></li>
-						<li><a href="category.html">Pants</a></li>
-						<li><a href="category.html">Accessories</a></li>
+						<li><a href="category.html"><i class="fas fa-caret-right"></i>
+								Bảo hành - Đổi trả</a></li>
+						<li><a href="category.html"><i class="fas fa-caret-right"></i>
+								Hỗ trợ mua hàng online</a></li>
+						<li><a href="category.html"><i class="fas fa-caret-right"></i>
+								Chính sách vận chuyển</a></li>
 					</ul>
 				</div>
 				<!-- /.col-lg-3-->
-				<div class="col-lg-3 col-md-6">
-					<h4 class="mb-3">Where to find us</h4>
+				<div class="col-lg-4">
+					<h4>
+						<i class="fab fa-galactic-senate"></i> Địa chỉ cửa hàng
+					</h4>
 					<p>
-						<strong>Obaju Ltd.</strong><br>13/25 New Avenue<br>New
-						Heaven<br>45Y 73J<br>England<br> <strong>Great
-							Britain</strong>
+						<i class="fas fa-map-marker-alt"></i> Địa chỉ: <br> <strong
+							style="color: red;">Thủ Đức, TP Hồ Chí Minh</strong>
 					</p>
-					<a href="contact.html">Go to contact page</a>
-					<hr class="d-block d-md-none">
-				</div>
-				<!-- /.col-lg-3-->
-				<div class="col-lg-3 col-md-6">
-					<h4 class="mb-3">Get the news</h4>
-					<p class="text-muted">Pellentesque habitant morbi tristique
-						senectus et netus et malesuada fames ac turpis egestas.</p>
-					<form>
-						<div class="input-group">
-							<input type="text" class="form-control"><span
-								class="input-group-append">
-								<button type="button" class="btn btn-outline-secondary">Subscribe!</button>
-							</span>
-						</div>
-						<!-- /input-group-->
-					</form>
-					<hr>
-					<h4 class="mb-3">Stay in touch</h4>
-					<p class="social">
-						<a href="#" class="facebook external"><i
-							class="fa fa-facebook"></i></a><a href="#" class="twitter external"><i
-							class="fa fa-twitter"></i></a><a href="#" class="instagram external"><i
-							class="fa fa-instagram"></i></a><a href="#" class="gplus external"><i
-							class="fa fa-google-plus"></i></a><a href="#" class="email external"><i
-							class="fa fa-envelope"></i></a>
+					<p>
+						<i class="fas fa-tty"></i> Số điện thoại: <strong
+							style="color: red;">1900 63 22 46</strong>
 					</p>
 				</div>
-				<!-- /.col-lg-3-->
 			</div>
 			<!-- /.row-->
 		</div>
@@ -1237,12 +1256,11 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 mb-2 mb-lg-0">
-					<p class="text-center text-lg-left">©2019 Your name goes here.</p>
+					<p class="text-center text-lg-left">©2019 H&D_16102016</p>
 				</div>
 				<div class="col-lg-6">
 					<p class="text-center text-lg-right">
-						Template design by <a
-							href="https://bootstrapious.com/p/big-bootstrap-tutorial">Bootstrapious</a>
+						Design by <a href="#">H&D_16102016</a>
 						<!-- If you want to remove this backlink, pls purchase an Attribution-free License @ https://bootstrapious.com/p/obaju-e-commerce-template. Big thanks!-->
 					</p>
 				</div>
