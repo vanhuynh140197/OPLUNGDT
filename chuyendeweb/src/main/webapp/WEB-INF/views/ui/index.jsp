@@ -145,7 +145,9 @@
 						<li>
 							<div class="row">
 								<div class="col-md-6 col-lg-3">
-									<h5>Phụ kiện Iphone</h5>
+									<h5>
+										<i class="fas fa-chevron-circle-down"></i> Phụ kiện Iphone
+									</h5>
 									<ul class="list-unstyled mb-3">
 										<li class="nav-item"><a href="category.html"
 											class="nav-link">Iphone XS Max</a></li>
@@ -174,7 +176,9 @@
 									</ul>
 								</div>
 								<div class="col-md-6 col-lg-3">
-									<h5>Phụ kiện iPad</h5>
+									<h5>
+										<i class="fas fa-chevron-circle-down"></i> Phụ kiện iPad
+									</h5>
 									<ul class="list-unstyled mb-3">
 										<li class="nav-item"><a href="category.html"
 											class="nav-link">iPad Pro 12.9 inch (2018)</a></li>
@@ -199,7 +203,9 @@
 									</ul>
 								</div>
 								<div class="col-md-6 col-lg-3">
-									<h5>Phụ kiện Macbook</h5>
+									<h5>
+										<i class="fas fa-chevron-circle-down"></i> Phụ kiện Macbook
+									</h5>
 									<ul class="list-unstyled mb-3">
 										<li class="nav-item"><a href="category.html"
 											class="nav-link">Macbook Air 13 inch (2018)</a></li>
@@ -230,7 +236,9 @@
 									</ul>
 								</div>
 								<div class="col-md-6 col-lg-3">
-									<h5>Apple Watch</h5>
+									<h5>
+										<i class="fas fa-chevron-circle-down"></i> Apple Watch
+									</h5>
 									<ul class="list-unstyled mb-3">
 										<li class="nav-item"><a href="category.html"
 											class="nav-link">Apple Watch Series 1</a></li>
@@ -241,7 +249,9 @@
 										<li class="nav-item"><a href="category.html"
 											class="nav-link">Apple Watch Series 4</a></li>
 									</ul>
-									<h5>Phụ kiện Air Pods</h5>
+									<h5>
+										<i class="fas fa-chevron-circle-down"></i> Phụ kiện Air Pods
+									</h5>
 								</div>
 							</div>
 						</li>
@@ -254,7 +264,9 @@
 						<li>
 							<div class="row">
 								<div class="col-md-6 col-lg-4">
-									<h5>Galaxy 2019</h5>
+									<h5>
+										<i class="fas fa-chevron-circle-down"></i> Galaxy 2019
+									</h5>
 									<ul class="list-unstyled mb-3">
 										<li class="nav-item"><a href="category.html"
 											class="nav-link">Galaxy S10 Plus</a></li>
@@ -277,7 +289,9 @@
 									</ul>
 								</div>
 								<div class="col-md-6 col-lg-4">
-									<h5>Galaxy 2018</h5>
+									<h5>
+										<i class="fas fa-chevron-circle-down"></i> Galaxy 2018
+									</h5>
 									<ul class="list-unstyled mb-3">
 										<li class="nav-item"><a href="category.html"
 											class="nav-link">Samsung Galaxy J4 Core</a></li>
@@ -310,7 +324,9 @@
 									</ul>
 								</div>
 								<div class="col-md-6 col-lg-4">
-									<h5>Galaxy 2017</h5>
+									<h5>
+										<i class="fas fa-chevron-circle-down"></i> Galaxy 2017
+									</h5>
 									<ul class="list-unstyled mb-3">
 										<li class="nav-item"><a href="category.html"
 											class="nav-link">Samsung Galaxy C10</a></li>
@@ -354,14 +370,18 @@
 						<li>
 							<div class="row">
 								<div class="col-md-3 col-lg-3">
-									<h5>Xperia 2019</h5>
+									<h5>
+										<i class="fas fa-chevron-circle-down"></i> Xperia 2019
+									</h5>
 									<ul class="list-unstyled mb-3">
 										<li class="nav-item"><a href="index.html"
 											class="nav-link">Phụ Kiện Sony Xperia 1</a></li>
 									</ul>
 								</div>
 								<div class="col-md-3 col-lg-3">
-									<h5>Xperia 2018</h5>
+									<h5>
+										<i class="fas fa-chevron-circle-down"></i> Xperia 2018
+									</h5>
 									<ul class="list-unstyled mb-3">
 										<li class="nav-item"><a href="register.html"
 											class="nav-link">Sony Xperia XZ3</a></li>
@@ -382,7 +402,9 @@
 									</ul>
 								</div>
 								<div class="col-md-3 col-lg-3">
-									<h5>Xperia 2017</h5>
+									<h5>
+										<i class="fas fa-chevron-circle-down"></i> Xperia 2017
+									</h5>
 									<ul class="list-unstyled mb-3">
 										<li class="nav-item"><a href="basket.html"
 											class="nav-link">Sony Xperia XZ1</a></li>
@@ -404,7 +426,9 @@
 									</ul>
 								</div>
 								<div class="col-md-3 col-lg-3">
-									<h5>Xperia 2016</h5>
+									<h5>
+										<i class="fas fa-chevron-circle-down"></i> Xperia 2016
+									</h5>
 									<ul class="list-unstyled mb-3">
 										<li class="nav-item"><a href="checkout4.html"
 											class="nav-link">Sony Xperia XZ</a></li>
@@ -423,7 +447,9 @@
 									</ul>
 								</div>
 								<div class="col-md-3 col-lg-3">
-									<h5>Xperia 2015</h5>
+									<h5>
+										<i class="fas fa-chevron-circle-down"></i> Xperia 2015
+									</h5>
 									<ul class="list-unstyled mb-3">
 										<li class="nav-item"><a href="checkout4.html"
 											class="nav-link">Sony Xperia Z5 Premium</a></li>
@@ -451,7 +477,9 @@
 						<li>
 							<div class="row">
 								<div class="col-md-6 col-lg-4">
-									<h5>HTC 2018</h5>
+									<h5>
+										<i class="fas fa-chevron-circle-down"></i> HTC 2018
+									</h5>
 									<ul class="list-unstyled mb-3">
 										<li class="nav-item"><a href="index.html"
 											class="nav-link">HTC Desire 12 Plus</a></li>
@@ -460,7 +488,9 @@
 									</ul>
 								</div>
 								<div class="col-md-6 col-lg-4">
-									<h5>HTC 2017</h5>
+									<h5>
+										<i class="fas fa-chevron-circle-down"></i> HTC 2017
+									</h5>
 									<ul class="list-unstyled mb-3">
 										<li class="nav-item"><a href="register.html"
 											class="nav-link">HTC U11 Plus</a></li>
@@ -490,14 +520,18 @@
 						<li>
 							<div class="row">
 								<div class="col-md-6 col-lg-3">
-									<h5>LG 2018</h5>
+									<h5>
+										<i class="fas fa-chevron-circle-down"></i> LG 2018
+									</h5>
 									<ul class="list-unstyled mb-3">
 										<li class="nav-item"><a href="index.html"
 											class="nav-link">LG G7 ThinQ</a></li>
 									</ul>
 								</div>
 								<div class="col-md-6 col-lg-3">
-									<h5>LG 2017</h5>
+									<h5>
+										<i class="fas fa-chevron-circle-down"></i> LG 2017
+									</h5>
 									<ul class="list-unstyled mb-3">
 										<li class="nav-item"><a href="register.html"
 											class="nav-link">LG X Power 2</a></li>
@@ -510,7 +544,9 @@
 									</ul>
 								</div>
 								<div class="col-md-6 col-lg-3">
-									<h5>LG 2016</h5>
+									<h5>
+										<i class="fas fa-chevron-circle-down"></i> LG 2016
+									</h5>
 									<ul class="list-unstyled mb-3">
 										<li class="nav-item"><a href="basket.html"
 											class="nav-link">LG K7</a></li>
@@ -523,7 +559,9 @@
 									</ul>
 								</div>
 								<div class="col-md-6 col-lg-3">
-									<h5>LG 2015</h5>
+									<h5>
+										<i class="fas fa-chevron-circle-down"></i> LG 2015
+									</h5>
 									<ul class="list-unstyled mb-3">
 										<li class="nav-item"><a href="blog.html" class="nav-link">LG
 												G5</a></li>
@@ -560,7 +598,9 @@
 						<li>
 							<div class="row">
 								<div class="col-md-6 col-lg-3">
-									<h5>Phụ kiện OPPO</h5>
+									<h5>
+										<i class="fas fa-chevron-circle-down"></i> Phụ kiện OPPO
+									</h5>
 									<ul class="list-unstyled mb-3">
 										<li class="nav-item"><a href="index.html"
 											class="nav-link">OPPO R17 Pro</a></li>
@@ -585,7 +625,9 @@
 									</ul>
 								</div>
 								<div class="col-md-6 col-lg-3">
-									<h5>Phụ kiện Xiaomi</h5>
+									<h5>
+										<i class="fas fa-chevron-circle-down"></i> Phụ kiện Xiaomi
+									</h5>
 									<ul class="list-unstyled mb-3">
 										<li class="nav-item"><a href="register.html"
 											class="nav-link">Xiaomi Redmi Note 7</a></li>
@@ -611,7 +653,9 @@
 									</ul>
 								</div>
 								<div class="col-md-6 col-lg-3">
-									<h5>Phụ kiện Huawei</h5>
+									<h5>
+										<i class="fas fa-chevron-circle-down"></i> Phụ kiện Huawei
+									</h5>
 									<ul class="list-unstyled mb-3">
 										<li class="nav-item"><a href="basket.html"
 											class="nav-link">Huawei Y7 Pro 2019</a></li>
@@ -636,7 +680,9 @@
 									</ul>
 								</div>
 								<div class="col-md-6 col-lg-3">
-									<h5>Phụ kiện Honor</h5>
+									<h5>
+										<i class="fas fa-chevron-circle-down"></i> Phụ kiện Honor
+									</h5>
 									<ul class="list-unstyled mb-3">
 										<li class="nav-item"><a href="blog.html" class="nav-link">Huawei
 												Honor 10</a></li>
@@ -660,7 +706,9 @@
 									</ul>
 								</div>
 								<div class="col-md-6 col-lg-3">
-									<h5>Phụ kiện Vivo</h5>
+									<h5>
+										<i class="fas fa-chevron-circle-down"></i> Phụ kiện Vivo
+									</h5>
 									<ul class="list-unstyled mb-3">
 										<li class="nav-item"><a href="blog.html" class="nav-link">Vivo
 												V9</a></li>
@@ -805,7 +853,10 @@
 						<div class="row">
 							<div class="col-md-12">
 								<h2 class="mb-0">
-									<marquee>Phụ kiện ốp lưng điện thoại bán nhất</marquee>
+									<marquee>
+										<i class="fas fa-braille"></i> Phụ kiện ốp lưng điện thoại bán
+										nhất
+									</marquee>
 								</h2>
 							</div>
 						</div>
@@ -1239,7 +1290,10 @@
 							<div class="col-lg-9">
 								<div class="box">
 									<h3>Obaju- Ốp lưng điện thoại</h3>
-									<p>ĐÚNG HÀNG - ĐÚNG GIÁ - ĐÚNG CHẤT LƯỢNG</p>
+									<p>
+										<i class="fab fa-centos"></i> ĐÚNG HÀNG - ĐÚNG GIÁ - ĐÚNG CHẤT
+										LƯỢNG
+									</p>
 								</div>
 								<div class="box info-bar">
 									<div class="row">
@@ -1274,35 +1328,41 @@
 												<div class="flipper">
 													<div class="front">
 														<a href="detail.html"><img
-															src="<c:url value="/resources/ui/img/product1.jpg"/>"
+															src="<c:url value="/resources/ui/img/Iphone 7 plus/ip7 plus.jpg"/>"
 															alt="" class="img-fluid"></a>
 													</div>
 													<div class="back">
 														<a href="detail.html"><img
-															src="<c:url value="/resources/ui/img/product1_2.jpg"/>"
+															src="<c:url value="/resources/ui/img/Iphone 7 plus/ip 7 plus_1.jpg"/>"
 															alt="" class="img-fluid"></a>
 													</div>
 												</div>
 											</div>
 											<a href="detail.html" class="invisible"><img
-												src="<c:url value="/resources/ui/img/product1.jpg"/>" alt=""
-												class="img-fluid"></a>
+												src="<c:url value="/resources/ui/img/Iphone 7 plus/ip7 plus.jpg"/>"
+												alt="" class="img-fluid"></a>
 											<div class="text">
 												<h3>
-													<a href="detail.html">Fur coat with very but very very
-														long name</a>
+													<a href="detail.html">Iphone 7 plus</a>
 												</h3>
 												<p class="price">
 													<del></del>
-													$143.00
+													<i class="fas fa-caret-right"></i> Giá bán: <strong
+														style="color: red;"> 90,000 đ </strong>
 												</p>
+												<br>
 												<p class="buttons">
-													<a href="detail.html" class="btn btn-outline-secondary">View
-														detail</a><a href="basket.html" class="btn btn-primary"><i
-														class="fa fa-shopping-cart"></i>Add to cart</a>
+													<a href="<c:url value="/oplungdienthoai/home/chitiet"/>" class="btn btn-outline-secondary">Chi
+														tiết</a><a href="basket.html" class="btn btn-primary"><i
+														class="fa fa-shopping-cart"></i>Đặt hàng nhanh</a>
 												</p>
 											</div>
 											<!-- /.text-->
+											<div class="ribbon new">
+												<div class="theribbon">NEW</div>
+												<div class="ribbon-background"></div>
+											</div>
+											<!-- /.ribbon-->
 										</div>
 										<!-- /.product            -->
 									</div>
@@ -1312,31 +1372,32 @@
 												<div class="flipper">
 													<div class="front">
 														<a href="detail.html"><img
-															src="<c:url value="/resources/ui/img/product2.jpg"/>"
+															src="<c:url value="/resources/ui/img/Iphone 7 plus/iphone 7plus.jpg"/>"
 															alt="" class="img-fluid"></a>
 													</div>
 													<div class="back">
 														<a href="detail.html"><img
-															src="<c:url value="/resources/ui/img/product2_2.jpg"/>"
+															src="<c:url value="/resources/ui/img/Iphone 7 plus/iphone 7 plus_1.jpg"/>"
 															alt="" class="img-fluid"></a>
 													</div>
 												</div>
 											</div>
 											<a href="detail.html" class="invisible"><img
-												src="<c:url value="/resources/ui/img/product2.jpg"/>" alt=""
-												class="img-fluid"></a>
+												src="<c:url value="/resources/ui/img/Iphone 7 plus/iphone 7plus.jpg"/>"
+												alt="" class="img-fluid"></a>
 											<div class="text">
 												<h3>
-													<a href="detail.html">White Blouse Armani</a>
+													<a href="detail.html">Iphone 7 plus</a>
 												</h3>
 												<p class="price">
-													<del>$280</del>
-													$143.00
+													<i class="fas fa-caret-right"></i> Giá bán:
+													<del>120,000 đ</del>
+													<br> <strong style="color: red;"> 100,000 đ </strong>
 												</p>
 												<p class="buttons">
-													<a href="detail.html" class="btn btn-outline-secondary">View
-														detail</a><a href="basket.html" class="btn btn-primary"><i
-														class="fa fa-shopping-cart"></i>Add to cart</a>
+													<a href="detail.html" class="btn btn-outline-secondary">Chi
+														tiết</a> <a href="basket.html" class="btn btn-primary"><i
+														class="fa fa-shopping-cart"></i>Đặt hàng nhanh</a>
 												</p>
 											</div>
 											<!-- /.text-->
@@ -1350,11 +1411,6 @@
 												<div class="ribbon-background"></div>
 											</div>
 											<!-- /.ribbon-->
-											<div class="ribbon gift">
-												<div class="theribbon">GIFT</div>
-												<div class="ribbon-background"></div>
-											</div>
-											<!-- /.ribbon-->
 										</div>
 										<!-- /.product            -->
 									</div>
@@ -1364,31 +1420,33 @@
 												<div class="flipper">
 													<div class="front">
 														<a href="detail.html"><img
-															src="<c:url value="/resources/ui/img/product3.jpg"/>"
+															src="<c:url value="/resources/ui/img/Iphone 6 plus/iphone 6 plus.jpg"/>"
 															alt="" class="img-fluid"></a>
 													</div>
 													<div class="back">
 														<a href="detail.html"><img
-															src="<c:url value="/resources/ui/img/product3_2.jpg"/>"
+															src="<c:url value="/resources/ui/img/Iphone 6 plus/op iphone 6 plus.jpg"/>"
 															alt="" class="img-fluid"></a>
 													</div>
 												</div>
 											</div>
 											<a href="detail.html" class="invisible"><img
-												src="<c:url value="/resources/ui/img/product3.jpg"/>" alt=""
-												class="img-fluid"></a>
+												src="<c:url value="/resources/ui/img/Iphone 6 plus/iphone 6 plus.jpg"/>"
+												alt="" class="img-fluid"></a>
 											<div class="text">
 												<h3>
-													<a href="detail.html">Black Blouse Versace</a>
+													<a href="detail.html">Iphone 6 plus</a>
 												</h3>
 												<p class="price">
 													<del></del>
-													$143.00
+													<i class="fas fa-caret-right"></i> Giá bán: <strong
+														style="color: red;"> 100,000 đ </strong>
 												</p>
+												<br>
 												<p class="buttons">
-													<a href="detail.html" class="btn btn-outline-secondary">View
-														detail</a><a href="basket.html" class="btn btn-primary"><i
-														class="fa fa-shopping-cart"></i>Add to cart</a>
+													<a href="detail.html" class="btn btn-outline-secondary">Chi
+														tiết</a> <a href="basket.html" class="btn btn-primary"><i
+														class="fa fa-shopping-cart"></i>Đặt hàng nhanh</a>
 												</p>
 											</div>
 											<!-- /.text-->
@@ -1401,68 +1459,32 @@
 												<div class="flipper">
 													<div class="front">
 														<a href="detail.html"><img
-															src="<c:url value="/resources/ui/img/product3.jpg"/>"
+															src="<c:url value="/resources/ui/img/Iphone 8 plus/iphone 8 plus.jpg"/>"
 															alt="" class="img-fluid"></a>
 													</div>
 													<div class="back">
 														<a href="detail.html"><img
-															src="<c:url value="/resources/ui/img/product3_2.jpg"/>"
+															src="<c:url value="/resources/ui/img/Iphone 8 plus/op iphone 8 plus.jpg"/>"
 															alt="" class="img-fluid"></a>
 													</div>
 												</div>
 											</div>
 											<a href="detail.html" class="invisible"><img
-												src="<c:url value="/resources/ui/img/product3.jpg"/>" alt=""
-												class="img-fluid"></a>
+												src="<c:url value="/resources/ui/img/Iphone 8 plus/iphone 8 plus.jpg"/>"
+												alt="" class="img-fluid"></a>
 											<div class="text">
 												<h3>
-													<a href="detail.html">Black Blouse Versace</a>
+													<a href="detail.html">Iphone 8 plus</a>
 												</h3>
 												<p class="price">
 													<del></del>
-													$143.00
+													<i class="fas fa-caret-right"></i> Giá bán: <strong
+														style="color: red;"> 120,000 đ </strong>
 												</p>
 												<p class="buttons">
-													<a href="detail.html" class="btn btn-outline-secondary">View
-														detail</a><a href="basket.html" class="btn btn-primary"><i
-														class="fa fa-shopping-cart"></i>Add to cart</a>
-												</p>
-											</div>
-											<!-- /.text-->
-										</div>
-										<!-- /.product            -->
-									</div>
-									<div class="col-lg-4 col-md-6">
-										<div class="product">
-											<div class="flip-container">
-												<div class="flipper">
-													<div class="front">
-														<a href="detail.html"><img
-															src="<c:url value="/resources/ui/img/product2.jpg"/>"
-															alt="" class="img-fluid"></a>
-													</div>
-													<div class="back">
-														<a href="detail.html"><img
-															src="<c:url value="/resources/ui/img/product2_2.jpg"/>"
-															alt="" class="img-fluid"></a>
-													</div>
-												</div>
-											</div>
-											<a href="detail.html" class="invisible"><img
-												src="<c:url value="/resources/ui/img/product2.jpg"/>" alt=""
-												class="img-fluid"></a>
-											<div class="text">
-												<h3>
-													<a href="detail.html">White Blouse Versace</a>
-												</h3>
-												<p class="price">
-													<del></del>
-													$143.00
-												</p>
-												<p class="buttons">
-													<a href="detail.html" class="btn btn-outline-secondary">View
-														detail</a><a href="basket.html" class="btn btn-primary"><i
-														class="fa fa-shopping-cart"></i>Add to cart</a>
+													<a href="detail.html" class="btn btn-outline-secondary">Chi
+														tiết</a><a href="basket.html" class="btn btn-primary"><i
+														class="fa fa-shopping-cart"></i>Đặt hàng nhanh</a>
 												</p>
 											</div>
 											<!-- /.text-->
@@ -1479,37 +1501,77 @@
 											<div class="flip-container">
 												<div class="flipper">
 													<div class="front">
-														<a href="detail.html"><img
-															src="<c:url value="/resources/ui/img/product1.jpg"/>"
+														" <a href="detail.html"><img
+															src="<c:url value="/resources/ui/img/Xiaomi redmi note 5 pro/xiaomi note 5.jpg"/>"
 															alt="" class="img-fluid"></a>
 													</div>
 													<div class="back">
 														<a href="detail.html"><img
-															src="<c:url value="/resources/ui/img/product1_2.jpg"/>"
+															src="<c:url value="/resources/ui/img/Xiaomi redmi note 5 pro/xiaomi note 5_1.jpg"/>"
 															alt="" class="img-fluid"></a>
 													</div>
 												</div>
 											</div>
 											<a href="detail.html" class="invisible"><img
-												src="<c:url value="/resources/ui/img/product1.jpg"/>" alt=""
-												class="img-fluid"></a>
+												src="<c:url value="/resources/ui/img/Xiaomi redmi note 5 pro/xiaomi note 5.jpg"/>"
+												alt="" class="img-fluid"></a>
 											<div class="text">
+												<br>
 												<h3>
-													<a href="detail.html">Fur coat</a>
+													<a href="detail.html">Xiami Redmi Note 5</a>
 												</h3>
 												<p class="price">
 													<del></del>
-													$143.00
+													<i class="fas fa-caret-right"></i> Giá bán: <strong
+														style="color: red;"> 110,000 đ </strong>
 												</p>
 												<p class="buttons">
-													<a href="detail.html" class="btn btn-outline-secondary">View
-														detail</a><a href="basket.html" class="btn btn-primary"><i
-														class="fa fa-shopping-cart"></i>Add to cart</a>
+													<a href="detail.html" class="btn btn-outline-secondary">Chi
+														tiết</a><a href="basket.html" class="btn btn-primary"><i
+														class="fa fa-shopping-cart"></i>Đặt hàng nhanh</a>
 												</p>
 											</div>
 											<!-- /.text-->
-											<div class="ribbon gift">
-												<div class="theribbon">GIFT</div>
+										</div>
+										<!-- /.product            -->
+									</div>
+									<div class="col-lg-4 col-md-6">
+										<div class="product">
+											<div class="flip-container">
+												<div class="flipper">
+													<div class="front">
+														<a href="detail.html"><img
+															src="<c:url value="/resources/ui/img/Oppo R15/oppo R15_0.jpg"/>"
+															alt="" class="img-fluid"></a>
+													</div>
+													<div class="back">
+														<a href="detail.html"><img
+															src="<c:url value="/resources/ui/img/Oppo R15/oppo R15.jpg"/>"
+															alt="" class="img-fluid"></a>
+													</div>
+												</div>
+											</div>
+											<a href="detail.html" class="invisible"><img
+												src="<c:url value="/resources/ui/img/Oppo R15/oppo R15_0.jpg"/>"
+												alt="" class="img-fluid"></a>
+											<div class="text">
+												<h3>
+													<a href="detail.html">Oppo R15</a>
+												</h3>
+												<p class="price">
+													<del></del>
+													<i class="fas fa-caret-right"></i> Giá bán: <strong
+														style="color: red;"> 85,000 đ </strong>
+												</p>
+												<p class="buttons">
+													<a href="detail.html" class="btn btn-outline-secondary">Chi
+														tiết</a><a href="basket.html" class="btn btn-primary"><i
+														class="fa fa-shopping-cart"></i>Đặt hàng nhanh</a>
+												</p>
+											</div>
+											<!-- /.text-->
+											<div class="ribbon new">
+												<div class="theribbon">NEW</div>
 												<div class="ribbon-background"></div>
 											</div>
 											<!-- /.ribbon-->
@@ -1560,8 +1622,10 @@
 								<i class="fab fa-galactic-senate"></i> Thông tin cửa hàng
 							</h4>
 							<ul class="list-unstyled">
-								<li><a href="text.html">Giới thiệu chung</a></li>
-								<li><a href="text.html">Liên hệ</a></li>
+								<li><a href="text.html"><i class="fas fa-caret-right"></i>
+										Giới thiệu chung</a></li>
+								<li><a href="text.html"><i class="fas fa-caret-right"></i>
+										Liên hệ</a></li>
 							</ul>
 						</div>
 						<!-- /.col-lg-3-->
@@ -1570,9 +1634,12 @@
 								<i class="fab fa-galactic-senate"></i> Hỗ trợ khách hàng
 							</h4>
 							<ul class="list-unstyled">
-								<li><a href="category.html">Bảo hành - Đổi trả</a></li>
-								<li><a href="category.html">Hỗ trợ mua hàng online</a></li>
-								<li><a href="category.html">Chính sách vận chuyển</a></li>
+								<li><a href="category.html"><i
+										class="fas fa-caret-right"></i> Bảo hành - Đổi trả</a></li>
+								<li><a href="category.html"><i
+										class="fas fa-caret-right"></i> Hỗ trợ mua hàng online</a></li>
+								<li><a href="category.html"><i
+										class="fas fa-caret-right"></i> Chính sách vận chuyển</a></li>
 							</ul>
 						</div>
 						<!-- /.col-lg-3-->
@@ -1581,9 +1648,13 @@
 								<i class="fab fa-galactic-senate"></i> Địa chỉ cửa hàng
 							</h4>
 							<p>
-								<strong>Địa chỉ:</strong><br>Thủ Đức, TP Hồ Chí Minh
+								<i class="fas fa-map-marker-alt"></i> Địa chỉ: <br> <strong
+									style="color: red;">Thủ Đức, TP Hồ Chí Minh</strong>
 							</p>
-							<p>Số điện thoại: 1900 63 22 46</p>
+							<p>
+								<i class="fas fa-tty"></i> Số điện thoại: <strong
+									style="color: red;">1900 63 22 46</strong>
+							</p>
 						</div>
 					</div>
 					<!-- /.row-->

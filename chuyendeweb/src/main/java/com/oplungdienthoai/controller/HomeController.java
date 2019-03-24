@@ -10,4 +10,9 @@ public class HomeController {
 	public String index(){
 		return "/ui/index";
 	}
+	@RequestMapping(value ="/home/chitiet")
+	public String chiTiet(){
+		return "/ui/detail";
+	}
 }
+
