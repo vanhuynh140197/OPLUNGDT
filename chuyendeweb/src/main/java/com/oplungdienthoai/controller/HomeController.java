@@ -18,5 +18,9 @@ public class HomeController {
 	public String gioHang(){
 		return "/ui/basket";
 	}
+	@RequestMapping(value ="/home/menu")
+	public String menu(){
+		return "/ui/menu";
+	}
 }
 
