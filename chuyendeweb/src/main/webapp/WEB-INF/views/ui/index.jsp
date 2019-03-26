@@ -546,23 +546,23 @@
 								<div class="box info-bar">
 									<div class="row">
 										<div class="col-md-12 col-lg-4 products-showing">
-											Showing <strong>12</strong> of <strong>25</strong> products
+											Hiển thị <strong>6</strong> trên <strong>25</strong> sản phẩm
 										</div>
-										<div class="col-md-12 col-lg-7 products-number-sort">
+										<div class="col-md-12 col-lg-8 products-number-sort">
 											<form
 												class="form-inline d-block d-lg-flex justify-content-between flex-column flex-md-row">
 												<div class="products-number">
-													<strong>Show</strong><a href="#"
-														class="btn btn-sm btn-primary">12</a><a href="#"
+													<strong>Hiển thị</strong><a href="#"
+														class="btn btn-sm btn-primary">6</a><a href="#"
 														class="btn btn-outline-secondary btn-sm">24</a><a href="#"
-														class="btn btn-outline-secondary btn-sm">All</a><span>products</span>
+														class="btn btn-outline-secondary btn-sm">Tất cả</a>
 												</div>
 												<div class="products-sort-by mt-2 mt-lg-0">
-													<strong>Sort by</strong> <select name="sort-by"
+													<strong>Sắp xếp theo</strong> <select name="sort-by"
 														class="form-control">
-														<option>Price</option>
-														<option>Name</option>
-														<option>Sales first</option>
+														<option>Giá</option>
+														<option>Tên</option>
+														<option>Sản phẩm SALE</option>
 													</select>
 												</div>
 											</form>

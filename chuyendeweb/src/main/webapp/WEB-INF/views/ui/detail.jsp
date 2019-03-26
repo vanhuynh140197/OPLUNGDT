@@ -23,7 +23,7 @@
 						<!-- breadcrumb-->
 						<nav aria-label="breadcrumb">
 						<ol class="breadcrumb">
-							<li class="breadcrumb-item"><a href="#">Home</a></li>
+							<li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
 							<li class="breadcrumb-item"><a href="#">Ladies</a></li>
 							<li class="breadcrumb-item"><a href="#">Tops</a></li>
 							<li aria-current="page" class="breadcrumb-item active">White
@@ -115,88 +115,7 @@
 								</ul>
 							</div>
 						</div>
-						<div class="card sidebar-menu mb-4">
-							<div class="card-header">
-								<h3 class="h4 card-title">
-									Brands <a href="#" class="btn btn-sm btn-danger pull-right"><i
-										class="fa fa-times-circle"></i> Clear</a>
-								</h3>
-							</div>
-							<div class="card-body">
-								<form>
-									<div class="form-group">
-										<div class="checkbox">
-											<label> <input type="checkbox"> Armani (10)
-											</label>
-										</div>
-										<div class="checkbox">
-											<label> <input type="checkbox"> Versace (12)
-											</label>
-										</div>
-										<div class="checkbox">
-											<label> <input type="checkbox"> Carlo Bruni
-												(15)
-											</label>
-										</div>
-										<div class="checkbox">
-											<label> <input type="checkbox"> Jack Honey
-												(14)
-											</label>
-										</div>
-									</div>
-									<button class="btn btn-default btn-sm btn-primary">
-										<i class="fa fa-pencil"></i> Apply
-									</button>
-								</form>
-							</div>
-						</div>
-						<div class="card sidebar-menu mb-4">
-							<div class="card-header">
-								<h3 class="h4 card-title">
-									Colours <a href="#" class="btn btn-sm btn-danger pull-right"><i
-										class="fa fa-times-circle"></i> Clear</a>
-								</h3>
-							</div>
-							<div class="card-body">
-								<form>
-									<div class="form-group">
-										<div class="checkbox">
-											<label> <input type="checkbox"><span
-												class="colour white"></span> White (14)
-											</label>
-										</div>
-										<div class="checkbox">
-											<label> <input type="checkbox"><span
-												class="colour blue"></span> Blue (10)
-											</label>
-										</div>
-										<div class="checkbox">
-											<label> <input type="checkbox"><span
-												class="colour green"></span> Green (20)
-											</label>
-										</div>
-										<div class="checkbox">
-											<label> <input type="checkbox"><span
-												class="colour yellow"></span> Yellow (13)
-											</label>
-										</div>
-										<div class="checkbox">
-											<label> <input type="checkbox"><span
-												class="colour red"></span> Red (10)
-											</label>
-										</div>
-									</div>
-									<button class="btn btn-default btn-sm btn-primary">
-										<i class="fa fa-pencil"></i> Apply
-									</button>
-								</form>
-							</div>
-						</div>
 						<!-- *** MENUS AND FILTERS END ***-->
-						<div class="banner">
-							<a href="#"><img src="img/banner.jpg" alt="sales 2014"
-								class="img-fluid"></a>
-						</div>
 					</div>
 					<div class="col-lg-9 order-1 order-lg-2">
 						<div id="productMain" class="row">
@@ -229,68 +148,64 @@
 							</div>
 							<div class="col-md-6">
 								<div class="box">
-									<h1 class="text-center">White Blouse Armani</h1>
+									<h3 class="text-center">Iphone 7 plus</h3>
 									<p class="goToDescription">
-										<a href="#details" class="scroll-to">Scroll to product
-											details, material &amp; care and sizing</a>
+										<a href="#details" class="scroll-to"><h4 align="center">Xem
+												thông tin chi tiết sản phẩm</h4></a>
 									</p>
-									<p class="price">$124.00</p>
+									<h4 align="center">
+										<i class="fas fa-caret-right"></i> Giá bán: <strong
+											style="color: red;"> 90,000 đ </strong>
+									</h4>
 									<p class="text-center buttons">
 										<a href="<c:url value="/oplungdienthoai/home/giohang"/>"
 											class="btn btn-primary"><i class="fa fa-shopping-cart"></i>
-											Add to cart</a><a href="basket.html"
-											class="btn btn-outline-primary"><i class="fa fa-heart"></i>
-											Add to wishlist</a>
+											Đặt hàng nhanh</a>
+									</p>
+									<br>
+									<p>Thông tin & Khuyến mãi</p>
+									<hr>
+									<p>
+										✪ Giao hàng toàn quốc <br> ✪ Thanh toán khi nhận hàng <br>
+										✪ Đơn hàng trên 500.000đ miễn phí vận chuyển <br> ✪
+										Thường xuyên có khuyến mãi cho thành viên
 									</p>
 								</div>
 								<div data-slider-id="1" class="owl-thumbs">
 									<button class="owl-thumb-item">
-										<img src="img/detailsquare.jpg" alt="" class="img-fluid">
+										<img src="<c:url value="/resources/ui/img/detailsquare.jpg"/>"
+											alt="" class="img-fluid">
 									</button>
 									<button class="owl-thumb-item">
-										<img src="img/detailsquare2.jpg" alt="" class="img-fluid">
+										<img
+											src="<c:url value="/resources/ui/img/detailsquare2.jpg"/>"
+											alt="" class="img-fluid">
 									</button>
 									<button class="owl-thumb-item">
-										<img src="img/detailsquare3.jpg" alt="" class="img-fluid">
+										<img
+											src="<c:url value="/resources/ui/img/detailsquare3.jpg"/>"
+											alt="" class="img-fluid">
 									</button>
 								</div>
 							</div>
 						</div>
 						<div id="details" class="box">
-							<p></p>
-							<h4>Product details</h4>
-							<p>White lace top, woven, has a round neck, short sleeves,
-								has knitted lining attached</p>
-							<h4>Material &amp; care</h4>
-							<ul>
-								<li>Polyester</li>
-								<li>Machine wash</li>
-							</ul>
-							<h4>Size &amp; Fit</h4>
-							<ul>
-								<li>Regular fit</li>
-								<li>The model (height 5'8" and chest 33") is wearing a size
-									S</li>
-							</ul>
-							<blockquote>
-								<p>
-									<em>Define style this season with Armani's new range of
-										trendy tops, crafted with intricate details. Create a chic
-										statement look by teaming this lace number with skinny jeans
-										and pumps.</em>
-								</p>
-							</blockquote>
+							<h3>Thông tin sản phẩm</h3>
 							<hr>
-							<div class="social">
-								<h4>Show it to your friends</h4>
-								<p>
-									<a href="#" class="external facebook"><i
-										class="fa fa-facebook"></i></a><a href="#" class="external gplus"><i
-										class="fa fa-google-plus"></i></a><a href="#"
-										class="external twitter"><i class="fa fa-twitter"></i></a><a
-										href="#" class="email"><i class="fa fa-envelope"></i></a>
-								</p>
-							</div>
+							<h4>Ốp lưng iPhone Xs Max Ringke Fusion kèm bộ Kit tiện lợi</h4>
+							<p>
+								Trọn bộ bao gồm: <br> - Dây đeo cổ tay màu ngẫu nhiên. Trên
+								ốp lưng Ringke Fusion có chỗ móc dây, đây là thiết kế đặc trưng
+								của Ringke. Dây đeo này sẽ giúp bạn cầm điện thoại trên tay chắc
+								chắn hơn. <br> - Miếng dán đựng card có thể dán trực tiếp
+								mặt lưng của ốp. <br> - Ốp lưng Ringke Fusion Thiết kế siêu
+								mỏng và hoàn toàn phù hợp từng chi tiết nhỏ trên iPhone Xs Max.
+								<br>Dễ dàng tháo lắp không làm trầy máy nhờ thiết kế viền
+								TPU dẻo. <br> Chất liệu nhựa cao cấp có cảm giác như bạn
+								cầm chính cái điện thoại mà không có bất gì cản trở nào. <br>
+								Chống va đập và ảnh hưởng tuyệt đối. <br> Chống trầy màn
+								hình iPhone Xs Max khi để trên mặt phẵng nhờ phần ốp mặt trước
+								nhô cao.
 						</div>
 						<div class="row same-height-row">
 							<div class="col-md-3 col-sm-6">
