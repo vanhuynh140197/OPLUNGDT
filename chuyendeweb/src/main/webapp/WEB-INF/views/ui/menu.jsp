@@ -139,7 +139,8 @@
 										<i class="fas fa-chevron-circle-down"></i> Phụ kiện Iphone
 									</h5>
 									<ul class="list-unstyled mb-3">
-										<li class="nav-item"><a href="category.html"
+										<li class="nav-item"><a
+											href="<c:url value="/oplungdienthoai/home/sanpham"/>"
 											class="nav-link">Iphone XS Max</a></li>
 										<li class="nav-item"><a href="category.html"
 											class="nav-link">Iphone XS/X</a></li>
@@ -727,7 +728,8 @@
 					class="sr-only">Toggle search</span><i class="fa fa-search"></i></a>
 				<div id="basket-overview"
 					class="navbar-collapse collapse d-none d-lg-block">
-					<a href="basket.html" class="btn btn-primary navbar-btn"><i
+					<a href="<c:url value="/oplungdienthoai/home/giohang"/>"
+						class="btn btn-primary navbar-btn"><i
 						class="fa fa-shopping-cart"></i></a>
 				</div>
 			</div>

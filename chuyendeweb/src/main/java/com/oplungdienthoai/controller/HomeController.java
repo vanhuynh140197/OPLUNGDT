@@ -22,5 +22,26 @@ public class HomeController {
 	public String menu(){
 		return "/ui/menu";
 	}
+	@RequestMapping(value ="/home/thanhtoan")
+	public String thanhToan(){
+		return "/ui/checkout1";
+	}
+	@RequestMapping(value ="/home/thanhtoan2")
+	public String thanhToan2(){
+		return "/ui/checkout2";
+	}
+	@RequestMapping(value ="/home/thanhtoan3")
+	public String thanhToan3(){
+		return "/ui/checkout3";
+	}
+	@RequestMapping(value ="/home/thanhtoan4")
+	public String thanhToan4(){
+		return "/ui/checkout4";
+	}
+	@RequestMapping(value ="/home/sanpham")
+	public String sanPham(){
+		return "/ui/category-full";
+	}
 }
+
 

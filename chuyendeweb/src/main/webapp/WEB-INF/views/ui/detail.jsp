@@ -148,22 +148,31 @@
 							</div>
 							<div class="col-md-6">
 								<div class="box">
-									<h3 class="text-center">Iphone 7 plus</h3>
-									<p class="goToDescription">
-										<a href="#details" class="scroll-to"><h4 align="center">Xem
-												thông tin chi tiết sản phẩm</h4></a>
+									<h3 class="text-center">Ốp lưng Iphone 7 plus</h3>
+									<p align="center" style="margin-left: 3%;">
+										<i class="fas fa-angle-double-right"></i> Mã sản phẩm: COP178
+									</p>
+									<p align="center">
+										<i class="fas fa-angle-double-right"></i> Tình trạng: <strong
+											style="color: red;">Còn hàng</strong>
 									</p>
 									<h4 align="center">
 										<i class="fas fa-caret-right"></i> Giá bán: <strong
 											style="color: red;"> 90,000 đ </strong>
 									</h4>
+									<p class="goToDescription">
+										<a href="#details" class="scroll-to"><h4 align="center">Xem
+												thông tin chi tiết sản phẩm</h4></a>
+									</p>
 									<p class="text-center buttons">
 										<a href="<c:url value="/oplungdienthoai/home/giohang"/>"
 											class="btn btn-primary"><i class="fa fa-shopping-cart"></i>
 											Đặt hàng nhanh</a>
 									</p>
 									<br>
-									<p>Thông tin & Khuyến mãi</p>
+									<p>
+										<i class="fas fa-bell"></i> Thông tin & Khuyến mãi
+									</p>
 									<hr>
 									<p>
 										✪ Giao hàng toàn quốc <br> ✪ Thanh toán khi nhận hàng <br>
@@ -190,7 +199,9 @@
 							</div>
 						</div>
 						<div id="details" class="box">
-							<h3>Thông tin sản phẩm</h3>
+							<h3>
+								<i class="fas fa-bell"></i> Thông tin sản phẩm
+							</h3>
 							<hr>
 							<h4>Ốp lưng iPhone Xs Max Ringke Fusion kèm bộ Kit tiện lợi</h4>
 							<p>
@@ -200,111 +211,52 @@
 								chắn hơn. <br> - Miếng dán đựng card có thể dán trực tiếp
 								mặt lưng của ốp. <br> - Ốp lưng Ringke Fusion Thiết kế siêu
 								mỏng và hoàn toàn phù hợp từng chi tiết nhỏ trên iPhone Xs Max.
-								<br>Dễ dàng tháo lắp không làm trầy máy nhờ thiết kế viền
-								TPU dẻo. <br> Chất liệu nhựa cao cấp có cảm giác như bạn
+								<br>- Dễ dàng tháo lắp không làm trầy máy nhờ thiết kế viền
+								TPU dẻo. <br> - Chất liệu nhựa cao cấp có cảm giác như bạn
 								cầm chính cái điện thoại mà không có bất gì cản trở nào. <br>
-								Chống va đập và ảnh hưởng tuyệt đối. <br> Chống trầy màn
-								hình iPhone Xs Max khi để trên mặt phẵng nhờ phần ốp mặt trước
-								nhô cao.
-						</div>
-						<div class="row same-height-row">
-							<div class="col-md-3 col-sm-6">
-								<div class="box same-height">
-									<h3>You may also like these products</h3>
-								</div>
-							</div>
-							<div class="col-md-3 col-sm-6">
-								<div class="product same-height">
-									<div class="flip-container">
-										<div class="flipper">
-											<div class="front">
-												<a href="detail.html"><img src="img/product2.jpg" alt=""
-													class="img-fluid"></a>
-											</div>
-											<div class="back">
-												<a href="detail.html"><img src="img/product2_2.jpg"
-													alt="" class="img-fluid"></a>
-											</div>
-										</div>
-									</div>
-									<a href="detail.html" class="invisible"><img
-										src="img/product2.jpg" alt="" class="img-fluid"></a>
-									<div class="text">
-										<h3>Fur coat</h3>
-										<p class="price">$143</p>
-									</div>
-								</div>
-								<!-- /.product-->
-							</div>
-							<div class="col-md-3 col-sm-6">
-								<div class="product same-height">
-									<div class="flip-container">
-										<div class="flipper">
-											<div class="front">
-												<a href="detail.html"><img src="img/product1.jpg" alt=""
-													class="img-fluid"></a>
-											</div>
-											<div class="back">
-												<a href="detail.html"><img src="img/product1_2.jpg"
-													alt="" class="img-fluid"></a>
-											</div>
-										</div>
-									</div>
-									<a href="detail.html" class="invisible"><img
-										src="img/product1.jpg" alt="" class="img-fluid"></a>
-									<div class="text">
-										<h3>Fur coat</h3>
-										<p class="price">$143</p>
-									</div>
-								</div>
-								<!-- /.product-->
-							</div>
-							<div class="col-md-3 col-sm-6">
-								<div class="product same-height">
-									<div class="flip-container">
-										<div class="flipper">
-											<div class="front">
-												<a href="detail.html"><img src="img/product3.jpg" alt=""
-													class="img-fluid"></a>
-											</div>
-											<div class="back">
-												<a href="detail.html"><img src="img/product3_2.jpg"
-													alt="" class="img-fluid"></a>
-											</div>
-										</div>
-									</div>
-									<a href="detail.html" class="invisible"><img
-										src="img/product3.jpg" alt="" class="img-fluid"></a>
-									<div class="text">
-										<h3>Fur coat</h3>
-										<p class="price">$143</p>
-									</div>
-								</div>
-								<!-- /.product-->
+								- Chống va đập và ảnh hưởng tuyệt đối. <br> - Chống trầy
+								màn hình iPhone Xs Max khi để trên mặt phẵng nhờ phần ốp mặt
+								trước nhô cao.
+							<hr>
+							<div class="social">
+								<h4><i class="fas fa-angle-double-right"></i> Chia sẻ</h4>
+								<p>
+									<a href="#" class="external facebook"><i
+										class="fa fa-facebook"></i></a><a href="#" class="external gplus"><i
+										class="fa fa-google-plus"></i></a><a href="#"
+										class="external twitter"><i class="fa fa-twitter"></i></a><a
+										href="#" class="email"><i class="fa fa-envelope"></i></a>
+								</p>
 							</div>
 						</div>
+						<div id="details" style="margin-left: 2%;">
+							<h3>
+								<i class="fas fa-bell"></i> Sản phẩm liên quan
+							</h3>
+							<hr>
+						</div>
 						<div class="row same-height-row">
-							<div class="col-md-3 col-sm-6">
-								<div class="box same-height">
-									<h3>Products viewed recently</h3>
-								</div>
-							</div>
+
 							<div class="col-md-3 col-sm-6">
 								<div class="product same-height">
 									<div class="flip-container">
 										<div class="flipper">
 											<div class="front">
-												<a href="detail.html"><img src="img/product2.jpg" alt=""
-													class="img-fluid"></a>
+												<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"><img
+													src="<c:url value="/resources/ui/img/product2.jpg"/>"
+													alt="" class="img-fluid"></a>
 											</div>
 											<div class="back">
-												<a href="detail.html"><img src="img/product2_2.jpg"
+												<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"><img
+													src="<c:url value="/resources/ui/img/product2_2.jpg"/>"
 													alt="" class="img-fluid"></a>
 											</div>
 										</div>
 									</div>
-									<a href="detail.html" class="invisible"><img
-										src="img/product2.jpg" alt="" class="img-fluid"></a>
+									<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"
+										class="invisible"><img
+										src="<c:url value="/resources/ui/img/product2.jpg"/>" alt=""
+										class="img-fluid"></a>
 									<div class="text">
 										<h3>Fur coat</h3>
 										<p class="price">$143</p>
@@ -317,17 +269,21 @@
 									<div class="flip-container">
 										<div class="flipper">
 											<div class="front">
-												<a href="detail.html"><img src="img/product1.jpg" alt=""
-													class="img-fluid"></a>
+												<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"><img
+													src="<c:url value="/resources/ui/img/product2.jpg"/>"
+													alt="" class="img-fluid"></a>
 											</div>
 											<div class="back">
-												<a href="detail.html"><img src="img/product1_2.jpg"
+												<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"><img
+													src="<c:url value="/resources/ui/img/product2_2.jpg"/>"
 													alt="" class="img-fluid"></a>
 											</div>
 										</div>
 									</div>
-									<a href="detail.html" class="invisible"><img
-										src="img/product1.jpg" alt="" class="img-fluid"></a>
+									<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"
+										class="invisible"><img
+										src="<c:url value="/resources/ui/img/product2.jpg"/>" alt=""
+										class="img-fluid"></a>
 									<div class="text">
 										<h3>Fur coat</h3>
 										<p class="price">$143</p>
@@ -340,17 +296,49 @@
 									<div class="flip-container">
 										<div class="flipper">
 											<div class="front">
-												<a href="detail.html"><img src="img/product3.jpg" alt=""
-													class="img-fluid"></a>
+												<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"><img
+													src="<c:url value="/resources/ui/img/product1.jpg"/>"
+													alt="" class="img-fluid"></a>
 											</div>
 											<div class="back">
-												<a href="detail.html"><img src="img/product3_2.jpg"
+												<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"><img
+													src="<c:url value="/resources/ui/img/product1_2.jpg"/>"
 													alt="" class="img-fluid"></a>
 											</div>
 										</div>
 									</div>
-									<a href="detail.html" class="invisible"><img
-										src="img/product3.jpg" alt="" class="img-fluid"></a>
+									<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"
+										class="invisible"><img
+										src="<c:url value="/resources/ui/img/product1.jpg"/>" alt=""
+										class="img-fluid"></a>
+									<div class="text">
+										<h3>Fur coat</h3>
+										<p class="price">$143</p>
+									</div>
+								</div>
+								<!-- /.product-->
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="product same-height">
+									<div class="flip-container">
+										<div class="flipper">
+											<div class="front">
+												<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"><img
+													src="<c:url value="/resources/ui/img/product3.jpg"/>"
+													alt="" class="img-fluid"></a>
+											</div>
+											<div class="back">
+												<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"><img
+													src="<c:url value="/resources/ui/img/product3_2.jpg"/>"
+													alt="" class="img-fluid"></a>
+											</div>
+										</div>
+									</div>
+									<a
+										href="detail.html<c:url value="/oplungdienthoai/home/chitiet"/>"
+										class="invisible"><img
+										src="<c:url value="/resources/ui/img/product3.jpg"/>" alt=""
+										class="img-fluid"></a>
 									<div class="text">
 										<h3>Fur coat</h3>
 										<p class="price">$143</p>

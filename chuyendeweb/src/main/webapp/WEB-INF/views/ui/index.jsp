@@ -552,7 +552,7 @@
 											<form
 												class="form-inline d-block d-lg-flex justify-content-between flex-column flex-md-row">
 												<div class="products-number">
-													<strong>Hiển thị</strong><a href="#"
+													<strong>Hiển thị</strong><a href="#" style="margin-left:2px;"
 														class="btn btn-sm btn-primary">6</a><a href="#"
 														class="btn btn-outline-secondary btn-sm">24</a><a href="#"
 														class="btn btn-outline-secondary btn-sm">Tất cả</a>

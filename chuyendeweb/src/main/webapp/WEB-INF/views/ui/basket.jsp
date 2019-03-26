@@ -23,32 +23,34 @@
 						<!-- breadcrumb-->
 						<nav aria-label="breadcrumb">
 						<ol class="breadcrumb">
-							<li class="breadcrumb-item"><a href="#">Home</a></li>
-							<li aria-current="page" class="breadcrumb-item active">Shopping
-								cart</li>
+							<li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+							<li aria-current="page" class="breadcrumb-item active">Sản
+								phẩm của bạn</li>
 						</ol>
 						</nav>
 					</div>
 					<div id="basket" class="col-lg-9">
 						<div class="box">
-							<form method="post" action="checkout1.html">
-								<h1>Shopping cart</h1>
-								<p class="text-muted">You currently have 3 item(s) in your
-									cart.</p>
+							<form method="post" action="<c:url value="/oplungdienthoai/home/thanhtoan"/>">
+								<h2>
+									<i class="fas fa-shopping-cart"></i> Giỏ hàng của bạn
+								</h2>
+								<p class="text-muted">Bạn hiện có 3 sản phẩm</p>
 								<div class="table-responsive">
 									<table class="table">
 										<thead>
 											<tr>
-												<th colspan="2">Product</th>
-												<th>Quantity</th>
-												<th>Unit price</th>
-												<th>Discount</th>
-												<th colspan="2">Total</th>
+												<th colspan="2">Sản phẩm</th>
+												<th>Đơn giá</th>
+												<th>Số lượng</th>
+												<th>Giảm giá</th>
+												<th colspan="2">Thành tiền</th>
 											</tr>
 										</thead>
 										<tbody>
 											<tr>
-												<td><a href="#"><img src="img/detailsquare.jpg"
+												<td><a href="#"><img
+														src="<c:url value="/resources/ui/img/detailsquare.jpg"/>"
 														alt="White Blouse Armani"></a></td>
 												<td><a href="#">White Blouse Armani</a></td>
 												<td><input type="number" value="2" class="form-control">
@@ -59,7 +61,8 @@
 												<td><a href="#"><i class="fa fa-trash-o"></i></a></td>
 											</tr>
 											<tr>
-												<td><a href="#"><img src="img/basketsquare.jpg"
+												<td><a href="#"><img
+														src="<c:url value="/resources/ui/img/basketsquare.jpg"/>"
 														alt="Black Blouse Armani"></a></td>
 												<td><a href="#">Black Blouse Armani</a></td>
 												<td><input type="number" value="1" class="form-control">
@@ -72,7 +75,7 @@
 										</tbody>
 										<tfoot>
 											<tr>
-												<th colspan="5">Total</th>
+												<th colspan="5">Tổng</th>
 												<th colspan="2">$446.00</th>
 											</tr>
 										</tfoot>
@@ -82,123 +85,40 @@
 								<div
 									class="box-footer d-flex justify-content-between flex-column flex-lg-row">
 									<div class="left">
-										<a href="category.html" class="btn btn-outline-secondary"><i
-											class="fa fa-chevron-left"></i> Continue shopping</a>
+										<a href="<c:url value="/oplungdienthoai/home"/>" class="btn btn-outline-secondary"><i
+											class="fa fa-chevron-left"></i> Mua thêm</a>
 									</div>
 									<div class="right">
-										<button class="btn btn-outline-secondary">
-											<i class="fa fa-refresh"></i> Update cart
-										</button>
-										<button type="submit" class="btn btn-primary">
-											Proceed to checkout <i class="fa fa-chevron-right"></i>
+										<button type="submit" class="btn btn-primary2">
+											Thanh toán <i class="fa fa-chevron-right"></i>
 										</button>
 									</div>
 								</div>
 							</form>
 						</div>
 						<!-- /.box-->
-						<div class="row same-height-row">
-							<div class="col-lg-3 col-md-6">
-								<div class="box same-height">
-									<h3>You may also like these products</h3>
-								</div>
-							</div>
-							<div class="col-md-3 col-sm-6">
-								<div class="product same-height">
-									<div class="flip-container">
-										<div class="flipper">
-											<div class="front">
-												<a href="detail.html"><img src="img/product2.jpg" alt=""
-													class="img-fluid"></a>
-											</div>
-											<div class="back">
-												<a href="detail.html"><img src="img/product2_2.jpg"
-													alt="" class="img-fluid"></a>
-											</div>
-										</div>
-									</div>
-									<a href="detail.html" class="invisible"><img
-										src="img/product2.jpg" alt="" class="img-fluid"></a>
-									<div class="text">
-										<h3>Fur coat</h3>
-										<p class="price">$143</p>
-									</div>
-								</div>
-								<!-- /.product-->
-							</div>
-							<div class="col-md-3 col-sm-6">
-								<div class="product same-height">
-									<div class="flip-container">
-										<div class="flipper">
-											<div class="front">
-												<a href="detail.html"><img src="img/product1.jpg" alt=""
-													class="img-fluid"></a>
-											</div>
-											<div class="back">
-												<a href="detail.html"><img src="img/product1_2.jpg"
-													alt="" class="img-fluid"></a>
-											</div>
-										</div>
-									</div>
-									<a href="detail.html" class="invisible"><img
-										src="img/product1.jpg" alt="" class="img-fluid"></a>
-									<div class="text">
-										<h3>Fur coat</h3>
-										<p class="price">$143</p>
-									</div>
-								</div>
-								<!-- /.product-->
-							</div>
-							<div class="col-md-3 col-sm-6">
-								<div class="product same-height">
-									<div class="flip-container">
-										<div class="flipper">
-											<div class="front">
-												<a href="detail.html"><img src="img/product3.jpg" alt=""
-													class="img-fluid"></a>
-											</div>
-											<div class="back">
-												<a href="detail.html"><img src="img/product3_2.jpg"
-													alt="" class="img-fluid"></a>
-											</div>
-										</div>
-									</div>
-									<a href="detail.html" class="invisible"><img
-										src="img/product3.jpg" alt="" class="img-fluid"></a>
-									<div class="text">
-										<h3>Fur coat</h3>
-										<p class="price">$143</p>
-									</div>
-								</div>
-								<!-- /.product-->
-							</div>
-						</div>
 					</div>
 					<!-- /.col-lg-9-->
 					<div class="col-lg-3">
 						<div id="order-summary" class="box">
 							<div class="box-header">
-								<h3 class="mb-0">Order summary</h3>
+								<h3 class="mb-0">Hóa đơn</h3>
 							</div>
-							<p class="text-muted">Shipping and additional costs are
-								calculated based on the values you have entered.</p>
+							<p class="text-muted">Vận chuyển và chi phí bổ sung được tính
+								dựa trên các giá trị bạn đã nhập.</p>
 							<div class="table-responsive">
 								<table class="table">
 									<tbody>
 										<tr>
-											<td>Order subtotal</td>
+											<td>Tổng tiền hàng:</td>
 											<th>$446.00</th>
 										</tr>
 										<tr>
-											<td>Shipping and handling</td>
+											<td>Phí vận chuyển:</td>
 											<th>$10.00</th>
 										</tr>
 										<tr>
-											<td>Tax</td>
-											<th>$0.00</th>
-										</tr>
-										<tr class="total">
-											<td>Total</td>
+											<td>Tổng thanh toán:</td>
 											<th>$456.00</th>
 										</tr>
 									</tbody>
@@ -215,7 +135,7 @@
 								<div class="input-group">
 									<input type="text" class="form-control"><span
 										class="input-group-append">
-										<button type="button" class="btn btn-primary">
+										<button type="button" class="btn btn-primary1">
 											<i class="fa fa-gift"></i>
 										</button>
 									</span>
