@@ -17,12 +17,10 @@ public class ProductsEntity {
     private Integer amount;
     private String description;
     private String productTypesId;
-    private String providersId;
     private Boolean productsStatus;
     private Collection<OrderDetailsEntity> orderDetailsByProductsId;
     private Collection<PricesEntity> pricesByProductsId;
     private ProductTypesEntity productTypesByProductTypesId;
-    private ProvidersEntity providersByProvidersId;
     private Collection<PromotionsEntity> promotionsByProductsId;
 
     @Id
@@ -76,7 +74,7 @@ public class ProductsEntity {
     }
 
     @Basic
-    @Column(name = "Amount")
+    @Column(name = "Amount", nullable = true)
     public Integer getAmount() {
         return amount;
     }
@@ -103,16 +101,6 @@ public class ProductsEntity {
 
     public void setProductTypesId(String productTypesId) {
         this.productTypesId = productTypesId;
-    }
-
-    @Basic
-    @Column(name = "ProvidersID")
-    public String getProvidersId() {
-        return providersId;
-    }
-
-    public void setProvidersId(String providersId) {
-        this.providersId = providersId;
     }
 
     @Basic
@@ -144,7 +132,6 @@ public class ProductsEntity {
         if (description != null ? !description.equals(that.description) : that.description != null) return false;
         if (productTypesId != null ? !productTypesId.equals(that.productTypesId) : that.productTypesId != null)
             return false;
-        if (providersId != null ? !providersId.equals(that.providersId) : that.providersId != null) return false;
         if (productsStatus != null ? !productsStatus.equals(that.productsStatus) : that.productsStatus != null)
             return false;
 
@@ -161,7 +148,6 @@ public class ProductsEntity {
         result = 31 * result + (amount != null ? amount.hashCode() : 0);
         result = 31 * result + (description != null ? description.hashCode() : 0);
         result = 31 * result + (productTypesId != null ? productTypesId.hashCode() : 0);
-        result = 31 * result + (providersId != null ? providersId.hashCode() : 0);
         result = 31 * result + (productsStatus != null ? productsStatus.hashCode() : 0);
         return result;
     }
@@ -192,16 +178,6 @@ public class ProductsEntity {
 
     public void setProductTypesByProductTypesId(ProductTypesEntity productTypesByProductTypesId) {
         this.productTypesByProductTypesId = productTypesByProductTypesId;
-    }
-
-    @ManyToOne
-    @JoinColumn(name = "ProvidersID", referencedColumnName = "ProvidersID", nullable = false,insertable = false,updatable = false)
-    public ProvidersEntity getProvidersByProvidersId() {
-        return providersByProvidersId;
-    }
-
-    public void setProvidersByProvidersId(ProvidersEntity providersByProvidersId) {
-        this.providersByProvidersId = providersByProvidersId;
     }
 
     @OneToMany(mappedBy = "productsByProductsId",cascade=CascadeType.ALL, fetch = FetchType.LAZY)

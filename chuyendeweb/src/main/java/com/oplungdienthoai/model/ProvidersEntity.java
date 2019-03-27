@@ -11,7 +11,7 @@ import java.util.Collection;
 public class ProvidersEntity {
     private String providersId;
     private String providersName;
-    private Collection<ProductsEntity> productsByProvidersId;
+    private Collection<ProductTypesEntity> productTypesByProvidersId;
 
     @Id
     @Column(name = "ProvidersID")
@@ -55,11 +55,11 @@ public class ProvidersEntity {
     }
 
     @OneToMany(mappedBy = "providersByProvidersId",cascade=CascadeType.ALL, fetch = FetchType.LAZY)
-    public Collection<ProductsEntity> getProductsByProvidersId() {
-        return productsByProvidersId;
+    public Collection<ProductTypesEntity> getProductTypesByProvidersId() {
+        return productTypesByProvidersId;
     }
 
-    public void setProductsByProvidersId(Collection<ProductsEntity> productsByProvidersId) {
-        this.productsByProvidersId = productsByProvidersId;
+    public void setProductTypesByProvidersId(Collection<ProductTypesEntity> productTypesByProvidersId) {
+        this.productTypesByProvidersId = productTypesByProvidersId;
     }
 }

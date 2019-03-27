@@ -11,6 +11,8 @@ import java.util.Collection;
 public class ProductTypesEntity {
     private String productTypesId;
     private String productTypesName;
+    private String providersId;
+    private ProvidersEntity providersByProvidersId;
     private Collection<ProductsEntity> productsByProductTypesId;
 
     @Id
@@ -33,6 +35,16 @@ public class ProductTypesEntity {
         this.productTypesName = productTypesName;
     }
 
+    @Basic
+    @Column(name = "ProvidersID")
+    public String getProvidersId() {
+        return providersId;
+    }
+
+    public void setProvidersId(String providersId) {
+        this.providersId = providersId;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -44,6 +56,7 @@ public class ProductTypesEntity {
             return false;
         if (productTypesName != null ? !productTypesName.equals(that.productTypesName) : that.productTypesName != null)
             return false;
+        if (providersId != null ? !providersId.equals(that.providersId) : that.providersId != null) return false;
 
         return true;
     }
@@ -52,7 +65,18 @@ public class ProductTypesEntity {
     public int hashCode() {
         int result = productTypesId != null ? productTypesId.hashCode() : 0;
         result = 31 * result + (productTypesName != null ? productTypesName.hashCode() : 0);
+        result = 31 * result + (providersId != null ? providersId.hashCode() : 0);
         return result;
+    }
+
+    @ManyToOne
+    @JoinColumn(name = "ProvidersID", referencedColumnName = "ProvidersID", nullable = false,insertable = false,updatable = false)
+    public ProvidersEntity getProvidersByProvidersId() {
+        return providersByProvidersId;
+    }
+
+    public void setProvidersByProvidersId(ProvidersEntity providersByProvidersId) {
+        this.providersByProvidersId = providersByProvidersId;
     }
 
     @OneToMany(mappedBy = "productTypesByProductTypesId",cascade=CascadeType.ALL, fetch = FetchType.LAZY)
