@@ -23,10 +23,6 @@
 					<div class="col-md-8">
 						<div id="main-slider" class="owl-carousel owl-theme">
 							<div class="item">
-								<img src="<c:url value="/resources/ui/img/oplungdt/op.jpg"/>"
-									alt="" class="img-fluid">
-							</div>
-							<div class="item">
 								<img
 									src="<c:url value="/resources/ui/img/oplungdt/iphone1.jpg"/>"
 									alt="" class="img-fluid">
@@ -34,6 +30,10 @@
 							<div class="item">
 								<img
 									src="<c:url value="/resources/ui/img/oplungdt/4500737slide2.jpg"/>"
+									alt="" class="img-fluid">
+							</div>
+							<div class="item">
+								<img src="<c:url value="/resources/ui/img/oplungdt/op.jpg"/>"
 									alt="" class="img-fluid">
 							</div>
 							<div class="item">
@@ -552,10 +552,11 @@
 											<form
 												class="form-inline d-block d-lg-flex justify-content-between flex-column flex-md-row">
 												<div class="products-number">
-													<strong>Hiển thị</strong><a href="#" style="margin-left:2px;"
-														class="btn btn-sm btn-primary">6</a><a href="#"
-														class="btn btn-outline-secondary btn-sm">24</a><a href="#"
-														class="btn btn-outline-secondary btn-sm">Tất cả</a>
+													<strong>Hiển thị</strong><a href="#"
+														style="margin-left: 2px;" class="btn btn-sm btn-primary">6</a><a
+														href="#" class="btn btn-outline-secondary btn-sm">24</a><a
+														href="#" class="btn btn-outline-secondary btn-sm">Tất
+														cả</a>
 												</div>
 												<div class="products-sort-by mt-2 mt-lg-0">
 													<strong>Sắp xếp theo</strong> <select name="sort-by"

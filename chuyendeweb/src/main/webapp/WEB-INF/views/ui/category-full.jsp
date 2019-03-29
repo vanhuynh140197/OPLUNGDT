@@ -29,8 +29,7 @@
 						</nav>
 						<div class="box">
 							<h3>Ốp lưng iPhone XS Max - Cao Cấp, Chính Hãng, Giá Rẻ</h3>
-							<p>In our Ladies department we offer wide selection of the
-								best products we have found and carefully selected worldwide.</p>
+							<p>Nhiều mẫu mã, nhiều màu sắc đa dạng. Chống sốc, chống trầy xước, chống mồ hôi, chống nước.</p>
 						</div>
 						<div class="box info-bar">
 							<div class="row">
@@ -65,26 +64,246 @@
 										<div class="flipper">
 											<div class="front">
 												<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"><img
-													src="<c:url value="/resources/ui/img/product1.jpg"/>"
+													src="<c:url value="/resources/ui/img/Iphone XS Max/SP/7Ikzwu.jpg"/>"
 													alt="" class="img-fluid"></a>
 											</div>
 											<div class="back">
 												<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"><img
-													src="<c:url value="/resources/ui/img/product1_2.jpg"/>"
+													src="<c:url value="/resources/ui/img/Iphone XS Max/SP/ty7kpt_1.jpg"/>"
 													alt="" class="img-fluid"></a>
 											</div>
 										</div>
 									</div>
 									<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"
 										class="invisible"><img
-										src="<c:url value="/resources/ui/img/product1.jpg"/>" alt=""
-										class="img-fluid"></a>
+										src="<c:url value="/resources/ui/img/Iphone XS Max/SP/7Ikzwu.jpg"/>"
+										alt="" class="img-fluid"></a>
 									<div class="text">
-										<h3>Iphone XS Max</h3>
+										<h3>Ốp lưng cẩm thạch Iphone XS Max</h3>
 										<p class="price">
 											<del></del>
 											<i class="fas fa-caret-right"></i> Giá bán: <strong
 												style="color: red;"> 100,000 đ </strong>
+										</p>
+										<br>
+										<p class="buttons" style="margin-top: -3px;">
+											<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"
+												class="btn btn-outline-secondary">Chi tiết</a><a
+												href="<c:url value="/oplungdienthoai/home/giohang"/>"
+												class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Đặt
+												hàng nhanh</a>
+										</p>
+									</div>
+									<!-- /.text-->
+								</div>
+								<!-- /.product            -->
+							</div>
+							<div class="col-lg-3 col-md-4">
+								<div class="product">
+									<div class="flip-container">
+										<div class="flipper">
+											<div class="front">
+												<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"><img
+													src="<c:url value="/resources/ui/img/Iphone XS Max/SP/Iphone XSMAx1.jpg"/>"
+													alt="" class="img-fluid"></a>
+											</div>
+											<div class="back">
+												<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"><img
+													src="<c:url value="/resources/ui/img/Iphone XS Max/SP/Iphone XSMAx.jpg"/>"
+													alt="" class="img-fluid"></a>
+											</div>
+										</div>
+									</div>
+									<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"
+										class="invisible"><img
+										src="<c:url value="/resources/ui/img/Iphone XS Max/SP/Iphone XSMAx1.jpg"/>"
+										alt="" class="img-fluid"></a>
+									<div class="text">
+										<h3>Ốp lưng Iphone XS Max da cao cấp</h3>
+										<p class="price">
+											<i class="fas fa-caret-right"></i> Giá bán:
+											<del>180,000 đ</del>
+											<br> <strong style="color: red;"> 150,000 đ </strong>
+										</p>
+										<p class="buttons" style="margin-top: -9px;">
+											<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"
+												class="btn btn-outline-secondary">Chi tiết</a><a
+												href="<c:url value="/oplungdienthoai/home/giohang"/>"
+												class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Đặt
+												hàng nhanh</a>
+										</p>
+									</div>
+									<!-- /.text-->
+									<div class="ribbon sale">
+										<div class="theribbon">SALE</div>
+										<div class="ribbon-background"></div>
+									</div>
+									<!-- /.ribbon-->
+									<div class="ribbon new">
+										<div class="theribbon">NEW</div>
+										<div class="ribbon-background"></div>
+									</div>
+									<!-- /.ribbon-->
+								</div>
+								<!-- /.product            -->
+							</div>
+							<div class="col-lg-3 col-md-4">
+								<div class="product">
+									<div class="flip-container">
+										<div class="flipper">
+											<div class="front">
+												<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"><img
+													src="<c:url value="/resources/ui/img/Iphone XS Max/SP/op_lung_mikki_iphone_x_mau _05.jpg"/>"
+													alt="" class="img-fluid"></a>
+											</div>
+											<div class="back">
+												<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"><img
+													src="<c:url value="/resources/ui/img/Iphone XS Max/SP/iphone.jpg"/>"
+													alt="" class="img-fluid"></a>
+											</div>
+										</div>
+									</div>
+									<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"
+										class="invisible"><img
+										src="<c:url value="/resources/ui/img/Iphone XS Max/SP/op_lung_mikki_iphone_x_mau _05.jpg"/>"
+										alt="" class="img-fluid"></a>
+									<div class="text">
+										<h3>Ốp lưng Mikki Iphone XS Max</h3>
+										<p class="price">
+											<del></del>
+											<i class="fas fa-caret-right"></i> Giá bán: <strong
+												style="color: red;"> 160,000 đ </strong>
+										</p>
+										<br>
+										<p class="buttons" style="margin-top: -3px;">
+											<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"
+												class="btn btn-outline-secondary">Chi tiết</a><a
+												href="<c:url value="/oplungdienthoai/home/giohang"/>"
+												class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Đặt
+												hàng nhanh</a>
+										</p>
+									</div>
+									<!-- /.text-->
+								</div>
+								<!-- /.product            -->
+							</div>
+							<div class="col-lg-3 col-md-4">
+								<div class="product">
+									<div class="flip-container">
+										<div class="flipper">
+											<div class="front">
+												<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"><img
+													src="<c:url value="/resources/ui/img/Iphone XS Max/SP/op-lung-vai-da-iphone-x-polo-racquet-usa-16.jpg"/>"
+													alt="" class="img-fluid"></a>
+											</div>
+											<div class="back">
+												<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"><img
+													src="<c:url value="/resources/ui/img/Iphone XS Max/SP/op_iphone_x_polo_racquet_usa_2.jpg"/>"
+													alt="" class="img-fluid"></a>
+											</div>
+										</div>
+									</div>
+									<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"
+										class="invisible"><img
+										src="<c:url value="/resources/ui/img/Iphone XS Max/SP/op-lung-vai-da-iphone-x-polo-racquet-usa-16.jpg"/>"
+										alt="" class="img-fluid"></a>
+									<div class="text">
+										<h3>Ốp lưng Iphone XS Max Polo Racquet USA</h3>
+										<p class="price">
+											<del></del>
+											<i class="fas fa-caret-right"></i> Giá bán: <strong
+												style="color: red;"> 360,000 đ </strong>
+										</p>
+										<br>
+										<p class="buttons" style="margin-top: -3px;">
+											<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"
+												class="btn btn-outline-secondary">Chi tiết</a><a
+												href="<c:url value="/oplungdienthoai/home/giohang"/>"
+												class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Đặt
+												hàng nhanh</a>
+										</p>
+									</div>
+									<!-- /.text-->
+									<!-- /.ribbon-->
+									<div class="ribbon new">
+										<div class="theribbon">NEW</div>
+										<div class="ribbon-background"></div>
+									</div>
+								</div>
+								<!-- /.product            -->
+							</div>
+							<div class="col-lg-3 col-md-4">
+								<div class="product">
+									<div class="flip-container">
+										<div class="flipper">
+											<div class="front">
+												<a
+													href="<c:url value="/oplungdienthoai/home/chitiet"/>"><img
+													src="<c:url value="/resources/ui/img/Iphone XS Max/SP/Iphone2.jpg"/>"
+													alt="" class="img-fluid"></a>
+											</div>
+											<div class="back">
+												<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"><img
+													src="<c:url value="/resources/ui/img/Iphone XS Max/SP/iphone3.jpg"/>"
+													alt="" class="img-fluid"></a>
+											</div>
+										</div>
+									</div>
+									<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"
+										class="invisible"><img
+										src="<c:url value="/resources/ui/img/Iphone XS Max/SP/Iphone2.jpg"/>"
+										alt="" class="img-fluid"></a>
+									<div class="text">
+										<h3>Ốp lưng trong suốt, viền màu Iphone XS Max</h3>
+										<p class="price">
+											<del></del>
+											<i class="fas fa-caret-right"></i> Giá bán: <strong
+												style="color: red;"> 90,000 đ </strong>
+										</p>
+										<br>
+										<p class="buttons">
+											<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"
+												class="btn btn-outline-secondary">Chi tiết</a><a
+												href="<c:url value="/oplungdienthoai/home/giohang"/>"
+												class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Đặt
+												hàng nhanh</a>
+										</p>
+									</div>
+									<!-- /.text-->
+									<div class="ribbon new">
+										<div class="theribbon">NEW</div>
+										<div class="ribbon-background"></div>
+									</div>
+									<!-- /.ribbon-->
+								</div>
+								<!-- /.product            -->
+							</div>
+							<div class="col-lg-3 col-md-4">
+								<div class="product">
+									<div class="flip-container">
+										<div class="flipper">
+											<div class="front">
+												<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"><img
+													src="<c:url value="/resources/ui/img/Iphone XS Max/SP/iphone4.jpg"/>"
+													alt="" class="img-fluid"></a>
+											</div>
+											<div class="back">
+												<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"><img
+													src="<c:url value="/resources/ui/img/Iphone XS Max/SP/iphone5.jpg"/>"
+													alt="" class="img-fluid"></a>
+											</div>
+										</div>
+									</div>
+									<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"
+										class="invisible"><img
+										src="<c:url value="/resources/ui/img/Iphone XS Max/SP/iphone4.jpg"/>"
+										alt="" class="img-fluid"></a>
+									<div class="text">
+										<h3>Ốp lưng cao su chống sốc Iphone XS Max</h3>
+										<p class="price">
+											<del></del>
+											<i class="fas fa-caret-right"></i> Giá bán: <strong
+												style="color: red;"> 90,000 đ </strong>
 										</p>
 										<br>
 										<p class="buttons">
@@ -104,146 +323,34 @@
 									<div class="flip-container">
 										<div class="flipper">
 											<div class="front">
-												<a href="detail.html"><img src="img/product2.jpg" alt=""
-													class="img-fluid"></a>
+												<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"><img
+													src="<c:url value="/resources/ui/img/Iphone XS Max/SP/iphone6.jpg"/>"
+													alt="" class="img-fluid"></a>
 											</div>
 											<div class="back">
-												<a href="detail.html"><img src="img/product2_2.jpg"
+												<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"><img
+													src="<c:url value="/resources/ui/img/Iphone XS Max/SP/iphone7.jpg"/>"
 													alt="" class="img-fluid"></a>
 											</div>
 										</div>
 									</div>
-									<a href="detail.html" class="invisible"><img
-										src="img/product2.jpg" alt="" class="img-fluid"></a>
+									<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"
+										class="invisible"><img
+										src="<c:url value="/resources/ui/img/Iphone XS Max/SP/iphone6.jpg"/>"
+										alt="" class="img-fluid"></a>
 									<div class="text">
-										<h3>
-											<a href="detail.html">White Blouse Armani</a>
-										</h3>
+										<h3>Ốp lưng chống sốc Iphone XS Max</h3>
 										<p class="price">
-											<del>$280</del>
-											$143.00
+											<i class="fas fa-caret-right"></i> Giá bán: <strong
+												style="color: red;"> 100,000 đ </strong>
 										</p>
+										<br>
 										<p class="buttons">
-											<a href="detail.html" class="btn btn-outline-secondary">View
-												detail</a><a href="basket.html" class="btn btn-primary"><i
-												class="fa fa-shopping-cart"></i>Add to cart</a>
-										</p>
-									</div>
-									<!-- /.text-->
-									<div class="ribbon sale">
-										<div class="theribbon">SALE</div>
-										<div class="ribbon-background"></div>
-									</div>
-									<!-- /.ribbon-->
-									<div class="ribbon new">
-										<div class="theribbon">NEW</div>
-										<div class="ribbon-background"></div>
-									</div>
-									<!-- /.ribbon-->
-									<div class="ribbon gift">
-										<div class="theribbon">GIFT</div>
-										<div class="ribbon-background"></div>
-									</div>
-									<!-- /.ribbon-->
-								</div>
-								<!-- /.product            -->
-							</div>
-							<div class="col-lg-3 col-md-4">
-								<div class="product">
-									<div class="flip-container">
-										<div class="flipper">
-											<div class="front">
-												<a href="detail.html"><img src="img/product3.jpg" alt=""
-													class="img-fluid"></a>
-											</div>
-											<div class="back">
-												<a href="detail.html"><img src="img/product3_2.jpg"
-													alt="" class="img-fluid"></a>
-											</div>
-										</div>
-									</div>
-									<a href="detail.html" class="invisible"><img
-										src="img/product3.jpg" alt="" class="img-fluid"></a>
-									<div class="text">
-										<h3>
-											<a href="detail.html">Black Blouse Versace</a>
-										</h3>
-										<p class="price">
-											<del></del>
-											$143.00
-										</p>
-										<p class="buttons">
-											<a href="detail.html" class="btn btn-outline-secondary">View
-												detail</a><a href="basket.html" class="btn btn-primary"><i
-												class="fa fa-shopping-cart"></i>Add to cart</a>
-										</p>
-									</div>
-									<!-- /.text-->
-								</div>
-								<!-- /.product            -->
-							</div>
-							<div class="col-lg-3 col-md-4">
-								<div class="product">
-									<div class="flip-container">
-										<div class="flipper">
-											<div class="front">
-												<a href="detail.html"><img src="img/product3.jpg" alt=""
-													class="img-fluid"></a>
-											</div>
-											<div class="back">
-												<a href="detail.html"><img src="img/product3_2.jpg"
-													alt="" class="img-fluid"></a>
-											</div>
-										</div>
-									</div>
-									<a href="detail.html" class="invisible"><img
-										src="img/product3.jpg" alt="" class="img-fluid"></a>
-									<div class="text">
-										<h3>
-											<a href="detail.html">Black Blouse Versace</a>
-										</h3>
-										<p class="price">
-											<del></del>
-											$143.00
-										</p>
-										<p class="buttons">
-											<a href="detail.html" class="btn btn-outline-secondary">View
-												detail</a><a href="basket.html" class="btn btn-primary"><i
-												class="fa fa-shopping-cart"></i>Add to cart</a>
-										</p>
-									</div>
-									<!-- /.text-->
-								</div>
-								<!-- /.product            -->
-							</div>
-							<div class="col-lg-3 col-md-4">
-								<div class="product">
-									<div class="flip-container">
-										<div class="flipper">
-											<div class="front">
-												<a href="detail.html"><img src="img/product2.jpg" alt=""
-													class="img-fluid"></a>
-											</div>
-											<div class="back">
-												<a href="detail.html"><img src="img/product2_2.jpg"
-													alt="" class="img-fluid"></a>
-											</div>
-										</div>
-									</div>
-									<a href="detail.html" class="invisible"><img
-										src="img/product2.jpg" alt="" class="img-fluid"></a>
-									<div class="text">
-										<h3>
-											<a href="detail.html">White Blouse Versace</a>
-										</h3>
-										<p class="price">
-											<del></del>
-											$143.00
-										</p>
-										<p class="buttons">
-											<a href="detail.html" class="btn btn-outline-secondary">View
-												detail</a><a href="basket.html" class="btn btn-primary"><i
-												class="fa fa-shopping-cart"></i>Add to cart</a>
+											<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"
+												class="btn btn-outline-secondary">Chi tiết</a><a
+												href="<c:url value="/oplungdienthoai/home/giohang"/>"
+												class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Đặt
+												hàng nhanh</a>
 										</p>
 									</div>
 									<!-- /.text-->
@@ -260,117 +367,32 @@
 									<div class="flip-container">
 										<div class="flipper">
 											<div class="front">
-												<a href="detail.html"><img src="img/product1.jpg" alt=""
-													class="img-fluid"></a>
+												<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"><img
+													src="<c:url value="/resources/ui/img/Iphone XS Max/SP/iphone8.jpg"/>" alt="" class="img-fluid"></a>
 											</div>
 											<div class="back">
-												<a href="detail.html"><img src="img/product1_2.jpg"
-													alt="" class="img-fluid"></a>
+												<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"><img
+													src="<c:url value="/resources/ui/img/Iphone XS Max/SP/iphone9.jpg"/>" alt="" class="img-fluid"></a>
 											</div>
 										</div>
 									</div>
-									<a href="detail.html" class="invisible"><img
-										src="img/product1.jpg" alt="" class="img-fluid"></a>
+									<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"
+										class="invisible"><img src="<c:url value="/resources/ui/img/Iphone XS Max/SP/iphone8.jpg"/>" alt=""
+										class="img-fluid"></a>
 									<div class="text">
-										<h3>
-											<a href="detail.html">Fur coat</a>
-										</h3>
+										<h3>Ốp lưng Iphone XS Max dẻo, chống sốc & mồ hôi & trầy xước</h3>
 										<p class="price">
 											<del></del>
-											$143.00
+											<i class="fas fa-caret-right"></i> Giá bán: <strong
+												style="color: red;"> 120,000 đ </strong>
 										</p>
+										<br>
 										<p class="buttons">
-											<a href="detail.html" class="btn btn-outline-secondary">View
-												detail</a><a href="basket.html" class="btn btn-primary"><i
-												class="fa fa-shopping-cart"></i>Add to cart</a>
-										</p>
-									</div>
-									<!-- /.text-->
-									<div class="ribbon gift">
-										<div class="theribbon">GIFT</div>
-										<div class="ribbon-background"></div>
-									</div>
-									<!-- /.ribbon-->
-								</div>
-								<!-- /.product            -->
-							</div>
-							<div class="col-lg-3 col-md-4">
-								<div class="product">
-									<div class="flip-container">
-										<div class="flipper">
-											<div class="front">
-												<a href="detail.html"><img src="img/product2.jpg" alt=""
-													class="img-fluid"></a>
-											</div>
-											<div class="back">
-												<a href="detail.html"><img src="img/product2_2.jpg"
-													alt="" class="img-fluid"></a>
-											</div>
-										</div>
-									</div>
-									<a href="detail.html" class="invisible"><img
-										src="img/product2.jpg" alt="" class="img-fluid"></a>
-									<div class="text">
-										<h3>
-											<a href="detail.html">White Blouse Armani</a>
-										</h3>
-										<p class="price">
-											<del>$280</del>
-											$143.00
-										</p>
-										<p class="buttons">
-											<a href="detail.html" class="btn btn-outline-secondary">View
-												detail</a><a href="basket.html" class="btn btn-primary"><i
-												class="fa fa-shopping-cart"></i>Add to cart</a>
-										</p>
-									</div>
-									<!-- /.text-->
-									<div class="ribbon sale">
-										<div class="theribbon">SALE</div>
-										<div class="ribbon-background"></div>
-									</div>
-									<!-- /.ribbon-->
-									<div class="ribbon new">
-										<div class="theribbon">NEW</div>
-										<div class="ribbon-background"></div>
-									</div>
-									<!-- /.ribbon-->
-									<div class="ribbon gift">
-										<div class="theribbon">GIFT</div>
-										<div class="ribbon-background"></div>
-									</div>
-									<!-- /.ribbon-->
-								</div>
-								<!-- /.product            -->
-							</div>
-							<div class="col-lg-3 col-md-4">
-								<div class="product">
-									<div class="flip-container">
-										<div class="flipper">
-											<div class="front">
-												<a href="detail.html"><img src="img/product3.jpg" alt=""
-													class="img-fluid"></a>
-											</div>
-											<div class="back">
-												<a href="detail.html"><img src="img/product3_2.jpg"
-													alt="" class="img-fluid"></a>
-											</div>
-										</div>
-									</div>
-									<a href="detail.html" class="invisible"><img
-										src="img/product3.jpg" alt="" class="img-fluid"></a>
-									<div class="text">
-										<h3>
-											<a href="detail.html">Black Blouse Versace</a>
-										</h3>
-										<p class="price">
-											<del></del>
-											$143.00
-										</p>
-										<p class="buttons">
-											<a href="detail.html" class="btn btn-outline-secondary">View
-												detail</a><a href="basket.html" class="btn btn-primary"><i
-												class="fa fa-shopping-cart"></i>Add to cart</a>
+											<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"
+												class="btn btn-outline-secondary">Chi tiết</a><a
+												href="<c:url value="/oplungdienthoai/home/giohang"/>"
+												class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Đặt
+												hàng nhanh</a>
 										</p>
 									</div>
 									<!-- /.text-->

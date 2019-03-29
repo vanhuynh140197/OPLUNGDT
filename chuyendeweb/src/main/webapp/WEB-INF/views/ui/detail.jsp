@@ -164,7 +164,7 @@
 										<a href="#details" class="scroll-to"><h4 align="center">Xem
 												thông tin chi tiết sản phẩm</h4></a>
 									</p>
-									<p class="text-center buttons">
+									<p class="text-center buttons" style="margin-left: 20%;">
 										<a href="<c:url value="/oplungdienthoai/home/giohang"/>"
 											class="btn btn-primary"><i class="fa fa-shopping-cart"></i>
 											Đặt hàng nhanh</a>
@@ -219,7 +219,9 @@
 								trước nhô cao.
 							<hr>
 							<div class="social">
-								<h4><i class="fas fa-angle-double-right"></i> Chia sẻ</h4>
+								<h4>
+									<i class="fas fa-angle-double-right"></i> Chia sẻ
+								</h4>
 								<p>
 									<a href="#" class="external facebook"><i
 										class="fa fa-facebook"></i></a><a href="#" class="external gplus"><i
@@ -231,35 +233,37 @@
 						</div>
 						<div id="details" style="margin-left: 2%;">
 							<h3>
-								<i class="fas fa-bell"></i> Sản phẩm liên quan
+								<i class="fas fa-bell"></i> Sản phẩm yêu thích
 							</h3>
 							<hr>
 						</div>
 						<div class="row same-height-row">
-
 							<div class="col-md-3 col-sm-6">
 								<div class="product same-height">
 									<div class="flip-container">
 										<div class="flipper">
 											<div class="front">
 												<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"><img
-													src="<c:url value="/resources/ui/img/product2.jpg"/>"
+													src="<c:url value="/resources/ui/img/SP YeuThich/iphone10.jpg"/>"
 													alt="" class="img-fluid"></a>
 											</div>
 											<div class="back">
 												<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"><img
-													src="<c:url value="/resources/ui/img/product2_2.jpg"/>"
+													src="<c:url value="/resources/ui/img/SP YeuThich/iphone11.jpg"/>"
 													alt="" class="img-fluid"></a>
 											</div>
 										</div>
 									</div>
 									<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"
 										class="invisible"><img
-										src="<c:url value="/resources/ui/img/product2.jpg"/>" alt=""
-										class="img-fluid"></a>
+										src="<c:url value="/resources/ui/img/SP YeuThich/iphone10.jpg"/>"
+										alt="" class="img-fluid"></a>
 									<div class="text">
-										<h3>Fur coat</h3>
-										<p class="price">$143</p>
+										<h3>Ốp lưng đính đá Iphone 7 Plus</h3>
+										<p class="price">
+											<i class="fas fa-caret-right"></i> Giá bán: <strong
+												style="color: red;"> 120,000 đ </strong>
+										</p>
 									</div>
 								</div>
 								<!-- /.product-->
@@ -270,23 +274,26 @@
 										<div class="flipper">
 											<div class="front">
 												<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"><img
-													src="<c:url value="/resources/ui/img/product2.jpg"/>"
+													src="<c:url value="/resources/ui/img/SP YeuThich/iphone12.jpg"/>"
 													alt="" class="img-fluid"></a>
 											</div>
 											<div class="back">
 												<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"><img
-													src="<c:url value="/resources/ui/img/product2_2.jpg"/>"
+													src="<c:url value="/resources/ui/img/SP YeuThich/iphone13.jpg"/>"
 													alt="" class="img-fluid"></a>
 											</div>
 										</div>
 									</div>
 									<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"
 										class="invisible"><img
-										src="<c:url value="/resources/ui/img/product2.jpg"/>" alt=""
-										class="img-fluid"></a>
+										src="<c:url value="/resources/ui/img/SP YeuThich/iphone12.jpg"/>"
+										alt="" class="img-fluid"></a>
 									<div class="text">
-										<h3>Fur coat</h3>
-										<p class="price">$143</p>
+										<h3>Ốp lưng dẻo chống sốc Iphone 7 Plus</h3>
+										<p class="price">
+											<i class="fas fa-caret-right"></i> Giá bán: <strong
+												style="color: red;"> 90,000 đ </strong>
+										</p>
 									</div>
 								</div>
 								<!-- /.product-->
@@ -297,23 +304,26 @@
 										<div class="flipper">
 											<div class="front">
 												<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"><img
-													src="<c:url value="/resources/ui/img/product1.jpg"/>"
+													src="<c:url value="/resources/ui/img/SP YeuThich/huawei novo 3i.jpg"/>"
 													alt="" class="img-fluid"></a>
 											</div>
 											<div class="back">
 												<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"><img
-													src="<c:url value="/resources/ui/img/product1_2.jpg"/>"
+													src="<c:url value="/resources/ui/img/SP YeuThich/huawei novo 3i1.jpg"/>"
 													alt="" class="img-fluid"></a>
 											</div>
 										</div>
 									</div>
 									<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"
 										class="invisible"><img
-										src="<c:url value="/resources/ui/img/product1.jpg"/>" alt=""
-										class="img-fluid"></a>
+										src="<c:url value="/resources/ui/img/SP YeuThich/huawei novo 3i.jpg"/>"
+										alt="" class="img-fluid"></a>
 									<div class="text">
-										<h3>Fur coat</h3>
-										<p class="price">$143</p>
+										<h3>Ốp lưng Huawei Novo 3e</h3>
+										<p class="price">
+											<i class="fas fa-caret-right"></i> Giá bán: <strong
+												style="color: red;"> 120,000 đ </strong>
+										</p>
 									</div>
 								</div>
 								<!-- /.product-->
@@ -324,12 +334,12 @@
 										<div class="flipper">
 											<div class="front">
 												<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"><img
-													src="<c:url value="/resources/ui/img/product3.jpg"/>"
+													src="<c:url value="/resources/ui/img/SP YeuThich/oppo1.jpg"/>"
 													alt="" class="img-fluid"></a>
 											</div>
 											<div class="back">
 												<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"><img
-													src="<c:url value="/resources/ui/img/product3_2.jpg"/>"
+													src="<c:url value="/resources/ui/img/SP YeuThich/oppo2.jpg"/>"
 													alt="" class="img-fluid"></a>
 											</div>
 										</div>
@@ -337,11 +347,14 @@
 									<a
 										href="detail.html<c:url value="/oplungdienthoai/home/chitiet"/>"
 										class="invisible"><img
-										src="<c:url value="/resources/ui/img/product3.jpg"/>" alt=""
-										class="img-fluid"></a>
+										src="<c:url value="/resources/ui/img/SP YeuThich/oppo1.jpg"/>"
+										alt="" class="img-fluid"></a>
 									<div class="text">
-										<h3>Fur coat</h3>
-										<p class="price">$143</p>
+										<h3>Ốp lưng Oppo F9 Full màu</h3>
+										<p class="price">
+											<i class="fas fa-caret-right"></i> Giá bán: <strong
+												style="color: red;"> 100,000 đ </strong>
+										</p>
 									</div>
 								</div>
 								<!-- /.product-->
