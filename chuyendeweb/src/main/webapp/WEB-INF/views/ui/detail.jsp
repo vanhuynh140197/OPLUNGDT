@@ -10,6 +10,9 @@
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="all,follow">
+<link
+	href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+	rel="stylesheet">
 </head>
 <body>
 	<!-- menu -->
@@ -48,69 +51,45 @@
 											class="fas fa-caret-right"></i> Apple <span
 											class="badge badge-secondary">42</span> </a>
 										<ul class="list-unstyled">
-											<li><a href="category.html" class="nav-link">Iphone
-													XS Max</a></li>
-											<li><a href="category.html" class="nav-link">Iphone
-													XS/X</a></li>
-											<li><a href="category.html" class="nav-link">Iphone
-													8 plus</a></li>
-											<li><a href="category.html" class="nav-link">Iphone
-													8</a></li>
-											<li><a href="category.html" class="nav-link">Iphone
-													7 plus</a></li>
-											<li><a href="category.html" class="nav-link">Iphone
-													7</a></li>
-											<li><a href="category.html" class="nav-link">Iphone
-													6/6s plus</a></li>
-											<li><a href="category.html" class="nav-link">Iphone
-													6/6s</a></li>
+											<li><a
+												href=<c:url value="/oplungdienthoai/home/sanpham"/>
+												class="nav-link">Iphone XS Max</a></li>
+											<li><a href="#" class="nav-link">Iphone XS/X</a></li>
+											<li><a href="#" class="nav-link">Iphone 8 plus</a></li>
+											<li><a href="#" class="nav-link">Iphone 8</a></li>
+											<li><a href="#" class="nav-link">Iphone 7 plus</a></li>
+											<li><a href="#" class="nav-link">Iphone 7</a></li>
+											<li><a href="#" class="nav-link">Iphone 6/6s plus</a></li>
+											<li><a href="#" class="nav-link">Iphone 6/6s</a></li>
 										</ul></li>
-									<li><a href="category.html" class="nav-link active"><i
+									<li><a href="#" class="nav-link active"><i
 											class="fas fa-caret-right"></i> SamSung <span
 											class="badge badge-light">123</span> </a>
 										<ul class="list-unstyled">
-											<li><a href="category.html" class="nav-link">Samsung
-													Galaxy S10</a></li>
-											<li><a href="category.html" class="nav-link">Galaxy
-													S10 Plus</a></li>
-											<li><a href="category.html" class="nav-link">Samsung
-													Galaxy S10E</a></li>
-											<li><a href="category.html" class="nav-link">Samsung
-													Galaxy M20</a></li>
-											<li><a href="category.html" class="nav-link">Samsung
-													Galaxy M10</a></li>
-											<li><a href="category.html" class="nav-link">Samsung
-													Galaxy M30</a></li>
-											<li><a href="category.html" class="nav-link">Samsung
-													Galaxy S10E</a></li>
-											<li><a href="category.html" class="nav-link">Samsung
-													Galaxy A50</a></li>
-											<li><a href="category.html" class="nav-link">Samsung
-													Galaxy A30</a></li>
-											<li><a href="category.html" class="nav-link">Samsung
-													Galaxy A10</a></li>
+											<li><a href="#" class="nav-link">Samsung Galaxy S10</a></li>
+											<li><a href="#" class="nav-link">Galaxy S10 Plus</a></li>
+											<li><a href="#" class="nav-link">Samsung Galaxy S10E</a></li>
+											<li><a href="#" class="nav-link">Samsung Galaxy M20</a></li>
+											<li><a href="#" class="nav-link">Samsung Galaxy M10</a></li>
+											<li><a href="#" class="nav-link">Samsung Galaxy M30</a></li>
+											<li><a href="#" class="nav-link">Samsung Galaxy S10E</a></li>
+											<li><a href="#" class="nav-link">Samsung Galaxy A50</a></li>
+											<li><a href="#" class="nav-link">Samsung Galaxy A30</a></li>
+											<li><a href="#" class="nav-link">Samsung Galaxy A10</a></li>
 										</ul></li>
-									<li><a href="category.html" class="nav-link active"><i
+									<li><a href="#" class="nav-link active"><i
 											class="fas fa-caret-right"></i> Huawei <span
 											class="badge badge-secondary">11</span> </a>
 
 										<ul class="list-unstyled">
-											<li><a href="category.html" class="nav-link">Huawei
-													Y7 Pro 2019</a></li>
-											<li><a href="category.html" class="nav-link">Huawei
-													Mate 20 Pro</a></li>
-											<li><a href="category.html" class="nav-link">Huawei
-													Mate 20</a></li>
-											<li><a href="category.html" class="nav-link">Huawei
-													Y9 (2019)</a></li>
-											<li><a href="category.html" class="nav-link">Huawei
-													Nova 3i</a></li>
-											<li><a href="category.html" class="nav-link">Huawei
-													Nova 3</a></li>
-											<li><a href="category.html" class="nav-link">Huawei
-													P20 Pro</a></li>
-											<li><a href="category.html" class="nav-link">Huawei
-													Nova 3e</a></li>
+											<li><a href="#" class="nav-link">Huawei Y7 Pro 2019</a></li>
+											<li><a href="#" class="nav-link">Huawei Mate 20 Pro</a></li>
+											<li><a href="#" class="nav-link">Huawei Mate 20</a></li>
+											<li><a href="#" class="nav-link">Huawei Y9 (2019)</a></li>
+											<li><a href="#" class="nav-link">Huawei Nova 3i</a></li>
+											<li><a href="#" class="nav-link">Huawei Nova 3</a></li>
+											<li><a href="#" class="nav-link">Huawei P20 Pro</a></li>
+											<li><a href="#" class="nav-link">Huawei Nova 3e</a></li>
 										</ul></li>
 								</ul>
 							</div>
@@ -368,5 +347,10 @@
 	</div>
 	<!--  *** FOOTER *** -->
 	<%@include file="footer.jsp"%>
+	<!-- Return to Top|ScrollTop -->
+	<a href="javascript:" id="return-to-top" title="Về đầu trang"><i
+		class="icon-chevron-up"></i></a>
+	<script src="<c:url value="/resources/ui/js/scrollTop.js"/>"></script>
+	<!-- Return to Top|ScrollTop -->
 </body>
 </html>

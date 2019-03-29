@@ -9,6 +9,9 @@
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="all,follow">
+<link
+	href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+	rel="stylesheet">
 </head>
 <body>
 	<!-- menu -->
@@ -30,7 +33,8 @@
 					</div>
 					<div id="checkout" class="col-lg-9">
 						<div class="box">
-							<form method="get" action="<c:url value="/oplungdienthoai/home/thanhtoan2"/>">
+							<form method="get"
+								action="<c:url value="/oplungdienthoai/home/thanhtoan2"/>">
 								<h1>Checkout - Address</h1>
 								<div class="nav flex-column flex-md-row nav-pills text-center">
 									<a href="checkout1.html"
@@ -119,7 +123,8 @@
 									<!-- /.row-->
 								</div>
 								<div class="box-footer d-flex justify-content-between">
-									<a href="<c:url value="/oplungdienthoai/home/giohang"/>" class="btn btn-outline-secondary"><i
+									<a href="<c:url value="/oplungdienthoai/home/giohang"/>"
+										class="btn btn-outline-secondary"><i
 										class="fa fa-chevron-left"></i>Quay lại</a>
 									<button type="submit" class="btn btn-primary">
 										Tiếp tục phương thức giao hàng<i class="fa fa-chevron-right"></i>
@@ -164,5 +169,10 @@
 	</div>
 	<!--  *** FOOTER *** -->
 	<%@include file="footer.jsp"%>
+	<!-- Return to Top|ScrollTop -->
+	<a href="javascript:" id="return-to-top" title="Về đầu trang"><i
+		class="icon-chevron-up"></i></a>
+	<script src="<c:url value="/resources/ui/js/scrollTop.js"/>"></script>
+	<!-- Return to Top|ScrollTop -->
 </body>
 </html>

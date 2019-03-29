@@ -142,28 +142,28 @@
 										<li class="nav-item"><a
 											href="<c:url value="/oplungdienthoai/home/sanpham"/>"
 											class="nav-link">Iphone XS Max</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Iphone XS/X</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Iphone XR</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Iphone X</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Iphone 8 Plus</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Iphone 8</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Iphone 7 Plus</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Iphone 7</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Iphone 6/6S Plus</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Iphone 6/6S</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Iphone 5C</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Iphone 5/5S</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Iphone
+												XS/X</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Iphone
+												XR</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Iphone
+												X</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Iphone
+												8 Plus</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Iphone
+												8</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Iphone
+												7 Plus</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Iphone
+												7</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Iphone
+												6/6S Plus</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Iphone
+												6/6S</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Iphone
+												5C</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Iphone
+												5/5S</a></li>
 									</ul>
 								</div>
 								<div class="col-md-6 col-lg-3">
@@ -171,26 +171,26 @@
 										<i class="fas fa-chevron-circle-down"></i> Phụ kiện iPad
 									</h5>
 									<ul class="list-unstyled mb-3">
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">iPad Pro 12.9 inch (2018)</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">iPad Pro 11 inch</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">iPad 9.7 (2018)</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">iPad Pro 12.9 2017</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">iPad 9.7 (2017)</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">iPad Pro 10.5 inch</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">iPad Pro 12.9 inch 2015</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">iPad Pro 9.7 inch</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">iPad Mini 4</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">iPad Mini 1/2/3</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">iPad
+												Pro 12.9 inch (2018)</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">iPad
+												Pro 11 inch</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">iPad
+												9.7 (2018)</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">iPad
+												Pro 12.9 2017</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">iPad
+												9.7 (2017)</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">iPad
+												Pro 10.5 inch</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">iPad
+												Pro 12.9 inch 2015</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">iPad
+												Pro 9.7 inch</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">iPad
+												Mini 4</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">iPad
+												Mini 1/2/3</a></li>
 									</ul>
 								</div>
 								<div class="col-md-6 col-lg-3">
@@ -198,32 +198,29 @@
 										<i class="fas fa-chevron-circle-down"></i> Phụ kiện Macbook
 									</h5>
 									<ul class="list-unstyled mb-3">
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Macbook Air 13 inch (2018)</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link"> Macbook Pro 15 inch <br> Touch Bar
-												2016/2017/2018
+										<li class="nav-item"><a href="#" class="nav-link">Macbook
+												Air 13 inch (2018)</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">
+												Macbook Pro 15 inch <br> Touch Bar 2016/2017/2018
 										</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Macbook Pro 13 inch <br>Touch Bar
-												2016/2017/2018
+										<li class="nav-item"><a href="#" class="nav-link">Macbook
+												Pro 13 inch <br>Touch Bar 2016/2017/2018
 										</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Macbook Retina 12 inch</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Macbook Air 13.3 inch</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Macbook Air 11.6 inch</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Macbook Pro Retina 15.4 inch</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Macbook Pro Retina 13.3 inch</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Macbook Pro 15.4 inch <br>With CD
-												ROM
+										<li class="nav-item"><a href="#" class="nav-link">Macbook
+												Retina 12 inch</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Macbook
+												Air 13.3 inch</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Macbook
+												Air 11.6 inch</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Macbook
+												Pro Retina 15.4 inch</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Macbook
+												Pro Retina 13.3 inch</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Macbook
+												Pro 15.4 inch <br>With CD ROM
 										</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">iPad 2/3/4</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">iPad
+												2/3/4</a></li>
 									</ul>
 								</div>
 								<div class="col-md-6 col-lg-3">
@@ -231,14 +228,14 @@
 										<i class="fas fa-chevron-circle-down"></i> Apple Watch
 									</h5>
 									<ul class="list-unstyled mb-3">
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Apple Watch Series 1</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Apple Watch Series 2</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Apple Watch Series 3</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Apple Watch Series 4</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Apple
+												Watch Series 1</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Apple
+												Watch Series 2</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Apple
+												Watch Series 3</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Apple
+												Watch Series 4</a></li>
 									</ul>
 									<h5>
 										<i class="fas fa-chevron-circle-down"></i> Phụ kiện Air Pods
@@ -259,24 +256,25 @@
 										<i class="fas fa-chevron-circle-down"></i> Galaxy 2019
 									</h5>
 									<ul class="list-unstyled mb-3">
-										<li class="nav-item"><a href="category.html"
+										<li class="nav-item"><a
+											href="<c:url value="/oplungdienthoai/home/sanpham"/>"
 											class="nav-link">Galaxy S10 Plus</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Samsung Galaxy S10</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Samsung Galaxy S10E</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Samsung Galaxy M20</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Samsung Galaxy M10</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Samsung Galaxy M30</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Samsung Galaxy A50</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Samsung Galaxy A30</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Samsung Galaxy A10</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Samsung
+												Galaxy S10</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Samsung
+												Galaxy S10E</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Samsung
+												Galaxy M20</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Samsung
+												Galaxy M10</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Samsung
+												Galaxy M30</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Samsung
+												Galaxy A50</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Samsung
+												Galaxy A30</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Samsung
+												Galaxy A10</a></li>
 									</ul>
 								</div>
 								<div class="col-md-6 col-lg-4">
@@ -284,34 +282,34 @@
 										<i class="fas fa-chevron-circle-down"></i> Galaxy 2018
 									</h5>
 									<ul class="list-unstyled mb-3">
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Samsung Galaxy J4 Core</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Samsung Galaxy J2 Core</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Samsung Galaxy A9s</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Samsung Galaxy A8s</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Samsung Galaxy A6s</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Samsung Galaxy A9 (2018)</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Samsung Galaxy A7 (2018)</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Samsung Galaxy J6 Plus</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Samsung Galaxy J4 Plus</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Samsung Galaxy Note 9</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Samsung Galaxy J8 (2018)</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Samsung Galaxy J4</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Samsung Galaxy A6 Plus (2018)</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Samsung Galaxy J3 Pro (2018)</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Samsung
+												Galaxy J4 Core</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Samsung
+												Galaxy J2 Core</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Samsung
+												Galaxy A9s</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Samsung
+												Galaxy A8s</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Samsung
+												Galaxy A6s</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Samsung
+												Galaxy A9 (2018)</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Samsung
+												Galaxy A7 (2018)</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Samsung
+												Galaxy J6 Plus</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Samsung
+												Galaxy J4 Plus</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Samsung
+												Galaxy Note 9</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Samsung
+												Galaxy J8 (2018)</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Samsung
+												Galaxy J4</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Samsung
+												Galaxy A6 Plus (2018)</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Samsung
+												Galaxy J3 Pro (2018)</a></li>
 									</ul>
 								</div>
 								<div class="col-md-6 col-lg-4">
@@ -319,36 +317,36 @@
 										<i class="fas fa-chevron-circle-down"></i> Galaxy 2017
 									</h5>
 									<ul class="list-unstyled mb-3">
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Samsung Galaxy C10</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Samsung Galaxy Note 8</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Samsung Galaxy Note FE</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Samsung Galaxy J7 Plus</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Samsung Galaxy J7 Pro</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Samsung Galaxy S8 Plus</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Samsung Galaxy S8</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Samsung Galaxy J7 2017</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Samsung Galaxy J5 2017</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Samsung Galaxy A7 2017</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Samsung Galaxy J7 Prime</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Samsung Galaxy J5 Prime</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Samsung Galaxy J2 Prime</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Samsung Galaxy J3 Pro</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">Samsung Galaxy J2 Pro</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Samsung
+												Galaxy C10</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Samsung
+												Galaxy Note 8</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Samsung
+												Galaxy Note FE</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Samsung
+												Galaxy J7 Plus</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Samsung
+												Galaxy J7 Pro</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Samsung
+												Galaxy S8 Plus</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Samsung
+												Galaxy S8</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Samsung
+												Galaxy J7 2017</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Samsung
+												Galaxy J5 2017</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Samsung
+												Galaxy A7 2017</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Samsung
+												Galaxy J7 Prime</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Samsung
+												Galaxy J5 Prime</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Samsung
+												Galaxy J2 Prime</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Samsung
+												Galaxy J3 Pro</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Samsung
+												Galaxy J2 Pro</a></li>
 									</ul>
 								</div>
 							</div>
@@ -365,8 +363,8 @@
 										<i class="fas fa-chevron-circle-down"></i> Xperia 2019
 									</h5>
 									<ul class="list-unstyled mb-3">
-										<li class="nav-item"><a href="index.html"
-											class="nav-link">Phụ Kiện Sony Xperia 1</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Phụ
+												Kiện Sony Xperia 1</a></li>
 									</ul>
 								</div>
 								<div class="col-md-3 col-lg-3">
@@ -374,22 +372,22 @@
 										<i class="fas fa-chevron-circle-down"></i> Xperia 2018
 									</h5>
 									<ul class="list-unstyled mb-3">
-										<li class="nav-item"><a href="register.html"
-											class="nav-link">Sony Xperia XZ3</a></li>
-										<li class="nav-item"><a href="customer-orders.html"
-											class="nav-link">Sony Xperia XZ2 Premium</a></li>
-										<li class="nav-item"><a href="customer-order.html"
-											class="nav-link">Sony Xperia XA2 Plus</a></li>
-										<li class="nav-item"><a href="customer-wishlist.html"
-											class="nav-link">Sony Xperia XZ2</a></li>
-										<li class="nav-item"><a href="customer-account.html"
-											class="nav-link">Sony Xperia XZ2 Compact</a></li>
-										<li class="nav-item"><a href="customer-account.html"
-											class="nav-link">Sony Xperia XA2</a></li>
-										<li class="nav-item"><a href="customer-account.html"
-											class="nav-link">Sony Xperia XA2 Ultra</a></li>
-										<li class="nav-item"><a href="customer-account.html"
-											class="nav-link">Sony Xperia L2</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Sony
+												Xperia XZ3</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Sony
+												Xperia XZ2 Premium</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Sony
+												Xperia XA2 Plus</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Sony
+												Xperia XZ2</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Sony
+												Xperia XZ2 Compact</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Sony
+												Xperia XA2</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Sony
+												Xperia XA2 Ultra</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Sony
+												Xperia L2</a></li>
 									</ul>
 								</div>
 								<div class="col-md-3 col-lg-3">
@@ -397,22 +395,22 @@
 										<i class="fas fa-chevron-circle-down"></i> Xperia 2017
 									</h5>
 									<ul class="list-unstyled mb-3">
-										<li class="nav-item"><a href="basket.html"
-											class="nav-link">Sony Xperia XZ1</a></li>
-										<li class="nav-item"><a href="checkout1.html"
-											class="nav-link">Sony Xperia XA1 Plus</a></li>
-										<li class="nav-item"><a href="checkout2.html"
-											class="nav-link">Sony Xperia XZ1 Compact</a></li>
-										<li class="nav-item"><a href="checkout3.html"
-											class="nav-link">Sony Xperia X1</a></li>
-										<li class="nav-item"><a href="checkout4.html"
-											class="nav-link">Sony Xperia XZ Premium</a></li>
-										<li class="nav-item"><a href="checkout4.html"
-											class="nav-link">Sony Xperia XZs</a></li>
-										<li class="nav-item"><a href="checkout4.html"
-											class="nav-link">Sony Xperia XA1</a></li>
-										<li class="nav-item"><a href="checkout4.html"
-											class="nav-link">Sony Xperia XA1 Ultra</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Sony
+												Xperia XZ1</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Sony
+												Xperia XA1 Plus</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Sony
+												Xperia XZ1 Compact</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Sony
+												Xperia X1</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Sony
+												Xperia XZ Premium</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Sony
+												Xperia XZs</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Sony
+												Xperia XA1</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Sony
+												Xperia XA1 Ultra</a></li>
 
 									</ul>
 								</div>
@@ -421,20 +419,20 @@
 										<i class="fas fa-chevron-circle-down"></i> Xperia 2016
 									</h5>
 									<ul class="list-unstyled mb-3">
-										<li class="nav-item"><a href="checkout4.html"
-											class="nav-link">Sony Xperia XZ</a></li>
-										<li class="nav-item"><a href="checkout4.html"
-											class="nav-link">Sony Xperia XA Ultra</a></li>
-										<li class="nav-item"><a href="checkout4.html"
-											class="nav-link">Sony Xperia XA</a></li>
-										<li class="nav-item"><a href="checkout4.html"
-											class="nav-link">Sony Xperia X</a></li>
-										<li class="nav-item"><a href="checkout4.html"
-											class="nav-link">Sony Xperia X Performance</a></li>
-										<li class="nav-item"><a href="checkout4.html"
-											class="nav-link">Sony Xperia E5</a></li>
-										<li class="nav-item"><a href="checkout4.html"
-											class="nav-link">Sony Xperia Z5 Mini</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Sony
+												Xperia XZ</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Sony
+												Xperia XA Ultra</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Sony
+												Xperia XA</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Sony
+												Xperia X</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Sony
+												Xperia X Performance</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Sony
+												Xperia E5</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Sony
+												Xperia Z5 Mini</a></li>
 									</ul>
 								</div>
 								<div class="col-md-3 col-lg-3">
@@ -442,20 +440,20 @@
 										<i class="fas fa-chevron-circle-down"></i> Xperia 2015
 									</h5>
 									<ul class="list-unstyled mb-3">
-										<li class="nav-item"><a href="checkout4.html"
-											class="nav-link">Sony Xperia Z5 Premium</a></li>
-										<li class="nav-item"><a href="checkout4.html"
-											class="nav-link">Sony Xperia Z5</a></li>
-										<li class="nav-item"><a href="checkout4.html"
-											class="nav-link">Sony Xperia Z5 Mini</a></li>
-										<li class="nav-item"><a href="checkout4.html"
-											class="nav-link">Sony Xperia C5 Ultra</a></li>
-										<li class="nav-item"><a href="checkout4.html"
-											class="nav-link">Sony Xperia Z3+/Z4</a></li>
-										<li class="nav-item"><a href="checkout4.html"
-											class="nav-link">Sony Xperia Z4 Mini</a></li>
-										<li class="nav-item"><a href="checkout4.html"
-											class="nav-link">Sony Xperia C4</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Sony
+												Xperia Z5 Premium</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Sony
+												Xperia Z5</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Sony
+												Xperia Z5 Mini</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Sony
+												Xperia C5 Ultra</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Sony
+												Xperia Z3+/Z4</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Sony
+												Xperia Z4 Mini</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Sony
+												Xperia C4</a></li>
 									</ul>
 								</div>
 							</div>
@@ -472,10 +470,10 @@
 										<i class="fas fa-chevron-circle-down"></i> HTC 2018
 									</h5>
 									<ul class="list-unstyled mb-3">
-										<li class="nav-item"><a href="index.html"
-											class="nav-link">HTC Desire 12 Plus</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">HTC Desire 12</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">HTC
+												Desire 12 Plus</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">HTC
+												Desire 12</a></li>
 									</ul>
 								</div>
 								<div class="col-md-6 col-lg-4">
@@ -483,22 +481,22 @@
 										<i class="fas fa-chevron-circle-down"></i> HTC 2017
 									</h5>
 									<ul class="list-unstyled mb-3">
-										<li class="nav-item"><a href="register.html"
-											class="nav-link">HTC U11 Plus</a></li>
-										<li class="nav-item"><a href="customer-orders.html"
-											class="nav-link">HTC U11</a></li>
-										<li class="nav-item"><a href="customer-order.html"
-											class="nav-link">HTC 10 Evo</a></li>
-										<li class="nav-item"><a href="customer-wishlist.html"
-											class="nav-link">HTC U Play</a></li>
-										<li class="nav-item"><a href="customer-account.html"
-											class="nav-link">HTC U Ultra</a></li>
-										<li class="nav-item"><a href="customer-account.html"
-											class="nav-link">HTC Ocean</a></li>
-										<li class="nav-item"><a href="customer-account.html"
-											class="nav-link">HTC Ocean Note</a></li>
-										<li class="nav-item"><a href="customer-account.html"
-											class="nav-link">HTC 10 Pro</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">HTC
+												U11 Plus</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">HTC
+												U11</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">HTC
+												10 Evo</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">HTC
+												U Play</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">HTC
+												U Ultra</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">HTC
+												Ocean</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">HTC
+												Ocean Note</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">HTC
+												10 Pro</a></li>
 									</ul>
 								</div>
 							</div>
@@ -515,8 +513,8 @@
 										<i class="fas fa-chevron-circle-down"></i> LG 2018
 									</h5>
 									<ul class="list-unstyled mb-3">
-										<li class="nav-item"><a href="index.html"
-											class="nav-link">LG G7 ThinQ</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">LG
+												G7 ThinQ</a></li>
 									</ul>
 								</div>
 								<div class="col-md-6 col-lg-3">
@@ -524,14 +522,14 @@
 										<i class="fas fa-chevron-circle-down"></i> LG 2017
 									</h5>
 									<ul class="list-unstyled mb-3">
-										<li class="nav-item"><a href="register.html"
-											class="nav-link">LG X Power 2</a></li>
-										<li class="nav-item"><a href="customer-orders.html"
-											class="nav-link">LG V30</a></li>
-										<li class="nav-item"><a href="customer-order.html"
-											class="nav-link">LG K10 2017</a></li>
-										<li class="nav-item"><a href="customer-wishlist.html"
-											class="nav-link">LG G6</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">LG
+												X Power 2</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">LG
+												V30</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">LG
+												K10 2017</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">LG
+												G6</a></li>
 									</ul>
 								</div>
 								<div class="col-md-6 col-lg-3">
@@ -539,14 +537,14 @@
 										<i class="fas fa-chevron-circle-down"></i> LG 2016
 									</h5>
 									<ul class="list-unstyled mb-3">
-										<li class="nav-item"><a href="basket.html"
-											class="nav-link">LG K7</a></li>
-										<li class="nav-item"><a href="checkout1.html"
-											class="nav-link">LG K10</a></li>
-										<li class="nav-item"><a href="checkout2.html"
-											class="nav-link">LG V20</a></li>
-										<li class="nav-item"><a href="checkout3.html"
-											class="nav-link">LG X Power</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">LG
+												K7</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">LG
+												K10</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">LG
+												V20</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">LG
+												X Power</a></li>
 									</ul>
 								</div>
 								<div class="col-md-6 col-lg-3">
@@ -554,28 +552,28 @@
 										<i class="fas fa-chevron-circle-down"></i> LG 2015
 									</h5>
 									<ul class="list-unstyled mb-3">
-										<li class="nav-item"><a href="blog.html" class="nav-link">LG
+										<li class="nav-item"><a href="#" class="nav-link">LG
 												G5</a></li>
-										<li class="nav-item"><a href="post.html" class="nav-link">LG
+										<li class="nav-item"><a href="#" class="nav-link">LG
 												V10</a></li>
-										<li class="nav-item"><a href="faq.html" class="nav-link">LG
+										<li class="nav-item"><a href="#" class="nav-link">LG
 												Magna</a></li>
-										<li class="nav-item"><a href="text.html" class="nav-link">LG
+										<li class="nav-item"><a href="#" class="nav-link">LG
 												G4</a></li>
-										<li class="nav-item"><a href="text-right.html"
-											class="nav-link">LG G4 Stylus G Stylo</a></li>
-										<li class="nav-item"><a href="404.html" class="nav-link">LG
+										<li class="nav-item"><a href="#" class="nav-link">LG
+												G4 Stylus G Stylo</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">LG
 												Nexus 5X</a></li>
-										<li class="nav-item"><a href="contact.html"
-											class="nav-link">LG G3</a></li>
-										<li class="nav-item"><a href="contact.html"
-											class="nav-link">LG G3 Beat</a></li>
-										<li class="nav-item"><a href="contact.html"
-											class="nav-link">LG G3 Stylus</a></li>
-										<li class="nav-item"><a href="contact.html"
-											class="nav-link">LG L Fino</a></li>
-										<li class="nav-item"><a href="contact.html"
-											class="nav-link">LG G Flex 2</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">LG
+												G3</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">LG
+												G3 Beat</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">LG
+												G3 Stylus</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">LG
+												L Fino</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">LG
+												G Flex 2</a></li>
 									</ul>
 								</div>
 							</div>
@@ -593,26 +591,26 @@
 										<i class="fas fa-chevron-circle-down"></i> Phụ kiện OPPO
 									</h5>
 									<ul class="list-unstyled mb-3">
-										<li class="nav-item"><a href="index.html"
-											class="nav-link">OPPO R17 Pro</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">OPPO A3s</a></li>
-										<li class="nav-item"><a href="category-right.html"
-											class="nav-link">OPPO F9</a></li>
-										<li class="nav-item"><a href="category-full.html"
-											class="nav-link">OPPO Find X</a></li>
-										<li class="nav-item"><a href="detail.html"
-											class="nav-link">OPPO F7</a></li>
-										<li class="nav-item"><a href="index.html"
-											class="nav-link">OPPO A83</a></li>
-										<li class="nav-item"><a href="category.html"
-											class="nav-link">OPPO F5 Youth</a></li>
-										<li class="nav-item"><a href="category-right.html"
-											class="nav-link">OPPO F5</a></li>
-										<li class="nav-item"><a href="category-full.html"
-											class="nav-link">OPPO A71</a></li>
-										<li class="nav-item"><a href="detail.html"
-											class="nav-link">OPPO F3</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">OPPO
+												R17 Pro</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">OPPO
+												A3s</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">OPPO
+												F9</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">OPPO
+												Find X</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">OPPO
+												F7</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">OPPO
+												A83</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">OPPO
+												F5 Youth</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">OPPO
+												F5</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">OPPO
+												A71</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">OPPO
+												F3</a></li>
 									</ul>
 								</div>
 								<div class="col-md-6 col-lg-3">
@@ -620,26 +618,26 @@
 										<i class="fas fa-chevron-circle-down"></i> Phụ kiện Xiaomi
 									</h5>
 									<ul class="list-unstyled mb-3">
-										<li class="nav-item"><a href="register.html"
-											class="nav-link">Xiaomi Redmi Note 7</a></li>
-										<li class="nav-item"><a href="customer-orders.html"
-											class="nav-link">Xiaomi Mi Play</a></li>
-										<li class="nav-item"><a href="customer-order.html"
-											class="nav-link">Xiaomi Mi Mix 3</a></li>
-										<li class="nav-item"><a href="customer-wishlist.html"
-											class="nav-link">Xiaomi Redmi Note 6 Pro</a></li>
-										<li class="nav-item"><a href="customer-account.html"
-											class="nav-link">Xiaomi Mi 8 Pro</a></li>
-										<li class="nav-item"><a href="register.html"
-											class="nav-link">Xiaomi Mi 8 Lite</a></li>
-										<li class="nav-item"><a href="customer-orders.html"
-											class="nav-link">Xiaomi Mi 8 Explorer</a></li>
-										<li class="nav-item"><a href="customer-order.html"
-											class="nav-link">Xiaomi Mi A2 Lite</a></li>
-										<li class="nav-item"><a href="customer-wishlist.html"
-											class="nav-link">Xiaomi Mi 8</a></li>
-										<li class="nav-item"><a href="customer-account.html"
-											class="nav-link">Xiaomi Mi 8 SE</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Xiaomi
+												Redmi Note 7</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Xiaomi
+												Mi Play</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Xiaomi
+												Mi Mix 3</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Xiaomi
+												Redmi Note 6 Pro</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Xiaomi
+												Mi 8 Pro</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Xiaomi
+												Mi 8 Lite</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Xiaomi
+												Mi 8 Explorer</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Xiaomi
+												Mi A2 Lite</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Xiaomi
+												Mi 8</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Xiaomi
+												Mi 8 SE</a></li>
 
 									</ul>
 								</div>
@@ -648,26 +646,26 @@
 										<i class="fas fa-chevron-circle-down"></i> Phụ kiện Huawei
 									</h5>
 									<ul class="list-unstyled mb-3">
-										<li class="nav-item"><a href="basket.html"
-											class="nav-link">Huawei Y7 Pro 2019</a></li>
-										<li class="nav-item"><a href="checkout1.html"
-											class="nav-link">Huawei Mate 20 Pro</a></li>
-										<li class="nav-item"><a href="checkout2.html"
-											class="nav-link">Huawei Mate 20</a></li>
-										<li class="nav-item"><a href="checkout3.html"
-											class="nav-link">Huawei Y9 (2019)</a></li>
-										<li class="nav-item"><a href="checkout4.html"
-											class="nav-link">Huawei Nova 3i</a></li>
-										<li class="nav-item"><a href="basket.html"
-											class="nav-link">Huawei Nova 3</a></li>
-										<li class="nav-item"><a href="checkout1.html"
-											class="nav-link">Huawei P20 Pro</a></li>
-										<li class="nav-item"><a href="checkout2.html"
-											class="nav-link">Huawei Nova 3e</a></li>
-										<li class="nav-item"><a href="checkout3.html"
-											class="nav-link">Huawei Y7 Pro 2018</a></li>
-										<li class="nav-item"><a href="checkout4.html"
-											class="nav-link">Huawei Y7 Prime 2018</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Huawei
+												Y7 Pro 2019</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Huawei
+												Mate 20 Pro</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Huawei
+												Mate 20</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Huawei
+												Y9 (2019)</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Huawei
+												Nova 3i</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Huawei
+												Nova 3</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Huawei
+												P20 Pro</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Huawei
+												Nova 3e</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Huawei
+												Y7 Pro 2018</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Huawei
+												Y7 Prime 2018</a></li>
 									</ul>
 								</div>
 								<div class="col-md-6 col-lg-3">
@@ -675,23 +673,23 @@
 										<i class="fas fa-chevron-circle-down"></i> Phụ kiện Honor
 									</h5>
 									<ul class="list-unstyled mb-3">
-										<li class="nav-item"><a href="blog.html" class="nav-link">Huawei
+										<li class="nav-item"><a href="#" class="nav-link">Huawei
 												Honor 10</a></li>
-										<li class="nav-item"><a href="post.html" class="nav-link">Huawei
+										<li class="nav-item"><a href="#" class="nav-link">Huawei
 												Honor View10</a></li>
-										<li class="nav-item"><a href="text.html" class="nav-link">Huawei
+										<li class="nav-item"><a href="#" class="nav-link">Huawei
 												Honor 9 Lite</a></li>
-										<li class="nav-item"><a href="text-right.html"
-											class="nav-link">Huawei Honor 7X</a></li>
-										<li class="nav-item"><a href="404.html" class="nav-link">Huawei
+										<li class="nav-item"><a href="#" class="nav-link">Huawei
+												Honor 7X</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Huawei
 												Honor 8X</a></li>
-										<li class="nav-item"><a href="contact.html"
-											class="nav-link">Huawei Honor 7</a></li>
-										<li class="nav-item"><a href="blog.html" class="nav-link">Huawei
+										<li class="nav-item"><a href="#" class="nav-link">Huawei
+												Honor 7</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Huawei
 												Honor 6 Plus</a></li>
-										<li class="nav-item"><a href="post.html" class="nav-link">Huawei
+										<li class="nav-item"><a href="#" class="nav-link">Huawei
 												Honor 4X</a></li>
-										<li class="nav-item"><a href="faq.html" class="nav-link">Huawei
+										<li class="nav-item"><a href="#" class="nav-link">Huawei
 												Honor 4C</a></li>
 									</ul>
 								</div>
@@ -700,20 +698,20 @@
 										<i class="fas fa-chevron-circle-down"></i> Phụ kiện Vivo
 									</h5>
 									<ul class="list-unstyled mb-3">
-										<li class="nav-item"><a href="blog.html" class="nav-link">Vivo
+										<li class="nav-item"><a href="#" class="nav-link">Vivo
 												V9</a></li>
-										<li class="nav-item"><a href="post.html" class="nav-link">Vivo
+										<li class="nav-item"><a href="#" class="nav-link">Vivo
 												V3</a></li>
-										<li class="nav-item"><a href="faq.html" class="nav-link">Vivo
+										<li class="nav-item"><a href="#" class="nav-link">Vivo
 												Y51</a></li>
-										<li class="nav-item"><a href="text.html" class="nav-link">Vivo
+										<li class="nav-item"><a href="#" class="nav-link">Vivo
 												Y31</a></li>
-										<li class="nav-item"><a href="text-right.html"
-											class="nav-link">Vivo V1</a></li>
-										<li class="nav-item"><a href="404.html" class="nav-link">Vivo
+										<li class="nav-item"><a href="#" class="nav-link">Vivo
+												V1</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Vivo
 												V1 Max</a></li>
-										<li class="nav-item"><a href="contact.html"
-											class="nav-link">Vivo V3 Max</a></li>
+										<li class="nav-item"><a href="#" class="nav-link">Vivo
+												V3 Max</a></li>
 									</ul>
 								</div>
 							</div>

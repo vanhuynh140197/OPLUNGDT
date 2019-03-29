@@ -9,6 +9,9 @@
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="all,follow">
+<link
+	href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+	rel="stylesheet">
 </head>
 <body>
 	<!-- menu -->
@@ -29,7 +32,8 @@
 						</nav>
 						<div class="box">
 							<h3>Ốp lưng iPhone XS Max - Cao Cấp, Chính Hãng, Giá Rẻ</h3>
-							<p>Nhiều mẫu mã, nhiều màu sắc đa dạng. Chống sốc, chống trầy xước, chống mồ hôi, chống nước.</p>
+							<p>Nhiều mẫu mã, nhiều màu sắc đa dạng. Chống sốc, chống trầy
+								xước, chống mồ hôi, chống bụi.</p>
 						</div>
 						<div class="box info-bar">
 							<div class="row">
@@ -237,8 +241,7 @@
 									<div class="flip-container">
 										<div class="flipper">
 											<div class="front">
-												<a
-													href="<c:url value="/oplungdienthoai/home/chitiet"/>"><img
+												<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"><img
 													src="<c:url value="/resources/ui/img/Iphone XS Max/SP/Iphone2.jpg"/>"
 													alt="" class="img-fluid"></a>
 											</div>
@@ -368,19 +371,23 @@
 										<div class="flipper">
 											<div class="front">
 												<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"><img
-													src="<c:url value="/resources/ui/img/Iphone XS Max/SP/iphone8.jpg"/>" alt="" class="img-fluid"></a>
+													src="<c:url value="/resources/ui/img/Iphone XS Max/SP/iphone8.jpg"/>"
+													alt="" class="img-fluid"></a>
 											</div>
 											<div class="back">
 												<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"><img
-													src="<c:url value="/resources/ui/img/Iphone XS Max/SP/iphone9.jpg"/>" alt="" class="img-fluid"></a>
+													src="<c:url value="/resources/ui/img/Iphone XS Max/SP/iphone9.jpg"/>"
+													alt="" class="img-fluid"></a>
 											</div>
 										</div>
 									</div>
 									<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"
-										class="invisible"><img src="<c:url value="/resources/ui/img/Iphone XS Max/SP/iphone8.jpg"/>" alt=""
-										class="img-fluid"></a>
+										class="invisible"><img
+										src="<c:url value="/resources/ui/img/Iphone XS Max/SP/iphone8.jpg"/>"
+										alt="" class="img-fluid"></a>
 									<div class="text">
-										<h3>Ốp lưng Iphone XS Max dẻo, chống sốc & mồ hôi & trầy xước</h3>
+										<h3>Ốp lưng Iphone XS Max dẻo, chống sốc & mồ hôi & trầy
+											xước</h3>
 										<p class="price">
 											<del></del>
 											<i class="fas fa-caret-right"></i> Giá bán: <strong
@@ -432,5 +439,10 @@
 	<!--
 <!--  *** FOOTER *** -->
 	<%@include file="footer.jsp"%>
+	<!-- Return to Top|ScrollTop -->
+	<a href="javascript:" id="return-to-top" title="Về đầu trang"><i
+		class="icon-chevron-up"></i></a>
+	<script src="<c:url value="/resources/ui/js/scrollTop.js"/>"></script>
+	<!-- Return to Top|ScrollTop -->
 </body>
 </html>

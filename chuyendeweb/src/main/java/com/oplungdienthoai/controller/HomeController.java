@@ -40,7 +40,7 @@ public class HomeController {
 	}
 	@RequestMapping(value ="/home/sanpham")
 	public String sanPham(){
-		return "/ui/category-full";
+		return "/ui/category-right";
 	}
 }
 
