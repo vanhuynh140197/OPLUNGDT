@@ -6,7 +6,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
-<title>Dashboard V.1 | Kiaalap - Kiaalap Admin Template</title>
+<title>Quản Lý Ốp Lưng Điện Thoại H&D</title>
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- favicon
@@ -104,215 +104,138 @@
 			<ul class="metismenu" id="menu1">
 				<li class="active"><a class="has-arrow" href="index.html">
 						<span class="educate-icon educate-home icon-wrap"></span> <span
-						class="mini-click-non">Education</span>
+						class="mini-click-non">Thống kê</span>
 				</a>
 					<ul class="submenu-angle" aria-expanded="true">
-						<li><a title="Dashboard v.1" href="index.html"><span
-								class="mini-sub-pro">Dashboard v.1</span></a></li>
-						<li><a title="Dashboard v.2" href="<c:url value="/admin/oplungdienthoai/dashboardv.2"/>"><span
-								class="mini-sub-pro">Dashboard v.2</span></a></li>
-						<li><a title="Dashboard v.3" href="index-2.html"><span
-								class="mini-sub-pro">Dashboard v.3</span></a></li>
-						<li><a title="Analytics" href="analytics.html"><span
-								class="mini-sub-pro">Analytics</span></a></li>
-						<li><a title="Widgets" href="widgets.html"><span
-								class="mini-sub-pro">Widgets</span></a></li>
+						<li><a title="Thống kê chung" href="#"><span
+								class="mini-sub-pro">Thống kê chung</span></a></li>
+						<li><a title="Thống kê doanh thu" href="#"><span
+								class="mini-sub-pro">Thống kê doanh thu</span></a></li>
+						<li><a title="Thống kê sản phẩm" href="#"><span
+								class="mini-sub-pro">Thống kê sản phẩm</span></a></li>
+						<li><a title="Thống kê kho" href="#"><span
+								class="mini-sub-pro">Thống kê kho</span></a></li>
 					</ul></li>
-				<li><a title="Landing Page" href="events.html"
-					aria-expanded="false"><span
-						class="educate-icon educate-event icon-wrap sub-icon-mg"
-						aria-hidden="true"></span> <span class="mini-click-non">Event</span></a>
-				</li>
-				<li><a class="has-arrow" href="all-professors.html"
+				<li><a class="has-arrow" href="#"
 					aria-expanded="false"><span
 						class="educate-icon educate-professor icon-wrap"></span> <span
-						class="mini-click-non">Professors</span></a>
+						class="mini-click-non">Nhân viên</span></a>
 					<ul class="submenu-angle" aria-expanded="false">
-						<li><a title="All Professors" href="all-professors.html"><span
-								class="mini-sub-pro">All Professors</span></a></li>
-						<li><a title="Add Professor" href="add-professor.html"><span
-								class="mini-sub-pro">Add Professor</span></a></li>
-						<li><a title="Edit Professor" href="edit-professor.html"><span
-								class="mini-sub-pro">Edit Professor</span></a></li>
-						<li><a title="Professor Profile"
-							href="professor-profile.html"><span class="mini-sub-pro">Professor
-									Profile</span></a></li>
+						<li><a title="Quản lý nhân viên" href="#"><span
+								class="mini-sub-pro">Quản lý nhân viên</span></a></li>
+						<li><a title="Thêm nhân viên" href="#"><span
+								class="mini-sub-pro">Thêm nhân viên</span></a></li>
 					</ul></li>
-				<li><a class="has-arrow" href="all-students.html"
+				<li><a class="has-arrow" href="#" aria-expanded="false"><span
+						class="educate-icon educate-apps icon-wrap"></span> <span
+						class="mini-click-non">Chức vụ</span></a>
+					<ul class="submenu-angle app-mini-nb-dp" aria-expanded="false">
+						<li><a title="Quản lý chức vụ" href="#"><span
+								class="mini-sub-pro">Quản lý chức vụ</span></a></li>
+						<li><a title="Thêm chức vụ" href="#"><span
+								class="mini-sub-pro">Thêm chức vụ</span></a></li>
+					</ul></li>
+				<li><a class="has-arrow" href="#"
 					aria-expanded="false"><span
 						class="educate-icon educate-student icon-wrap"></span> <span
-						class="mini-click-non">Students</span></a>
+						class="mini-click-non">Khách hàng</span></a>
 					<ul class="submenu-angle" aria-expanded="false">
-						<li><a title="All Students" href="<c:url value="/admin/oplungdienthoai/all-students"/>"><span
-								class="mini-sub-pro">All Students</span></a></li>
-						<li><a title="Add Students" href="add-student.html"><span
-								class="mini-sub-pro">Add Student</span></a></li>
-						<li><a title="Edit Students" href="edit-student.html"><span
-								class="mini-sub-pro">Edit Student</span></a></li>
-						<li><a title="Students Profile" href="student-profile.html"><span
-								class="mini-sub-pro">Student Profile</span></a></li>
+						<li><a title="Quản lý khách hàng" href="#"><span
+								class="mini-sub-pro">Quản lý khách hàng</span></a></li>
+						<li><a title="Thêm khách hàng" href="#"><span
+								class="mini-sub-pro">Thêm khách hàng</span></a></li>
 					</ul></li>
-				<li><a class="has-arrow" href="all-courses.html"
+					               <li><a class="has-arrow" href="#"
+                    aria-expanded="false"><span
+                        class="educate-icon educate-student icon-wrap"></span> <span
+                        class="mini-click-non">Hóa đơn</span></a>
+                    <ul class="submenu-angle" aria-expanded="false">
+                        <li><a title="Quản lý khách hàng" href="#"><span
+                                class="mini-sub-pro">Quản lý hóa đơn</span></a></li>
+                        <li><a title="Thêm khách hàng" href="#"><span
+                                class="mini-sub-pro">Thêm hóa đơn</span></a></li>
+                    </ul></li>
+				<li><a class="has-arrow" href="#"
 					aria-expanded="false"><span
 						class="educate-icon educate-course icon-wrap"></span> <span
-						class="mini-click-non">Courses</span></a>
+						class="mini-click-non">Sản phẩm</span></a>
 					<ul class="submenu-angle" aria-expanded="false">
-						<li><a title="All Courses" href="all-courses.html"><span
-								class="mini-sub-pro">All Courses</span></a></li>
-						<li><a title="Add Courses" href="add-course.html"><span
-								class="mini-sub-pro">Add Course</span></a></li>
-						<li><a title="Edit Courses" href="edit-course.html"><span
-								class="mini-sub-pro">Edit Course</span></a></li>
-						<li><a title="Courses Profile" href="course-info.html"><span
-								class="mini-sub-pro">Courses Info</span></a></li>
-						<li><a title="Product Payment" href="course-payment.html"><span
-								class="mini-sub-pro">Courses Payment</span></a></li>
+						<li><a title="Quản lý sản phẩm" href="#"><span
+								class="mini-sub-pro">Quản lý sản phẩm</span></a></li>
+						<li><a title="Thêm sản phẩm" href="#"><span
+								class="mini-sub-pro">Thêm sản phẩm</span></a></li>
 					</ul></li>
-				<li><a class="has-arrow" href="all-courses.html"
+				<li><a class="has-arrow" href="#"
 					aria-expanded="false"><span
 						class="educate-icon educate-library icon-wrap"></span> <span
-						class="mini-click-non">Library</span></a>
+						class="mini-click-non">Loại sản phẩm</span></a>
 					<ul class="submenu-angle" aria-expanded="false">
-						<li><a title="All Library" href="library-assets.html"><span
-								class="mini-sub-pro">Library Assets</span></a></li>
-						<li><a title="Add Library" href="add-library-assets.html"><span
-								class="mini-sub-pro">Add Library Asset</span></a></li>
-						<li><a title="Edit Library" href="edit-library-assets.html"><span
-								class="mini-sub-pro">Edit Library Asset</span></a></li>
+						<li><a title="Quản lý loại sản phẩm" href="#"><span
+								class="mini-sub-pro">Quản lý loại sản phẩm</span></a></li>
+						<li><a title="Thêm loại sản phẩm" href="#"><span
+								class="mini-sub-pro">Thêm loại sản phẩm</span></a></li>
 					</ul></li>
-				<li><a class="has-arrow" href="all-courses.html"
+				<li><a class="has-arrow" href="#"
 					aria-expanded="false"><span
 						class="educate-icon educate-department icon-wrap"></span> <span
-						class="mini-click-non">Departments</span></a>
+						class="mini-click-non">Nhà cung cấp</span></a>
 					<ul class="submenu-angle" aria-expanded="false">
-						<li><a title="Departments List" href="departments.html"><span
-								class="mini-sub-pro">Departments List</span></a></li>
-						<li><a title="Add Departments" href="add-department.html"><span
-								class="mini-sub-pro">Add Departments</span></a></li>
-						<li><a title="Edit Departments" href="edit-department.html"><span
-								class="mini-sub-pro">Edit Departments</span></a></li>
+						<li><a title="Quản lý nhà cung cấp" href="#"><span
+								class="mini-sub-pro">Quản lý nhà cung cấp</span></a></li>
+						<li><a title="Thêm nhà cung cấp" href="#"><span
+								class="mini-sub-pro">Thêm nhà cung cấp</span></a></li>
 					</ul></li>
-				<li><a class="has-arrow" href="mailbox.html"
+				<li><a class="has-arrow" href="#"
 					aria-expanded="false"><span
-						class="educate-icon educate-message icon-wrap"></span> <span
-						class="mini-click-non">Mailbox</span></a>
+						class="educate-icon educate-event icon-wrap sub-icon-mg"></span> <span
+						class="mini-click-non">Khuyến mãi</span></a>
 					<ul class="submenu-angle" aria-expanded="false">
-						<li><a title="Inbox" href="mailbox.html"><span
-								class="mini-sub-pro">Inbox</span></a></li>
-						<li><a title="View Mail" href="mailbox-view.html"><span
-								class="mini-sub-pro">View Mail</span></a></li>
-						<li><a title="Compose Mail" href="mailbox-compose.html"><span
-								class="mini-sub-pro">Compose Mail</span></a></li>
+						<li><a title="Quản lý khuyến mãi" href="#"><span
+								class="mini-sub-pro">Quản lý khuyến mãi</span></a></li>
+						<li><a title="Thêm khuyến mãi" href="#"><span
+								class="mini-sub-pro">Thêm khuyến mãi</span></a></li>
 					</ul></li>
-				<li><a class="has-arrow" href="mailbox.html"
+				<li><a class="has-arrow" href="#"
 					aria-expanded="false"><span
 						class="educate-icon educate-interface icon-wrap"></span> <span
-						class="mini-click-non">Interface</span></a>
+						class="mini-click-non">Giá bán</span></a>
 					<ul class="submenu-angle interface-mini-nb-dp"
 						aria-expanded="false">
-						<li><a title="Google Map" href="google-map.html"><span
-								class="mini-sub-pro">Google Map</span></a></li>
-						<li><a title="Data Maps" href="data-maps.html"><span
-								class="mini-sub-pro">Data Maps</span></a></li>
-						<li><a title="Pdf Viewer" href="pdf-viewer.html"><span
-								class="mini-sub-pro">Pdf Viewer</span></a></li>
-						<li><a title="X-Editable" href="x-editable.html"><span
-								class="mini-sub-pro">X-Editable</span></a></li>
-						<li><a title="Code Editor" href="code-editor.html"><span
-								class="mini-sub-pro">Code Editor</span></a></li>
-						<li><a title="Tree View" href="tree-view.html"><span
-								class="mini-sub-pro">Tree View</span></a></li>
-						<li><a title="Preloader" href="preloader.html"><span
-								class="mini-sub-pro">Preloader</span></a></li>
-						<li><a title="Images Cropper" href="images-cropper.html"><span
-								class="mini-sub-pro">Images Cropper</span></a></li>
+						<li><a title="Quản lý giá bán" href="#"><span
+								class="mini-sub-pro">Quản lý giá bán</span></a></li>
+						<li><a title="Thêm giá bán" href="#"><span
+								class="mini-sub-pro">Thêm giá bán</span></a></li>
 					</ul></li>
-				<li><a class="has-arrow" href="mailbox.html"
+				<li><a class="has-arrow" href="#"
 					aria-expanded="false"><span
 						class="educate-icon educate-charts icon-wrap"></span> <span
-						class="mini-click-non">Charts</span></a>
+						class="mini-click-non">Tài khoản</span></a>
 					<ul class="submenu-angle chart-mini-nb-dp" aria-expanded="false">
-						<li><a title="Bar Charts" href="bar-charts.html"><span
-								class="mini-sub-pro">Bar Charts</span></a></li>
-						<li><a title="Line Charts" href="line-charts.html"><span
-								class="mini-sub-pro">Line Charts</span></a></li>
-						<li><a title="Area Charts" href="area-charts.html"><span
-								class="mini-sub-pro">Area Charts</span></a></li>
-						<li><a title="Rounded Charts" href="rounded-chart.html"><span
-								class="mini-sub-pro">Rounded Charts</span></a></li>
-						<li><a title="C3 Charts" href="c3.html"><span
-								class="mini-sub-pro">C3 Charts</span></a></li>
-						<li><a title="Sparkline Charts" href="sparkline.html"><span
-								class="mini-sub-pro">Sparkline Charts</span></a></li>
-						<li><a title="Peity Charts" href="peity.html"><span
-								class="mini-sub-pro">Peity Charts</span></a></li>
+						<li><a title="Quản lý tài khoản" href="#"><span
+								class="mini-sub-pro">Quản lý tài khoản</span></a></li>
+						<li><a title="Thêm tài khoản" href="#"><span
+								class="mini-sub-pro">Thêm tài khoản</span></a></li>
 					</ul></li>
-				<li><a class="has-arrow" href="mailbox.html"
+				<li><a class="has-arrow" href="#"
 					aria-expanded="false"><span
 						class="educate-icon educate-data-table icon-wrap"></span> <span
-						class="mini-click-non">Tables</span></a>
+						class="mini-click-non">Thanh toán</span></a>
 					<ul class="submenu-angle" aria-expanded="false">
-						<li><a title="Peity Charts" href="<c:url value="/admin/oplungdienthoai/static-table"/>"><span
-								class="mini-sub-pro">Static Table</span></a></li>
-						<li><a title="Data Table" href="<c:url value="/admin/oplungdienthoai/data-table"/>"><span
-								class="mini-sub-pro">Data Table</span></a></li>
+						<li><a title="Phương thức thanh toán" href="#"><span
+								class="mini-sub-pro">Phương thức thanh toán</span></a></li>
+						<li><a title="Thêm phương thức thanh toán" href="#"><span
+								class="mini-sub-pro">Thêm phương thức thanh toán</span></a></li>
 					</ul></li>
-				<li><a class="has-arrow" href="mailbox.html"
+				<li><a class="has-arrow" href="#"
 					aria-expanded="false"><span
 						class="educate-icon educate-form icon-wrap"></span> <span
-						class="mini-click-non">Forms Elements</span></a>
+						class="mini-click-non">Vận chuyển</span></a>
 					<ul class="submenu-angle form-mini-nb-dp" aria-expanded="false">
-						<li><a title="Basic Form Elements"
-							href="basic-form-element.html"><span class="mini-sub-pro">Bc
-									Form Elements</span></a></li>
-						<li><a title="Advance Form Elements"
-							href="advance-form-element.html"><span class="mini-sub-pro">Ad
-									Form Elements</span></a></li>
-						<li><a title="Password Meter" href="password-meter.html"><span
-								class="mini-sub-pro">Password Meter</span></a></li>
-						<li><a title="Multi Upload" href="multi-upload.html"><span
-								class="mini-sub-pro">Multi Upload</span></a></li>
-						<li><a title="Text Editor" href="tinymc.html"><span
-								class="mini-sub-pro">Text Editor</span></a></li>
-						<li><a title="Dual List Box" href="dual-list-box.html"><span
-								class="mini-sub-pro">Dual List Box</span></a></li>
-					</ul></li>
-				<li><a class="has-arrow" href="mailbox.html"
-					aria-expanded="false"><span
-						class="educate-icon educate-apps icon-wrap"></span> <span
-						class="mini-click-non">App views</span></a>
-					<ul class="submenu-angle app-mini-nb-dp" aria-expanded="false">
-						<li><a title="Notifications" href="notifications.html"><span
-								class="mini-sub-pro">Notifications</span></a></li>
-						<li><a title="Alerts" href="alerts.html"><span
-								class="mini-sub-pro">Alerts</span></a></li>
-						<li><a title="Modals" href="modals.html"><span
-								class="mini-sub-pro">Modals</span></a></li>
-						<li><a title="Buttons" href="buttons.html"><span
-								class="mini-sub-pro">Buttons</span></a></li>
-						<li><a title="Tabs" href="tabs.html"><span
-								class="mini-sub-pro">Tabs</span></a></li>
-						<li><a title="Accordion" href="accordion.html"><span
-								class="mini-sub-pro">Accordion</span></a></li>
-					</ul></li>
-				<li id="removable"><a class="has-arrow" href="#"
-					aria-expanded="false"><span
-						class="educate-icon educate-pages icon-wrap"></span> <span
-						class="mini-click-non">Pages</span></a>
-					<ul class="submenu-angle page-mini-nb-dp" aria-expanded="false">
-						<li><a title="Login" href="login.html"><span
-								class="mini-sub-pro">Login</span></a></li>
-						<li><a title="Register" href="register.html"><span
-								class="mini-sub-pro">Register</span></a></li>
-						<li><a title="Lock" href="lock.html"><span
-								class="mini-sub-pro">Lock</span></a></li>
-						<li><a title="Password Recovery"
-							href="password-recovery.html"><span class="mini-sub-pro">Password
-									Recovery</span></a></li>
-						<li><a title="404 Page" href="404.html"><span
-								class="mini-sub-pro">404 Page</span></a></li>
-						<li><a title="500 Page" href="500.html"><span
-								class="mini-sub-pro">500 Page</span></a></li>
+						<li><a title="Phương thức vận chuyển"
+							href="#"><span class="mini-sub-pro">Phương thức vận chuyển</span></a></li>
+						<li><a title="Thêm phương thức vận chuyển"
+							href="#"><span class="mini-sub-pro">
+									Thêm phương thức vận chuyển</span></a></li>
 					</ul></li>
 			</ul>
 			</nav>
@@ -348,29 +271,6 @@
 										</div>
 									</div>
 									<div class="col-lg-6 col-md-7 col-sm-6 col-xs-12">
-										<div class="header-top-menu tabl-d-n">
-											<ul class="nav navbar-nav mai-top-nav">
-												<li class="nav-item"><a href="#" class="nav-link">Home</a>
-												</li>
-												<li class="nav-item"><a href="#" class="nav-link">About</a>
-												</li>
-												<li class="nav-item"><a href="#" class="nav-link">Services</a>
-												</li>
-												<li class="nav-item dropdown res-dis-nn"><a href="#"
-													data-toggle="dropdown" role="button" aria-expanded="false"
-													class="nav-link dropdown-toggle">Project <span
-														class="angle-down-topmenu"><i
-															class="fa fa-angle-down"></i></span></a>
-													<div role="menu" class="dropdown-menu animated zoomIn">
-														<a href="#" class="dropdown-item">Documentation</a> <a
-															href="#" class="dropdown-item">Expert Backend</a> <a
-															href="#" class="dropdown-item">Expert FrontEnd</a> <a
-															href="#" class="dropdown-item">Contact Support</a>
-													</div></li>
-												<li class="nav-item"><a href="#" class="nav-link">Support</a>
-												</li>
-											</ul>
-										</div>
 									</div>
 									<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
 										<div class="header-right-info">
@@ -380,618 +280,37 @@
 													class="nav-link dropdown-toggle"><i
 														class="educate-icon educate-message edu-chat-pro"
 														aria-hidden="true"></i><span class="indicator-ms"></span></a>
-													<div role="menu"
-														class="author-message-top dropdown-menu animated zoomIn">
-														<div class="message-single-top">
-															<h1>Message</h1>
-														</div>
-														<ul class="message-menu">
-															<li><a href="#">
-																	<div class="message-img">
-																		<img
-																			src="<c:url value="/resources/admin/images/contact/1.jpg"/>"
-																			alt="">
-																	</div>
-																	<div class="message-content">
-																		<span class="message-date">16 Sept</span>
-																		<h2>Advanda Cro</h2>
-																		<p>Please done this project as soon possible.</p>
-																	</div>
-															</a></li>
-															<li><a href="#">
-																	<div class="message-img">
-																		<img
-																			src="<c:url value="/resources/admin/images/contact/4.jpg"/>"
-																			alt="">
-																	</div>
-																	<div class="message-content">
-																		<span class="message-date">16 Sept</span>
-																		<h2>Sulaiman din</h2>
-																		<p>Please done this project as soon possible.</p>
-																	</div>
-															</a></li>
-															<li><a href="#">
-																	<div class="message-img">
-																		<img
-																			src="<c:url value="/resources/admin/images/contact/3.jpg"/>"
-																			alt="">
-																	</div>
-																	<div class="message-content">
-																		<span class="message-date">16 Sept</span>
-																		<h2>Victor Jara</h2>
-																		<p>Please done this project as soon possible.</p>
-																	</div>
-															</a></li>
-															<li><a href="#">
-																	<div class="message-img">
-																		<img
-																			src="<c:url value="/resources/admin/images/contact/2.jpg"/>"
-																			alt="">
-																	</div>
-																	<div class="message-content">
-																		<span class="message-date">16 Sept</span>
-																		<h2>Victor Jara</h2>
-																		<p>Please done this project as soon possible.</p>
-																	</div>
-															</a></li>
-														</ul>
-														<div class="message-view">
-															<a href="#">View All Messages</a>
-														</div>
-													</div></li>
+												</li>
 												<li class="nav-item"><a href="#" data-toggle="dropdown"
 													role="button" aria-expanded="false"
 													class="nav-link dropdown-toggle"><i
 														class="educate-icon educate-bell" aria-hidden="true"></i><span
 														class="indicator-nt"></span></a>
-													<div role="menu"
-														class="notification-author dropdown-menu animated zoomIn">
-														<div class="notification-single-top">
-															<h1>Notifications</h1>
-														</div>
-														<ul class="notification-menu">
-															<li><a href="#">
-																	<div class="notification-icon">
-																		<i
-																			class="educate-icon educate-checked edu-checked-pro admin-check-pro"
-																			aria-hidden="true"></i>
-																	</div>
-																	<div class="notification-content">
-																		<span class="notification-date">16 Sept</span>
-																		<h2>Advanda Cro</h2>
-																		<p>Please done this project as soon possible.</p>
-																	</div>
-															</a></li>
-															<li><a href="#">
-																	<div class="notification-icon">
-																		<i class="fa fa-cloud edu-cloud-computing-down"
-																			aria-hidden="true"></i>
-																	</div>
-																	<div class="notification-content">
-																		<span class="notification-date">16 Sept</span>
-																		<h2>Sulaiman din</h2>
-																		<p>Please done this project as soon possible.</p>
-																	</div>
-															</a></li>
-															<li><a href="#">
-																	<div class="notification-icon">
-																		<i class="fa fa-eraser edu-shield" aria-hidden="true"></i>
-																	</div>
-																	<div class="notification-content">
-																		<span class="notification-date">16 Sept</span>
-																		<h2>Victor Jara</h2>
-																		<p>Please done this project as soon possible.</p>
-																	</div>
-															</a></li>
-															<li><a href="#">
-																	<div class="notification-icon">
-																		<i class="fa fa-line-chart edu-analytics-arrow"
-																			aria-hidden="true"></i>
-																	</div>
-																	<div class="notification-content">
-																		<span class="notification-date">16 Sept</span>
-																		<h2>Victor Jara</h2>
-																		<p>Please done this project as soon possible.</p>
-																	</div>
-															</a></li>
-														</ul>
-														<div class="notification-view">
-															<a href="#">View All Notification</a>
-														</div>
-													</div></li>
+												</li>
 												<li class="nav-item"><a href="#" data-toggle="dropdown"
 													role="button" aria-expanded="false"
 													class="nav-link dropdown-toggle"> <img
 														src="<c:url value="/resources/admin/images/product/pro4.jpg"/>"
-														alt="" /> <span class="admin-name">Prof.Anderson</span> <i
+														alt="" /> <span class="admin-name">Xin chào, Huỳnh
+															đẹp trai</span> <i
 														class="fa fa-angle-down edu-icon edu-down-arrow"></i>
 												</a>
 													<ul role="menu"
 														class="dropdown-header-top author-log dropdown-menu animated zoomIn">
 														<li><a href="#"><span
-																class="edu-icon edu-home-admin author-log-ic"></span>My
-																Account</a></li>
+																class="edu-icon edu-home-admin author-log-ic"></span>Thông
+															tin tài khoản</a></li>
 														<li><a href="#"><span
-																class="edu-icon edu-user-rounded author-log-ic"></span>My
-																Profile</a></li>
+																class="edu-icon edu-settings author-log-ic"></span>Cài
+																đặt</a></li>
 														<li><a href="#"><span
-																class="edu-icon edu-money author-log-ic"></span>User
-																Billing</a></li>
-														<li><a href="#"><span
-																class="edu-icon edu-settings author-log-ic"></span>Settings</a>
-														</li>
-														<li><a href="#"><span
-																class="edu-icon edu-locked author-log-ic"></span>Log Out</a>
-														</li>
+																class="edu-icon edu-locked author-log-ic"></span>Đăng
+																xuất</a></li>
 													</ul></li>
 												<li class="nav-item nav-setting-open"><a href="#"
 													data-toggle="dropdown" role="button" aria-expanded="false"
 													class="nav-link dropdown-toggle"><i
-														class="educate-icon educate-menu"></i></a>
-
-													<div role="menu"
-														class="admintab-wrap menu-setting-wrap menu-setting-wrap-bg dropdown-menu animated zoomIn">
-														<ul class="nav nav-tabs custon-set-tab">
-															<li class="active"><a data-toggle="tab"
-																href="#Notes">Notes</a></li>
-															<li><a data-toggle="tab" href="#Projects">Projects</a>
-															</li>
-															<li><a data-toggle="tab" href="#Settings">Settings</a>
-															</li>
-														</ul>
-
-														<div class="tab-content custom-bdr-nt">
-															<div id="Notes" class="tab-pane fade in active">
-																<div class="notes-area-wrap">
-																	<div class="note-heading-indicate">
-																		<h2>
-																			<i class="fa fa-comments-o"></i> Latest Notes
-																		</h2>
-																		<p>You have 10 new message.</p>
-																	</div>
-																	<div class="notes-list-area notes-menu-scrollbar">
-																		<ul class="notes-menu-list">
-																			<li><a href="#">
-																					<div class="notes-list-flow">
-																						<div class="notes-img">
-																							<img
-																								src="<c:url value="/resources/admin/images/contact/4.jpg"/>"
-																								alt="" />
-																						</div>
-																						<div class="notes-content">
-																							<p>The point of using Lorem Ipsum is that it
-																								has a more-or-less normal.</p>
-																							<span>Yesterday 2:45 pm</span>
-																						</div>
-																					</div>
-																			</a></li>
-																			<li><a href="#">
-																					<div class="notes-list-flow">
-																						<div class="notes-img">
-																							<img
-																								src="<c:url value="/resources/admin/images/contact/1.jpg"/>"
-																								alt="" />
-																						</div>
-																						<div class="notes-content">
-																							<p>The point of using Lorem Ipsum is that it
-																								has a more-or-less normal.</p>
-																							<span>Yesterday 2:45 pm</span>
-																						</div>
-																					</div>
-																			</a></li>
-																			<li><a href="#">
-																					<div class="notes-list-flow">
-																						<div class="notes-img">
-																							<img
-																								src="<c:url value="/resources/admin/images/contact/2.jpg"/>"
-																								alt="" />
-																						</div>
-																						<div class="notes-content">
-																							<p>The point of using Lorem Ipsum is that it
-																								has a more-or-less normal.</p>
-																							<span>Yesterday 2:45 pm</span>
-																						</div>
-																					</div>
-																			</a></li>
-																			<li><a href="#">
-																					<div class="notes-list-flow">
-																						<div class="notes-img">
-																							<img
-																								src="<c:url value="/resources/admin/images/contact/3.jpg"/>"
-																								alt="" />
-																						</div>
-																						<div class="notes-content">
-																							<p>The point of using Lorem Ipsum is that it
-																								has a more-or-less normal.</p>
-																							<span>Yesterday 2:45 pm</span>
-																						</div>
-																					</div>
-																			</a></li>
-																			<li><a href="#">
-																					<div class="notes-list-flow">
-																						<div class="notes-img">
-																							<img
-																								src="<c:url value="/resources/admin/images/contact/4.jpg"/>"
-																								alt="" />
-																						</div>
-																						<div class="notes-content">
-																							<p>The point of using Lorem Ipsum is that it
-																								has a more-or-less normal.</p>
-																							<span>Yesterday 2:45 pm</span>
-																						</div>
-																					</div>
-																			</a></li>
-																			<li><a href="#">
-																					<div class="notes-list-flow">
-																						<div class="notes-img">
-																							<img
-																								src="<c:url value="/resources/admin/images/contact/1.jpg"/>"
-																								alt="" />
-																						</div>
-																						<div class="notes-content">
-																							<p>The point of using Lorem Ipsum is that it
-																								has a more-or-less normal.</p>
-																							<span>Yesterday 2:45 pm</span>
-																						</div>
-																					</div>
-																			</a></li>
-																			<li><a href="#">
-																					<div class="notes-list-flow">
-																						<div class="notes-img">
-																							<img
-																								src="<c:url value="/resources/admin/images/contact/2.jpg"/>"
-																								alt="" />
-																						</div>
-																						<div class="notes-content">
-																							<p>The point of using Lorem Ipsum is that it
-																								has a more-or-less normal.</p>
-																							<span>Yesterday 2:45 pm</span>
-																						</div>
-																					</div>
-																			</a></li>
-																			<li><a href="#">
-																					<div class="notes-list-flow">
-																						<div class="notes-img">
-																							<img
-																								src="<c:url value="/resources/admin/images/contact/1.jpg"/>"
-																								alt="" />
-																						</div>
-																						<div class="notes-content">
-																							<p>The point of using Lorem Ipsum is that it
-																								has a more-or-less normal.</p>
-																							<span>Yesterday 2:45 pm</span>
-																						</div>
-																					</div>
-																			</a></li>
-																			<li><a href="#">
-																					<div class="notes-list-flow">
-																						<div class="notes-img">
-																							<img
-																								src="<c:url value="/resources/admin/images/contact/2.jpg"/>"
-																								alt="" />
-																						</div>
-																						<div class="notes-content">
-																							<p>The point of using Lorem Ipsum is that it
-																								has a more-or-less normal.</p>
-																							<span>Yesterday 2:45 pm</span>
-																						</div>
-																					</div>
-																			</a></li>
-																			<li><a href="#">
-																					<div class="notes-list-flow">
-																						<div class="notes-img">
-																							<img
-																								src="<c:url value="/resources/admin/images/contact/3.jpg"/>"
-																								alt="" />
-																						</div>
-																						<div class="notes-content">
-																							<p>The point of using Lorem Ipsum is that it
-																								has a more-or-less normal.</p>
-																							<span>Yesterday 2:45 pm</span>
-																						</div>
-																					</div>
-																			</a></li>
-																		</ul>
-																	</div>
-																</div>
-															</div>
-															<div id="Projects" class="tab-pane fade">
-																<div class="projects-settings-wrap">
-																	<div class="note-heading-indicate">
-																		<h2>
-																			<i class="fa fa-cube"></i> Latest projects
-																		</h2>
-																		<p>You have 20 projects. 5 not completed.</p>
-																	</div>
-																	<div
-																		class="project-st-list-area project-st-menu-scrollbar">
-																		<ul class="projects-st-menu-list">
-																			<li><a href="#">
-																					<div class="project-list-flow">
-																						<div class="projects-st-heading">
-																							<h2>Web Development</h2>
-																							<p>The point of using Lorem Ipsum is that it
-																								has a more or less normal.</p>
-																							<span class="project-st-time">1 hours ago</span>
-																						</div>
-																						<div class="projects-st-content">
-																							<p>Completion with: 28%</p>
-																							<div class="progress progress-mini">
-																								<div style="width: 28%;"
-																									class="progress-bar progress-bar-danger hd-tp-1"></div>
-																							</div>
-																							<p>Project end: 4:00 pm - 12.06.2014</p>
-																						</div>
-																					</div>
-																			</a></li>
-																			<li><a href="#">
-																					<div class="project-list-flow">
-																						<div class="projects-st-heading">
-																							<h2>Software Development</h2>
-																							<p>The point of using Lorem Ipsum is that it
-																								has a more or less normal.</p>
-																							<span class="project-st-time">2 hours ago</span>
-																						</div>
-																						<div class="projects-st-content project-rating-cl">
-																							<p>Completion with: 68%</p>
-																							<div class="progress progress-mini">
-																								<div style="width: 68%;"
-																									class="progress-bar hd-tp-2"></div>
-																							</div>
-																							<p>Project end: 4:00 pm - 12.06.2014</p>
-																						</div>
-																					</div>
-																			</a></li>
-																			<li><a href="#">
-																					<div class="project-list-flow">
-																						<div class="projects-st-heading">
-																							<h2>Graphic Design</h2>
-																							<p>The point of using Lorem Ipsum is that it
-																								has a more or less normal.</p>
-																							<span class="project-st-time">3 hours ago</span>
-																						</div>
-																						<div class="projects-st-content">
-																							<p>Completion with: 78%</p>
-																							<div class="progress progress-mini">
-																								<div style="width: 78%;"
-																									class="progress-bar hd-tp-3"></div>
-																							</div>
-																							<p>Project end: 4:00 pm - 12.06.2014</p>
-																						</div>
-																					</div>
-																			</a></li>
-																			<li><a href="#">
-																					<div class="project-list-flow">
-																						<div class="projects-st-heading">
-																							<h2>Web Design</h2>
-																							<p>The point of using Lorem Ipsum is that it
-																								has a more or less normal.</p>
-																							<span class="project-st-time">4 hours ago</span>
-																						</div>
-																						<div
-																							class="projects-st-content project-rating-cl2">
-																							<p>Completion with: 38%</p>
-																							<div class="progress progress-mini">
-																								<div style="width: 38%;"
-																									class="progress-bar progress-bar-danger hd-tp-4"></div>
-																							</div>
-																							<p>Project end: 4:00 pm - 12.06.2014</p>
-																						</div>
-																					</div>
-																			</a></li>
-																			<li><a href="#">
-																					<div class="project-list-flow">
-																						<div class="projects-st-heading">
-																							<h2>Business Card</h2>
-																							<p>The point of using Lorem Ipsum is that it
-																								has a more or less normal.</p>
-																							<span class="project-st-time">5 hours ago</span>
-																						</div>
-																						<div class="projects-st-content">
-																							<p>Completion with: 28%</p>
-																							<div class="progress progress-mini">
-																								<div style="width: 28%;"
-																									class="progress-bar progress-bar-danger hd-tp-5"></div>
-																							</div>
-																							<p>Project end: 4:00 pm - 12.06.2014</p>
-																						</div>
-																					</div>
-																			</a></li>
-																			<li><a href="#">
-																					<div class="project-list-flow">
-																						<div class="projects-st-heading">
-																							<h2>Ecommerce Business</h2>
-																							<p>The point of using Lorem Ipsum is that it
-																								has a more or less normal.</p>
-																							<span class="project-st-time">6 hours ago</span>
-																						</div>
-																						<div class="projects-st-content project-rating-cl">
-																							<p>Completion with: 68%</p>
-																							<div class="progress progress-mini">
-																								<div style="width: 68%;"
-																									class="progress-bar hd-tp-6"></div>
-																							</div>
-																							<p>Project end: 4:00 pm - 12.06.2014</p>
-																						</div>
-																					</div>
-																			</a></li>
-																			<li><a href="#">
-																					<div class="project-list-flow">
-																						<div class="projects-st-heading">
-																							<h2>Woocommerce Plugin</h2>
-																							<p>The point of using Lorem Ipsum is that it
-																								has a more or less normal.</p>
-																							<span class="project-st-time">7 hours ago</span>
-																						</div>
-																						<div class="projects-st-content">
-																							<p>Completion with: 78%</p>
-																							<div class="progress progress-mini">
-																								<div style="width: 78%;" class="progress-bar"></div>
-																							</div>
-																							<p>Project end: 4:00 pm - 12.06.2014</p>
-																						</div>
-																					</div>
-																			</a></li>
-																			<li><a href="#">
-																					<div class="project-list-flow">
-																						<div class="projects-st-heading">
-																							<h2>Wordpress Theme</h2>
-																							<p>The point of using Lorem Ipsum is that it
-																								has a more or less normal.</p>
-																							<span class="project-st-time">9 hours ago</span>
-																						</div>
-																						<div
-																							class="projects-st-content project-rating-cl2">
-																							<p>Completion with: 38%</p>
-																							<div class="progress progress-mini">
-																								<div style="width: 38%;"
-																									class="progress-bar progress-bar-danger"></div>
-																							</div>
-																							<p>Project end: 4:00 pm - 12.06.2014</p>
-																						</div>
-																					</div>
-																			</a></li>
-																		</ul>
-																	</div>
-																</div>
-															</div>
-															<div id="Settings" class="tab-pane fade">
-																<div class="setting-panel-area">
-																	<div class="note-heading-indicate">
-																		<h2>
-																			<i class="fa fa-gears"></i> Settings Panel
-																		</h2>
-																		<p>You have 20 Settings. 5 not completed.</p>
-																	</div>
-																	<ul class="setting-panel-list">
-																		<li>
-																			<div class="checkbox-setting-pro">
-																				<div class="checkbox-title-pro">
-																					<h2>Show notifications</h2>
-																					<div class="ts-custom-check">
-																						<div class="onoffswitch">
-																							<input type="checkbox" name="collapsemenu"
-																								class="onoffswitch-checkbox" id="example">
-																							<label class="onoffswitch-label" for="example">
-																								<span class="onoffswitch-inner"></span> <span
-																								class="onoffswitch-switch"></span>
-																							</label>
-																						</div>
-																					</div>
-																				</div>
-																			</div>
-																		</li>
-																		<li>
-																			<div class="checkbox-setting-pro">
-																				<div class="checkbox-title-pro">
-																					<h2>Disable Chat</h2>
-																					<div class="ts-custom-check">
-																						<div class="onoffswitch">
-																							<input type="checkbox" name="collapsemenu"
-																								class="onoffswitch-checkbox" id="example3">
-																							<label class="onoffswitch-label" for="example3">
-																								<span class="onoffswitch-inner"></span> <span
-																								class="onoffswitch-switch"></span>
-																							</label>
-																						</div>
-																					</div>
-																				</div>
-																			</div>
-																		</li>
-																		<li>
-																			<div class="checkbox-setting-pro">
-																				<div class="checkbox-title-pro">
-																					<h2>Enable history</h2>
-																					<div class="ts-custom-check">
-																						<div class="onoffswitch">
-																							<input type="checkbox" name="collapsemenu"
-																								class="onoffswitch-checkbox" id="example4">
-																							<label class="onoffswitch-label" for="example4">
-																								<span class="onoffswitch-inner"></span> <span
-																								class="onoffswitch-switch"></span>
-																							</label>
-																						</div>
-																					</div>
-																				</div>
-																			</div>
-																		</li>
-																		<li>
-																			<div class="checkbox-setting-pro">
-																				<div class="checkbox-title-pro">
-																					<h2>Show charts</h2>
-																					<div class="ts-custom-check">
-																						<div class="onoffswitch">
-																							<input type="checkbox" name="collapsemenu"
-																								class="onoffswitch-checkbox" id="example7">
-																							<label class="onoffswitch-label" for="example7">
-																								<span class="onoffswitch-inner"></span> <span
-																								class="onoffswitch-switch"></span>
-																							</label>
-																						</div>
-																					</div>
-																				</div>
-																			</div>
-																		</li>
-																		<li>
-																			<div class="checkbox-setting-pro">
-																				<div class="checkbox-title-pro">
-																					<h2>Update everyday</h2>
-																					<div class="ts-custom-check">
-																						<div class="onoffswitch">
-																							<input type="checkbox" name="collapsemenu"
-																								checked="" class="onoffswitch-checkbox"
-																								id="example2"> <label
-																								class="onoffswitch-label" for="example2">
-																								<span class="onoffswitch-inner"></span> <span
-																								class="onoffswitch-switch"></span>
-																							</label>
-																						</div>
-																					</div>
-																				</div>
-																			</div>
-																		</li>
-																		<li>
-																			<div class="checkbox-setting-pro">
-																				<div class="checkbox-title-pro">
-																					<h2>Global search</h2>
-																					<div class="ts-custom-check">
-																						<div class="onoffswitch">
-																							<input type="checkbox" name="collapsemenu"
-																								checked="" class="onoffswitch-checkbox"
-																								id="example6"> <label
-																								class="onoffswitch-label" for="example6">
-																								<span class="onoffswitch-inner"></span> <span
-																								class="onoffswitch-switch"></span>
-																							</label>
-																						</div>
-																					</div>
-																				</div>
-																			</div>
-																		</li>
-																		<li>
-																			<div class="checkbox-setting-pro">
-																				<div class="checkbox-title-pro">
-																					<h2>Offline users</h2>
-																					<div class="ts-custom-check">
-																						<div class="onoffswitch">
-																							<input type="checkbox" name="collapsemenu"
-																								checked="" class="onoffswitch-checkbox"
-																								id="example5"> <label
-																								class="onoffswitch-label" for="example5">
-																								<span class="onoffswitch-inner"></span> <span
-																								class="onoffswitch-switch"></span>
-																							</label>
-																						</div>
-																					</div>
-																				</div>
-																			</div>
-																		</li>
-																	</ul>
-
-																</div>
-															</div>
-														</div>
-													</div></li>
+														class="educate-icon educate-menu"></i></a></li>
 											</ul>
 										</div>
 									</div>
@@ -1173,7 +492,7 @@
 										<ul class="breadcome-menu">
 											<li><a href="#">Home</a> <span class="bread-slash">/</span>
 											</li>
-											<li><span class="bread-blod">Dashboard V.1</span></li>
+											<li><span class="bread-blod">Thống kê</span></li>
 										</ul>
 									</div>
 								</div>
