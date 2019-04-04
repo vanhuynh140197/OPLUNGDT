@@ -20,14 +20,15 @@ public class ProductsDAOImpl implements ProductsDAO {
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<ProductsEntity> getAll() {
-		return sessionFactory.getCurrentSession().createQuery("from Products where productsStatus='" + 1 + "'").list();
+		return sessionFactory.getCurrentSession().createQuery("from ProductsEntity where productsStatus='" + 1 + "'")
+				.list();
 	}
 
 	@Override
 	public ProductsEntity getProducts(String productsId) {
 		@SuppressWarnings("rawtypes")
 		List list = sessionFactory.getCurrentSession()
-				.createQuery("from Products where productsId='" + productsId + "'").list();
+				.createQuery("from ProductsEntity where productsId='" + productsId + "'").list();
 		return !list.isEmpty() ? (ProductsEntity) list.get(0) : null;
 	}
 
@@ -54,8 +55,8 @@ public class ProductsDAOImpl implements ProductsDAO {
 	@Override
 	public boolean remove(String productsId) {
 		try {
-			sessionFactory.getCurrentSession()
-					.createQuery("update Products set productsStatus='" + 0 + "' where productsId='" + productsId + "'")
+			sessionFactory.getCurrentSession().createQuery(
+					"update ProductsEntity set productsStatus='" + 0 + "' where productsId='" + productsId + "'")
 					.executeUpdate();
 		} catch (Exception e) {
 			return false;

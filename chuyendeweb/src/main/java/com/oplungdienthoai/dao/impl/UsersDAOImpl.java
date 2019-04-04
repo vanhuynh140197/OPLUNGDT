@@ -1,5 +1,65 @@
 package com.oplungdienthoai.dao.impl;
 
-public class UsersDAOImpl {
+import java.util.List;
 
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.oplungdienthoai.dao.UsersDAO;
+import com.oplungdienthoai.model.UsersEntity;
+
+@Transactional
+@Repository
+public class UsersDAOImpl implements UsersDAO {
+
+	@Autowired
+	SessionFactory sessionFactory;
+
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<UsersEntity> getAll() {
+		return sessionFactory.getCurrentSession().createQuery("from UsersEntity where usersStatus='" + 1 + "'").list();
+	}
+
+	@Override
+	public UsersEntity getUsers(String userId) {
+		@SuppressWarnings("rawtypes")
+		List list = sessionFactory.getCurrentSession().createQuery("from UsersEntity where userId='" + userId + "'")
+				.list();
+		return !list.isEmpty() ? (UsersEntity) list.get(0) : null;
+	}
+
+	@Override
+	public boolean add(UsersEntity user) {
+		try {
+			sessionFactory.getCurrentSession().save(user);
+		} catch (Exception e) {
+			return false;
+		}
+		return true;
+	}
+
+	@Override
+	public boolean edit(UsersEntity user) {
+		try {
+			sessionFactory.getCurrentSession().update(user);
+		} catch (Exception e) {
+			return false;
+		}
+		return true;
+	}
+
+	@Override
+	public boolean remove(String userId) {
+		try {
+			sessionFactory.getCurrentSession()
+					.createQuery("update UsersEntity set usersStatus='" + 0 + "' where userId='" + userId + "'")
+					.executeUpdate();
+		} catch (Exception e) {
+			return false;
+		}
+		return true;
+	}
 }

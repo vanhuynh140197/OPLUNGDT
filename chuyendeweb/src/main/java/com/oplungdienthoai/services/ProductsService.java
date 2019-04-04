@@ -5,7 +5,7 @@ import java.util.List;
 import com.oplungdienthoai.model.ProductsEntity;
 
 public interface ProductsService {
-	
+
 	public List<ProductsEntity> getAll();
 
 	public ProductsEntity getProducts(String productsId);

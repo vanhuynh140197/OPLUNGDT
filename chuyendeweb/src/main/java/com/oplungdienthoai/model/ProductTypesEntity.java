@@ -9,82 +9,100 @@ import java.util.Collection;
 @Entity
 @Table(name = "product_types", schema = "public", catalog = "oplungdienthoai")
 public class ProductTypesEntity {
-    private String productTypesId;
-    private String productTypesName;
-    private String providersId;
-    private ProvidersEntity providersByProvidersId;
-    private Collection<ProductsEntity> productsByProductTypesId;
+	private String productTypesId;
+	private String productTypesName;
+	private String providersId;
+	private Boolean productTypesStatus;
+	private ProvidersEntity providersByProvidersId;
+	private Collection<ProductsEntity> productsByProductTypesId;
 
-    @Id
-    @Column(name = "ProductTypesID")
-    public String getProductTypesId() {
-        return productTypesId;
-    }
+	@Id
+	@Column(name = "ProductTypesID")
+	public String getProductTypesId() {
+		return productTypesId;
+	}
 
-    public void setProductTypesId(String productTypesId) {
-        this.productTypesId = productTypesId;
-    }
+	public void setProductTypesId(String productTypesId) {
+		this.productTypesId = productTypesId;
+	}
 
-    @Basic
-    @Column(name = "ProductTypesName")
-    public String getProductTypesName() {
-        return productTypesName;
-    }
+	@Basic
+	@Column(name = "ProductTypesName")
+	public String getProductTypesName() {
+		return productTypesName;
+	}
 
-    public void setProductTypesName(String productTypesName) {
-        this.productTypesName = productTypesName;
-    }
+	public void setProductTypesName(String productTypesName) {
+		this.productTypesName = productTypesName;
+	}
 
-    @Basic
-    @Column(name = "ProvidersID")
-    public String getProvidersId() {
-        return providersId;
-    }
+	@Basic
+	@Column(name = "ProvidersID")
+	public String getProvidersId() {
+		return providersId;
+	}
 
-    public void setProvidersId(String providersId) {
-        this.providersId = providersId;
-    }
+	public void setProvidersId(String providersId) {
+		this.providersId = providersId;
+	}
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+	@Basic
+	@Column(name = "ProductTypesStatus")
+	public Boolean getProductTypesStatus() {
+		return productTypesStatus;
+	}
 
-        ProductTypesEntity that = (ProductTypesEntity) o;
+	public void setProductTypesStatus(Boolean productTypesStatus) {
+		this.productTypesStatus = productTypesStatus;
+	}
 
-        if (productTypesId != null ? !productTypesId.equals(that.productTypesId) : that.productTypesId != null)
-            return false;
-        if (productTypesName != null ? !productTypesName.equals(that.productTypesName) : that.productTypesName != null)
-            return false;
-        if (providersId != null ? !providersId.equals(that.providersId) : that.providersId != null) return false;
+	@Override
+	public boolean equals(Object o) {
+		if (this == o)
+			return true;
+		if (o == null || getClass() != o.getClass())
+			return false;
 
-        return true;
-    }
+		ProductTypesEntity that = (ProductTypesEntity) o;
 
-    @Override
-    public int hashCode() {
-        int result = productTypesId != null ? productTypesId.hashCode() : 0;
-        result = 31 * result + (productTypesName != null ? productTypesName.hashCode() : 0);
-        result = 31 * result + (providersId != null ? providersId.hashCode() : 0);
-        return result;
-    }
+		if (productTypesId != null ? !productTypesId.equals(that.productTypesId) : that.productTypesId != null)
+			return false;
+		if (productTypesName != null ? !productTypesName.equals(that.productTypesName) : that.productTypesName != null)
+			return false;
+		if (providersId != null ? !providersId.equals(that.providersId) : that.providersId != null)
+			return false;
+		if (productTypesStatus != null ? !productTypesStatus.equals(that.productTypesStatus)
+				: that.productTypesStatus != null)
+			return false;
 
-    @ManyToOne
-    @JoinColumn(name = "ProvidersID", referencedColumnName = "ProvidersID", nullable = false,insertable = false,updatable = false)
-    public ProvidersEntity getProvidersByProvidersId() {
-        return providersByProvidersId;
-    }
+		return true;
+	}
 
-    public void setProvidersByProvidersId(ProvidersEntity providersByProvidersId) {
-        this.providersByProvidersId = providersByProvidersId;
-    }
+	@Override
+	public int hashCode() {
+		int result = productTypesId != null ? productTypesId.hashCode() : 0;
+		result = 31 * result + (productTypesName != null ? productTypesName.hashCode() : 0);
+		result = 31 * result + (providersId != null ? providersId.hashCode() : 0);
+		result = 31 * result + (productTypesStatus != null ? productTypesStatus.hashCode() : 0);
+		return result;
+	}
 
-    @OneToMany(mappedBy = "productTypesByProductTypesId",cascade=CascadeType.ALL, fetch = FetchType.LAZY)
-    public Collection<ProductsEntity> getProductsByProductTypesId() {
-        return productsByProductTypesId;
-    }
+	@ManyToOne
+	@JoinColumn(name = "ProvidersID", referencedColumnName = "ProvidersID", nullable = false, insertable = false, updatable = false)
+	public ProvidersEntity getProvidersByProvidersId() {
+		return providersByProvidersId;
+	}
 
-    public void setProductsByProductTypesId(Collection<ProductsEntity> productsByProductTypesId) {
-        this.productsByProductTypesId = productsByProductTypesId;
-    }
+	public void setProvidersByProvidersId(ProvidersEntity providersByProvidersId) {
+		this.providersByProvidersId = providersByProvidersId;
+	}
+
+	@OneToMany(mappedBy = "productTypesByProductTypesId", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	public Collection<ProductsEntity> getProductsByProductTypesId() {
+		return productsByProductTypesId;
+	}
+
+	public void setProductsByProductTypesId(Collection<ProductsEntity> productsByProductTypesId) {
+		this.productsByProductTypesId = productsByProductTypesId;
+	}
 }
