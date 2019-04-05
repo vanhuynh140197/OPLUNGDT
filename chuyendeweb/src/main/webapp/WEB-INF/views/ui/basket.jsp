@@ -132,10 +132,9 @@
 						</div>
 						<div class="box">
 							<div class="box-header">
-								<h4 class="mb-0">Coupon code</h4>
+								<h4 class="mb-0">Lời nhắn</h4>
 							</div>
-							<p class="text-muted">If you have a coupon code, please enter
-								it in the box below.</p>
+							<p class="text-muted">Để lại lời nhắn cho người b.</p>
 							<form>
 								<div class="input-group">
 									<input type="text" class="form-control"><span

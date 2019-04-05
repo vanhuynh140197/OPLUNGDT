@@ -52,7 +52,8 @@
 								class="fas fa-map-marker-alt"></i> Địa chỉ cửa hàng</a></li>
 						<li class="list-inline-item"><a href="#"><i
 								class="fas fa-phone-volume"></i> Chăm sóc khách hàng</a></li>
-						<li class="list-inline-item"><a href="register.html"><i
+						<li class="list-inline-item"><a
+							href="<c:url value="/oplungdienthoai/home/dangky"/>"><i
 								class="fas fa-user-edit"></i> Đăng ký</a></li>
 						<li class="list-inline-item"><a href="#" data-toggle="modal"
 							data-target="#login-modal"><i class="fas fa-user-tag"></i>
@@ -66,33 +67,38 @@
 			<div class="modal-dialog modal-sm">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h5 class="modal-title">Customer login</h5>
+						<h4 class="modal-title">
+							<i class="fas fa-user-tag"></i> Đăng nhập
+						</h4>
 						<button type="button" data-dismiss="modal" aria-label="Close"
 							class="close">
 							<span aria-hidden="true">×</span>
 						</button>
 					</div>
 					<div class="modal-body">
-						<form action="customer-orders.html" method="post">
+						<form action="" method="post">
 							<div class="form-group">
-								<input id="email-modal" type="text" placeholder="email"
+								<label class="text-muted" style="margin-left: -2%"><i class="fas fa-users"></i>
+									Email/Số điện thoại/Tên đăng nhập</label> <br> <input
+									id="email-modal" type="text" class="form-control">
+							</div>
+							<div class="form-group">
+								<label class="text-muted" style="margin-left: -2%"><i class="fas fa-key"></i> Mật
+									khẩu</label><br> <input id="password-modal" type="password"
 									class="form-control">
 							</div>
-							<div class="form-group">
-								<input id="password-modal" type="password"
-									placeholder="password" class="form-control">
-							</div>
+							<p class="text-muted" style="margin-left: 39%;"><b>Quên mật
+								khẩu</b>| Trợ giúp?</p>
 							<p class="text-center">
-								<button class="btn btn-primary">
-									<i class="fa fa-sign-in"></i> Log in
+								<button class="btn btn-primary2">
+									<i class="fa fa-sign-in"></i> Đăng nhập
 								</button>
 							</p>
 						</form>
-						<p class="text-center text-muted">Not registered yet?</p>
+
 						<p class="text-center text-muted">
-							<a href="register.html"><strong>Register now</strong></a>! It is
-							easy and done in 1 minute and gives you access to special
-							discounts and much more!
+							<a href="<c:url value="/oplungdienthoai/home/dangky"/>"><strong>Đăng
+									ký ngay!</strong></a>
 						</p>
 					</div>
 				</div>
@@ -738,7 +744,7 @@
 		<div class="container">
 			<form role="search" class="ml-auto">
 				<div class="input-group">
-					<input type="text" placeholder="Search" class="form-control">
+					<input type="text" placeholder="Tìm kiếm" class="form-control">
 					<div class="input-group-append">
 						<button type="button" class="btn btn-primary">
 							<i class="fa fa-search"></i>

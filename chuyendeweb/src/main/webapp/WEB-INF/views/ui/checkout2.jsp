@@ -25,9 +25,9 @@
 						<!-- breadcrumb-->
 						<nav aria-label="breadcrumb">
 						<ol class="breadcrumb">
-							<li class="breadcrumb-item"><a href="#">Home</a></li>
-							<li aria-current="page" class="breadcrumb-item active">Checkout
-								- Delivery method</li>
+							<li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+							<li aria-current="page" class="breadcrumb-item active">Thanh
+								toán</li>
 						</ol>
 						</nav>
 					</div>
@@ -35,28 +35,35 @@
 						<div class="box">
 							<form method="get"
 								action="<c:url value="/oplungdienthoai/home/thanhtoan3"/>">
-								<h1>Checkout - Delivery method</h1>
+								<h3>Thanh toán</h3>
 								<div class="nav flex-column flex-sm-row nav-pills">
-									<a href="checkout1.html"
-										class="nav-link flex-sm-fill text-sm-center"> <i
-										class="fa fa-map-marker"> </i>Address
-									</a><a href="checkout2.html"
+									<a href="<c:url value="/oplungdienthoai/home/thanhtoan"/>"
+										class="nav-link flex-sm-fill text-sm-center disabled "> <i
+										class="fa fa-map-marker"> </i>Địa chỉ nhận hàng
+									</a><a href="<c:url value="/oplungdienthoai/home/thanhtoan2"/>"
 										class="nav-link flex-sm-fill text-sm-center active"> <i
-										class="fa fa-truck"> </i>Delivery Method
-									</a><a href="#"
+										class="fa fa-truck"> </i>Đơn vị vận chuyển
+									</a><a href="<c:url value="/oplungdienthoai/home/thanhtoan3"/>"
 										class="nav-link flex-sm-fill text-sm-center disabled"> <i
-										class="fa fa-money"> </i>Payment Method
-									</a><a href="#"
+										class="fa fa-money"> </i>Phương thức thanh toán
+									</a><a href="<c:url value="/oplungdienthoai/home/thanhtoan4"/>"
 										class="nav-link flex-sm-fill text-sm-center disabled"> <i
-										class="fa fa-eye"> </i>Order Review
+										class="fa fa-eye"> </i>Tổng hóa đơn
 									</a>
 								</div>
 								<div class="content py-3">
 									<div class="row">
 										<div class="col-md-6">
 											<div class="box shipping-method">
-												<h4>USPS Next Day</h4>
-												<p>Get it right on next day - fastest option possible.</p>
+												<h4>Giao hàng nhanh</h4>
+												<p>
+													Giao hàng trong 2-4 ngày <br> Cho phép Thanh toán khi
+													nhận hàng
+												</p>
+												<p>
+													<strong style="color: red;">đ 30.569</strong>
+												</p>
+
 												<div class="box-footer text-center">
 													<input type="radio" name="delivery" value="delivery1">
 												</div>
@@ -64,19 +71,16 @@
 										</div>
 										<div class="col-md-6">
 											<div class="box shipping-method">
-												<h4>USPS Next Day</h4>
-												<p>Get it right on next day - fastest option possible.</p>
+												<h4>Giao hàng tiết kiệm</h4>
+												<p>
+													Giao hàng trong 2-5 ngày<br> Cho phép Thanh toán khi
+													nhận hàng
+												</p>
+												<p>
+													<strong style="color: red;">đ 15.000</strong>
+												</p>
 												<div class="box-footer text-center">
 													<input type="radio" name="delivery" value="delivery2">
-												</div>
-											</div>
-										</div>
-										<div class="col-md-6">
-											<div class="box shipping-method">
-												<h4>USPS Next Day</h4>
-												<p>Get it right on next day - fastest option possible.</p>
-												<div class="box-footer text-center">
-													<input type="radio" name="delivery" value="delivery3">
 												</div>
 											</div>
 										</div>
@@ -85,7 +89,7 @@
 								<div class="box-footer d-flex justify-content-between">
 									<a href="<c:url value="/oplungdienthoai/home/thanhtoan"/>"
 										class="btn btn-outline-secondary"><i
-										class="fa fa-chevron-left"></i>Back to address</a>
+										class="fa fa-chevron-left"></i>Quay lại</a>
 									<button type="submit" class="btn btn-primary">
 										Tiếp tục phương thức thanh toán<i class="fa fa-chevron-right"></i>
 									</button>
@@ -120,6 +124,23 @@
 									</tbody>
 								</table>
 							</div>
+						</div>
+						<div class="box">
+							<div class="box-header">
+								<h4 class="mb-0">Lời nhắn</h4>
+							</div>
+							<p class="text-muted">Để lại lời nhắn cho người bán.</p>
+							<form>
+								<div class="input-group">
+									<input type="text" class="form-control"><span
+										class="input-group-append">
+										<button type="button" class="btn btn-primary1">
+											<i class="fa fa-gift"></i>
+										</button>
+									</span>
+								</div>
+								<!-- /input-group-->
+							</form>
 						</div>
 					</div>
 					<!-- /.col-md-3-->

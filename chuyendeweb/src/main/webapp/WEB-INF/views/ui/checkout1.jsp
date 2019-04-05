@@ -25,9 +25,9 @@
 						<!-- breadcrumb-->
 						<nav aria-label="breadcrumb">
 						<ol class="breadcrumb">
-							<li class="breadcrumb-item"><a href="#">Home</a></li>
-							<li aria-current="page" class="breadcrumb-item active">Checkout
-								- Address</li>
+							<li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+							<li aria-current="page" class="breadcrumb-item active">Thanh
+								toán</li>
 						</ol>
 						</nav>
 					</div>
@@ -35,93 +35,68 @@
 						<div class="box">
 							<form method="get"
 								action="<c:url value="/oplungdienthoai/home/thanhtoan2"/>">
-								<h1>Checkout - Address</h1>
+								<h3>Thanh toán</h3>
 								<div class="nav flex-column flex-md-row nav-pills text-center">
-									<a href="checkout1.html"
+									<a href="<c:url value="/oplungdienthoai/home/thanhtoan"/>"
 										class="nav-link flex-sm-fill text-sm-center active"> <i
-										class="fa fa-map-marker"> </i>Address
-									</a><a href="#"
+										class="fa fa-map-marker"> </i>Địa chỉ nhận hàng
+									</a><a href="<c:url value="/oplungdienthoai/home/thanhtoan2"/>"
 										class="nav-link flex-sm-fill text-sm-center disabled"> <i
-										class="fa fa-truck"> </i>Delivery Method
-									</a><a href="#"
+										class="fa fa-truck"> </i>Đơn vị vận chuyển
+									</a><a href="<c:url value="/oplungdienthoai/home/thanhtoan3"/>"
 										class="nav-link flex-sm-fill text-sm-center disabled"> <i
-										class="fa fa-money"> </i>Payment Method
-									</a><a href="#"
+										class="fa fa-money"> </i>Phương thức thanh toán
+									</a><a href="<c:url value="/oplungdienthoai/home/thanhtoan4"/>"
 										class="nav-link flex-sm-fill text-sm-center disabled"> <i
-										class="fa fa-eye"> </i>Order Review
+										class="fa fa-eye"> </i>Tổng hóa đơn
 									</a>
 								</div>
-								<div class="content py-3">
+								<div class="content py-3" style="margin-left: 12%;">
 									<div class="row">
-										<div class="col-md-6">
+										<div class="col-md-5">
 											<div class="form-group">
-												<label for="firstname">Firstname</label> <input
-													id="firstname" type="text" class="form-control">
+												<label for="firstname"><strong style="color: red;">*</strong>
+													Họ </label> <input id="firstname" type="text" class="form-control">
 											</div>
 										</div>
-										<div class="col-md-6">
+										<div class="col-md-5">
 											<div class="form-group">
-												<label for="lastname">Lastname</label> <input id="lastname"
-													type="text" class="form-control">
+												<label for="lastname"><strong style="color: red;">*</strong>
+													Tên</label> <input id="lastname" type="text" class="form-control">
 											</div>
 										</div>
 									</div>
 									<!-- /.row-->
 									<div class="row">
-										<div class="col-md-6">
+										<div class="col-md-10">
 											<div class="form-group">
-												<label for="company">Company</label> <input id="company"
-													type="text" class="form-control">
-											</div>
-										</div>
-										<div class="col-md-6">
-											<div class="form-group">
-												<label for="street">Street</label> <input id="street"
-													type="text" class="form-control">
-											</div>
-										</div>
-									</div>
-									<!-- /.row-->
-									<div class="row">
-										<div class="col-md-6 col-lg-3">
-											<div class="form-group">
-												<label for="city">Company</label> <input id="city"
-													type="text" class="form-control">
-											</div>
-										</div>
-										<div class="col-md-6 col-lg-3">
-											<div class="form-group">
-												<label for="zip">ZIP</label> <input id="zip" type="text"
+												<label for="address"><strong style="color: red;">*</strong>
+													Địa chỉ:</label> <input id="address" type="text"
 													class="form-control">
 											</div>
 										</div>
-										<div class="col-md-6 col-lg-3">
+									</div>
+									<!-- /.row-->
+									<div class="row">
+										<div class="col-md-10">
 											<div class="form-group">
-												<label for="state">State</label> <select id="state"
-													class="form-control"></select>
-											</div>
-										</div>
-										<div class="col-md-6 col-lg-3">
-											<div class="form-group">
-												<label for="country">Country</label> <select id="country"
-													class="form-control"></select>
-											</div>
-										</div>
-										<div class="col-md-6">
-											<div class="form-group">
-												<label for="phone">Telephone</label> <input id="phone"
+												<label for="email">Email:</label> <input id="email"
 													type="text" class="form-control">
 											</div>
 										</div>
-										<div class="col-md-6">
+									</div>
+									<div class="row">
+										<div class="col-md-10">
 											<div class="form-group">
-												<label for="email">Email</label> <input id="email"
-													type="text" class="form-control">
+												<label for="phone"><strong style="color: red;">*</strong>
+													Số điện thoại:</label> <input id="phone" type="text"
+													class="form-control">
 											</div>
 										</div>
 									</div>
 									<!-- /.row-->
 								</div>
+
 								<div class="box-footer d-flex justify-content-between">
 									<a href="<c:url value="/oplungdienthoai/home/giohang"/>"
 										class="btn btn-outline-secondary"><i
@@ -161,8 +136,26 @@
 								</table>
 							</div>
 						</div>
+						<div class="box">
+							<div class="box-header">
+								<h4 class="mb-0">Lời nhắn</h4>
+							</div>
+							<p class="text-muted">Để lại lời nhắn cho người bán.</p>
+							<form>
+								<div class="input-group">
+									<input type="text" class="form-control"><span
+										class="input-group-append">
+										<button type="button" class="btn btn-primary1">
+											<i class="fa fa-gift"></i>
+										</button>
+									</span>
+								</div>
+								<!-- /input-group-->
+							</form>
+						</div>
 					</div>
 					<!-- /.col-lg-3-->
+
 				</div>
 			</div>
 		</div>

@@ -25,9 +25,9 @@
 						<!-- breadcrumb-->
 						<nav aria-label="breadcrumb">
 						<ol class="breadcrumb">
-							<li class="breadcrumb-item"><a href="#">Home</a></li>
-							<li aria-current="page" class="breadcrumb-item active">Checkout
-								- Payment method</li>
+							<li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+							<li aria-current="page" class="breadcrumb-item active">Thanh
+								toán</li>
 						</ol>
 						</nav>
 					</div>
@@ -35,28 +35,32 @@
 						<div class="box">
 							<form method="get"
 								action="<c:url value="/oplungdienthoai/home/thanhtoan4"/>">
-								<h1>Checkout - Payment method</h1>
+								<h3>Thanh toán</h3>
 								<div class="nav flex-column flex-sm-row nav-pills">
-									<a href="checkout1.html"
-										class="nav-link flex-sm-fill text-sm-center"> <i
-										class="fa fa-map-marker"> </i>Address
-									</a><a href="checkout2.html"
-										class="nav-link flex-sm-fill text-sm-center"> <i
-										class="fa fa-truck"> </i>Delivery Method
-									</a><a href="checkout3.html"
-										class="nav-link flex-sm-fill text-sm-center active"> <i
-										class="fa fa-money"> </i>Payment Method
-									</a><a href="#"
+									<a href="<c:url value="/oplungdienthoai/home/thanhtoan"/>"
+										class="nav-link flex-sm-fill text-sm-center disabled "> <i
+										class="fa fa-map-marker"> </i>Địa chỉ nhận hàng
+									</a><a href="<c:url value="/oplungdienthoai/home/thanhtoan2"/>"
 										class="nav-link flex-sm-fill text-sm-center disabled"> <i
-										class="fa fa-eye"> </i>Order Review
+										class="fa fa-truck"> </i>Đơn vị vận chuyển
+									</a><a href="<c:url value="/oplungdienthoai/home/thanhtoan3"/>"
+										class="nav-link flex-sm-fill text-sm-center active"> <i
+										class="fa fa-money"> </i>Phương thức thanh toán
+									</a><a href="<c:url value="/oplungdienthoai/home/thanhtoan4"/>"
+										class="nav-link flex-sm-fill text-sm-center disabled"> <i
+										class="fa fa-eye"> </i>Tổng hóa đơn
 									</a>
 								</div>
 								<div class="content py-3">
 									<div class="row">
 										<div class="col-md-6">
 											<div class="box payment-method">
-												<h4>Paypal</h4>
-												<p>We like it all.</p>
+												<h4>Thẻ tín dụng: VISA, MASTER</h4>
+												<p>
+													<b>Hóa đơn VAT:</b> Quý khách vui lòng liên hệ hotline <br>
+													<strong style="color: red;">028 7300 2010</strong> để gửi
+													thông tin trong vòng 24 giờ kể từ khi đặt hàng thành công.
+												</p>
 												<div class="box-footer text-center">
 													<input type="radio" name="payment" value="payment1">
 												</div>
@@ -64,8 +68,11 @@
 										</div>
 										<div class="col-md-6">
 											<div class="box payment-method">
-												<h4>Payment gateway</h4>
-												<p>VISA and Mastercard only.</p>
+												<h4>COD: Thanh toán khi nhận hàng</h4>
+												<p>
+													<b>Lưu ý:</b><br>Quý khách vui lòng kiểm tra sản phẩm
+													trước khi thanh toán.
+												</p>
 												<div class="box-footer text-center">
 													<input type="radio" name="payment" value="payment2">
 												</div>
@@ -73,8 +80,13 @@
 										</div>
 										<div class="col-md-6">
 											<div class="box payment-method">
-												<h4>Cash on delivery</h4>
-												<p>You pay when you get it.</p>
+												<h4>Ví điện tử</h4>
+												<p>MoMo, ZaloPay, Gotit...</p>
+												<p>
+													<b>Hóa đơn VAT:</b> Quý khách vui lòng liên hệ hotline <br>
+													<strong style="color: red;">028 7300 2010</strong> để gửi
+													thông tin trong vòng 24 giờ kể từ khi đặt hàng thành công.
+												</p>
 												<div class="box-footer text-center">
 													<input type="radio" name="payment" value="payment3">
 												</div>
@@ -87,9 +99,9 @@
 								<div class="box-footer d-flex justify-content-between">
 									<a href="<c:url value="/oplungdienthoai/home/thanhtoan2"/>"
 										class="btn btn-outline-secondary"><i
-										class="fa fa-chevron-left"></i>Back to Shipping Method</a>
+										class="fa fa-chevron-left"></i>Quay lại</a>
 									<button type="submit" class="btn btn-primary">
-										Continue to Order Review<i class="fa fa-chevron-right"></i>
+										Tiếp tục phương thức thanh toán<i class="fa fa-chevron-right"></i>
 									</button>
 								</div>
 							</form>
@@ -122,6 +134,23 @@
 									</tbody>
 								</table>
 							</div>
+						</div>
+						<div class="box">
+							<div class="box-header">
+								<h4 class="mb-0">Lời nhắn</h4>
+							</div>
+							<p class="text-muted">Để lại lời nhắn cho người bán.</p>
+							<form>
+								<div class="input-group">
+									<input type="text" class="form-control"><span
+										class="input-group-append">
+										<button type="button" class="btn btn-primary1">
+											<i class="fa fa-gift"></i>
+										</button>
+									</span>
+								</div>
+								<!-- /input-group-->
+							</form>
 						</div>
 					</div>
 					<!-- /.col-md-3-->

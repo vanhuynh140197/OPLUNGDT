@@ -25,9 +25,9 @@
 						<!-- breadcrumb-->
 						<nav aria-label="breadcrumb">
 						<ol class="breadcrumb">
-							<li class="breadcrumb-item"><a href="#">Home</a></li>
-							<li aria-current="page" class="breadcrumb-item active">Checkout
-								- Order review</li>
+							<li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+							<li aria-current="page" class="breadcrumb-item active">Thanh
+								toán</li>
 						</ol>
 						</nav>
 					</div>
@@ -35,19 +35,20 @@
 						<div class="box">
 							<form method="get"
 								action="<c:url value="/oplungdienthoai/home/thanhtoan4"/>">
-								<h1>Checkout - Order review</h1>
+								<h3>Thanh toán</h3>
 								<div class="nav flex-column flex-sm-row nav-pills">
-									<a href="checkout1.html"
-										class="nav-link flex-sm-fill text-sm-center"> <i
-										class="fa fa-map-marker"> </i>Address
-									</a><a href="checkout2.html"
-										class="nav-link flex-sm-fill text-sm-center"> <i
-										class="fa fa-truck"> </i>Delivery Method
-									</a><a href="checkout3.html"
-										class="nav-link flex-sm-fill text-sm-center"> <i
-										class="fa fa-money"> </i>Payment Method
-									</a><a href="#" class="nav-link flex-sm-fill text-sm-center active">
-										<i class="fa fa-eye"> </i>Order Review
+									<a href="<c:url value="/oplungdienthoai/home/thanhtoan"/>"
+										class="nav-link flex-sm-fill text-sm-center disabled"> <i
+										class="fa fa-map-marker"> </i>Địa chỉ nhận hàng
+									</a><a href="<c:url value="/oplungdienthoai/home/thanhtoan2"/>"
+										class="nav-link flex-sm-fill text-sm-center disabled"> <i
+										class="fa fa-truck"> </i>Đơn vị vận chuyển
+									</a><a href="<c:url value="/oplungdienthoai/home/thanhtoan3"/>"
+										class="nav-link flex-sm-fill text-sm-center disabled"> <i
+										class="fa fa-money"> </i>Phương thức thanh toán
+									</a><a href="<c:url value="/oplungdienthoai/home/thanhtoan4"/>"
+										class="nav-link flex-sm-fill text-sm-center active"> <i
+										class="fa fa-eye"> </i>Tổng hóa đơn
 									</a>
 								</div>
 								<div class="content">
@@ -87,6 +88,14 @@
 													<td>$200.00</td>
 													<td><a href="#"><i class="fa fa-trash-o"></i></a></td>
 												</tr>
+												<tr>
+													<td>Đơn vị vận chuyển:</td>
+													<td>abc</td>
+												</tr>
+												<tr>
+													<td>Phương thức thanh toán:</td>
+													<td>abc</td>
+												</tr>
 											</tbody>
 											<tfoot>
 												<tr>
@@ -102,9 +111,9 @@
 								<div class="box-footer d-flex justify-content-between">
 									<a href="<c:url value="/oplungdienthoai/home/thanhtoan3"/>"
 										class="btn btn-outline-secondary"><i
-										class="fa fa-chevron-left"></i>Back to payment method</a>
+										class="fa fa-chevron-left"></i>Quay lại</a>
 									<button type="submit" class="btn btn-primary">
-										Place an order<i class="fa fa-chevron-right"></i>
+										Thanh toán<i class="fa fa-chevron-right"></i>
 									</button>
 								</div>
 							</form>
@@ -137,6 +146,23 @@
 									</tbody>
 								</table>
 							</div>
+						</div>
+						<div class="box">
+							<div class="box-header">
+								<h4 class="mb-0">Lời nhắn</h4>
+							</div>
+							<p class="text-muted">Để lại lời nhắn cho người bán.</p>
+							<form>
+								<div class="input-group">
+									<input type="text" class="form-control"><span
+										class="input-group-append">
+										<button type="button" class="btn btn-primary1">
+											<i class="fa fa-gift"></i>
+										</button>
+									</span>
+								</div>
+								<!-- /input-group-->
+							</form>
 						</div>
 					</div>
 					<!-- /.col-md-3-->
