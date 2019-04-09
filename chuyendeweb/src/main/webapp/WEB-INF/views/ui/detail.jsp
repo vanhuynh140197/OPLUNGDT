@@ -145,7 +145,7 @@
 									</p>
 									<p class="text-center buttons" style="margin-left: 20%;">
 										<a href="<c:url value="/oplungdienthoai/home/giohang"/>"
-											class="btn btn-primary"><i class="fa fa-shopping-cart"></i>
+											class="btn btn-primary5"><i class="fa fa-shopping-cart"></i>
 											Đặt hàng nhanh</a>
 									</p>
 									<br>

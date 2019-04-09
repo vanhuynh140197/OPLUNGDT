@@ -543,7 +543,7 @@
 												class="form-inline d-block d-lg-flex justify-content-between flex-column flex-md-row">
 												<div class="products-number">
 													<strong>Hiển thị</strong><a href="#"
-														style="margin-left: 2px;" class="btn btn-sm btn-primary">6</a><a
+														style="margin-left: 2px;" class="btn btn-sm btn-primary5">6</a><a
 														href="#" class="btn btn-outline-secondary btn-sm">24</a><a
 														href="#" class="btn btn-outline-secondary btn-sm">Tất
 														cả</a>
@@ -593,8 +593,8 @@
 													<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"
 														class="btn btn-outline-secondary">Chi tiết</a><a
 														href="<c:url value="/oplungdienthoai/home/giohang"/>"
-														class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Đặt
-														hàng nhanh</a>
+														class="btn btn-primary5"><i
+														class="fa fa-shopping-cart"></i>Đặt hàng nhanh</a>
 												</p>
 											</div>
 											<!-- /.text-->
@@ -637,8 +637,8 @@
 													<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"
 														class="btn btn-outline-secondary">Chi tiết</a> <a
 														href="<c:url value="/oplungdienthoai/home/giohang"/>"
-														class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Đặt
-														hàng nhanh</a>
+														class="btn btn-primary5"><i
+														class="fa fa-shopping-cart"></i>Đặt hàng nhanh</a>
 												</p>
 											</div>
 											<!-- /.text-->
@@ -687,8 +687,8 @@
 													<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"
 														class="btn btn-outline-secondary">Chi tiết</a> <a
 														href="<c:url value="/oplungdienthoai/home/giohang"/>"
-														class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Đặt
-														hàng nhanh</a>
+														class="btn btn-primary5"><i
+														class="fa fa-shopping-cart"></i>Đặt hàng nhanh</a>
 												</p>
 											</div>
 											<!-- /.text-->
@@ -726,7 +726,7 @@
 													<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"
 														class="btn btn-outline-secondary">Chi tiết</a><a
 														href=<c:url value="/oplungdienthoai/home/giohang"/>
-														" class="btn btn-primary"><i
+														class="btn btn-primary5"><i
 														class="fa fa-shopping-cart"></i>Đặt hàng nhanh</a>
 												</p>
 											</div>
@@ -772,8 +772,8 @@
 													<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"
 														class="btn btn-outline-secondary">Chi tiết</a><a
 														href="<c:url value="/oplungdienthoai/home/giohang"/>"
-														class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Đặt
-														hàng nhanh</a>
+														class="btn btn-primary5"><i
+														class="fa fa-shopping-cart"></i>Đặt hàng nhanh</a>
 												</p>
 											</div>
 											<!-- /.text-->
@@ -811,8 +811,8 @@
 													<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"
 														class="btn btn-outline-secondary">Chi tiết</a><a
 														href="<c:url value="/oplungdienthoai/home/giohang"/>"
-														class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Đặt
-														hàng nhanh</a>
+														class="btn btn-primary5"><i
+														class="fa fa-shopping-cart"></i>Đặt hàng nhanh</a>
 												</p>
 											</div>
 											<!-- /.text-->

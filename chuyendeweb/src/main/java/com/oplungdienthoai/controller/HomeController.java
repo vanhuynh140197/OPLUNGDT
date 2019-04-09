@@ -46,6 +46,10 @@ public class HomeController {
 	public String dangKy(){
 		return "/ui/register";
 	}
+	@RequestMapping(value ="/home/dangnhap")
+	public String dangNhap(){
+		return "/ui/login";
+	}
 }
 
 

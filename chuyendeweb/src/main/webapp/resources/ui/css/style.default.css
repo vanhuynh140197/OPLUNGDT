@@ -1429,7 +1429,7 @@ STYLE SWITCHER FOR DEMO
 	color: #6c757d;
 }
 
-.btn-primary {
+.btn-primary5 {
 	color: #212529;
 	background-color: #4fbfa8;
 	border-color: #4fbfa8;
@@ -1515,36 +1515,43 @@ STYLE SWITCHER FOR DEMO
 	box-shadow: 0 0 0 0.2rem rgba(79, 191, 168, 0.5);
 }
 
-.btn-primary:hover {
+.btn-primary5:hover {
 	color: #fff;
 	background-color: #3eaa94;
 	border-color: #3aa18c;
 }
 
-.btn-primary:focus, .btn-primary.focus {
+.btn-primary5:focus, .btn-primary5.focus {
 	-webkit-box-shadow: 0 0 0 0.2rem rgba(79, 191, 168, 0.5);
 	box-shadow: 0 0 0 0.2rem rgba(79, 191, 168, 0.5);
 }
 
-.btn-primary.disabled, .btn-primary:disabled {
+.btn-primary5.disabled, .btn-primary5:disabled {
 	color: #212529;
 	background-color: #4fbfa8;
 	border-color: #4fbfa8;
 }
 
-.btn-primary:not (:disabled ):not (.disabled ):active, .btn-primary:not
-	 (:disabled ):not (.disabled ).active, .show>.btn-primary.dropdown-toggle
+.btn-primary5:not (:disabled ):not (.disabled ):active, .btn-primary5:not
+	 (:disabled ):not (.disabled ).active, .show>.btn-primary5.dropdown-toggle
 	{
 	color: #fff;
 	background-color: #3aa18c;
 	border-color: #379783;
 }
 
-.btn-primary:not (:disabled ):not (.disabled ):active:focus,
-	.btn-primary:not (:disabled ):not (.disabled ).active:focus, .show>.btn-primary.dropdown-toggle:focus
+.btn-primary5:not (:disabled ):not (.disabled ):active:focus,
+	.btn-primary5:not (:disabled ):not (.disabled ).active:focus, .show>.btn-primary5.dropdown-toggle:focus
 	{
 	-webkit-box-shadow: 0 0 0 0.2rem rgba(79, 191, 168, 0.5);
 	box-shadow: 0 0 0 0.2rem rgba(79, 191, 168, 0.5);
+}
+
+.btn-warning1 {
+	color: #ffffff;
+	background-color: #d96926;
+	border-color: #d96926;
+	height: 50%;
 }
 
 .btn-secondary {
@@ -2659,7 +2666,15 @@ select
 
 
 
+
+
+
+
 .form-control
+
+
+
+
 
 
 
@@ -2682,7 +2697,11 @@ select
 
 
 
+
+
  
+
+
 
 
 
@@ -2701,7 +2720,11 @@ size
 
 
 
+
+
  
+
+
 
 
 
@@ -2718,7 +2741,11 @@ size
 
 
 
+
+
  
+
+
 
 
 
@@ -2737,7 +2764,11 @@ multiple
 
 
 
+
+
  
+
+
 
 
 
@@ -2762,6 +2793,10 @@ height
 
 
 
+
+
+
+
 :
 
 
@@ -2770,7 +2805,11 @@ height
 
 
 
+
+
  
+
+
 
 
 
@@ -2793,11 +2832,19 @@ calc
 
 
 
+
+
+
+
 (2
 .1rem
 +
 2
 px
+
+
+
+
 
 
 
@@ -2841,7 +2888,15 @@ select
 
 
 
+
+
+
+
 .form-control-sm
+
+
+
+
 
 
 
@@ -2864,7 +2919,11 @@ select
 
 
 
+
+
  
+
+
 
 
 
@@ -2883,7 +2942,11 @@ size
 
 
 
+
+
  
+
+
 
 
 
@@ -2900,7 +2963,11 @@ size
 
 
 
+
+
  
+
+
 
 
 
@@ -2919,7 +2986,11 @@ multiple
 
 
 
+
+
  
+
+
 
 
 
@@ -2944,6 +3015,10 @@ height
 
 
 
+
+
+
+
 :
 
 
@@ -2952,7 +3027,11 @@ height
 
 
 
+
+
  
+
+
 
 
 
@@ -2975,11 +3054,19 @@ calc
 
 
 
+
+
+
+
 (1
 .607rem
 +
 2
 px
+
+
+
+
 
 
 
@@ -3018,7 +3105,15 @@ select
 
 
 
+
+
+
+
 .form-control-lg
+
+
+
+
 
 
 
@@ -3041,7 +3136,11 @@ select
 
 
 
+
+
  
+
+
 
 
 
@@ -3060,7 +3159,11 @@ size
 
 
 
+
+
  
+
+
 
 
 
@@ -3077,7 +3180,11 @@ size
 
 
 
+
+
  
+
+
 
 
 
@@ -3096,7 +3203,11 @@ multiple
 
 
 
+
+
  
+
+
 
 
 
@@ -3121,6 +3232,10 @@ height
 
 
 
+
+
+
+
 :
 
 
@@ -3129,7 +3244,11 @@ height
 
 
 
+
+
  
+
+
 
 
 
@@ -3152,11 +3271,19 @@ calc
 
 
 
+
+
+
+
 (2
 .6875rem
 +
 2
 px
+
+
+
+
 
 
 

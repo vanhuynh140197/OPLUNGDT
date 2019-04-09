@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Ốp lưng điện thoại giá rẻ|Đăng ký</title>
+<title>Ốp lưng điện thoại giá rẻ|Đăng nhập</title>
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="all,follow">
@@ -27,7 +27,7 @@
 						<ol class="breadcrumb">
 							<li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
 							<li aria-current="page" class="breadcrumb-item active">Đăng
-								ký tài khoản</li>
+								nhập</li>
 						</ol>
 						</nav>
 					</div>
@@ -35,11 +35,11 @@
 						<div class="box">
 							<div class="row">
 								<div class="col-md-6">
-									<h3>Tạo tài khoản</h3>
+									<h4>Chào mừng bạn đến với Shop Obaju. Đăng nhập ngay!</h4>
 								</div>
 								<div class="col-md-6" align="right">
-									Bạn đã là thành viên? <i> <a href="<c:url value="/oplungdienthoai/home/dangnhap"/>" style="color: red;">Đăng
-											nhập </a>
+									Thành viên mới? <i> <a href="<c:url value="/oplungdienthoai/home/dangky"/>" style="color: red;">Đăng
+											ký </a>
 									</i>&nbsp;tại đây
 								</div>
 							</div>
@@ -48,25 +48,26 @@
 							<form action="" method="post">
 								<div class="content py-3">
 									<div class="row">
-										<div class="col-md-6">
+										<div class="col-md-1"></div>
+										<div class="col-md-5">
 											<div class="form-group">
-												<label for="email">Địa chỉ email<strong
-													style="color: red;">*</strong></label> <input id="email"
-													placeholder="Vui lòng nhập email của bạn" type="text"
-													class="form-control">
+												<label for="email">Email<strong style="color: red;">*</strong></label>
+												<input id="email" placeholder="Vui lòng nhập email của bạn"
+													type="text" class="form-control">
 											</div>
 										</div>
-										<div class="col-md-6">
-											<div class="form-group">
-												<label for="name">Tên<strong style="color: red;">*</strong></label>
-												<input id="name" type="text" placeholder="Họ và tên"
-													class="form-control">
-											</div>
+										<div class="col-md-1"></div>
+										<div class="col-md-4">
+											<button type="submit" class="btn btn-warning1"
+												style="margin-top: 7%; width: 100%;">
+												<i class="fas fa-sign-in-alt"></i> Đăng nhập
+											</button>
 										</div>
 									</div>
 									<!-- /.row-->
 									<div class="row">
-										<div class="col-md-6">
+										<div class="col-md-1"></div>
+										<div class="col-md-5">
 											<div class="form-group">
 												<label for="pass">Mật khẩu<strong
 													style="color: red;">*</strong></label> <input id="pass" type="text"
@@ -74,51 +75,22 @@
 													class="form-control">
 											</div>
 										</div>
-										<div class="col-md-6">
-											<div class="text-center">
-												<button type="submit" class="btn btn-warning1"
-													style="margin-top: 2%; width: 100%; height: 50px;">
-													<i class="fas fa-sign-out-alt"></i> Đăng ký
-												</button>
-											</div>
-										</div>
-									</div>
-									<!-- /.row-->
-									<div class="row">
-										<div class="col-md-6">
-											<div class="form-group">
-												<label for="re-pass">Nhập lại mật khẩu<strong
-													style="color: red;">*</strong></label> <input id="city" type="text"
-													class="form-control">
-											</div>
-										</div>
-										<div class="col-md-6">
-											<div class="form-group">
-												<input type="checkbox"> Tôi đồng ý các điều khoản
-												trên<br> <br>
-												<p>
-													<i class="fab fa-jedi-order"></i> Hoặc đăng ký với
-												</p>
-											</div>
-										</div>
-										<div class="col-md-6">
-											<div class="form-group">
-												<label for="phone">Telephone</label> <input id="phone"
-													type="text" class="form-control">
-											</div>
-										</div>
-										<div class="col-md-6">
+										<div class="col-md-1"></div>
+										<div class="col-md-4" style="margin-top: -1%;">
+											<p>
+												<i class="fab fa-jedi-order"></i> Hoặc đăng nhập bằng
+											</p>
 											<div class="form-group">
 												<div class="row">
 													<div class="col-md-6">
 														<button type="submit" class="btn btn-primary"
-															style="width: 100%; height: 50px;">
+															style="width: 100%; height: 40px;">
 															<i class="fab fa-facebook-f"></i> Facebook
 														</button>
 													</div>
 													<div class="col-md-6">
 														<button type="submit" class="btn btn-danger"
-															style="width: 100%; height: 50px;">
+															style="width: 100%; height: 40px;">
 															<i class="fab fa-google-plus-g"></i> Google
 														</button>
 													</div>
@@ -126,7 +98,6 @@
 											</div>
 										</div>
 									</div>
-									<!-- /.row-->
 								</div>
 							</form>
 						</div>

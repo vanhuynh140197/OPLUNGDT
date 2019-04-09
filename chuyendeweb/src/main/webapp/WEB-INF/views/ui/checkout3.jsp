@@ -100,7 +100,7 @@
 									<a href="<c:url value="/oplungdienthoai/home/thanhtoan2"/>"
 										class="btn btn-outline-secondary"><i
 										class="fa fa-chevron-left"></i>Quay lại</a>
-									<button type="submit" class="btn btn-primary">
+									<button type="submit" class="btn btn-primary5">
 										Tiếp tục phương thức thanh toán<i class="fa fa-chevron-right"></i>
 									</button>
 								</div>

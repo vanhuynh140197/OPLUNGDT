@@ -112,7 +112,7 @@
 									<a href="<c:url value="/oplungdienthoai/home/thanhtoan3"/>"
 										class="btn btn-outline-secondary"><i
 										class="fa fa-chevron-left"></i>Quay lại</a>
-									<button type="submit" class="btn btn-primary">
+									<button type="submit" class="btn btn-primary5">
 										Thanh toán<i class="fa fa-chevron-right"></i>
 									</button>
 								</div>

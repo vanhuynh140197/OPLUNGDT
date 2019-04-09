@@ -55,9 +55,10 @@
 						<li class="list-inline-item"><a
 							href="<c:url value="/oplungdienthoai/home/dangky"/>"><i
 								class="fas fa-user-edit"></i> Đăng ký</a></li>
-						<li class="list-inline-item"><a href="#" data-toggle="modal"
-							data-target="#login-modal"><i class="fas fa-user-tag"></i>
-								Đăng nhập</a></li>
+						<li class="list-inline-item"><a
+							href="<c:url value="/oplungdienthoai/home/dangnhap"/>"> <i
+								class="fas fa-user-tag"></i> Đăng nhập
+						</a></li>
 					</ul>
 				</div>
 			</div>
@@ -78,17 +79,18 @@
 					<div class="modal-body">
 						<form action="" method="post">
 							<div class="form-group">
-								<label class="text-muted" style="margin-left: -2%"><i class="fas fa-users"></i>
-									Email/Số điện thoại/Tên đăng nhập</label> <br> <input
-									id="email-modal" type="text" class="form-control">
+								<label class="text-muted" style="margin-left: -2%"><i
+									class="fas fa-users"></i> Email/Số điện thoại/Tên đăng nhập</label> <br>
+								<input id="email-modal" type="text" class="form-control">
 							</div>
 							<div class="form-group">
-								<label class="text-muted" style="margin-left: -2%"><i class="fas fa-key"></i> Mật
-									khẩu</label><br> <input id="password-modal" type="password"
-									class="form-control">
+								<label class="text-muted" style="margin-left: -2%"><i
+									class="fas fa-key"></i> Mật khẩu</label><br> <input
+									id="password-modal" type="password" class="form-control">
 							</div>
-							<p class="text-muted" style="margin-left: 39%;"><b>Quên mật
-								khẩu</b>| Trợ giúp?</p>
+							<p class="text-muted" style="margin-left: 39%;">
+								<b>Quên mật khẩu</b>| Trợ giúp?
+							</p>
 							<p class="text-center">
 								<button class="btn btn-primary2">
 									<i class="fa fa-sign-in"></i> Đăng nhập
@@ -728,12 +730,12 @@
 				<!-- /.nav-collapse-->
 				<div id="search-not-mobile" class="navbar-collapse collapse"></div>
 				<a data-toggle="collapse" href="#search"
-					class="btn navbar-btn btn-primary d-none d-lg-inline-block"><span
+					class="btn navbar-btn btn-primary5 d-none d-lg-inline-block"><span
 					class="sr-only">Toggle search</span><i class="fa fa-search"></i></a>
 				<div id="basket-overview"
 					class="navbar-collapse collapse d-none d-lg-block">
 					<a href="<c:url value="/oplungdienthoai/home/giohang"/>"
-						class="btn btn-primary navbar-btn"><i
+						class="btn btn-primary5 navbar-btn"><i
 						class="fa fa-shopping-cart"></i></a>
 				</div>
 			</div>
@@ -746,7 +748,7 @@
 				<div class="input-group">
 					<input type="text" placeholder="Tìm kiếm" class="form-control">
 					<div class="input-group-append">
-						<button type="button" class="btn btn-primary">
+						<button type="button" class="btn btn-primary5">
 							<i class="fa fa-search"></i>
 						</button>
 					</div>
