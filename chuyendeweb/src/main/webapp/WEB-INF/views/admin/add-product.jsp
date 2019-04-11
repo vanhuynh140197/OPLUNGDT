@@ -6,7 +6,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
-<title>Data Table | Kiaalap - Kiaalap Admin Template</title>
+<title>Add Student | Kiaalap - Kiaalap Admin Template</title>
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- favicon
@@ -21,15 +21,15 @@
 <!-- Bootstrap CSS
         ============================================ -->
 <link rel="stylesheet"
-	href="<c:url value="/resources/admin/css/bootstrap.min.css" />">
+	href="<c:url value="/resources/admin/css/bootstrap.min.css"/>">
 <!-- Bootstrap CSS
         ============================================ -->
 <link rel="stylesheet"
-	href="<c:url value="/resources/admin/css/font-awesome.min.css" />">
+	href="<c:url value="/resources/admin/css/font-awesome.min.css"/>">
 <!-- owl.carousel CSS
         ============================================ -->
 <link rel="stylesheet"
-	href="<c:url value="/resources/admin/css/owl.carousel.css" />">
+	href="<c:url value="/resources/admin/css/owl.carousel.css"/>">
 <link rel="stylesheet"
 	href="<c:url value="/resources/admin/css/owl.theme.css"/>">
 <link rel="stylesheet"
@@ -37,7 +37,7 @@
 <!-- animate CSS
         ============================================ -->
 <link rel="stylesheet"
-	href="<c:url value="/resources/admin/css/animate.css"/> ">
+	href="<c:url value="/resources/admin/css/animate.css"/>">
 <!-- normalize CSS
         ============================================ -->
 <link rel="stylesheet"
@@ -48,7 +48,8 @@
 	href="<c:url value="/resources/admin/css/meanmenu.min.css"/>">
 <!-- main CSS
         ============================================ -->
-<link rel="stylesheet" href="<c:url value="/resources/admin/css/main.css"/>">
+<link rel="stylesheet"
+	href="<c:url value="/resources/admin/css/main.css"/>">
 <!-- educate icon CSS
         ============================================ -->
 <link rel="stylesheet"
@@ -73,25 +74,10 @@
 	href="<c:url value="/resources/admin/css/calendar/fullcalendar.min.css"/>">
 <link rel="stylesheet"
 	href="<c:url value="/resources/admin/css/calendar/fullcalendar.print.min.css"/>">
-<!-- x-editor CSS
-        ============================================ -->
-<link rel="stylesheet"
-	href="<c:url value="/resources/admin/css/editor/select2.css"/>">
-<link rel="stylesheet"
-	href="<c:url value="/resources/admin/css/editor/datetimepicker.css"/>">
-<link rel="stylesheet"
-	href="<c:url value="/resources/admin/css/editor/bootstrap-editable.css"/>">
-<link rel="stylesheet"
-	href="<c:url value="/resources/admin/css/editor/x-editor-style.css"/>">
-<!-- normalize CSS
-        ============================================ -->
-<link rel="stylesheet"
-	href="<c:url value="/resources/admin/css/data-table/bootstrap-table.css"/>">
-<link rel="stylesheet"
-	href="<c:url value="/resources/admin/css/data-table/bootstrap-editable.css"/>">
 <!-- style CSS
         ============================================ -->
-<link rel="stylesheet" href="<c:url value="/resources/admin/css/style.css"/>">
+<link rel="stylesheet"
+	href="<c:url value="/resources/admin/css/style.css"/>">
 <!-- responsive CSS
         ============================================ -->
 <link rel="stylesheet"
@@ -100,6 +86,14 @@
         ============================================ -->
 <script
 	src="<c:url value="/resources/admin/js/vendor/modernizr-2.8.3.min.js"/>"></script>
+<!-- forms CSS
+        ============================================ -->
+<link rel="stylesheet"
+	href="<c:url value="/resources/admin/css/form/all-type-forms.css"/>">
+<!-- dropzone CSS
+        ============================================ -->
+<link rel="stylesheet"
+	href="<c:url value="/resources/admin/css/dropzone/dropzone.css"/>">
 </head>
 
 <body>
@@ -153,8 +147,8 @@
 							href="professor-profile.html"><span class="mini-sub-pro">Professor
 									Profile</span></a></li>
 					</ul></li>
-				<li><a class="has-arrow" href="all-students.html"
-					aria-expanded="false"><span
+				<li class="active"><a class="has-arrow"
+					href="all-students.html" aria-expanded="false"><span
 						class="educate-icon educate-student icon-wrap"></span> <span
 						class="mini-click-non">Students</span></a>
 					<ul class="submenu-angle" aria-expanded="false">
@@ -262,7 +256,7 @@
 						<li><a title="Peity Charts" href="peity.html"><span
 								class="mini-sub-pro">Peity Charts</span></a></li>
 					</ul></li>
-				<li class="active"><a class="has-arrow" href="mailbox.html"
+				<li><a class="has-arrow" href="mailbox.html"
 					aria-expanded="false"><span
 						class="educate-icon educate-data-table icon-wrap"></span> <span
 						class="mini-click-non">Data Tables</span></a>
@@ -1160,7 +1154,7 @@
 										<ul class="breadcome-menu">
 											<li><a href="#">Home</a> <span class="bread-slash">/</span>
 											</li>
-											<li><span class="bread-blod">Data Table</span></li>
+											<li><span class="bread-blod">Add Student</span></li>
 										</ul>
 									</div>
 								</div>
@@ -1170,308 +1164,200 @@
 				</div>
 			</div>
 		</div>
-		<!-- Static Table Start -->
-		<div class="data-table-area mg-b-15">
+		<!-- Single pro tab review Start-->
+		<div class="single-pro-review-area mt-t-30 mg-b-15">
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-						<div class="sparkline13-list">
-							<div class="sparkline13-hd">
-								<div class="main-sparkline13-hd">
-									<h1>
-										Projects <span class="table-project-n">Data</span> Table
-									</h1>
-								</div>
-							</div>
-							<div class="sparkline13-graph">
-								<div class="datatable-dashv1-list custom-datatable-overright">
-									<div id="toolbar">
-										<select class="form-control dt-tb">
-											<option value="">Export Basic</option>
-											<option value="all">Export All</option>
-											<option value="selected">Export Selected</option>
-										</select>
+						<div class="product-payment-inner-st">
+							<ul id="myTabedu1" class="tab-review-design">
+								<li class="active"><a href="#description">Basic
+										Information</a></li>
+								<li><a href="#reviews"> Account Information</a></li>
+								<li><a href="#INFORMATION">Social Information</a></li>
+							</ul>
+							<div id="myTabContent" class="tab-content custom-product-edit">
+								<div class="product-tab-list tab-pane fade active in"
+									id="description">
+									<div class="row">
+										<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+											<div class="review-content-section">
+												<div id="dropzone1" class="pro-ad">
+													<form action="/upload"
+														class="dropzone dropzone-custom needsclick add-professors"
+														id="demo1-upload">
+														<div class="row">
+															<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+																<div class="form-group">
+																	<input name="firstname" type="text"
+																		class="form-control" placeholder="Full Name">
+																</div>
+																<div class="form-group">
+																	<input name="address" type="text" class="form-control"
+																		placeholder="Address">
+																</div>
+																<div class="form-group">
+																	<input name="mobileno" type="number"
+																		class="form-control" placeholder="Mobile no.">
+																</div>
+																<div class="form-group">
+																	<input name="finish" id="finish" type="text"
+																		class="form-control" placeholder="Date of Birth">
+																</div>
+																<div class="form-group">
+																	<input name="postcode" id="postcode" type="text"
+																		class="form-control" placeholder="Postcode">
+																</div>
+																<div class="form-group alert-up-pd">
+																	<div class="dz-message needsclick download-custom">
+																		<i class="fa fa-download edudropnone"
+																			aria-hidden="true"></i>
+																		<h2 class="edudropnone">Drop image here or click
+																			to upload.</h2>
+																		<p class="edudropnone">
+																			<span class="note needsclick">(This is just a
+																				demo dropzone. Selected image is <strong>not</strong>
+																				actually uploaded.)
+																			</span>
+																		</p>
+																		<input name="imageico" class="hd-pro-img" type="text" />
+																	</div>
+																</div>
+															</div>
+															<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+																<div class="form-group">
+																	<input name="department" type="text"
+																		class="form-control" placeholder="Department">
+																</div>
+																<div class="form-group res-mg-t-15">
+																	<textarea name="description" placeholder="Description"></textarea>
+																</div>
+																<div class="form-group">
+																	<select name="gender" class="form-control">
+																		<option value="none" selected="" disabled="">Select
+																			Gender</option>
+																		<option value="0">Male</option>
+																		<option value="1">Female</option>
+																	</select>
+																</div>
+																<div class="form-group">
+																	<select name="country" class="form-control">
+																		<option value="none" selected="" disabled="">Select
+																			country</option>
+																		<option value="0">India</option>
+																		<option value="1">Pakistan</option>
+																		<option value="2">Amerika</option>
+																		<option value="3">China</option>
+																		<option value="4">Dubai</option>
+																		<option value="5">Nepal</option>
+																	</select>
+																</div>
+																<div class="form-group">
+																	<select name="state" class="form-control">
+																		<option value="none" selected="" disabled="">Select
+																			state</option>
+																		<option value="0">Gujarat</option>
+																		<option value="1">Maharastra</option>
+																		<option value="2">Rajastan</option>
+																		<option value="3">Maharastra</option>
+																		<option value="4">Rajastan</option>
+																		<option value="5">Gujarat</option>
+																	</select>
+																</div>
+																<div class="form-group">
+																	<select name="city" class="form-control">
+																		<option value="none" selected="" disabled="">Select
+																			city</option>
+																		<option value="0">Surat</option>
+																		<option value="1">Baroda</option>
+																		<option value="2">Navsari</option>
+																		<option value="3">Baroda</option>
+																		<option value="4">Surat</option>
+																	</select>
+																</div>
+																<div class="form-group">
+																	<input name="website" type="text" class="form-control"
+																		placeholder="Website URL">
+																</div>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-lg-12">
+																<div class="payment-adress">
+																	<button type="submit"
+																		class="btn btn-primary waves-effect waves-light">Submit</button>
+																</div>
+															</div>
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
 									</div>
-									<table id="table" data-toggle="table" data-pagination="true"
-										data-search="true" data-show-columns="true"
-										data-show-pagination-switch="true" data-show-refresh="true"
-										data-key-events="true" data-show-toggle="true"
-										data-resizable="true" data-cookie="true"
-										data-cookie-id-table="saveId" data-show-export="true"
-										data-click-to-select="true" data-toolbar="#toolbar">
-										<thead>
-											<tr>
-												<th data-field="state" data-checkbox="true"></th>
-												<th data-field="id">ID</th>
-												<th data-field="name" data-editable="true">Task</th>
-												<th data-field="email" data-editable="true">Email</th>
-												<th data-field="phone" data-editable="true">Phone</th>
-												<th data-field="complete">Completed</th>
-												<th data-field="task" data-editable="true">Task</th>
-												<th data-field="date" data-editable="true">Date</th>
-												<th data-field="price" data-editable="true">Price</th>
-												<th data-field="action">Action</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td></td>
-												<td>1</td>
-												<td>Web Development</td>
-												<td>admin@uttara.com</td>
-												<td>+8801962067309</td>
-												<td class="datatable-ct"><span class="pie">1/6</span></td>
-												<td>10%</td>
-												<td>Jul 14, 2017</td>
-												<td>$5455</td>
-												<td class="datatable-ct"><i class="fa fa-check"></i></td>
-											</tr>
-											<tr>
-												<td></td>
-												<td>2</td>
-												<td>Graphic Design</td>
-												<td>fox@itpark.com</td>
-												<td>+8801762067304</td>
-												<td class="datatable-ct"><span class="pie">230/360</span>
-												</td>
-												<td>70%</td>
-												<td>fab 2, 2017</td>
-												<td>$8756</td>
-												<td class="datatable-ct"><i class="fa fa-check"></i></td>
-											</tr>
-											<tr>
-												<td></td>
-												<td>3</td>
-												<td>Software Development</td>
-												<td>gumre@hash.com</td>
-												<td>+8801862067308</td>
-												<td class="datatable-ct"><span class="pie">0.42/1.461</span>
-												</td>
-												<td>5%</td>
-												<td>Seb 5, 2017</td>
-												<td>$9875</td>
-												<td class="datatable-ct"><i class="fa fa-check"></i></td>
-											</tr>
-											<tr>
-												<td></td>
-												<td>4</td>
-												<td>Woocommerce</td>
-												<td>kyum@frok.com</td>
-												<td>+8801962066547</td>
-												<td class="datatable-ct"><span class="pie">2,7</span></td>
-												<td>15%</td>
-												<td>Oct 10, 2017</td>
-												<td>$3254</td>
-												<td class="datatable-ct"><i class="fa fa-check"></i></td>
-											</tr>
-											<tr>
-												<td></td>
-												<td>5</td>
-												<td>Joomla</td>
-												<td>jams@game.com</td>
-												<td>+8801962098745</td>
-												<td class="datatable-ct"><span class="pie">200,133</span>
-												</td>
-												<td>80%</td>
-												<td>Nov 20, 2017</td>
-												<td>$58745</td>
-												<td class="datatable-ct"><i class="fa fa-check"></i></td>
-											</tr>
-											<tr>
-												<td></td>
-												<td>6</td>
-												<td>Wordpress</td>
-												<td>flat@yem.com</td>
-												<td>+8801962254781</td>
-												<td class="datatable-ct"><span class="pie">0.42,1.051</span>
-												</td>
-												<td>30%</td>
-												<td>Aug 25, 2017</td>
-												<td>$789879</td>
-												<td class="datatable-ct"><i class="fa fa-check"></i></td>
-											</tr>
-											<tr>
-												<td></td>
-												<td>7</td>
-												<td>Ecommerce</td>
-												<td>hasan@wpm.com</td>
-												<td>+8801962254863</td>
-												<td class="datatable-ct"><span class="pie">2,7</span></td>
-												<td>15%</td>
-												<td>July 17, 2017</td>
-												<td>$21424</td>
-												<td class="datatable-ct"><i class="fa fa-check"></i></td>
-											</tr>
-											<tr>
-												<td></td>
-												<td>8</td>
-												<td>Android Apps</td>
-												<td>ATM@devep.com</td>
-												<td>+8801962875469</td>
-												<td class="datatable-ct"><span class="pie">2,7</span></td>
-												<td>15%</td>
-												<td>June 11, 2017</td>
-												<td>$78978</td>
-												<td class="datatable-ct"><i class="fa fa-check"></i></td>
-											</tr>
-											<tr>
-												<td></td>
-												<td>9</td>
-												<td>Prestashop</td>
-												<td>presta@Prest.com</td>
-												<td>+8801962067524</td>
-												<td class="datatable-ct"><span class="pie">2,7</span></td>
-												<td>15%</td>
-												<td>May 9, 2017</td>
-												<td>$45645</td>
-												<td class="datatable-ct"><i class="fa fa-check"></i></td>
-											</tr>
-											<tr>
-												<td></td>
-												<td>10</td>
-												<td>Game Development</td>
-												<td>Dev@game.com</td>
-												<td>+8801962067457</td>
-												<td class="datatable-ct"><span class="pie">2,7</span></td>
-												<td>15%</td>
-												<td>April 5, 2017</td>
-												<td>$4564545</td>
-												<td class="datatable-ct"><i class="fa fa-check"></i></td>
-											</tr>
-											<tr>
-												<td></td>
-												<td>11</td>
-												<td>Angular Js</td>
-												<td>gular@angular.com</td>
-												<td>+8801962067124</td>
-												<td class="datatable-ct"><span class="pie">2,7</span></td>
-												<td>15%</td>
-												<td>Dec 1, 2017</td>
-												<td>$645455</td>
-												<td class="datatable-ct"><i class="fa fa-check"></i></td>
-											</tr>
-											<tr>
-												<td></td>
-												<td>12</td>
-												<td>Opencart</td>
-												<td>open@cart.com</td>
-												<td>+8801962067587</td>
-												<td class="datatable-ct"><span class="pie">2,7</span></td>
-												<td>15%</td>
-												<td>Jan 6, 2017</td>
-												<td>$78978</td>
-												<td class="datatable-ct"><i class="fa fa-check"></i></td>
-											</tr>
-											<tr>
-												<td></td>
-												<td>13</td>
-												<td>Education</td>
-												<td>john@example.com</td>
-												<td>+8801962067471</td>
-												<td class="datatable-ct"><span class="pie">2,7</span></td>
-												<td>15%</td>
-												<td>Feb 6, 2016</td>
-												<td>$456456</td>
-												<td class="datatable-ct"><i class="fa fa-check"></i></td>
-											</tr>
-											<tr>
-												<td></td>
-												<td>14</td>
-												<td>Construction</td>
-												<td>mary@example.com</td>
-												<td>+8801962012457</td>
-												<td class="datatable-ct"><span class="pie">2,7</span></td>
-												<td>15%</td>
-												<td>Jan 6, 2016</td>
-												<td>$87978</td>
-												<td class="datatable-ct"><i class="fa fa-check"></i></td>
-											</tr>
-											<tr>
-												<td></td>
-												<td>15</td>
-												<td>Real Estate</td>
-												<td>july@example.com</td>
-												<td>+8801962067309</td>
-												<td class="datatable-ct"><span class="pie">2,7</span></td>
-												<td>15%</td>
-												<td>Dec 1, 2016</td>
-												<td>$454554</td>
-												<td class="datatable-ct"><i class="fa fa-check"></i></td>
-											</tr>
-											<tr>
-												<td></td>
-												<td>16</td>
-												<td>Personal Regume</td>
-												<td>john@example.com</td>
-												<td>+8801962067306</td>
-												<td class="datatable-ct"><span class="pie">2,7</span></td>
-												<td>15%</td>
-												<td>May 9, 2016</td>
-												<td>$564555</td>
-												<td class="datatable-ct"><i class="fa fa-check"></i></td>
-											</tr>
-											<tr>
-												<td></td>
-												<td>17</td>
-												<td>Admin Template</td>
-												<td>mary@example.com</td>
-												<td>+8801962067305</td>
-												<td class="datatable-ct"><span class="pie">2,7</span></td>
-												<td>15%</td>
-												<td>June 11, 2016</td>
-												<td>$454565</td>
-												<td class="datatable-ct"><i class="fa fa-check"></i></td>
-											</tr>
-											<tr>
-												<td></td>
-												<td>18</td>
-												<td>FrontEnd</td>
-												<td>july@example.com</td>
-												<td>+8801962067304</td>
-												<td class="datatable-ct"><span class="pie">2,7</span></td>
-												<td>15%</td>
-												<td>May 9, 2015</td>
-												<td>$456546</td>
-												<td class="datatable-ct"><i class="fa fa-check"></i></td>
-											</tr>
-											<tr>
-												<td></td>
-												<td>19</td>
-												<td>Backend</td>
-												<td>john@range.com</td>
-												<td>+8801962067303</td>
-												<td class="datatable-ct"><span class="pie">2,7</span></td>
-												<td>15%</td>
-												<td>Feb 9, 2014</td>
-												<td>$564554</td>
-												<td class="datatable-ct"><i class="fa fa-check"></i></td>
-											</tr>
-											<tr>
-												<td></td>
-												<td>20</td>
-												<td>Java Advance</td>
-												<td>lamon@ghs.com</td>
-												<td>+8801962067302</td>
-												<td class="datatable-ct"><span class="pie">2,7</span></td>
-												<td>15%</td>
-												<td>July 6, 2014</td>
-												<td>$789889</td>
-												<td class="datatable-ct"><i class="fa fa-check"></i></td>
-											</tr>
-											<tr>
-												<td></td>
-												<td>21</td>
-												<td>Jquery Advance</td>
-												<td>hasad@uth.com</td>
-												<td>+8801962067301</td>
-												<td class="datatable-ct"><span class="pie">2,7</span></td>
-												<td>15%</td>
-												<td>Jun 6, 2013</td>
-												<td>$4565656</td>
-												<td class="datatable-ct"><i class="fa fa-check"></i></td>
-											</tr>
-										</tbody>
-									</table>
+								</div>
+								<div class="product-tab-list tab-pane fade" id="reviews">
+									<div class="row">
+										<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+											<div class="review-content-section">
+												<div class="row">
+													<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+														<div class="devit-card-custom">
+															<div class="form-group">
+																<input type="text" class="form-control"
+																	placeholder="Email">
+															</div>
+															<div class="form-group">
+																<input type="number" class="form-control"
+																	placeholder="Phone">
+															</div>
+															<div class="form-group">
+																<input type="password" class="form-control"
+																	placeholder="Password">
+															</div>
+															<div class="form-group">
+																<input type="password" class="form-control"
+																	placeholder="Confirm Password">
+															</div>
+															<a href="#!"
+																class="btn btn-primary waves-effect waves-light">Submit</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="product-tab-list tab-pane fade" id="INFORMATION">
+									<div class="row">
+										<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+											<div class="review-content-section">
+												<div class="row">
+													<div class="col-lg-12">
+														<div class="devit-card-custom">
+															<div class="form-group">
+																<input type="url" class="form-control"
+																	placeholder="Facebook URL">
+															</div>
+															<div class="form-group">
+																<input type="url" class="form-control"
+																	placeholder="Twitter URL">
+															</div>
+															<div class="form-group">
+																<input type="url" class="form-control"
+																	placeholder="Google Plus">
+															</div>
+															<div class="form-group">
+																<input type="url" class="form-control"
+																	placeholder="Linkedin URL">
+															</div>
+															<button type="submit"
+																class="btn btn-primary waves-effect waves-light">Submit</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -1479,7 +1365,6 @@
 				</div>
 			</div>
 		</div>
-		<!-- Static Table End -->
 		<div class="footer-copyright-area">
 			<div class="container-fluid">
 				<div class="row">
@@ -1496,6 +1381,7 @@
 		</div>
 	</div>
 
+	<!-- End Left menu area -->
 	<!-- jquery
         ============================================ -->
 	<script
@@ -1508,7 +1394,8 @@
 	<script src="<c:url value="/resources/admin/js/wow.min.js"/>"></script>
 	<!-- price-slider JS
         ============================================ -->
-	<script src="<c:url value="/resources/admin/js/jquery-price-slider.js"/>"></script>
+	<script
+		src="<c:url value="/resources/admin/js/jquery-price-slider.js"/>"></script>
 	<!-- meanmenu JS
         ============================================ -->
 	<script src="<c:url value="/resources/admin/js/jquery.meanmenu.js"/>"></script>
@@ -1520,7 +1407,16 @@
 	<script src="<c:url value="/resources/admin/js/jquery.sticky.js"/>"></script>
 	<!-- scrollUp JS
         ============================================ -->
-	<script src="<c:url value="/resources/admin/js/jquery.scrollUp.min.js"/>"></script>
+	<script
+		src="<c:url value="/resources/admin/js/jquery.scrollUp.min.js"/>"></script>
+	<!-- counterup JS
+        ============================================ -->
+	<script
+		src="<c:url value="/resources/admin/js/counterup/jquery.counterup.min.js"/>"></script>
+	<script
+		src="<c:url value="/resources/admin/js/counterup/waypoints.min.js"/>"></script>
+	<script
+		src="<c:url value="/resources/admin/js/counterup/counterup-active.js"/>"></script>
 	<!-- mCustomScrollbar JS
         ============================================ -->
 	<script
@@ -1529,45 +1425,33 @@
 		src="<c:url value="/resources/admin/js/scrollbar/mCustomScrollbar-active.js"/>"></script>
 	<!-- metisMenu JS
         ============================================ -->
-	<script src="<c:url value="/resources/admin/js/metisMenu/metisMenu.min.js"/>"></script>
+	<script
+		src="<c:url value="/resources/admin/js/metisMenu/metisMenu.min.js"/>"></script>
 	<script
 		src="<c:url value="/resources/admin/js/metisMenu/metisMenu-active.js"/>"></script>
-	<!-- data table JS
+	<!-- morrisjs JS
         ============================================ -->
 	<script
-		src="<c:url value="/resources/admin/js/data-table/bootstrap-table.js"/>"></script>
-	<script src="<c:url value="/resources/admin/js/data-table/tableExport.js"/>"></script>
+		src="<c:url value="/resources/admin/js/morrisjs/raphael-min.js"/>"></script>
+	<script src="<c:url value="/resources/admin/js/morrisjs/morris.js"/>"></script>
 	<script
-		src="<c:url value="/resources/admin/js/data-table/data-table-active.js"/>"></script>
-	<script
-		src="<c:url value="/resources/admin/js/data-table/bootstrap-table-editable.js"/>"></script>
-	<script
-		src="<c:url value="/resources/admin/js/data-table/bootstrap-editable.js"/>"></script>
-	<script
-		src="<c:url value="/resources/admin/js/data-table/bootstrap-table-resizable.js"/>"></script>
-	<script
-		src="<c:url value="/resources/admin/js/data-table/colResizable-1.5.source.js"/>"></script>
-	<script
-		src="<c:url value="/resources/admin/js/data-table/bootstrap-table-export.js"/>"></script>
-	<!--  editable JS
+		src="<c:url value="/resources/admin/js/morrisjs/morris-active.js"/>"></script>
+	<!-- morrisjs JS
         ============================================ -->
-	<script src="<c:url value="/resources/admin/js/editable/jquery.mockjax.js"/>"></script>
-	<script src="<c:url value="/resources/admin/js/editable/mock-active.js"/>"></script>
-	<script src="<c:url value="/resources/admin/js/editable/select2.js"/>"></script>
-	<script src="<c:url value="/resources/admin/js/editable/moment.min.js"/>"></script>
 	<script
-		src="<c:url value="/resources/admin/js/editable/bootstrap-datetimepicker.js"/>"></script>
+		src="<c:url value="/resources/admin/js/sparkline/jquery.sparkline.min.js"/>"></script>
 	<script
-		src="<c:url value="/resources/admin/js/editable/bootstrap-editable.js"/>"></script>
+		src="<c:url value="/resources/admin/js/sparkline/jquery.charts-sparkline.js"/>"></script>
 	<script
-		src="<c:url value="/resources/admin/js/editable/xediable-active.js"/>"></script>
-	<!-- Chart JS
+		src="<c:url value="/resources/admin/js/sparkline/sparkline-active.js"/>"></script>
+	<!-- calendar JS
         ============================================ -->
-	<script src="<c:url value="/resources/admin/js/chart/jquery.peity.min.js"/>"></script>
-	<script src="<c:url value="/resources/admin/js/peity/peity-active.js"/>"></script>
-	<!-- tab JS
-        ============================================ -->
-	<script src="<c:url value="/resources/admin/js/tab.js"/>"></script>
+	<script
+		src="<c:url value="/resources/admin/js/calendar/moment.min.js"/>"></script>
+	<script
+		src="<c:url value="/resources/admin/js/calendar/fullcalendar.min.js"/>"></script>
+	<script
+		src="<c:url value="/resources/admin/js/calendar/fullcalendar-active.js"/>"></script>
 	<!-- plugins JS
         ============================================ -->
 	<script src="<c:url value="/resources/admin/js/plugins.js"/>"></script>
@@ -1577,6 +1461,32 @@
 	<!-- tawk chat JS
         ============================================ -->
 	<script src="<c:url value="/resources/admin/js/tawk-chat.js"/>"></script>
-</body>
+	<!-- maskedinput JS
+        ============================================ -->
+	<script
+		src="<c:url value="/resources/admin/js/jquery.maskedinput.min.js"/>"></script>
+	<script src="<c:url value="/resources/admin/js/masking-active.js"/>"></script>
+	<!-- datepicker JS
+        ============================================ -->
+	<script
+		src="<c:url value="/resources/admin/js/datepicker/jquery-ui.min.js"/>"></script>
+	<script
+		src="<c:url value="/resources/admin/js/datepicker/datepicker-active.js"/>"></script>
+	<!-- form validate JS
+        ============================================ -->
+	<script
+		src="<c:url value="/resources/admin/js/form-validation/jquery.form.min.js"/>"></script>
+	<script
+		src="<c:url value="/resources/admin/js/form-validation/jquery.validate.min.js"/>"></script>
+	<script
+		src="<c:url value="/resources/admin/js/form-validation/form-active.js"/>"></script>
+	<!-- dropzone JS
+        ============================================ -->
+	<script src="<c:url value="/resources/admin/js/dropzone/dropzone.js"/>"></script>
 
+	============================================ -->
+	<script src="<c:url value="/resources/admin/js/tab.js"/>">
+		
+	</script>
+</body>
 </html>

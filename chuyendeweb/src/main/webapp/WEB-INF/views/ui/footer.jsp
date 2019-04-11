@@ -75,7 +75,6 @@
                 <div class="col-lg-6">
                     <p class="text-center text-lg-right">
                         Design by <a href="#">H&D_16102016</a>
-                        <!-- If you want to remove this backlink, pls purchase an Attribution-free License @ https://bootstrapious.com/p/obaju-e-commerce-template. Big thanks!-->
                     </p>
                 </div>
             </div>

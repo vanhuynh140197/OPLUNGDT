@@ -6,243 +6,16 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
-<title>Quản Lý Ốp Lưng Điện Thoại H&D</title>
+<title>Quản lý ốp lưng điện thoại H&D|Admin</title>
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- favicon
-        ============================================ -->
-<link rel="shortcut icon" type="image/x-icon"
-	href="<c:url value="/resources/admin/images/favicon.ico"/>">
-<!-- Google Fonts
-        ============================================ -->
-<link
-	href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900"
-	rel="stylesheet">
-<!-- Bootstrap CSS
-        ============================================ -->
-<link rel="stylesheet"
-	href="<c:url value="/resources/admin/css/bootstrap.min.css"/>">
-<!-- Bootstrap CSS
-        ============================================ -->
-<link rel="stylesheet"
-	href="<c:url value="/resources/admin/css/font-awesome.min.css"/>">
-<!-- owl.carousel CSS
-        ============================================ -->
-<link rel="stylesheet"
-	href="<c:url value="/resources/admin/css/owl.carousel.css"/>">
-<link rel="stylesheet"
-	href="<c:url value="/resources/admin/css/owl.theme.css"/>">
-<link rel="stylesheet"
-	href="<c:url value="/resources/admin/css/owl.transitions.css"/>">
-<!-- animate CSS
-        ============================================ -->
-<link rel="stylesheet"
-	href="<c:url value="/resources/admin/css/animate.css"/>">
-<!-- normalize CSS
-        ============================================ -->
-<link rel="stylesheet"
-	href="<c:url value="/resources/admin/css/normalize.css"/>">
-<!-- meanmenu icon CSS
-        ============================================ -->
-<link rel="stylesheet"
-	href="<c:url value="/resources/admin/css/meanmenu.min.css"/>">
-<!-- main CSS
-        ============================================ -->
-<link rel="stylesheet" href="<c:url value="/resources/admin/css/main.css"/>">
-<!-- educate icon CSS
-        ============================================ -->
-<link rel="stylesheet"
-	href="<c:url value="/resources/admin/css/educate-custon-icon.css"/>">
-<!-- morrisjs CSS
-        ============================================ -->
-<link rel="stylesheet"
-	href="<c:url value="/resources/admin/css/morrisjs/morris.css"/>">
-<!-- mCustomScrollbar CSS
-        ============================================ -->
-<link rel="stylesheet"
-	href="<c:url value="/resources/admin/css/scrollbar/jquery.mCustomScrollbar.min.css"/>">
-<!-- metisMenu CSS
-        ============================================ -->
-<link rel="stylesheet"
-	href="<c:url value="/resources/admin/css/metisMenu/metisMenu.min.css"/>">
-<link rel="stylesheet"
-	href="<c:url value="/resources/admin/css/metisMenu/metisMenu-vertical.css"/>">
-<!-- calendar CSS
-        ============================================ -->
-<link rel="stylesheet"
-	href="<c:url value="/resources/admin/css/calendar/fullcalendar.min.css"/>">
-<link rel="stylesheet"
-	href="<c:url value="/resources/admin/css/calendar/fullcalendar.print.min.css"/>">
-<!-- style CSS
-        ============================================ -->
-<link rel="stylesheet" href="<c:url value="/resources/admin/css/style.css"/>">
-<!-- responsive CSS
-        ============================================ -->
-<link rel="stylesheet"
-	href="<c:url value="/resources/admin/css/responsive.css"/>">
-<!-- modernizr JS
-        ============================================ -->
-<script
-	src="<c:url value="/resources/admin/js/vendor/modernizr-2.8.3.min.js"/>"></script>
+
 </head>
 
 <body>
-	<!--[if lt IE 8]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-	<!-- Start Left menu area -->
-	<div class="left-sidebar-pro">
-		<nav id="sidebar" class="">
-		<div class="sidebar-header">
-			<a href="index.html"><img class="main-logo"
-				src="<c:url value="/resources/admin/images/logo/logo.png"/>" alt="" /></a> <strong><a
-				href="index.html"><img
-					src="<c:url value="/resources/admin/images/logo/logosn.png"/>" alt="" /></a></strong>
-		</div>
-		<div class="left-custom-menu-adp-wrap comment-scrollbar">
-			<nav class="sidebar-nav left-sidebar-menu-pro">
-			<ul class="metismenu" id="menu1">
-				<li class="active"><a class="has-arrow" href="index.html">
-						<span class="educate-icon educate-home icon-wrap"></span> <span
-						class="mini-click-non">Thống kê</span>
-				</a>
-					<ul class="submenu-angle" aria-expanded="true">
-						<li><a title="Thống kê chung" href="#"><span
-								class="mini-sub-pro">Thống kê chung</span></a></li>
-						<li><a title="Thống kê doanh thu" href="#"><span
-								class="mini-sub-pro">Thống kê doanh thu</span></a></li>
-						<li><a title="Thống kê sản phẩm" href="#"><span
-								class="mini-sub-pro">Thống kê sản phẩm</span></a></li>
-						<li><a title="Thống kê kho" href="#"><span
-								class="mini-sub-pro">Thống kê kho</span></a></li>
-					</ul></li>
-				<li><a class="has-arrow" href="#"
-					aria-expanded="false"><span
-						class="educate-icon educate-professor icon-wrap"></span> <span
-						class="mini-click-non">Nhân viên</span></a>
-					<ul class="submenu-angle" aria-expanded="false">
-						<li><a title="Quản lý nhân viên" href="#"><span
-								class="mini-sub-pro">Quản lý nhân viên</span></a></li>
-						<li><a title="Thêm nhân viên" href="#"><span
-								class="mini-sub-pro">Thêm nhân viên</span></a></li>
-					</ul></li>
-				<li><a class="has-arrow" href="#" aria-expanded="false"><span
-						class="educate-icon educate-apps icon-wrap"></span> <span
-						class="mini-click-non">Chức vụ</span></a>
-					<ul class="submenu-angle app-mini-nb-dp" aria-expanded="false">
-						<li><a title="Quản lý chức vụ" href="#"><span
-								class="mini-sub-pro">Quản lý chức vụ</span></a></li>
-						<li><a title="Thêm chức vụ" href="#"><span
-								class="mini-sub-pro">Thêm chức vụ</span></a></li>
-					</ul></li>
-				<li><a class="has-arrow" href="#"
-					aria-expanded="false"><span
-						class="educate-icon educate-student icon-wrap"></span> <span
-						class="mini-click-non">Khách hàng</span></a>
-					<ul class="submenu-angle" aria-expanded="false">
-						<li><a title="Quản lý khách hàng" href="#"><span
-								class="mini-sub-pro">Quản lý khách hàng</span></a></li>
-						<li><a title="Thêm khách hàng" href="#"><span
-								class="mini-sub-pro">Thêm khách hàng</span></a></li>
-					</ul></li>
-					               <li><a class="has-arrow" href="#"
-                    aria-expanded="false"><span
-                        class="educate-icon educate-student icon-wrap"></span> <span
-                        class="mini-click-non">Hóa đơn</span></a>
-                    <ul class="submenu-angle" aria-expanded="false">
-                        <li><a title="Quản lý khách hàng" href="#"><span
-                                class="mini-sub-pro">Quản lý hóa đơn</span></a></li>
-                        <li><a title="Thêm khách hàng" href="#"><span
-                                class="mini-sub-pro">Thêm hóa đơn</span></a></li>
-                    </ul></li>
-				<li><a class="has-arrow" href="#"
-					aria-expanded="false"><span
-						class="educate-icon educate-course icon-wrap"></span> <span
-						class="mini-click-non">Sản phẩm</span></a>
-					<ul class="submenu-angle" aria-expanded="false">
-						<li><a title="Quản lý sản phẩm" href="#"><span
-								class="mini-sub-pro">Quản lý sản phẩm</span></a></li>
-						<li><a title="Thêm sản phẩm" href="#"><span
-								class="mini-sub-pro">Thêm sản phẩm</span></a></li>
-					</ul></li>
-				<li><a class="has-arrow" href="#"
-					aria-expanded="false"><span
-						class="educate-icon educate-library icon-wrap"></span> <span
-						class="mini-click-non">Loại sản phẩm</span></a>
-					<ul class="submenu-angle" aria-expanded="false">
-						<li><a title="Quản lý loại sản phẩm" href="#"><span
-								class="mini-sub-pro">Quản lý loại sản phẩm</span></a></li>
-						<li><a title="Thêm loại sản phẩm" href="#"><span
-								class="mini-sub-pro">Thêm loại sản phẩm</span></a></li>
-					</ul></li>
-				<li><a class="has-arrow" href="#"
-					aria-expanded="false"><span
-						class="educate-icon educate-department icon-wrap"></span> <span
-						class="mini-click-non">Nhà cung cấp</span></a>
-					<ul class="submenu-angle" aria-expanded="false">
-						<li><a title="Quản lý nhà cung cấp" href="#"><span
-								class="mini-sub-pro">Quản lý nhà cung cấp</span></a></li>
-						<li><a title="Thêm nhà cung cấp" href="#"><span
-								class="mini-sub-pro">Thêm nhà cung cấp</span></a></li>
-					</ul></li>
-				<li><a class="has-arrow" href="#"
-					aria-expanded="false"><span
-						class="educate-icon educate-event icon-wrap sub-icon-mg"></span> <span
-						class="mini-click-non">Khuyến mãi</span></a>
-					<ul class="submenu-angle" aria-expanded="false">
-						<li><a title="Quản lý khuyến mãi" href="#"><span
-								class="mini-sub-pro">Quản lý khuyến mãi</span></a></li>
-						<li><a title="Thêm khuyến mãi" href="#"><span
-								class="mini-sub-pro">Thêm khuyến mãi</span></a></li>
-					</ul></li>
-				<li><a class="has-arrow" href="#"
-					aria-expanded="false"><span
-						class="educate-icon educate-interface icon-wrap"></span> <span
-						class="mini-click-non">Giá bán</span></a>
-					<ul class="submenu-angle interface-mini-nb-dp"
-						aria-expanded="false">
-						<li><a title="Quản lý giá bán" href="#"><span
-								class="mini-sub-pro">Quản lý giá bán</span></a></li>
-						<li><a title="Thêm giá bán" href="#"><span
-								class="mini-sub-pro">Thêm giá bán</span></a></li>
-					</ul></li>
-				<li><a class="has-arrow" href="#"
-					aria-expanded="false"><span
-						class="educate-icon educate-charts icon-wrap"></span> <span
-						class="mini-click-non">Tài khoản</span></a>
-					<ul class="submenu-angle chart-mini-nb-dp" aria-expanded="false">
-						<li><a title="Quản lý tài khoản" href="#"><span
-								class="mini-sub-pro">Quản lý tài khoản</span></a></li>
-						<li><a title="Thêm tài khoản" href="#"><span
-								class="mini-sub-pro">Thêm tài khoản</span></a></li>
-					</ul></li>
-				<li><a class="has-arrow" href="#"
-					aria-expanded="false"><span
-						class="educate-icon educate-data-table icon-wrap"></span> <span
-						class="mini-click-non">Thanh toán</span></a>
-					<ul class="submenu-angle" aria-expanded="false">
-						<li><a title="Phương thức thanh toán" href="#"><span
-								class="mini-sub-pro">Phương thức thanh toán</span></a></li>
-						<li><a title="Thêm phương thức thanh toán" href="#"><span
-								class="mini-sub-pro">Thêm phương thức thanh toán</span></a></li>
-					</ul></li>
-				<li><a class="has-arrow" href="#"
-					aria-expanded="false"><span
-						class="educate-icon educate-form icon-wrap"></span> <span
-						class="mini-click-non">Vận chuyển</span></a>
-					<ul class="submenu-angle form-mini-nb-dp" aria-expanded="false">
-						<li><a title="Phương thức vận chuyển"
-							href="#"><span class="mini-sub-pro">Phương thức vận chuyển</span></a></li>
-						<li><a title="Thêm phương thức vận chuyển"
-							href="#"><span class="mini-sub-pro">
-									Thêm phương thức vận chuyển</span></a></li>
-					</ul></li>
-			</ul>
-			</nav>
-		</div>
-		</nav>
-	</div>
-	<!-- End Left menu area -->
+	<!-- menu -->
+	<%@include file="menu_admin.jsp"%>
+	<!-- menu -->
 	<!-- Start Welcome area -->
 	<div class="all-content-wrapper">
 		<div class="container-fluid">
@@ -250,229 +23,15 @@
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 					<div class="logo-pro">
 						<a href="index.html"><img class="main-logo"
-							src="<c:url value="/resources/admin/images/logo/logo.png"/>" alt="" /></a>
+							src="/chuyendeweb/resources/admin/images/logo/logo.png" alt="" /></a>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="header-advance-area">
-			<div class="header-top-area">
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-							<div class="header-top-wraper">
-								<div class="row">
-									<div class="col-lg-1 col-md-0 col-sm-1 col-xs-12">
-										<div class="menu-switcher-pro">
-											<button type="button" id="sidebarCollapse"
-												class="btn bar-button-pro header-drl-controller-btn btn-info navbar-btn">
-												<i class="educate-icon educate-nav"></i>
-											</button>
-										</div>
-									</div>
-									<div class="col-lg-6 col-md-7 col-sm-6 col-xs-12">
-									</div>
-									<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
-										<div class="header-right-info">
-											<ul class="nav navbar-nav mai-top-nav header-right-menu">
-												<li class="nav-item dropdown"><a href="#"
-													data-toggle="dropdown" role="button" aria-expanded="false"
-													class="nav-link dropdown-toggle"><i
-														class="educate-icon educate-message edu-chat-pro"
-														aria-hidden="true"></i><span class="indicator-ms"></span></a>
-												</li>
-												<li class="nav-item"><a href="#" data-toggle="dropdown"
-													role="button" aria-expanded="false"
-													class="nav-link dropdown-toggle"><i
-														class="educate-icon educate-bell" aria-hidden="true"></i><span
-														class="indicator-nt"></span></a>
-												</li>
-												<li class="nav-item"><a href="#" data-toggle="dropdown"
-													role="button" aria-expanded="false"
-													class="nav-link dropdown-toggle"> <img
-														src="<c:url value="/resources/admin/images/product/pro4.jpg"/>"
-														alt="" /> <span class="admin-name">Xin chào, Huỳnh
-															đẹp trai</span> <i
-														class="fa fa-angle-down edu-icon edu-down-arrow"></i>
-												</a>
-													<ul role="menu"
-														class="dropdown-header-top author-log dropdown-menu animated zoomIn">
-														<li><a href="#"><span
-																class="edu-icon edu-home-admin author-log-ic"></span>Thông
-															tin tài khoản</a></li>
-														<li><a href="#"><span
-																class="edu-icon edu-settings author-log-ic"></span>Cài
-																đặt</a></li>
-														<li><a href="#"><span
-																class="edu-icon edu-locked author-log-ic"></span>Đăng
-																xuất</a></li>
-													</ul></li>
-												<li class="nav-item nav-setting-open"><a href="#"
-													data-toggle="dropdown" role="button" aria-expanded="false"
-													class="nav-link dropdown-toggle"><i
-														class="educate-icon educate-menu"></i></a></li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- Mobile Menu start -->
-			<div class="mobile-menu-area">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-							<div class="mobile-menu">
-								<nav id="dropdown">
-								<ul class="mobile-menu-nav">
-									<li><a data-toggle="collapse" data-target="#Charts"
-										href="#">Home <span
-											class="admin-project-icon edu-icon edu-down-arrow"></span></a>
-										<ul class="collapse dropdown-header-top">
-											<li><a href="index.html">Dashboard v.1</a></li>
-											<li><a href="index-1.html">Dashboard v.2</a></li>
-											<li><a href="index-3.html">Dashboard v.3</a></li>
-											<li><a href="analytics.html">Analytics</a></li>
-											<li><a href="widgets.html">Widgets</a></li>
-										</ul></li>
-									<li><a href="events.html">Event</a></li>
-									<li><a data-toggle="collapse" data-target="#demoevent"
-										href="#">Professors <span
-											class="admin-project-icon edu-icon edu-down-arrow"></span></a>
-										<ul id="demoevent" class="collapse dropdown-header-top">
-											<li><a href="all-professors.html">All Professors</a></li>
-											<li><a href="add-professor.html">Add Professor</a></li>
-											<li><a href="edit-professor.html">Edit Professor</a></li>
-											<li><a href="professor-profile.html">Professor
-													Profile</a></li>
-										</ul></li>
-									<li><a data-toggle="collapse" data-target="#demopro"
-										href="#">Students <span
-											class="admin-project-icon edu-icon edu-down-arrow"></span></a>
-										<ul id="demopro" class="collapse dropdown-header-top">
-											<li><a href="all-students.html">All Students</a></li>
-											<li><a href="add-student.html">Add Student</a></li>
-											<li><a href="edit-student.html">Edit Student</a></li>
-											<li><a href="student-profile.html">Student Profile</a></li>
-										</ul></li>
-									<li><a data-toggle="collapse" data-target="#democrou"
-										href="#">Courses <span
-											class="admin-project-icon edu-icon edu-down-arrow"></span></a>
-										<ul id="democrou" class="collapse dropdown-header-top">
-											<li><a href="all-courses.html">All Courses</a></li>
-											<li><a href="add-course.html">Add Course</a></li>
-											<li><a href="edit-course.html">Edit Course</a></li>
-											<li><a href="course-profile.html">Courses Info</a></li>
-											<li><a href="course-payment.html">Courses Payment</a></li>
-										</ul></li>
-									<li><a data-toggle="collapse" data-target="#demolibra"
-										href="#">Library <span
-											class="admin-project-icon edu-icon edu-down-arrow"></span></a>
-										<ul id="demolibra" class="collapse dropdown-header-top">
-											<li><a href="library-assets.html">Library Assets</a></li>
-											<li><a href="add-library-assets.html">Add Library
-													Asset</a></li>
-											<li><a href="edit-library-assets.html">Edit Library
-													Asset</a></li>
-										</ul></li>
-									<li><a data-toggle="collapse" data-target="#demodepart"
-										href="#">Departments <span
-											class="admin-project-icon edu-icon edu-down-arrow"></span></a>
-										<ul id="demodepart" class="collapse dropdown-header-top">
-											<li><a href="departments.html">Departments List</a></li>
-											<li><a href="add-department.html">Add Departments</a></li>
-											<li><a href="edit-department.html">Edit Departments</a>
-											</li>
-										</ul></li>
-									<li><a data-toggle="collapse" data-target="#demo" href="#">Mailbox
-											<span class="admin-project-icon edu-icon edu-down-arrow"></span>
-									</a>
-										<ul id="demo" class="collapse dropdown-header-top">
-											<li><a href="mailbox.html">Inbox</a></li>
-											<li><a href="mailbox-view.html">View Mail</a></li>
-											<li><a href="mailbox-compose.html">Compose Mail</a></li>
-										</ul></li>
-									<li><a data-toggle="collapse"
-										data-target="#Miscellaneousmob" href="#">Interface <span
-											class="admin-project-icon edu-icon edu-down-arrow"></span></a>
-										<ul id="Miscellaneousmob" class="collapse dropdown-header-top">
-											<li><a href="google-map.html">Google Map</a></li>
-											<li><a href="data-maps.html">Data Maps</a></li>
-											<li><a href="pdf-viewer.html">Pdf Viewer</a></li>
-											<li><a href="x-editable.html">X-Editable</a></li>
-											<li><a href="code-editor.html">Code Editor</a></li>
-											<li><a href="tree-view.html">Tree View</a></li>
-											<li><a href="preloader.html">Preloader</a></li>
-											<li><a href="images-cropper.html">Images Cropper</a></li>
-										</ul></li>
-									<li><a data-toggle="collapse" data-target="#Chartsmob"
-										href="#">Charts <span
-											class="admin-project-icon edu-icon edu-down-arrow"></span></a>
-										<ul id="Chartsmob" class="collapse dropdown-header-top">
-											<li><a href="bar-charts.html">Bar Charts</a></li>
-											<li><a href="line-charts.html">Line Charts</a></li>
-											<li><a href="area-charts.html">Area Charts</a></li>
-											<li><a href="rounded-chart.html">Rounded Charts</a></li>
-											<li><a href="c3.html">C3 Charts</a></li>
-											<li><a href="sparkline.html">Sparkline Charts</a></li>
-											<li><a href="peity.html">Peity Charts</a></li>
-										</ul></li>
-									<li><a data-toggle="collapse" data-target="#Tablesmob"
-										href="#">Tables <span
-											class="admin-project-icon edu-icon edu-down-arrow"></span></a>
-										<ul id="Tablesmob" class="collapse dropdown-header-top">
-											<li><a href="static-table.html">Static Table</a></li>
-											<li><a href="data-table.html">Data Table</a></li>
-										</ul></li>
-									<li><a data-toggle="collapse" data-target="#formsmob"
-										href="#">Forms <span
-											class="admin-project-icon edu-icon edu-down-arrow"></span></a>
-										<ul id="formsmob" class="collapse dropdown-header-top">
-											<li><a href="basic-form-element.html">Basic Form
-													Elements</a></li>
-											<li><a href="advance-form-element.html">Advanced
-													Form Elements</a></li>
-											<li><a href="password-meter.html">Password Meter</a></li>
-											<li><a href="multi-upload.html">Multi Upload</a></li>
-											<li><a href="tinymc.html">Text Editor</a></li>
-											<li><a href="dual-list-box.html">Dual List Box</a></li>
-										</ul></li>
-									<li><a data-toggle="collapse" data-target="#Appviewsmob"
-										href="#">App views <span
-											class="admin-project-icon edu-icon edu-down-arrow"></span></a>
-										<ul id="Appviewsmob" class="collapse dropdown-header-top">
-											<li><a href="basic-form-element.html">Basic Form
-													Elements</a></li>
-											<li><a href="advance-form-element.html">Advanced
-													Form Elements</a></li>
-											<li><a href="password-meter.html">Password Meter</a></li>
-											<li><a href="multi-upload.html">Multi Upload</a></li>
-											<li><a href="tinymc.html">Text Editor</a></li>
-											<li><a href="dual-list-box.html">Dual List Box</a></li>
-										</ul></li>
-									<li><a data-toggle="collapse" data-target="#Pagemob"
-										href="#">Pages <span
-											class="admin-project-icon edu-icon edu-down-arrow"></span></a>
-										<ul id="Pagemob" class="collapse dropdown-header-top">
-											<li><a href="login.html">Login</a></li>
-											<li><a href="register.html">Register</a></li>
-											<li><a href="lock.html">Lock</a></li>
-											<li><a href="password-recovery.html">Password
-													Recovery</a></li>
-											<li><a href="404.html">404 Page</a></li>
-											<li><a href="500.html">500 Page</a></li>
-										</ul></li>
-								</ul>
-								</nav>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- Mobile Menu end -->
+			<!-- content -->
+			<%@include file="content.jsp"%>
+			<!-- content -->
 			<div class="breadcome-area">
 				<div class="container-fluid">
 					<div class="row">
@@ -733,7 +292,8 @@
 									alt=""></a>
 							</div>
 							<div class="single-product-text">
-								<img src="<c:url value="/resources/admin/images/product/pro4.jpg"/>"
+								<img
+									src="<c:url value="/resources/admin/images/product/pro4.jpg"/>"
 									alt="">
 								<h4>
 									<a class="cards-hd-dn" href="#">Angela Dominic</a>
@@ -777,7 +337,8 @@
 								<h2>Reviews</h2>
 							</div>
 							<div class="single-review-st-text">
-								<img src="<c:url value="/resources/admin/images/notification/1.jpg"/>"
+								<img
+									src="<c:url value="/resources/admin/images/notification/1.jpg"/>"
 									alt="">
 								<div class="review-ctn-hf">
 									<h3>Sarah Graves</h3>
@@ -792,7 +353,8 @@
 								</div>
 							</div>
 							<div class="single-review-st-text">
-								<img src="<c:url value="/resources/admin/images/notification/2.jpg"/>"
+								<img
+									src="<c:url value="/resources/admin/images/notification/2.jpg"/>"
 									alt="">
 								<div class="review-ctn-hf">
 									<h3>Garbease sha</h3>
@@ -807,7 +369,8 @@
 								</div>
 							</div>
 							<div class="single-review-st-text">
-								<img src="<c:url value="/resources/admin/images/notification/3.jpg"/>"
+								<img
+									src="<c:url value="/resources/admin/images/notification/3.jpg"/>"
 									alt="">
 								<div class="review-ctn-hf">
 									<h3>Gobetro pro</h3>
@@ -822,7 +385,8 @@
 								</div>
 							</div>
 							<div class="single-review-st-text">
-								<img src="<c:url value="/resources/admin/images/notification/4.jpg"/>"
+								<img
+									src="<c:url value="/resources/admin/images/notification/4.jpg"/>"
 									alt="">
 								<div class="review-ctn-hf">
 									<h3>Siam Graves</h3>
@@ -837,7 +401,8 @@
 								</div>
 							</div>
 							<div class="single-review-st-text">
-								<img src="<c:url value="/resources/admin/images/notification/5.jpg"/>"
+								<img
+									src="<c:url value="/resources/admin/images/notification/5.jpg"/>"
 									alt="">
 								<div class="review-ctn-hf">
 									<h3>Sarah Graves</h3>
@@ -852,7 +417,8 @@
 								</div>
 							</div>
 							<div class="single-review-st-text">
-								<img src="<c:url value="/resources/admin/images/notification/6.jpg"/>"
+								<img
+									src="<c:url value="/resources/admin/images/notification/6.jpg"/>"
 									alt="">
 								<div class="review-ctn-hf">
 									<h3>Julsha Grav</h3>
@@ -1133,7 +699,8 @@
 							class="courses-inner res-mg-t-30 table-mg-t-pro-n tb-sm-res-d-n dk-res-t-d-n">
 							<div class="courses-title">
 								<a href="#"><img
-									src="<c:url value="/resources/admin/images/courses/1.jpg"/>" alt="" /></a>
+									src="<c:url value="/resources/admin/images/courses/1.jpg"/>"
+									alt="" /></a>
 								<h2>Apps Development</h2>
 							</div>
 							<div class="courses-alaltic">
@@ -1171,8 +738,7 @@
 					<div class="col-lg-12">
 						<div class="footer-copy-right">
 							<p>
-								Copyright © 2018. All rights reserved. Template by <a
-									href="https://colorlib.com/wp/templates/">Colorlib</a>
+								Design by <a href="#">H&D_16102016</a>
 							</p>
 						</div>
 					</div>
@@ -1181,78 +747,7 @@
 		</div>
 	</div>
 
-	<!-- jquery
-        ============================================ -->
-	<script
-		src="<c:url value="/resources/admin/js/vendor/jquery-1.12.4.min.js"/>"></script>
-	<!-- bootstrap JS
-        ============================================ -->
-	<script src="<c:url value="/resources/admin/js/bootstrap.min.js"/>"></script>
-	<!-- wow JS
-        ============================================ -->
-	<script src="<c:url value="/resources/admin/js/wow.min.js"/>"></script>
-	<!-- price-slider JS
-        ============================================ -->
-	<script src="<c:url value="/resources/admin/js/jquery-price-slider.js"/>"></script>
-	<!-- meanmenu JS
-        ============================================ -->
-	<script src="<c:url value="/resources/admin/js/jquery.meanmenu.js"/>"></script>
-	<!-- owl.carousel JS
-        ============================================ -->
-	<script src="<c:url value="/resources/admin/js/owl.carousel.min.js"/>"></script>
-	<!-- sticky JS
-        ============================================ -->
-	<script src="<c:url value="/resources/admin/js/jquery.sticky.js"/>"></script>
-	<!-- scrollUp JS
-        ============================================ -->
-	<script src="<c:url value="/resources/admin/js/jquery.scrollUp.min.js"/>"></script>
-	<!-- counterup JS
-        ============================================ -->
-	<script
-		src="<c:url value="/resources/admin/js/counterup/jquery.counterup.min.js"/>"></script>
-	<script src="<c:url value="/resources/admin/js/counterup/waypoints.min.js"/>"></script>
-	<script
-		src="<c:url value="/resources/admin/js/counterup/counterup-active.js"/>"></script>
-	<!-- mCustomScrollbar JS
-        ============================================ -->
-	<script
-		src="<c:url value="/resources/admin/js/scrollbar/jquery.mCustomScrollbar.concat.min.js"/>"></script>
-	<script
-		src="<c:url value="/resources/admin/js/scrollbar/mCustomScrollbar-active.js"/>"></script>
-	<!-- metisMenu JS
-        ============================================ -->
-	<script src="<c:url value="/resources/admin/js/metisMenu/metisMenu.min.js"/>"></script>
-	<script
-		src="<c:url value="/resources/admin/js/metisMenu/metisMenu-active.js"/>"></script>
-	<!-- morrisjs JS
-        ============================================ -->
-	<script src="<c:url value="/resources/admin/js/morrisjs/raphael-min.js"/>"></script>
-	<script src="<c:url value="/resources/admin/js/morrisjs/morris.js"/>"></script>
-	<script src="<c:url value="/resources/admin/js/morrisjs/morris-active.js"/>"></script>
-	<!-- morrisjs JS
-        ============================================ -->
-	<script
-		src="<c:url value="/resources/admin/js/sparkline/jquery.sparkline.min.js"/>"></script>
-	<script
-		src="<c:url value="/resources/admin/js/sparkline/jquery.charts-sparkline.js"/>"></script>
-	<script
-		src="<c:url value="/resources/admin/js/sparkline/sparkline-active.js"/>"></script>
-	<!-- calendar JS
-        ============================================ -->
-	<script src="<c:url value="/resources/admin/js/calendar/moment.min.js"/>"></script>
-	<script
-		src="<c:url value="/resources/admin/js/calendar/fullcalendar.min.js"/>"></script>
-	<script
-		src="<c:url value="/resources/admin/js/calendar/fullcalendar-active.js"/>"></script>
-	<!-- plugins JS
-        ============================================ -->
-	<script src="<c:url value="/resources/admin/js/plugins.js"/>"></script>
-	<!-- main JS
-        ============================================ -->
-	<script src="<c:url value="/resources/admin/js/main.js"/>"></script>
-	<!-- tawk chat JS
-        ============================================ -->
-	<script src="<c:url value="/resources/admin/js/tawk-chat.js"/>"></script>
+
 </body>
 
 </html>

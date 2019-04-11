@@ -11,23 +11,22 @@ public class AdminController {
 		return "/admin/index";
 	}
 
-	@RequestMapping(value = "/oplungdienthoai/dashboardv.2")
-	public String index1() {
-		return "/admin/index-1";
+	@RequestMapping(value = "/oplungdienthoai/sanpham")
+	public String product() {
+		return "/admin/product";
+	}
+	@RequestMapping(value = "/oplungdienthoai/themsanpham")
+	public String addProduct() {
+		return "/admin/add-product";
+	}
+	@RequestMapping(value = "/oplungdienthoai/menu_admin")
+	public String menuAdmin() {
+		return "/admin/menu_admin";
+	}
+	@RequestMapping(value = "/oplungdienthoai/noidung")
+	public String content() {
+		return "/admin/content";
 	}
 
-	@RequestMapping(value = "/oplungdienthoai/all-students")
-	public String allStudents() {
-		return "/admin/all-students";
-	}
-
-	@RequestMapping(value = "/oplungdienthoai/static-table")
-	public String staticTable() {
-		return "/admin/static-table";
-	}
-
-	@RequestMapping(value = "/oplungdienthoai/data-table")
-	public String dataTable() {
-		return "/admin/data-table";
-	}
+	
 }
