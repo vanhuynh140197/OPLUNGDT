@@ -38,8 +38,9 @@
 									<h3>Tạo tài khoản</h3>
 								</div>
 								<div class="col-md-6" align="right">
-									Bạn đã là thành viên? <i> <a href="<c:url value="/oplungdienthoai/home/dangnhap"/>" style="color: red;">Đăng
-											nhập </a>
+									Bạn đã là thành viên? <i> <a
+										href="<c:url value="/oplungdienthoai/home/dangnhap"/>"
+										style="color: red;">Đăng nhập </a>
 									</i>&nbsp;tại đây
 								</div>
 							</div>
@@ -103,8 +104,9 @@
 										</div>
 										<div class="col-md-6">
 											<div class="form-group">
-												<label for="phone">Telephone</label> <input id="phone"
-													type="text" class="form-control">
+												<label for="phone">Số điện thoại<strong
+													style="color: red;">*</strong></label> <input id="phone"
+													type="number" class="form-control">
 											</div>
 										</div>
 										<div class="col-md-6">

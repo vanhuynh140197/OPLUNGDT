@@ -266,8 +266,8 @@
     .dropzone .dz-preview .dz-image {
       border-radius: 20px;
       overflow: hidden;
-      width: 120px;
-      height: 120px;
+      width: 90px;
+      height: 90px;
       position: relative;
       display: block;
       z-index: 10; }
@@ -349,7 +349,7 @@
         -o-transition: width 300ms ease-in-out;
         transition: width 300ms ease-in-out; }
     .dropzone .dz-preview.dz-error .dz-error-message {
-      display: block; }
+       }
     .dropzone .dz-preview.dz-error:hover .dz-error-message {
       opacity: 1;
       pointer-events: auto; }

@@ -9,6 +9,10 @@
 <title>Admin | Sản phẩm</title>
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous">
 <!-- normalize CSS
         ============================================ -->
 <link rel="stylesheet"
@@ -74,19 +78,16 @@
 						<div class="sparkline13-list">
 							<div class="sparkline13-hd">
 								<div class="main-sparkline13-hd">
-									<h1>
-										Danh sách sản phẩm
-									</h1>
+									<h1>Danh sách sản phẩm</h1>
 								</div>
 							</div>
 							<div class="sparkline13-graph">
 								<div class="datatable-dashv1-list custom-datatable-overright">
 									<div id="toolbar">
-										<select class="form-control dt-tb">
-											<option value="">Export Basic</option>
-											<option value="all">Export All</option>
-											<option value="selected">Export Selected</option>
-										</select>
+										<a href="<c:url value="/admin/oplungdienthoai/themsanpham"/>"><button
+												class="btn btn-primary" style="float: right;">
+												<i class="fas fa-plus"></i> Thêm sản phẩm
+											</button></a>
 									</div>
 									<table id="table" data-toggle="table" data-pagination="true"
 										data-search="true" data-show-columns="true"
@@ -107,7 +108,7 @@
 												<th data-field="task" data-editable="true">Màu sắc</th>
 												<th data-field="date" data-editable="true">Số lượng</th>
 												<th data-field="price" data-editable="true">Mô tả</th>
-												<th data-field="action">Action</th>
+												<th data-field="action"></th>
 											</tr>
 										</thead>
 										<tbody>
@@ -120,7 +121,10 @@
 												<td>10%</td>
 												<td>Jul 14, 2017</td>
 												<td>$5455</td>
-												<td class="datatable-ct"><i class="fa fa-check"></i></td>
+												<td><a
+													href="<c:url value="/admin/oplungdienthoai/suasanpham"/>"><i
+														class="far fa-edit" title="Sửa sản phẩm"></i></a> &nbsp; <i
+													class="fas fa-trash-alt" title="Xóa sản phẩm"></i></td>
 											</tr>
 											<tr>
 												<td></td>
@@ -131,7 +135,10 @@
 												<td>70%</td>
 												<td>fab 2, 2017</td>
 												<td>$8756</td>
-												<td class="datatable-ct"><i class="fa fa-check"></i></td>
+												<td><a
+													href="<c:url value="/admin/oplungdienthoai/suasanpham"/>"><i
+														class="far fa-edit" title="Sửa sản phẩm"></i></a> &nbsp; <i
+													class="fas fa-trash-alt" title="Xóa sản phẩm"></i></td>
 											</tr>
 											<tr>
 												<td></td>
@@ -142,7 +149,10 @@
 												<td>5%</td>
 												<td>Seb 5, 2017</td>
 												<td>$9875</td>
-												<td class="datatable-ct"><i class="fa fa-check"></i></td>
+												<td><a
+													href="<c:url value="/admin/oplungdienthoai/suasanpham"/>"><i
+														class="far fa-edit" title="Sửa sản phẩm"></i></a> &nbsp; <i
+													class="fas fa-trash-alt" title="Xóa sản phẩm"></i></td>
 											</tr>
 											<tr>
 												<td></td>
@@ -153,7 +163,9 @@
 												<td>15%</td>
 												<td>Oct 10, 2017</td>
 												<td>$3254</td>
-												<td class="datatable-ct"><i class="fa fa-check"></i></td>
+												<td><i class="far fa-edit" title="Sửa sản phẩm"></i>
+													&nbsp; <i class="fas fa-trash-alt" title="Xóa sản phẩm"></i>
+												</td>
 											</tr>
 											<tr>
 												<td></td>
@@ -164,7 +176,9 @@
 												<td>80%</td>
 												<td>Nov 20, 2017</td>
 												<td>$58745</td>
-												<td class="datatable-ct"><i class="fa fa-check"></i></td>
+												<td><i class="far fa-edit" title="Sửa sản phẩm"></i>
+													&nbsp; <i class="fas fa-trash-alt" title="Xóa sản phẩm"></i>
+												</td>
 											</tr>
 											<tr>
 												<td></td>
@@ -175,7 +189,9 @@
 												<td>30%</td>
 												<td>Aug 25, 2017</td>
 												<td>$789879</td>
-												<td class="datatable-ct"><i class="fa fa-check"></i></td>
+												<td><i class="far fa-edit" title="Sửa sản phẩm"></i>
+													&nbsp; <i class="fas fa-trash-alt" title="Xóa sản phẩm"></i>
+												</td>
 											</tr>
 											<tr>
 												<td></td>
@@ -186,7 +202,9 @@
 												<td>15%</td>
 												<td>July 17, 2017</td>
 												<td>$21424</td>
-												<td class="datatable-ct"><i class="fa fa-check"></i></td>
+												<td><i class="far fa-edit" title="Sửa sản phẩm"></i>
+													&nbsp; <i class="fas fa-trash-alt" title="Xóa sản phẩm"></i>
+												</td>
 											</tr>
 											<tr>
 												<td></td>
@@ -197,7 +215,9 @@
 												<td>15%</td>
 												<td>June 11, 2017</td>
 												<td>$78978</td>
-												<td class="datatable-ct"><i class="fa fa-check"></i></td>
+												<td><i class="far fa-edit" title="Sửa sản phẩm"></i>
+													&nbsp; <i class="fas fa-trash-alt" title="Xóa sản phẩm"></i>
+												</td>
 											</tr>
 											<tr>
 												<td></td>
@@ -208,7 +228,9 @@
 												<td>15%</td>
 												<td>May 9, 2017</td>
 												<td>$45645</td>
-												<td class="datatable-ct"><i class="fa fa-check"></i></td>
+												<td><i class="far fa-edit" title="Sửa sản phẩm"></i>
+													&nbsp; <i class="fas fa-trash-alt" title="Xóa sản phẩm"></i>
+												</td>
 											</tr>
 											<tr>
 												<td></td>
@@ -219,7 +241,9 @@
 												<td>15%</td>
 												<td>April 5, 2017</td>
 												<td>$4564545</td>
-												<td class="datatable-ct"><i class="fa fa-check"></i></td>
+												<td><i class="far fa-edit" title="Sửa sản phẩm"></i>
+													&nbsp; <i class="fas fa-trash-alt" title="Xóa sản phẩm"></i>
+												</td>
 											</tr>
 											<tr>
 												<td></td>
@@ -230,7 +254,9 @@
 												<td>15%</td>
 												<td>Dec 1, 2017</td>
 												<td>$645455</td>
-												<td class="datatable-ct"><i class="fa fa-check"></i></td>
+												<td><i class="far fa-edit" title="Sửa sản phẩm"></i>
+													&nbsp; <i class="fas fa-trash-alt" title="Xóa sản phẩm"></i>
+												</td>
 											</tr>
 											<tr>
 												<td></td>
@@ -241,7 +267,9 @@
 												<td>15%</td>
 												<td>Jan 6, 2017</td>
 												<td>$78978</td>
-												<td class="datatable-ct"><i class="fa fa-check"></i></td>
+												<td><i class="far fa-edit" title="Sửa sản phẩm"></i>
+													&nbsp; <i class="fas fa-trash-alt" title="Xóa sản phẩm"></i>
+												</td>
 											</tr>
 											<tr>
 												<td></td>
@@ -252,7 +280,9 @@
 												<td>15%</td>
 												<td>Feb 6, 2016</td>
 												<td>$456456</td>
-												<td class="datatable-ct"><i class="fa fa-check"></i></td>
+												<td><i class="far fa-edit" title="Sửa sản phẩm"></i>
+													&nbsp; <i class="fas fa-trash-alt" title="Xóa sản phẩm"></i>
+												</td>
 											</tr>
 											<tr>
 												<td></td>
@@ -263,7 +293,9 @@
 												<td>15%</td>
 												<td>Jan 6, 2016</td>
 												<td>$87978</td>
-												<td class="datatable-ct"><i class="fa fa-check"></i></td>
+												<td><i class="far fa-edit" title="Sửa sản phẩm"></i>
+													&nbsp; <i class="fas fa-trash-alt" title="Xóa sản phẩm"></i>
+												</td>
 											</tr>
 											<tr>
 												<td></td>
@@ -274,7 +306,9 @@
 												<td>15%</td>
 												<td>Dec 1, 2016</td>
 												<td>$454554</td>
-												<td class="datatable-ct"><i class="fa fa-check"></i></td>
+												<td><i class="far fa-edit" title="Sửa sản phẩm"></i>
+													&nbsp; <i class="fas fa-trash-alt" title="Xóa sản phẩm"></i>
+												</td>
 											</tr>
 											<tr>
 												<td></td>
@@ -285,7 +319,9 @@
 												<td>15%</td>
 												<td>May 9, 2016</td>
 												<td>$564555</td>
-												<td class="datatable-ct"><i class="fa fa-check"></i></td>
+												<td><i class="far fa-edit" title="Sửa sản phẩm"></i>
+													&nbsp; <i class="fas fa-trash-alt" title="Xóa sản phẩm"></i>
+												</td>
 											</tr>
 											<tr>
 												<td></td>
@@ -296,7 +332,9 @@
 												<td>15%</td>
 												<td>June 11, 2016</td>
 												<td>$454565</td>
-												<td class="datatable-ct"><i class="fa fa-check"></i></td>
+												<td><i class="far fa-edit" title="Sửa sản phẩm"></i>
+													&nbsp; <i class="fas fa-trash-alt" title="Xóa sản phẩm"></i>
+												</td>
 											</tr>
 											<tr>
 												<td></td>
@@ -307,7 +345,9 @@
 												<td>15%</td>
 												<td>May 9, 2015</td>
 												<td>$456546</td>
-												<td class="datatable-ct"><i class="fa fa-check"></i></td>
+												<td><i class="far fa-edit" title="Sửa sản phẩm"></i>
+													&nbsp; <i class="fas fa-trash-alt" title="Xóa sản phẩm"></i>
+												</td>
 											</tr>
 											<tr>
 												<td></td>
@@ -318,7 +358,9 @@
 												<td>15%</td>
 												<td>Feb 9, 2014</td>
 												<td>$564554</td>
-												<td class="datatable-ct"><i class="fa fa-check"></i></td>
+												<td><i class="far fa-edit" title="Sửa sản phẩm"></i>
+													&nbsp; <i class="fas fa-trash-alt" title="Xóa sản phẩm"></i>
+												</td>
 											</tr>
 											<tr>
 												<td></td>
@@ -329,7 +371,9 @@
 												<td>15%</td>
 												<td>July 6, 2014</td>
 												<td>$789889</td>
-												<td class="datatable-ct"><i class="fa fa-check"></i></td>
+												<td><i class="far fa-edit" title="Sửa sản phẩm"></i>
+													&nbsp; <i class="fas fa-trash-alt" title="Xóa sản phẩm"></i>
+												</td>
 											</tr>
 											<tr>
 												<td></td>
@@ -340,7 +384,9 @@
 												<td>15%</td>
 												<td>Jun 6, 2013</td>
 												<td>$4565656</td>
-												<td class="datatable-ct"><i class="fa fa-check"></i></td>
+												<td><i class="far fa-edit" title="Sửa sản phẩm"></i>
+													&nbsp; <i class="fas fa-trash-alt" title="Xóa sản phẩm"></i>
+												</td>
 											</tr>
 										</tbody>
 									</table>

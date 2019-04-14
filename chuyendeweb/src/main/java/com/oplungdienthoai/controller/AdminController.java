@@ -19,6 +19,10 @@ public class AdminController {
 	public String addProduct() {
 		return "/admin/add-product";
 	}
+	@RequestMapping(value = "/oplungdienthoai/suasanpham")
+	public String editProduct() {
+		return "/admin/edit-product";
+	}
 	@RequestMapping(value = "/oplungdienthoai/menu_admin")
 	public String menuAdmin() {
 		return "/admin/menu_admin";

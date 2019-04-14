@@ -3021,7 +3021,7 @@ td.text-right.mail-date {
 .file-upload-inner.ts-forms .file-button, .file-upload-inner.ts-forms .file-button:active, .file-upload-inner.ts-forms .file-button:focus{
 	background: #006DF0;
 	border-radius:0px;
-	width:70px;
+	width:120px;
 	height: 40px;
 	line-height: 40px;
 	top:0px;
@@ -4201,6 +4201,7 @@ div#sparklinehome canvas {
 }
 .add-professors .file-upload-inner.ts-forms input[type="text"]{
 	margin: 10px 0px;
+	padding-left: 160px;
 }
 .m-t-md .btn-success{
 	background-color: #006DF0;
