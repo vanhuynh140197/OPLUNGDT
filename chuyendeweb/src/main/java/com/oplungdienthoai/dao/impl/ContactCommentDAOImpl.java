@@ -20,7 +20,8 @@ public class ContactCommentDAOImpl implements ContactCommentDAO {
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<ContactCommentEntity> getAll() {
-		return sessionFactory.getCurrentSession().createQuery("from ContactCommentEntity where contactStatus='" + 1 + "'").list();
+		return sessionFactory.getCurrentSession()
+				.createQuery("from ContactCommentEntity where contactStatus=" + true + "").list();
 	}
 
 	@Override
@@ -54,8 +55,8 @@ public class ContactCommentDAOImpl implements ContactCommentDAO {
 	@Override
 	public boolean remove(String contactId) {
 		try {
-			sessionFactory.getCurrentSession()
-					.createQuery("update ContactCommentEntity set contactStatus='" + 0 + "' where contactId='" + contactId + "'")
+			sessionFactory.getCurrentSession().createQuery(
+					"update ContactCommentEntity set contactStatus=" + false + " where contactId='" + contactId + "'")
 					.executeUpdate();
 		} catch (Exception e) {
 			return false;

@@ -15,7 +15,7 @@ public class ShippingMethodEntity {
 	private Collection<OrdersEntity> ordersByShippingId;
 
 	@Id
-	@Column(name = "ShippingID")
+	@Column(name = "shippingid")
 	public String getShippingId() {
 		return shippingId;
 	}
@@ -25,7 +25,7 @@ public class ShippingMethodEntity {
 	}
 
 	@Basic
-	@Column(name = "ShippingName")
+	@Column(name = "shippingname")
 	public String getShippingName() {
 		return shippingName;
 	}
@@ -35,7 +35,7 @@ public class ShippingMethodEntity {
 	}
 
 	@Basic
-	@Column(name = "ShippingDescription")
+	@Column(name = "shippingdescription")
 	public String getShippingDescription() {
 		return shippingDescription;
 	}

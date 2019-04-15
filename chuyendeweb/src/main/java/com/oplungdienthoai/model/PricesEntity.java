@@ -17,7 +17,7 @@ public class PricesEntity {
 	private ProductsEntity productsByProductsId;
 
 	@Id
-	@Column(name = "PricesID")
+	@Column(name = "pricesid")
 	public String getPricesId() {
 		return pricesId;
 	}
@@ -27,7 +27,7 @@ public class PricesEntity {
 	}
 
 	@Basic
-	@Column(name = "ProductsID")
+	@Column(name = "productsid")
 	public String getProductsId() {
 		return productsId;
 	}
@@ -37,7 +37,7 @@ public class PricesEntity {
 	}
 
 	@Basic
-	@Column(name = "Prices")
+	@Column(name = "prices")
 	public Double getPrices() {
 		return prices;
 	}
@@ -47,7 +47,7 @@ public class PricesEntity {
 	}
 
 	@Basic
-	@Column(name = "DateStart")
+	@Column(name = "datestart")
 	public Date getDateStart() {
 		return dateStart;
 	}
@@ -57,7 +57,7 @@ public class PricesEntity {
 	}
 
 	@Basic
-	@Column(name = "DateEnd")
+	@Column(name = "dateend")
 	public Date getDateEnd() {
 		return dateEnd;
 	}
@@ -100,7 +100,7 @@ public class PricesEntity {
 	}
 
 	@ManyToOne
-	@JoinColumn(name = "ProductsID", referencedColumnName = "ProductsID", nullable = false, insertable = false, updatable = false)
+	@JoinColumn(name = "productsid", referencedColumnName = "productsid", nullable = false, insertable = false, updatable = false)
 	public ProductsEntity getProductsByProductsId() {
 		return productsByProductsId;
 	}

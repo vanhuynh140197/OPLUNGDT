@@ -20,7 +20,7 @@ public class OrdersDAOImpl implements OrdersDAO {
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<OrdersEntity> getAll() {
-		return sessionFactory.getCurrentSession().createQuery("from OrdersEntity where ordersStatus='" + 1 + "'")
+		return sessionFactory.getCurrentSession().createQuery("from OrdersEntity where ordersStatus=" + true + "")
 				.list();
 	}
 
@@ -56,7 +56,7 @@ public class OrdersDAOImpl implements OrdersDAO {
 	public boolean remove(String ordersId) {
 		try {
 			sessionFactory.getCurrentSession()
-					.createQuery("update OrdersEntity set ordersStatus='" + 0 + "' where ordersId='" + ordersId + "'")
+					.createQuery("update OrdersEntity set ordersStatus=" + false + " where ordersId='" + ordersId + "'")
 					.executeUpdate();
 		} catch (Exception e) {
 			return false;

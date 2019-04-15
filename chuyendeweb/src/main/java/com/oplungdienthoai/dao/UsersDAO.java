@@ -10,6 +10,8 @@ public interface UsersDAO {
 
 	public UsersEntity getUsers(String userId);
 
+	public UsersEntity getUsersName(String userName);
+
 	public boolean add(UsersEntity user);
 
 	public boolean edit(UsersEntity user);

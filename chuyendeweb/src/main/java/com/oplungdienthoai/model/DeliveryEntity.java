@@ -15,7 +15,7 @@ public class DeliveryEntity {
 	private Collection<EmployeesEntity> employeesByDeliveryId;
 
 	@Id
-	@Column(name = "DeliveryID")
+	@Column(name = "deliveryid")
 	public String getDeliveryId() {
 		return deliveryId;
 	}
@@ -25,7 +25,7 @@ public class DeliveryEntity {
 	}
 
 	@Basic
-	@Column(name = "DeliveryName")
+	@Column(name = "deliveryname")
 	public String getDeliveryName() {
 		return deliveryName;
 	}
@@ -35,7 +35,7 @@ public class DeliveryEntity {
 	}
 
 	@Basic
-	@Column(name = "Salary")
+	@Column(name = "salary")
 	public Double getSalary() {
 		return salary;
 	}

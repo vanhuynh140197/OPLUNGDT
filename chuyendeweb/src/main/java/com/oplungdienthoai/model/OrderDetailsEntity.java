@@ -17,7 +17,7 @@ public class OrderDetailsEntity {
 	private ProductsEntity productsByProductsId;
 
 	@Id
-	@Column(name = "OrdersID")
+	@Column(name = "ordersid")
 	public String getOrdersId() {
 		return ordersId;
 	}
@@ -27,7 +27,7 @@ public class OrderDetailsEntity {
 	}
 
 	@Id
-	@Column(name = "ProductsID")
+	@Column(name = "productsid")
 	public String getProductsId() {
 		return productsId;
 	}
@@ -37,7 +37,7 @@ public class OrderDetailsEntity {
 	}
 
 	@Basic
-	@Column(name = "Amount")
+	@Column(name = "amount")
 	public Integer getAmount() {
 		return amount;
 	}
@@ -47,7 +47,7 @@ public class OrderDetailsEntity {
 	}
 
 	@Basic
-	@Column(name = "TotalPrices")
+	@Column(name = "totalprices")
 	public Double getTotalPrices() {
 		return totalPrices;
 	}
@@ -87,7 +87,7 @@ public class OrderDetailsEntity {
 	}
 
 	@ManyToOne
-	@JoinColumn(name = "OrdersID", referencedColumnName = "OrdersID", nullable = false, insertable = false, updatable = false)
+	@JoinColumn(name = "ordersid", referencedColumnName = "ordersid", nullable = false, insertable = false, updatable = false)
 	public OrdersEntity getOrdersByOrdersId() {
 		return ordersByOrdersId;
 	}
@@ -97,7 +97,7 @@ public class OrderDetailsEntity {
 	}
 
 	@ManyToOne
-	@JoinColumn(name = "ProductsID", referencedColumnName = "ProductsID", nullable = false, insertable = false, updatable = false)
+	@JoinColumn(name = "productsid", referencedColumnName = "productsid", nullable = false, insertable = false, updatable = false)
 	public ProductsEntity getProductsByProductsId() {
 		return productsByProductsId;
 	}

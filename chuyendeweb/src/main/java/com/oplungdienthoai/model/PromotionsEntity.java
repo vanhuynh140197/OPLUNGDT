@@ -20,7 +20,7 @@ public class PromotionsEntity {
 	private ProductsEntity productsByProductsId;
 
 	@Id
-	@Column(name = "PromotionsID")
+	@Column(name = "promotionsid")
 	public String getPromotionsId() {
 		return promotionsId;
 	}
@@ -30,7 +30,7 @@ public class PromotionsEntity {
 	}
 
 	@Basic
-	@Column(name = "PromotionsName")
+	@Column(name = "promotionsname")
 	public String getPromotionsName() {
 		return promotionsName;
 	}
@@ -40,7 +40,7 @@ public class PromotionsEntity {
 	}
 
 	@Basic
-	@Column(name = "ProductsID")
+	@Column(name = "productsid")
 	public String getProductsId() {
 		return productsId;
 	}
@@ -50,7 +50,7 @@ public class PromotionsEntity {
 	}
 
 	@Basic
-	@Column(name = "PromotionsDescription")
+	@Column(name = "promotionsdescription")
 	public String getPromotionsDescription() {
 		return promotionsDescription;
 	}
@@ -60,7 +60,7 @@ public class PromotionsEntity {
 	}
 
 	@Basic
-	@Column(name = "PromotionValues")
+	@Column(name = "promotionvalues")
 	public Double getPromotionValues() {
 		return promotionValues;
 	}
@@ -70,7 +70,7 @@ public class PromotionsEntity {
 	}
 
 	@Basic
-	@Column(name = "DateStart")
+	@Column(name = "datestart")
 	public Date getDateStart() {
 		return dateStart;
 	}
@@ -80,7 +80,7 @@ public class PromotionsEntity {
 	}
 
 	@Basic
-	@Column(name = "DateEnd")
+	@Column(name = "dateend")
 	public Date getDateEnd() {
 		return dateEnd;
 	}
@@ -90,7 +90,7 @@ public class PromotionsEntity {
 	}
 
 	@Basic
-	@Column(name = "PromotionStatus")
+	@Column(name = "promotionstatus")
 	public Boolean getPromotionStatus() {
 		return promotionStatus;
 	}
@@ -143,7 +143,7 @@ public class PromotionsEntity {
 	}
 
 	@ManyToOne
-	@JoinColumn(name = "ProductsID", referencedColumnName = "ProductsID", nullable = false, insertable = false, updatable = false)
+	@JoinColumn(name = "productsid", referencedColumnName = "productsid", nullable = false, insertable = false, updatable = false)
 	public ProductsEntity getProductsByProductsId() {
 		return productsByProductsId;
 	}

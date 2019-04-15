@@ -20,8 +20,8 @@ public class PromotionsDAOImpl implements PromotionsDAO {
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<PromotionsEntity> getAll() {
-		return sessionFactory.getCurrentSession().createQuery("from PromotionsEntity where promotionStatus='" + 1 + "'")
-				.list();
+		return sessionFactory.getCurrentSession()
+				.createQuery("from PromotionsEntity where promotionStatus=" + true + "").list();
 	}
 
 	@Override
@@ -55,9 +55,8 @@ public class PromotionsDAOImpl implements PromotionsDAO {
 	@Override
 	public boolean remove(String promotionsId) {
 		try {
-			sessionFactory.getCurrentSession().createQuery(
-					"update PromotionsEntity set promotionStatus='" + 0 + "' where promotionsId='" + promotionsId + "'")
-					.executeUpdate();
+			sessionFactory.getCurrentSession().createQuery("update PromotionsEntity set promotionStatus=" + false
+					+ " where promotionsId='" + promotionsId + "'").executeUpdate();
 		} catch (Exception e) {
 			return false;
 		}

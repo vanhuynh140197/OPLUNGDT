@@ -24,7 +24,7 @@ public class ProductsEntity {
 	private Collection<PromotionsEntity> promotionsByProductsId;
 
 	@Id
-	@Column(name = "ProductsID")
+	@Column(name = "productsid")
 	public String getProductsId() {
 		return productsId;
 	}
@@ -34,7 +34,7 @@ public class ProductsEntity {
 	}
 
 	@Basic
-	@Column(name = "ProductsName")
+	@Column(name = "productsname")
 	public String getProductsName() {
 		return productsName;
 	}
@@ -44,7 +44,7 @@ public class ProductsEntity {
 	}
 
 	@Basic
-	@Column(name = "ProductsImages1")
+	@Column(name = "productsimages1")
 	public String getProductsImages1() {
 		return productsImages1;
 	}
@@ -54,7 +54,7 @@ public class ProductsEntity {
 	}
 
 	@Basic
-	@Column(name = "ProductsImages2")
+	@Column(name = "productsimages2")
 	public String getProductsImages2() {
 		return productsImages2;
 	}
@@ -64,7 +64,7 @@ public class ProductsEntity {
 	}
 
 	@Basic
-	@Column(name = "ProductsColor")
+	@Column(name = "productscolor")
 	public String getProductsColor() {
 		return productsColor;
 	}
@@ -74,7 +74,7 @@ public class ProductsEntity {
 	}
 
 	@Basic
-	@Column(name = "Amount", nullable = true)
+	@Column(name = "amount", nullable = true)
 	public Integer getAmount() {
 		return amount;
 	}
@@ -84,7 +84,7 @@ public class ProductsEntity {
 	}
 
 	@Basic
-	@Column(name = "Description")
+	@Column(name = "description")
 	public String getDescription() {
 		return description;
 	}
@@ -94,7 +94,7 @@ public class ProductsEntity {
 	}
 
 	@Basic
-	@Column(name = "ProductTypesID")
+	@Column(name = "producttypesid")
 	public String getProductTypesId() {
 		return productTypesId;
 	}
@@ -104,7 +104,7 @@ public class ProductsEntity {
 	}
 
 	@Basic
-	@Column(name = "ProductsStatus")
+	@Column(name = "productstatus")
 	public Boolean getProductsStatus() {
 		return productsStatus;
 	}
@@ -177,7 +177,7 @@ public class ProductsEntity {
 	}
 
 	@ManyToOne
-	@JoinColumn(name = "ProductTypesID", referencedColumnName = "ProductTypesID", nullable = false, insertable = false, updatable = false)
+	@JoinColumn(name = "producttypesid", referencedColumnName = "producttypesid", nullable = false, insertable = false, updatable = false)
 	public ProductTypesEntity getProductTypesByProductTypesId() {
 		return productTypesByProductTypesId;
 	}

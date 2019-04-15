@@ -20,7 +20,7 @@ public class EmployeesDAOImpl implements EmployeesDAO {
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<EmployeesEntity> getAll() {
-		return sessionFactory.getCurrentSession().createQuery("from EmployeesEntity where employeesStatus='" + 1 + "'")
+		return sessionFactory.getCurrentSession().createQuery("from EmployeesEntity where employeesStatus=" + true + "")
 				.list();
 	}
 
@@ -56,7 +56,7 @@ public class EmployeesDAOImpl implements EmployeesDAO {
 	public boolean remove(String employeesId) {
 		try {
 			sessionFactory.getCurrentSession().createQuery(
-					"update EmployeesEntity set employeesStatus='" + 0 + "' where employeesId='" + employeesId + "'")
+					"update EmployeesEntity set employeesStatus=" + false + " where employeesId='" + employeesId + "'")
 					.executeUpdate();
 		} catch (Exception e) {
 			return false;

@@ -17,7 +17,7 @@ public class ContactCommentEntity {
 	private Boolean contactStatus;
 
 	@Id
-	@Column(name = "ContactID")
+	@Column(name = "contactid")
 	public String getContactId() {
 		return contactId;
 	}
@@ -27,7 +27,7 @@ public class ContactCommentEntity {
 	}
 
 	@Basic
-	@Column(name = "TitleContact")
+	@Column(name = "titlecontact")
 	public String getTitleContact() {
 		return titleContact;
 	}
@@ -37,7 +37,7 @@ public class ContactCommentEntity {
 	}
 
 	@Basic
-	@Column(name = "Descriptions")
+	@Column(name = "descriptions")
 	public String getDescriptions() {
 		return descriptions;
 	}
@@ -47,7 +47,7 @@ public class ContactCommentEntity {
 	}
 
 	@Basic
-	@Column(name = "DateContacts")
+	@Column(name = "datecontacts")
 	public Date getDateContacts() {
 		return dateContacts;
 	}
@@ -57,7 +57,7 @@ public class ContactCommentEntity {
 	}
 
 	@Basic
-	@Column(name = "Email")
+	@Column(name = "email")
 	public String getEmail() {
 		return email;
 	}
@@ -67,7 +67,7 @@ public class ContactCommentEntity {
 	}
 
 	@Basic
-	@Column(name = "ContactStatus")
+	@Column(name = "contactstatus")
 	public Boolean getContactStatus() {
 		return contactStatus;
 	}

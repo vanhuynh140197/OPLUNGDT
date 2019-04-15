@@ -26,6 +26,11 @@ public class UsersServiceImpl implements UsersService {
 	}
 
 	@Override
+	public UsersEntity getUsersName(String userName) {
+		return usersDAO.getUsersName(userName);
+	}
+
+	@Override
 	public boolean add(UsersEntity user) {
 		return usersDAO.add(user);
 	}

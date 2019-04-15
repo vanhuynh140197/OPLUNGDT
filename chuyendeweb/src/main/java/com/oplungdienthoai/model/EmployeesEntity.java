@@ -22,7 +22,7 @@ public class EmployeesEntity {
 	private Collection<PositionsEntity> positionsByEmployeesId;
 
 	@Id
-	@Column(name = "EmployeesID")
+	@Column(name = "employeesid")
 	public String getEmployeesId() {
 		return employeesId;
 	}
@@ -32,7 +32,7 @@ public class EmployeesEntity {
 	}
 
 	@Basic
-	@Column(name = "EmployeesName")
+	@Column(name = "employeesname")
 	public String getEmployeesName() {
 		return employeesName;
 	}
@@ -42,7 +42,7 @@ public class EmployeesEntity {
 	}
 
 	@Basic
-	@Column(name = "Email")
+	@Column(name = "email")
 	public String getEmail() {
 		return email;
 	}
@@ -52,7 +52,7 @@ public class EmployeesEntity {
 	}
 
 	@Basic
-	@Column(name = "Phone")
+	@Column(name = "phone")
 	public String getPhone() {
 		return phone;
 	}
@@ -62,7 +62,7 @@ public class EmployeesEntity {
 	}
 
 	@Basic
-	@Column(name = "Address")
+	@Column(name = "address")
 	public String getAddress() {
 		return address;
 	}
@@ -72,7 +72,7 @@ public class EmployeesEntity {
 	}
 
 	@Basic
-	@Column(name = "DateStart")
+	@Column(name = "datestart")
 	public Date getDateStart() {
 		return dateStart;
 	}
@@ -82,7 +82,7 @@ public class EmployeesEntity {
 	}
 
 	@Basic
-	@Column(name = "DeliveryID")
+	@Column(name = "deliveryid")
 	public String getDeliveryId() {
 		return deliveryId;
 	}
@@ -92,7 +92,7 @@ public class EmployeesEntity {
 	}
 
 	@Basic
-	@Column(name = "EmployeesStatus")
+	@Column(name = "employeestatus")
 	public Boolean getEmployeesStatus() {
 		return employeesStatus;
 	}
@@ -144,7 +144,7 @@ public class EmployeesEntity {
 	}
 
 	@ManyToOne
-	@JoinColumn(name = "DeliveryID", referencedColumnName = "DeliveryID", nullable = false, insertable = false, updatable = false)
+	@JoinColumn(name = "deliveryid", referencedColumnName = "deliveryid", nullable = false, insertable = false, updatable = false)
 	public DeliveryEntity getDeliveryByDeliveryId() {
 		return deliveryByDeliveryId;
 	}

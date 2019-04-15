@@ -19,7 +19,7 @@ public class UsersEntity {
 	private RoleEntity roleByRoleId;
 
 	@Id
-	@Column(name = "UserID")
+	@Column(name = "userid")
 	public String getUserId() {
 		return userId;
 	}
@@ -29,7 +29,7 @@ public class UsersEntity {
 	}
 
 	@Basic
-	@Column(name = "UserName")
+	@Column(name = "username")
 	public String getUserName() {
 		return userName;
 	}
@@ -39,7 +39,7 @@ public class UsersEntity {
 	}
 
 	@Basic
-	@Column(name = "Passwords")
+	@Column(name = "passwords")
 	public String getPasswords() {
 		return passwords;
 	}
@@ -49,7 +49,7 @@ public class UsersEntity {
 	}
 
 	@Basic
-	@Column(name = "Email")
+	@Column(name = "email")
 	public String getEmail() {
 		return email;
 	}
@@ -59,7 +59,7 @@ public class UsersEntity {
 	}
 
 	@Basic
-	@Column(name = "Phone")
+	@Column(name = "phone")
 	public String getPhone() {
 		return phone;
 	}
@@ -69,7 +69,7 @@ public class UsersEntity {
 	}
 
 	@Basic
-	@Column(name = "ValidateEmail")
+	@Column(name = "validateemail")
 	public Boolean getValidateEmail() {
 		return validateEmail;
 	}
@@ -79,7 +79,7 @@ public class UsersEntity {
 	}
 
 	@Basic
-	@Column(name = "RoleID")
+	@Column(name = "roleid")
 	public String getRoleId() {
 		return roleId;
 	}
@@ -89,7 +89,7 @@ public class UsersEntity {
 	}
 
 	@Basic
-	@Column(name = "UsersStatus")
+	@Column(name = "userstatus")
 	public Boolean getUsersStatus() {
 		return usersStatus;
 	}
@@ -141,7 +141,7 @@ public class UsersEntity {
 	}
 
 	@ManyToOne
-	@JoinColumn(name = "RoleID", referencedColumnName = "RoleID", nullable = false, insertable = false, updatable = false)
+	@JoinColumn(name = "roleid", referencedColumnName = "roleid", nullable = false, insertable = false, updatable = false)
 	public RoleEntity getRoleByRoleId() {
 		return roleByRoleId;
 	}

@@ -14,7 +14,7 @@ public class StatusOrdersEntity {
 	private Collection<PositionsEntity> positionsByOrdersStatusId;
 
 	@Id
-	@Column(name = "OrdersStatusID")
+	@Column(name = "orderstatusid")
 	public String getOrdersStatusId() {
 		return ordersStatusId;
 	}
@@ -24,7 +24,7 @@ public class StatusOrdersEntity {
 	}
 
 	@Basic
-	@Column(name = "Descriptions")
+	@Column(name = "descriptions")
 	public String getDescriptions() {
 		return descriptions;
 	}

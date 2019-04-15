@@ -17,7 +17,7 @@ public class ProductTypesEntity {
 	private Collection<ProductsEntity> productsByProductTypesId;
 
 	@Id
-	@Column(name = "ProductTypesID")
+	@Column(name = "producttypesid")
 	public String getProductTypesId() {
 		return productTypesId;
 	}
@@ -27,7 +27,7 @@ public class ProductTypesEntity {
 	}
 
 	@Basic
-	@Column(name = "ProductTypesName")
+	@Column(name = "producttypesname")
 	public String getProductTypesName() {
 		return productTypesName;
 	}
@@ -37,7 +37,7 @@ public class ProductTypesEntity {
 	}
 
 	@Basic
-	@Column(name = "ProvidersID")
+	@Column(name = "providersid")
 	public String getProvidersId() {
 		return providersId;
 	}
@@ -47,7 +47,7 @@ public class ProductTypesEntity {
 	}
 
 	@Basic
-	@Column(name = "ProductTypesStatus")
+	@Column(name = "producttypestatus")
 	public Boolean getProductTypesStatus() {
 		return productTypesStatus;
 	}
@@ -88,7 +88,7 @@ public class ProductTypesEntity {
 	}
 
 	@ManyToOne
-	@JoinColumn(name = "ProvidersID", referencedColumnName = "ProvidersID", nullable = false, insertable = false, updatable = false)
+	@JoinColumn(name = "providersid", referencedColumnName = "providersid", nullable = false, insertable = false, updatable = false)
 	public ProvidersEntity getProvidersByProvidersId() {
 		return providersByProvidersId;
 	}

@@ -17,7 +17,7 @@ public class CommentProductsEntity {
 	private CustomersEntity customersByCustomersId;
 
 	@Id
-	@Column(name = "CommentID")
+	@Column(name = "commentid")
 	public String getCommentId() {
 		return commentId;
 	}
@@ -27,7 +27,7 @@ public class CommentProductsEntity {
 	}
 
 	@Basic
-	@Column(name = "CommentName")
+	@Column(name = "commentname")
 	public String getCommentName() {
 		return commentName;
 	}
@@ -37,7 +37,7 @@ public class CommentProductsEntity {
 	}
 
 	@Basic
-	@Column(name = "DateComment")
+	@Column(name = "datecomment")
 	public Date getDateComment() {
 		return dateComment;
 	}
@@ -47,7 +47,7 @@ public class CommentProductsEntity {
 	}
 
 	@Basic
-	@Column(name = "Descriptions")
+	@Column(name = "descriptions")
 	public String getDescriptions() {
 		return descriptions;
 	}
@@ -57,7 +57,7 @@ public class CommentProductsEntity {
 	}
 
 	@Basic
-	@Column(name = "CustomersID")
+	@Column(name = "customersid")
 	public String getCustomersId() {
 		return customersId;
 	}
@@ -100,7 +100,7 @@ public class CommentProductsEntity {
 	}
 
 	@ManyToOne
-	@JoinColumn(name = "CustomersID", referencedColumnName = "CustomersID", nullable = false, insertable = false, updatable = false)
+	@JoinColumn(name = "customersid", referencedColumnName = "customersid", nullable = false, insertable = false, updatable = false)
 	public CustomersEntity getCustomersByCustomersId() {
 		return customersByCustomersId;
 	}

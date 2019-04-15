@@ -20,13 +20,21 @@ public class UsersDAOImpl implements UsersDAO {
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<UsersEntity> getAll() {
-		return sessionFactory.getCurrentSession().createQuery("from UsersEntity where usersStatus='" + 1 + "'").list();
+		return sessionFactory.getCurrentSession().createQuery("from UsersEntity where usersStatus=" + true + "").list();
 	}
 
 	@Override
 	public UsersEntity getUsers(String userId) {
 		@SuppressWarnings("rawtypes")
 		List list = sessionFactory.getCurrentSession().createQuery("from UsersEntity where userId='" + userId + "'")
+				.list();
+		return !list.isEmpty() ? (UsersEntity) list.get(0) : null;
+	}
+
+	@Override
+	public UsersEntity getUsersName(String userName) {
+		@SuppressWarnings("rawtypes")
+		List list = sessionFactory.getCurrentSession().createQuery("from UsersEntity where userName='" + userName + "'")
 				.list();
 		return !list.isEmpty() ? (UsersEntity) list.get(0) : null;
 	}
@@ -55,7 +63,7 @@ public class UsersDAOImpl implements UsersDAO {
 	public boolean remove(String userId) {
 		try {
 			sessionFactory.getCurrentSession()
-					.createQuery("update UsersEntity set usersStatus='" + 0 + "' where userId='" + userId + "'")
+					.createQuery("update UsersEntity set usersStatus=" + false + " where userId='" + userId + "'")
 					.executeUpdate();
 		} catch (Exception e) {
 			return false;

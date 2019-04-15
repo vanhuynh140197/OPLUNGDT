@@ -20,6 +20,22 @@
 <link rel="stylesheet"
 	href="<c:url value="/resources/admin/css/data-table/bootstrap-editable.css"/>">
 </head>
+<script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$.ajax({
+		type: 'GET',
+		url: '<c:url value="/admin/oplungdienthoai/sanpham/load"/>',
+		success: function(data){
+			console.log(data);
+		},
+		error: function(){
+			
+		}
+	});
+});
+</script>
 <body>
 	<!-- menu -->
 	<%@include file="menu_admin.jsp"%>

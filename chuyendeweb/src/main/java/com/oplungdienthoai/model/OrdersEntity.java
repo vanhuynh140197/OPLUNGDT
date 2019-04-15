@@ -25,7 +25,7 @@ public class OrdersEntity {
 	private Collection<PositionsEntity> positionsByOrdersId;
 
 	@Id
-	@Column(name = "OrdersID")
+	@Column(name = "ordersid")
 	public String getOrdersId() {
 		return ordersId;
 	}
@@ -35,7 +35,7 @@ public class OrdersEntity {
 	}
 
 	@Basic
-	@Column(name = "DateStartOrder")
+	@Column(name = "datestartorder")
 	public Date getDateStartOrder() {
 		return dateStartOrder;
 	}
@@ -45,7 +45,7 @@ public class OrdersEntity {
 	}
 
 	@Basic
-	@Column(name = "CustomersID")
+	@Column(name = "customersid")
 	public String getCustomersId() {
 		return customersId;
 	}
@@ -55,7 +55,7 @@ public class OrdersEntity {
 	}
 
 	@Basic
-	@Column(name = "OrderDescriptions")
+	@Column(name = "orderdescriptions")
 	public String getOrderDescriptions() {
 		return orderDescriptions;
 	}
@@ -65,7 +65,7 @@ public class OrdersEntity {
 	}
 
 	@Basic
-	@Column(name = "TotalPrices")
+	@Column(name = "totalprices")
 	public double getTotalPrices() {
 		return totalPrices;
 	}
@@ -75,7 +75,7 @@ public class OrdersEntity {
 	}
 
 	@Basic
-	@Column(name = "ShippingID")
+	@Column(name = "shippingid")
 	public String getShippingId() {
 		return shippingId;
 	}
@@ -85,7 +85,7 @@ public class OrdersEntity {
 	}
 
 	@Basic
-	@Column(name = "PaymentsID")
+	@Column(name = "paymentsid")
 	public String getPaymentsId() {
 		return paymentsId;
 	}
@@ -95,7 +95,7 @@ public class OrdersEntity {
 	}
 
 	@Basic
-	@Column(name = "OrdersStatus")
+	@Column(name = "orderstatus")
 	public Boolean getOrdersStatus() {
 		return ordersStatus;
 	}
@@ -160,7 +160,7 @@ public class OrdersEntity {
 	}
 
 	@ManyToOne
-	@JoinColumn(name = "CustomersID", referencedColumnName = "CustomersID", nullable = false, insertable = false, updatable = false)
+	@JoinColumn(name = "customersid", referencedColumnName = "customersid", nullable = false, insertable = false, updatable = false)
 	public CustomersEntity getCustomersByCustomersId() {
 		return customersByCustomersId;
 	}
@@ -170,7 +170,7 @@ public class OrdersEntity {
 	}
 
 	@ManyToOne
-	@JoinColumn(name = "ShippingID", referencedColumnName = "ShippingID", nullable = false, insertable = false, updatable = false)
+	@JoinColumn(name = "shippingid", referencedColumnName = "shippingid", nullable = false, insertable = false, updatable = false)
 	public ShippingMethodEntity getShippingMethodByShippingId() {
 		return shippingMethodByShippingId;
 	}
@@ -180,7 +180,7 @@ public class OrdersEntity {
 	}
 
 	@ManyToOne
-	@JoinColumn(name = "PaymentsID", referencedColumnName = "PaymentsID", nullable = false, insertable = false, updatable = false)
+	@JoinColumn(name = "paymentsid", referencedColumnName = "paymentsid", nullable = false, insertable = false, updatable = false)
 	public PaymentsEntity getPaymentsByPaymentsId() {
 		return paymentsByPaymentsId;
 	}

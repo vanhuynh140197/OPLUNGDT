@@ -14,7 +14,7 @@ public class RoleEntity {
 	private Collection<UsersEntity> usersByRoleId;
 
 	@Id
-	@Column(name = "RoleID")
+	@Column(name = "roleid")
 	public String getRoleId() {
 		return roleId;
 	}
@@ -24,7 +24,7 @@ public class RoleEntity {
 	}
 
 	@Basic
-	@Column(name = "RoleName")
+	@Column(name = "rolename")
 	public String getRoleName() {
 		return roleName;
 	}

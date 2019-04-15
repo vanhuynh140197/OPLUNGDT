@@ -21,7 +21,7 @@ public class PositionsEntity {
 	private StatusOrdersEntity statusOrdersByOrdersStatusId;
 
 	@Id
-	@Column(name = "PositonsID")
+	@Column(name = "positonsid")
 	public String getPositonsId() {
 		return positonsId;
 	}
@@ -31,7 +31,7 @@ public class PositionsEntity {
 	}
 
 	@Basic
-	@Column(name = "OrdersID")
+	@Column(name = "ordersid")
 	public String getOrdersId() {
 		return ordersId;
 	}
@@ -41,7 +41,7 @@ public class PositionsEntity {
 	}
 
 	@Basic
-	@Column(name = "EmployeesID")
+	@Column(name = "employeesid")
 	public String getEmployeesId() {
 		return employeesId;
 	}
@@ -51,7 +51,7 @@ public class PositionsEntity {
 	}
 
 	@Basic
-	@Column(name = "DateShipping")
+	@Column(name = "dateshipping")
 	public Date getDateShipping() {
 		return dateShipping;
 	}
@@ -61,7 +61,7 @@ public class PositionsEntity {
 	}
 
 	@Basic
-	@Column(name = "DateReceived")
+	@Column(name = "datereceived")
 	public Date getDateReceived() {
 		return dateReceived;
 	}
@@ -71,7 +71,7 @@ public class PositionsEntity {
 	}
 
 	@Basic
-	@Column(name = "OrdersStatusID")
+	@Column(name = "orderstatusid")
 	public String getOrdersStatusId() {
 		return ordersStatusId;
 	}
@@ -81,7 +81,7 @@ public class PositionsEntity {
 	}
 
 	@Basic
-	@Column(name = "PositionsStatus")
+	@Column(name = "positionstatus")
 	public Boolean getPositionsStatus() {
 		return positionsStatus;
 	}
@@ -130,7 +130,7 @@ public class PositionsEntity {
 	}
 
 	@ManyToOne
-	@JoinColumn(name = "OrdersID", referencedColumnName = "OrdersID", nullable = false, insertable = false, updatable = false)
+	@JoinColumn(name = "ordersid", referencedColumnName = "ordersid", nullable = false, insertable = false, updatable = false)
 	public OrdersEntity getOrdersByOrdersId() {
 		return ordersByOrdersId;
 	}
@@ -140,7 +140,7 @@ public class PositionsEntity {
 	}
 
 	@ManyToOne
-	@JoinColumn(name = "EmployeesID", referencedColumnName = "EmployeesID", nullable = false, insertable = false, updatable = false)
+	@JoinColumn(name = "employeesid", referencedColumnName = "employeesid", nullable = false, insertable = false, updatable = false)
 	public EmployeesEntity getEmployeesByEmployeesId() {
 		return employeesByEmployeesId;
 	}
@@ -150,7 +150,7 @@ public class PositionsEntity {
 	}
 
 	@ManyToOne
-	@JoinColumn(name = "OrdersStatusID", referencedColumnName = "OrdersStatusID", nullable = false, insertable = false, updatable = false)
+	@JoinColumn(name = "orderstatusid", referencedColumnName = "orderstatusid", nullable = false, insertable = false, updatable = false)
 	public StatusOrdersEntity getStatusOrdersByOrdersStatusId() {
 		return statusOrdersByOrdersStatusId;
 	}

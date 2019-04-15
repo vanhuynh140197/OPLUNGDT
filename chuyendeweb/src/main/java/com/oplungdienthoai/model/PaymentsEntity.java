@@ -15,7 +15,7 @@ public class PaymentsEntity {
 	private Collection<OrdersEntity> ordersByPaymentsId;
 
 	@Id
-	@Column(name = "PaymentsID")
+	@Column(name = "paymentsid")
 	public String getPaymentsId() {
 		return paymentsId;
 	}
@@ -25,7 +25,7 @@ public class PaymentsEntity {
 	}
 
 	@Basic
-	@Column(name = "PaymentsName")
+	@Column(name = "paymentsname")
 	public String getPaymentsName() {
 		return paymentsName;
 	}
@@ -35,7 +35,7 @@ public class PaymentsEntity {
 	}
 
 	@Basic
-	@Column(name = "PaymentsDescription")
+	@Column(name = "paymentsdescription")
 	public String getPaymentsDescription() {
 		return paymentsDescription;
 	}

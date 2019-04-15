@@ -21,7 +21,7 @@ public class CustomersEntity {
 	private Collection<OrdersEntity> ordersByCustomersId;
 
 	@Id
-	@Column(name = "CustomersID")
+	@Column(name = "customersid")
 	public String getCustomersId() {
 		return customersId;
 	}
@@ -31,7 +31,7 @@ public class CustomersEntity {
 	}
 
 	@Basic
-	@Column(name = "CustomersName")
+	@Column(name = "customersname")
 	public String getCustomersName() {
 		return customersName;
 	}
@@ -41,7 +41,7 @@ public class CustomersEntity {
 	}
 
 	@Basic
-	@Column(name = "Email")
+	@Column(name = "email")
 	public String getEmail() {
 		return email;
 	}
@@ -51,7 +51,7 @@ public class CustomersEntity {
 	}
 
 	@Basic
-	@Column(name = "Phone")
+	@Column(name = "phone")
 	public String getPhone() {
 		return phone;
 	}
@@ -61,7 +61,7 @@ public class CustomersEntity {
 	}
 
 	@Basic
-	@Column(name = "DateBirth")
+	@Column(name = "datebirth")
 	public Date getDateBirth() {
 		return dateBirth;
 	}
@@ -71,7 +71,7 @@ public class CustomersEntity {
 	}
 
 	@Basic
-	@Column(name = "Address")
+	@Column(name = "address")
 	public String getAddress() {
 		return address;
 	}
@@ -81,7 +81,7 @@ public class CustomersEntity {
 	}
 
 	@Basic
-	@Column(name = "CustomersStatus")
+	@Column(name = "customerstatus")
 	public Boolean getCustomersStatus() {
 		return customersStatus;
 	}

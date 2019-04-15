@@ -11,7 +11,7 @@ public class OrderDetailsEntityPK implements Serializable {
 	private String ordersId;
 	private String productsId;
 
-	@Column(name = "OrdersID", nullable = false, length = 10)
+	@Column(name = "ordersid", nullable = false, length = 10)
 	@Id
 	public String getOrdersId() {
 		return ordersId;
@@ -21,7 +21,7 @@ public class OrderDetailsEntityPK implements Serializable {
 		this.ordersId = ordersId;
 	}
 
-	@Column(name = "ProductsID", nullable = false, length = 10)
+	@Column(name = "productsid", nullable = false, length = 10)
 	@Id
 	public String getProductsId() {
 		return productsId;

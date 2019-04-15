@@ -15,7 +15,7 @@ public class ProvidersEntity {
 	private Collection<ProductTypesEntity> productTypesByProvidersId;
 
 	@Id
-	@Column(name = "ProvidersID")
+	@Column(name = "providersid")
 	public String getProvidersId() {
 		return providersId;
 	}
@@ -25,7 +25,7 @@ public class ProvidersEntity {
 	}
 
 	@Basic
-	@Column(name = "ProvidersName")
+	@Column(name = "providersname")
 	public String getProvidersName() {
 		return providersName;
 	}
@@ -35,7 +35,7 @@ public class ProvidersEntity {
 	}
 
 	@Basic
-	@Column(name = "ProviderStatus")
+	@Column(name = "providerstatus")
 	public Boolean getProviderStatus() {
 		return providerStatus;
 	}
