@@ -1,3 +1,4 @@
+<%@page import="com.oplungdienthoai.model.UsersEntity"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
@@ -52,6 +53,12 @@
 								class="fas fa-map-marker-alt"></i> Địa chỉ cửa hàng</a></li>
 						<li class="list-inline-item"><a href="#"><i
 								class="fas fa-phone-volume"></i> Chăm sóc khách hàng</a></li>
+						<%
+							UsersEntity usersEntity = session.getAttribute("LoginSuccess") == null
+									? null
+									: ((UsersEntity) session.getAttribute("LoginSuccess"));
+							if (usersEntity == null) {
+						%>
 						<li class="list-inline-item"><a
 							href="<c:url value="/oplungdienthoai/home/dangky"/>"><i
 								class="fas fa-user-edit"></i> Đăng ký</a></li>
@@ -59,6 +66,12 @@
 							href="<c:url value="/oplungdienthoai/home/dangnhap"/>"> <i
 								class="fas fa-user-tag"></i> Đăng nhập
 						</a></li>
+						<%
+							} else {
+						%>
+						<li class="list-inline-item"><a href="#"><i
+								class="fas fa-phone-volume"></i> Xin chào, <%=usersEntity.getUserName()%></a></li>
+						<% } %>
 					</ul>
 				</div>
 			</div>

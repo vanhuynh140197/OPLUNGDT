@@ -359,10 +359,10 @@
 			content : '<div class="ajs-content"></div>',
 			footer : '<div class="ajs-footer"></div>',
 			buttons : {
-				primary : '<div class="ajs-primary ajs-buttons"></div>',
-				auxiliary : '<div class="ajs-auxiliary ajs-buttons"></div>'
+				primary : '',
+				auxiliary : ''
 			},
-			button : '<button class="ajs-button"></button>',
+			button : '',
 			resizeHandle : '<div class="ajs-handle"></div>',
 		},
 		//common class names

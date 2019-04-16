@@ -1,8 +1,11 @@
 package com.oplungdienthoai.controller;
 
+import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -75,16 +78,17 @@ public class HomeController {
 		return "/ui/login";
 	}
 
-	@RequestMapping(value = "/home/login/ajax")
+	@RequestMapping(value = "/home/login/ajax", method = RequestMethod.POST)
 	public @ResponseBody String ajaxLogin(@RequestParam(value = "email") String email,
-			@RequestParam(value = "password") String password) {
+			@RequestParam(value = "password") String password, HttpSession session) {
 		UsersEntity usersEntity = userService.getUsersName(email);
 		if (usersEntity == null) {
 			return "error";
+		} else if (!usersEntity.getPasswords().trim().equals(password)) {
+			return "error";
 		} else {
-			return usersEntity.getUserName().trim().equals(email) && usersEntity.getPasswords().trim().equals(password)
-					? "success" : "error";
+			session.setAttribute("LoginSuccess", usersEntity);
+			return "success";
 		}
-
 	}
 }
