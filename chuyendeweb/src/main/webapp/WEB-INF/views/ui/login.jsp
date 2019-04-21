@@ -38,7 +38,6 @@
 						alertify.alert('Tên đăng nhập hoặc mật khẩu không chính xác.');
 						setTimeout(function(){
 							alertify.closeAll();
-							window.location.reload();
 						}, 2000);
 					}else{
 						window.location = '<c:url value="/oplungdienthoai/home"/>';
