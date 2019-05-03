@@ -17,4 +17,6 @@ public interface UsersDAO {
 	public boolean edit(UsersEntity user);
 
 	public boolean remove(String userId);
+
+	public boolean update(String username, Boolean daxacnhan);
 }

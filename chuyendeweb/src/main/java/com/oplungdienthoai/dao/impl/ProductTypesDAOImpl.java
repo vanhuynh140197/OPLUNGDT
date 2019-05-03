@@ -21,7 +21,7 @@ public class ProductTypesDAOImpl implements ProductTypesDAO {
 	@Override
 	public List<ProductTypesEntity> getAll() {
 		return sessionFactory.getCurrentSession()
-				.createQuery("from ProductTypesEntity where productTypesStatus=" + true + "").list();
+				.createQuery("from ProductTypesEntity where productTypesStatus=" + false + "").list();
 	}
 
 	@Override
@@ -55,7 +55,7 @@ public class ProductTypesDAOImpl implements ProductTypesDAO {
 	@Override
 	public boolean remove(String productTypesId) {
 		try {
-			sessionFactory.getCurrentSession().createQuery("update ProductTypesEntity set productTypesStatus=" + false
+			sessionFactory.getCurrentSession().createQuery("update ProductTypesEntity set productTypesStatus=" + true
 					+ " where productTypesId='" + productTypesId + "'").executeUpdate();
 		} catch (Exception e) {
 			return false;

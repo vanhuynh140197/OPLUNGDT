@@ -21,7 +21,7 @@ public class ContactCommentDAOImpl implements ContactCommentDAO {
 	@Override
 	public List<ContactCommentEntity> getAll() {
 		return sessionFactory.getCurrentSession()
-				.createQuery("from ContactCommentEntity where contactStatus=" + true + "").list();
+				.createQuery("from ContactCommentEntity where contactStatus=" + false + "").list();
 	}
 
 	@Override
@@ -56,7 +56,7 @@ public class ContactCommentDAOImpl implements ContactCommentDAO {
 	public boolean remove(String contactId) {
 		try {
 			sessionFactory.getCurrentSession().createQuery(
-					"update ContactCommentEntity set contactStatus=" + false + " where contactId='" + contactId + "'")
+					"update ContactCommentEntity set contactStatus=" + true + " where contactId='" + contactId + "'")
 					.executeUpdate();
 		} catch (Exception e) {
 			return false;

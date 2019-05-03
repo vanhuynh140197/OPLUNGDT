@@ -2,6 +2,7 @@ package com.oplungdienthoai.model;
 
 import javax.persistence.*;
 import java.sql.Date;
+import java.util.Collection;
 
 /**
  * Created by VanHuynh on 25/03/2019.
@@ -11,13 +12,11 @@ import java.sql.Date;
 public class PromotionsEntity {
 	private String promotionsId;
 	private String promotionsName;
-	private String productsId;
 	private String promotionsDescription;
 	private Double promotionValues;
 	private Date dateStart;
 	private Date dateEnd;
-	private Boolean promotionStatus;
-	private ProductsEntity productsByProductsId;
+	private Collection<ProductsEntity> productByPromotionsId;
 
 	@Id
 	@Column(name = "promotionsid")
@@ -37,16 +36,6 @@ public class PromotionsEntity {
 
 	public void setPromotionsName(String promotionsName) {
 		this.promotionsName = promotionsName;
-	}
-
-	@Basic
-	@Column(name = "productsid")
-	public String getProductsId() {
-		return productsId;
-	}
-
-	public void setProductsId(String productsId) {
-		this.productsId = productsId;
 	}
 
 	@Basic
@@ -89,16 +78,6 @@ public class PromotionsEntity {
 		this.dateEnd = dateEnd;
 	}
 
-	@Basic
-	@Column(name = "promotionstatus")
-	public Boolean getPromotionStatus() {
-		return promotionStatus;
-	}
-
-	public void setPromotionStatus(Boolean promotionStatus) {
-		this.promotionStatus = promotionStatus;
-	}
-
 	@Override
 	public boolean equals(Object o) {
 		if (this == o)
@@ -112,8 +91,6 @@ public class PromotionsEntity {
 			return false;
 		if (promotionsName != null ? !promotionsName.equals(that.promotionsName) : that.promotionsName != null)
 			return false;
-		if (productsId != null ? !productsId.equals(that.productsId) : that.productsId != null)
-			return false;
 		if (promotionsDescription != null ? !promotionsDescription.equals(that.promotionsDescription)
 				: that.promotionsDescription != null)
 			return false;
@@ -123,8 +100,6 @@ public class PromotionsEntity {
 			return false;
 		if (dateEnd != null ? !dateEnd.equals(that.dateEnd) : that.dateEnd != null)
 			return false;
-		if (promotionStatus != null ? !promotionStatus.equals(that.promotionStatus) : that.promotionStatus != null)
-			return false;
 
 		return true;
 	}
@@ -133,22 +108,19 @@ public class PromotionsEntity {
 	public int hashCode() {
 		int result = promotionsId != null ? promotionsId.hashCode() : 0;
 		result = 31 * result + (promotionsName != null ? promotionsName.hashCode() : 0);
-		result = 31 * result + (productsId != null ? productsId.hashCode() : 0);
 		result = 31 * result + (promotionsDescription != null ? promotionsDescription.hashCode() : 0);
 		result = 31 * result + (promotionValues != null ? promotionValues.hashCode() : 0);
 		result = 31 * result + (dateStart != null ? dateStart.hashCode() : 0);
 		result = 31 * result + (dateEnd != null ? dateEnd.hashCode() : 0);
-		result = 31 * result + (promotionStatus != null ? promotionStatus.hashCode() : 0);
 		return result;
 	}
 
-	@ManyToOne
-	@JoinColumn(name = "productsid", referencedColumnName = "productsid", nullable = false, insertable = false, updatable = false)
-	public ProductsEntity getProductsByProductsId() {
-		return productsByProductsId;
+	@OneToMany(mappedBy = "promotionByPromotionsId", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	public Collection<ProductsEntity> getProductByPromotionsId() {
+		return productByPromotionsId;
 	}
 
-	public void setProductsByProductsId(ProductsEntity productsByProductsId) {
-		this.productsByProductsId = productsByProductsId;
+	public void setProductByPromotionsId(Collection<ProductsEntity> productByPromotionsId) {
+		this.productByPromotionsId = productByPromotionsId;
 	}
 }

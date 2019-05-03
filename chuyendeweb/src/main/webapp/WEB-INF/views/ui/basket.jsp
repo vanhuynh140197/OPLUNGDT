@@ -1,3 +1,7 @@
+<%@page import="com.oplungdienthoai.model.PromotionsEntity"%>
+<%@page import="java.text.DecimalFormat"%>
+<%@page import="java.util.List"%>
+<%@page import="com.oplungdienthoai.model.GioHang"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
@@ -14,7 +18,22 @@
 	href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
 	rel="stylesheet">
 </head>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(e){
+	$("#soLuong").on('click', function(){
+		var soLuong = $('#soLuong').val();
+		var giaBan = $('#giaBan').html();
+		console.log(soLuong + " " + giaBan);
+	});
+});
+</script>
 <body>
+	<%!public String formatNumberGiaBan(Double giaban) {
+		DecimalFormat decimalFormat = new DecimalFormat("###,###");
+		return decimalFormat.format(giaban);
+	}%>
 	<!-- menu -->
 	<%@include file="menu.jsp"%>
 	<!-- menu -->
@@ -32,55 +51,70 @@
 						</ol>
 						</nav>
 					</div>
+					<%
+						List<GioHang> gioHang = (List<GioHang>) session.getAttribute("gio_hang");
+					%>
 					<div id="basket" class="col-lg-9">
 						<div class="box">
 							<form method="post"
-								action="<c:url value="/oplungdienthoai/home/thanhtoan"/>">
+								action='<c:url value="/oplungdienthoai/home/thanhtoan"/>'>
 								<h2>
 									<i class="fas fa-shopping-cart"></i> Giỏ hàng của bạn
 								</h2>
-								<p class="text-muted">Bạn hiện có 3 sản phẩm</p>
+								<p class="text-muted">
+									Bạn hiện có
+									<%=gioHang.size()%>
+									sản phẩm
+								</p>
 								<div class="table-responsive">
 									<table class="table">
 										<thead>
 											<tr>
-												<th colspan="2">Sản phẩm</th>
-												<th>Đơn giá</th>
+												<th>Hình ảnh</th>
+												<th>Tên sản phẩm</th>
 												<th>Số lượng</th>
+												<th>Đơn giá</th>
 												<th>Giảm giá</th>
 												<th colspan="2">Thành tiền</th>
 											</tr>
 										</thead>
 										<tbody>
+											<%
+												for (GioHang gh : gioHang) {
+											%>
 											<tr>
 												<td><a href="#"><img
-														src="<c:url value="/resources/ui/img/detailsquare.jpg"/>"
+														src="<c:url value="/resources/ui/<%=gh.getProductsEntity().getProductsImages1()%>"/>"
 														alt="White Blouse Armani"></a></td>
-												<td><a href="#">White Blouse Armani</a></td>
-												<td><input type="number" value="2" class="form-control">
-												</td>
-												<td>$123.00</td>
-												<td>$0.00</td>
-												<td>$246.00</td>
+												<td><a href="#"><%=gh.getProductsEntity().getProductsName()%></a></td>
+												<td><input id="soLuong<%=gh.getProductsEntity().getProductsId()%>" type="number"
+													value="<%=gh.getSoLuong()%>"></td>
+												<td id="giaBan<%=gh.getProductsEntity().getProductsId()%>"><%=formatNumberGiaBan(gh.getProductsEntity().getPrices())%></td>
+												<%
+													if (gh.getProductsEntity().getPromotionByPromotionsId() != null) {
+												%>
+												<td><%=(int) (gh.getProductsEntity().getPromotionByPromotionsId().getPromotionValues() * 100)%>%</td>
+												<td id="thanhTien<%=gh.getProductsEntity().getProductsId()%>"><%=formatNumberGiaBan((gh.getSoLuong() * gh.getProductsEntity().getPrices())
+							- (gh.getSoLuong() * gh.getProductsEntity().getPrices()
+									* gh.getProductsEntity().getPromotionByPromotionsId().getPromotionValues()))%></td>
+												<%
+													} else {
+												%>
+												<td>0%</td>
+												<td id="thanhTien"><%=formatNumberGiaBan((gh.getSoLuong() * gh.getProductsEntity().getPrices()))%></td>
+												<%
+													}
+												%>
 												<td><a href="#"><i class="fa fa-trash-o"></i></a></td>
 											</tr>
-											<tr>
-												<td><a href="#"><img
-														src="<c:url value="/resources/ui/img/basketsquare.jpg"/>"
-														alt="Black Blouse Armani"></a></td>
-												<td><a href="#">Black Blouse Armani</a></td>
-												<td><input type="number" value="1" class="form-control">
-												</td>
-												<td>$200.00</td>
-												<td>$0.00</td>
-												<td>$200.00</td>
-												<td><a href="#"><i class="fa fa-trash-o"></i></a></td>
-											</tr>
+											<%
+												}
+											%>
 										</tbody>
 										<tfoot>
 											<tr>
 												<th colspan="5">Tổng</th>
-												<th colspan="2">$446.00</th>
+												<th colspan="2">cmm</th>
 											</tr>
 										</tfoot>
 									</table>
@@ -89,7 +123,7 @@
 								<div
 									class="box-footer d-flex justify-content-between flex-column flex-lg-row">
 									<div class="left">
-										<a href="<c:url value="/oplungdienthoai/home"/>"
+										<a href='<c:url value="/oplungdienthoai/home"/>'
 											class="btn btn-outline-secondary"><i
 											class="fa fa-chevron-left"></i> Mua thêm</a>
 									</div>
@@ -135,7 +169,7 @@
 								<h4 class="mb-0">Lời nhắn</h4>
 							</div>
 							<p class="text-muted">Để lại lời nhắn cho người b.</p>
-							<form>
+							<form action="">
 								<div class="input-group">
 									<input type="text" class="form-control"><span
 										class="input-group-append">
@@ -158,7 +192,8 @@
 	<!-- Return to Top|ScrollTop -->
 	<a href="javascript:" id="return-to-top" title="Về đầu trang"><i
 		class="icon-chevron-up"></i></a>
-	<script src="<c:url value="/resources/ui/js/scrollTop.js"/>"></script>
+	<script src='<c:url value="/resources/ui/js/scrollTop.js"/>'
+		type="text/javascript"></script>
 	<!-- Return to Top|ScrollTop -->
 </body>
 </html>

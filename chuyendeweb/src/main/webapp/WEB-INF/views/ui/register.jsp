@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -12,7 +13,257 @@
 <link
 	href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
 	rel="stylesheet">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
+<script type="text/javascript">
+	$(document)
+			.ready(
+					function() {
+						var email = $('#email');
+						var email_ = $('#email_');
+						var name = $('#name');
+						var name_ = $('#name_');
+						var pass = $('#pass');
+						var pass_ = $('#pass_');
+						var re_pass = $('#re_pass');
+						var re_pass_ = $('#re_pass_');
+						var phone = $('#phone');
+						var phone_ = $('#phone_');
+						var isCheckBox = $('#isCheckBox');
+						var formRegister = $('#formRegister');
+						var register = $('#register');
+
+						var check = function() {
+							email.on("blur", function() {
+								if (email.val() === "") {
+									email.css("border", "solid 1px red");
+									email_.css("color", "red");
+									email_.html("Nhập email");
+								} else {
+									email.removeAttr("style");
+									email_.removeAttr("style");
+									email_.html("Email");
+								}
+							});
+							name.on("blur", function() {
+								if (name.val() === "") {
+									name.css("border", "solid 1px red");
+									name_.css("color", "red");
+									name_.html("Nhập tên");
+								} else {
+									name.removeAttr("style");
+									name_.removeAttr("style");
+									name_.html("Tên");
+								}
+							});
+							pass.on("blur", function() {
+								if (pass.val() === "") {
+									pass.css("border", "solid 1px red");
+									pass_.css("color", "red");
+									pass_.html("Nhập mật khẩu");
+								} else {
+									pass.removeAttr("style");
+									pass_.removeAttr("style");
+									pass_.html("Mật khẩu");
+								}
+							});
+							re_pass.on("blur", function() {
+								if (re_pass.val() != pass.val()) {
+									re_pass.css("border", "solid 1px red");
+									re_pass_.css("color", "red");
+									re_pass_.html("Nhập mật khẩu chưa trùng");
+								} else {
+									re_pass.removeAttr("style");
+									re_pass_.removeAttr("style");
+									re_pass_.html("Nhập lại mật khẩu");
+								}
+							});
+							phone
+									.on(
+											"blur",
+											function() {
+												if (phone.val() === "") {
+													phone.css("border",
+															"solid 1px red");
+													phone_.css("color", "red");
+													phone_
+															.html("Nhập số điện thoại");
+												} else {
+													phone.removeAttr("style");
+													phone_.removeAttr("style");
+													phone_
+															.html("Số điện thoại");
+												}
+												if (!validatePhone(phone.val())) {
+													phone.css("border",
+															"solid 1px red");
+													phone_.css("color", "red");
+													phone_
+															.html("Số điện thoại chưa đúng định dạng");
+												} else {
+													phone.removeAttr("style");
+													phone_.removeAttr("style");
+													phone_
+															.html("Số điện thoại");
+												}
+											});
+						};
+
+						var checkAll = function() {
+							var check = true;
+							if (email.val() === "") {
+								check = false;
+							}
+							if (name.val() === "") {
+								check = false;
+							}
+							if (pass.val() === "") {
+								check = false;
+							}
+							if (re_pass.val() != pass.val()) {
+								check = false;
+							}
+							if (phone.val() === "") {
+								check = false;
+							}
+							if (!validatePhone(phone.val())) {
+								check = false;
+							}
+							return check;
+						};
+						isCheckBox.click(function() {
+							if (isCheckBox.prop('checked') === true) {
+								alert("Bạn đồng ý với các điều khoản.");
+							} else {
+								alert("Bạn không đồng ý với các điều khoản.");
+							}
+						});
+						email
+								.on(
+										'keyup',
+										function(e) {
+											e.preventDefault();
+											if (validateEmail(email.val())) {
+												email.removeAttr("style");
+												email_.removeAttr("style");
+												email_.html("Email");
+												$
+														.ajax({
+															type : 'POST',
+															url : '<c:url value="/oplungdienthoai/home/register/ajax"/>',
+															data : {
+																email : email
+																		.val()
+																		.trim()
+															},
+															success : function(
+																	data) {
+																if (data === 'success') {
+																} else {
+																	email
+																			.css(
+																					"border",
+																					"solid 1px red");
+																	email_
+																			.css(
+																					"color",
+																					"red");
+																	email_
+																			.html("Email đã tồn tại");
+																}
+															},
+															error : function(
+																	error) {
+																console
+																		.log("error"
+																				+ error);
+															}
+														})
+											} else {
+												email.css("border",
+														"solid 1px red");
+												email_.css("color", "red");
+												email_
+														.html("Email chưa đúng định dạng");
+											}
+
+										});
+						formRegister
+								.on(
+										'keyup',
+										function(e) {
+											e.preventDefault();
+											check();
+											if (checkAll()) {
+												if (isCheckBox.prop('checked') == true) {
+													register
+															.removeAttr("disabled");
+													$
+															.ajax({
+																type : 'POST',
+																url : '<c:url value="/oplungdienthoai/home/register/ajax"/>',
+																data : {
+																	email : email
+																			.val()
+																			.trim()
+																},
+																success : function(
+																		data) {
+																	if (data === 'success') {
+																		register
+																				.on(
+																						'click',
+																						function() {
+																							formRegister
+																									.submit();
+																						});
+																	} else {
+																		email
+																				.css(
+																						"border",
+																						"solid 1px red");
+																		email_
+																				.css(
+																						"color",
+																						"red");
+																		email_
+																				.html("Email đã tồn tại");
+																	}
+																},
+																error : function(
+																		error) {
+																	console
+																			.log("error"
+																					+ error);
+																}
+															})
+												} else {
+													register.attr("disabled",
+															"disabled");
+												}
+											} else {
+												register.attr("disabled",
+														"disabled");
+											}
+
+										});
+					});
+	function validatePhone(txtPhone) {
+		var filter = /^[0-9-+]+$/;
+		if (filter.test(txtPhone + "") && txtPhone.length >= 10
+				&& txtPhone.length < 12) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	function validateEmail(email) {
+		var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+		return re.test(String(email).toLowerCase());
+	}
+</script>
 <body>
 	<!-- menu -->
 	<%@include file="menu.jsp"%>
@@ -46,22 +297,25 @@
 							</div>
 
 							<hr>
-							<form action="" method="post">
+							<form id="formRegister"
+								action="<c:url value="/oplungdienthoai/home/register"/>"
+								method="post">
 								<div class="content py-3">
 									<div class="row">
 										<div class="col-md-6">
 											<div class="form-group">
-												<label for="email">Địa chỉ email<strong
+												<label id="email_" for="email">Email<strong
 													style="color: red;">*</strong></label> <input id="email"
-													placeholder="Vui lòng nhập email của bạn" type="text"
-													class="form-control">
+													placeholder="Vui lòng nhập email của bạn" name="email"
+													type="text" class="form-control" required=”required”>
 											</div>
 										</div>
 										<div class="col-md-6">
 											<div class="form-group">
-												<label for="name">Tên<strong style="color: red;">*</strong></label>
-												<input id="name" type="text" placeholder="Họ và tên"
-													class="form-control">
+												<label id="name_" for="name">Tên<strong
+													style="color: red;">*</strong></label> <input id="name" name="name"
+													type="text" placeholder="Họ và tên" class="form-control"
+													required=”required”>
 											</div>
 										</div>
 									</div>
@@ -69,15 +323,17 @@
 									<div class="row">
 										<div class="col-md-6">
 											<div class="form-group">
-												<label for="pass">Mật khẩu<strong
-													style="color: red;">*</strong></label> <input id="pass" type="text"
+												<label id="pass_" for="pass">Mật khẩu<strong
+													style="color: red;">*</strong></label> <input id="pass"
+													type="password" name="pass"
 													placeholder="Tối đa 6 kí tự bao gồm cả chữ và số"
-													class="form-control">
+													class="form-control" required=”required”>
 											</div>
 										</div>
 										<div class="col-md-6">
 											<div class="text-center">
-												<button type="submit" class="btn btn-warning1"
+												<button disabled="disabled" id="register" type="submit"
+													class="btn btn-warning1"
 													style="margin-top: 2%; width: 100%; height: 50px;">
 													<i class="fas fa-sign-out-alt"></i> Đăng ký
 												</button>
@@ -88,15 +344,16 @@
 									<div class="row">
 										<div class="col-md-6">
 											<div class="form-group">
-												<label for="re-pass">Nhập lại mật khẩu<strong
-													style="color: red;">*</strong></label> <input id="city" type="text"
-													class="form-control">
+												<label id="re_pass_" for="re_pass">Nhập lại mật khẩu<strong
+													style="color: red;">*</strong></label> <input id="re_pass"
+													name="re_pass" type="password" class="form-control"
+													required=”required”>
 											</div>
 										</div>
 										<div class="col-md-6">
 											<div class="form-group">
-												<input type="checkbox"> Tôi đồng ý các điều khoản
-												trên<br> <br>
+												<input type="checkbox" id="isCheckBox"> Tôi đồng ý
+												các điều khoản trên<br> <br>
 												<p>
 													<i class="fab fa-jedi-order"></i> Hoặc đăng ký với
 												</p>
@@ -104,9 +361,10 @@
 										</div>
 										<div class="col-md-6">
 											<div class="form-group">
-												<label for="phone">Số điện thoại<strong
+												<label id="phone_" for="phone">Số điện thoại<strong
 													style="color: red;">*</strong></label> <input id="phone"
-													type="number" class="form-control">
+													type="number" name="phone" class="form-control"
+													required=”required”>
 											</div>
 										</div>
 										<div class="col-md-6">

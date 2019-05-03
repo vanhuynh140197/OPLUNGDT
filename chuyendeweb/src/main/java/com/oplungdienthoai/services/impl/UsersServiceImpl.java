@@ -44,4 +44,9 @@ public class UsersServiceImpl implements UsersService {
 	public boolean remove(String userId) {
 		return usersDAO.remove(userId);
 	}
+
+	@Override
+	public boolean update(String userename, Boolean daxacnhan) {
+		return usersDAO.update(userename, daxacnhan);
+	}
 }

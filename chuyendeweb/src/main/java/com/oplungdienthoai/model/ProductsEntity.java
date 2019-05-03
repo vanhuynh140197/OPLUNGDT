@@ -18,10 +18,11 @@ public class ProductsEntity {
 	private String description;
 	private String productTypesId;
 	private Boolean productsStatus;
+	private Double prices;
+	private String promotionsId;
 	private Collection<OrderDetailsEntity> orderDetailsByProductsId;
-	private Collection<PricesEntity> pricesByProductsId;
 	private ProductTypesEntity productTypesByProductTypesId;
-	private Collection<PromotionsEntity> promotionsByProductsId;
+	private PromotionsEntity promotionByPromotionsId;
 
 	@Id
 	@Column(name = "productsid")
@@ -113,6 +114,26 @@ public class ProductsEntity {
 		this.productsStatus = productsStatus;
 	}
 
+	@Basic
+	@Column(name = "prices", nullable = true)
+	public Double getPrices() {
+		return prices;
+	}
+
+	public void setPrices(Double prices) {
+		this.prices = prices;
+	}
+
+	@Basic
+	@Column(name = "promotionsid")
+	public String getPromotionsId() {
+		return promotionsId;
+	}
+
+	public void setPromotionsId(String promotionsId) {
+		this.promotionsId = promotionsId;
+	}
+
 	@Override
 	public boolean equals(Object o) {
 		if (this == o)
@@ -140,6 +161,10 @@ public class ProductsEntity {
 			return false;
 		if (productsStatus != null ? !productsStatus.equals(that.productsStatus) : that.productsStatus != null)
 			return false;
+		if (prices != null ? !prices.equals(that.prices) : that.prices != null)
+			return false;
+		if (promotionsId != null ? !promotionsId.equals(that.promotionsId) : that.promotionsId != null)
+			return false;
 
 		return true;
 	}
@@ -155,6 +180,8 @@ public class ProductsEntity {
 		result = 31 * result + (description != null ? description.hashCode() : 0);
 		result = 31 * result + (productTypesId != null ? productTypesId.hashCode() : 0);
 		result = 31 * result + (productsStatus != null ? productsStatus.hashCode() : 0);
+		result = 31 * result + (prices != null ? prices.hashCode() : 0);
+		result = 31 * result + (promotionsId != null ? promotionsId.hashCode() : 0);
 		return result;
 	}
 
@@ -167,15 +194,6 @@ public class ProductsEntity {
 		this.orderDetailsByProductsId = orderDetailsByProductsId;
 	}
 
-	@OneToMany(mappedBy = "productsByProductsId", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-	public Collection<PricesEntity> getPricesByProductsId() {
-		return pricesByProductsId;
-	}
-
-	public void setPricesByProductsId(Collection<PricesEntity> pricesByProductsId) {
-		this.pricesByProductsId = pricesByProductsId;
-	}
-
 	@ManyToOne
 	@JoinColumn(name = "producttypesid", referencedColumnName = "producttypesid", nullable = false, insertable = false, updatable = false)
 	public ProductTypesEntity getProductTypesByProductTypesId() {
@@ -186,12 +204,13 @@ public class ProductsEntity {
 		this.productTypesByProductTypesId = productTypesByProductTypesId;
 	}
 
-	@OneToMany(mappedBy = "productsByProductsId", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-	public Collection<PromotionsEntity> getPromotionsByProductsId() {
-		return promotionsByProductsId;
+	@ManyToOne
+	@JoinColumn(name = "promotionsid", referencedColumnName = "promotionsid", nullable = false, insertable = false, updatable = false)
+	public PromotionsEntity getPromotionByPromotionsId() {
+		return promotionByPromotionsId;
 	}
 
-	public void setPromotionsByProductsId(Collection<PromotionsEntity> promotionsByProductsId) {
-		this.promotionsByProductsId = promotionsByProductsId;
+	public void setPromotionByPromotionsId(PromotionsEntity promotionByPromotionsId) {
+		this.promotionByPromotionsId = promotionByPromotionsId;
 	}
 }

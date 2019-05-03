@@ -20,7 +20,7 @@ public class ProvidersDAOImpl implements ProvidersDAO {
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<ProvidersEntity> getAll() {
-		return sessionFactory.getCurrentSession().createQuery("from ProvidersEntity where providerStatus=" + true + "")
+		return sessionFactory.getCurrentSession().createQuery("from ProvidersEntity where providerStatus=" + false + "")
 				.list();
 	}
 
@@ -56,7 +56,7 @@ public class ProvidersDAOImpl implements ProvidersDAO {
 	public boolean remove(String providersId) {
 		try {
 			sessionFactory.getCurrentSession().createQuery(
-					"update ProvidersEntity set providerStatus=" + false + " where providersId='" + providersId + "'")
+					"update ProvidersEntity set providerStatus=" + true + " where providersId='" + providersId + "'")
 					.executeUpdate();
 		} catch (Exception e) {
 			return false;

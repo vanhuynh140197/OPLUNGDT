@@ -11,7 +11,7 @@ public class UsersEntity {
 	private String userId;
 	private String userName;
 	private String passwords;
-	private String email;
+	private String name;
 	private String phone;
 	private Boolean validateEmail;
 	private String roleId;
@@ -49,13 +49,13 @@ public class UsersEntity {
 	}
 
 	@Basic
-	@Column(name = "email")
-	public String getEmail() {
-		return email;
+	@Column(name = "name")
+	public String getName() {
+		return name;
 	}
 
-	public void setEmail(String email) {
-		this.email = email;
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	@Basic
@@ -113,7 +113,7 @@ public class UsersEntity {
 			return false;
 		if (passwords != null ? !passwords.equals(that.passwords) : that.passwords != null)
 			return false;
-		if (email != null ? !email.equals(that.email) : that.email != null)
+		if (name != null ? !name.equals(that.name) : that.name != null)
 			return false;
 		if (phone != null ? !phone.equals(that.phone) : that.phone != null)
 			return false;
@@ -132,7 +132,7 @@ public class UsersEntity {
 		int result = userId != null ? userId.hashCode() : 0;
 		result = 31 * result + (userName != null ? userName.hashCode() : 0);
 		result = 31 * result + (passwords != null ? passwords.hashCode() : 0);
-		result = 31 * result + (email != null ? email.hashCode() : 0);
+		result = 31 * result + (name != null ? name.hashCode() : 0);
 		result = 31 * result + (phone != null ? phone.hashCode() : 0);
 		result = 31 * result + (validateEmail != null ? validateEmail.hashCode() : 0);
 		result = 31 * result + (roleId != null ? roleId.hashCode() : 0);

@@ -2,6 +2,7 @@ package com.oplungdienthoai.services;
 
 import java.util.List;
 
+import com.oplungdienthoai.model.GioHang;
 import com.oplungdienthoai.model.ProductsEntity;
 
 public interface ProductsService {
@@ -15,4 +16,8 @@ public interface ProductsService {
 	public boolean edit(ProductsEntity products);
 
 	public boolean remove(String productsId);
+	
+	public boolean checkBasket(GioHang gioHang);
+
+	public GioHang getProductInGioHang(List<GioHang> gioHang, ProductsEntity productsEntity);
 }

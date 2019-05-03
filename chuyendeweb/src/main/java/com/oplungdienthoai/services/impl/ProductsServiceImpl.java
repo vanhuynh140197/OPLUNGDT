@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.oplungdienthoai.dao.ProductsDAO;
+import com.oplungdienthoai.model.GioHang;
 import com.oplungdienthoai.model.ProductsEntity;
 import com.oplungdienthoai.services.ProductsService;
 
@@ -38,5 +39,20 @@ public class ProductsServiceImpl implements ProductsService {
 	@Override
 	public boolean remove(String productsId) {
 		return productsDAO.remove(productsId);
+	}
+
+	@Override
+	public boolean checkBasket(GioHang gioHang) {
+		return false;
+	}
+
+	@Override
+	public GioHang getProductInGioHang(List<GioHang> gioHang, ProductsEntity productsEntity) {
+		for (GioHang gh : gioHang) {
+			if (gh.getProductsEntity().getProductsId().equals(productsEntity.getProductsId())) {
+				return gh;
+			}
+		}
+		return null;
 	}
 }

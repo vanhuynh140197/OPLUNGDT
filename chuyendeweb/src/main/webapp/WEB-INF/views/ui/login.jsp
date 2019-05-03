@@ -28,19 +28,21 @@
 			e.preventDefault();
 			$.ajax({
 				type : 'POST',
-				url : '<c:url value="/oplungdienthoai/trangchu/login/ajax"/>',
+				url : '<c:url value="/oplungdienthoai/home/login/ajax"/>',
 				data : {
-					email : $('#email').val().trim(),
-					password : $('#password').val().trim()
+					email : $('#email').val(),
+					password : $('#password').val()
 				},
 				success : function(data) {
 					if(data === 'error'){
 						alertify.alert('Tên đăng nhập hoặc mật khẩu không chính xác.');
 						setTimeout(function(){
 							alertify.closeAll();
+							$('#email').css('border','0.5px solid red');
+							$('#password').css('border','0.5px solid red');
 						}, 2000);
 					}else{
-						window.location = '<c:url value="/oplungdienthoai/trangchu"/>';
+						window.location = '<c:url value="/oplungdienthoai/home"/>';
 					}
 				},
 				error : function(error) {
@@ -77,7 +79,7 @@
 								</div>
 								<div class="col-md-6" align="right">
 									Thành viên mới? <i> <a
-										href="<c:url value="/oplungdienthoai/dangky"/>"
+										href="<c:url value="/oplungdienthoai/home/dangky"/>"
 										style="color: red;">Đăng ký </a>
 									</i>&nbsp;tại đây
 								</div>

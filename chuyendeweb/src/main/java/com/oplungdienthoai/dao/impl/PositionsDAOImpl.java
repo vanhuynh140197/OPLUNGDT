@@ -20,8 +20,8 @@ public class PositionsDAOImpl implements PositionsDAO {
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<PositionsEntity> getAll() {
-		return sessionFactory.getCurrentSession().createQuery("from PositionsEntity where positionsStatus=" + true + "")
-				.list();
+		return sessionFactory.getCurrentSession()
+				.createQuery("from PositionsEntity where positionsStatus=" + false + "").list();
 	}
 
 	@Override
@@ -56,7 +56,7 @@ public class PositionsDAOImpl implements PositionsDAO {
 	public boolean remove(String positonsId) {
 		try {
 			sessionFactory.getCurrentSession().createQuery(
-					"update PositionsEntity set positionsStatus=" + false + " where positonsId='" + positonsId + "'")
+					"update PositionsEntity set positionsStatus=" + true + " where positonsId='" + positonsId + "'")
 					.executeUpdate();
 		} catch (Exception e) {
 			return false;
