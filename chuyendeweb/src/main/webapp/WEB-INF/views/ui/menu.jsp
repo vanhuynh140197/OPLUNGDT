@@ -44,8 +44,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 offer mb-3 mb-lg-0">
-					<a class="ml-1"><i class="fas fa-bell"></i> HOTLINE: +1900 63
-						22 46 </a>
+					<a class="ml-1"><i class="fas fa-bell"></i> HOTLINE: <strong
+						style="color: red;">+1900 63 22 46</strong> </a>
 				</div>
 				<div class="col-lg-6 text-center text-lg-right">
 					<ul class="menu list-inline mb-0">
@@ -60,18 +60,36 @@
 							if (usersEntity == null) {
 						%>
 						<li class="list-inline-item"><a
-							href="<c:url value="/oplungdienthoai/home/dangky"/>"><i
+							href="<c:url value="/oplungdienthoai/dangky"/>"><i
 								class="fas fa-user-edit"></i> Đăng ký</a></li>
 						<li class="list-inline-item"><a
-							href="<c:url value="/oplungdienthoai/home/dangnhap"/>"> <i
+							href="<c:url value="/oplungdienthoai/dangnhap"/>"> <i
 								class="fas fa-user-tag"></i> Đăng nhập
 						</a></li>
 						<%
 							} else {
 						%>
-						<li class="list-inline-item"><a href="#"><i
-								class="fas fa-phone-volume"></i> Xin chào, <%=usersEntity.getUserName()%></a></li>
-						<% } %>
+						<li class="list-inline-item" class="dropdown"><a href="#"
+							id="dropdownMenuButton" data-toggle="dropdown"><i
+								class="fab fa-angellist"></i> Xin chào,<strong
+								style="color: red;"><%=usersEntity.getUserName()%></strong> <i
+								class="fas fa-caret-down"></i></a>
+							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+								<a class="dropdown-item" href="#"> <%
+ 	if (usersEntity.getRoleId().equals("1")) {
+ %> <i class="fas fa-angle-right"></i> Quản lý admin
+								</a> <a class="dropdown-item" href="#"> <%
+ 	}
+ %><i class="fas fa-angle-right"></i> Thông tin tài khoản
+								</a> <a class="dropdown-item" href="#"><i
+									class="fas fa-angle-right"></i> Đổi mật khẩu</a> <a
+									class="dropdown-item"
+									href="<c:url value="/oplungdienthoai/dangxuat"/>"><i
+									class="fas fa-angle-right"></i> Đăng xuất</a>
+							</div></li>
+						<%
+							}
+						%>
 					</ul>
 				</div>
 			</div>
@@ -112,7 +130,7 @@
 						</form>
 
 						<p class="text-center text-muted">
-							<a href="<c:url value="/oplungdienthoai/home/dangky"/>"><strong>Đăng
+							<a href="<c:url value="/oplungdienthoai/dangky"/>"><strong>Đăng
 									ký ngay!</strong></a>
 						</p>
 					</div>
@@ -161,7 +179,7 @@
 									</h5>
 									<ul class="list-unstyled mb-3">
 										<li class="nav-item"><a
-											href="<c:url value="/oplungdienthoai/home/sanpham"/>"
+											href="<c:url value="/oplungdienthoai/sanpham"/>"
 											class="nav-link">Iphone XS Max</a></li>
 										<li class="nav-item"><a href="#" class="nav-link">Iphone
 												XS/X</a></li>
@@ -278,7 +296,7 @@
 									</h5>
 									<ul class="list-unstyled mb-3">
 										<li class="nav-item"><a
-											href="<c:url value="/oplungdienthoai/home/sanpham"/>"
+											href="<c:url value="/oplungdienthoai/sanpham"/>"
 											class="nav-link">Galaxy S10 Plus</a></li>
 										<li class="nav-item"><a href="#" class="nav-link">Samsung
 												Galaxy S10</a></li>
@@ -747,7 +765,7 @@
 					class="sr-only">Toggle search</span><i class="fa fa-search"></i></a>
 				<div id="basket-overview"
 					class="navbar-collapse collapse d-none d-lg-block">
-					<a href="<c:url value="/oplungdienthoai/home/giohang"/>"
+					<a href="<c:url value="/oplungdienthoai/giohang"/>"
 						class="btn btn-primary5 navbar-btn"><i
 						class="fa fa-shopping-cart"></i></a>
 				</div>

@@ -1,5 +1,6 @@
 package com.oplungdienthoai.controller;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,62 +24,69 @@ public class HomeController {
 	@Autowired
 	ProductsService productService;
 
-	@RequestMapping(value = "/home")
+	@RequestMapping(value = "/trangchu")
 	public String index() {
 		return "/ui/index";
 	}
 
-	@RequestMapping(value = "/home/chitiet")
+	@RequestMapping(value = "/chitiet")
 	public String chiTiet() {
 		return "/ui/detail";
 	}
 
-	@RequestMapping(value = "/home/giohang")
+	@RequestMapping(value = "/giohang")
 	public String gioHang() {
 		return "/ui/basket";
 	}
 
-	@RequestMapping(value = "/home/menu")
+	@RequestMapping(value = "/menu")
 	public String menu() {
 		return "/ui/menu";
 	}
 
-	@RequestMapping(value = "/home/thanhtoan")
+	@RequestMapping(value = "/thanhtoan")
 	public String thanhToan() {
 		return "/ui/checkout1";
 	}
 
-	@RequestMapping(value = "/home/thanhtoan2")
+	@RequestMapping(value = "/thanhtoan2")
 	public String thanhToan2() {
 		return "/ui/checkout2";
 	}
 
-	@RequestMapping(value = "/home/thanhtoan3")
+	@RequestMapping(value = "/thanhtoan3")
 	public String thanhToan3() {
 		return "/ui/checkout3";
 	}
 
-	@RequestMapping(value = "/home/thanhtoan4")
+	@RequestMapping(value = "/thanhtoan4")
 	public String thanhToan4() {
 		return "/ui/checkout4";
 	}
 
-	@RequestMapping(value = "/home/sanpham")
+	@RequestMapping(value = "/sanpham")
 	public String sanPham() {
 		return "/ui/category-right";
 	}
 
-	@RequestMapping(value = "/home/dangky")
+	@RequestMapping(value = "/dangky")
 	public String dangKy() {
 		return "/ui/register";
 	}
 
-	@RequestMapping(value = "/home/dangnhap")
+	@RequestMapping(value = "/dangnhap")
 	public String dangNhap() {
 		return "/ui/login";
 	}
 
-	@RequestMapping(value = "/home/login/ajax", method = RequestMethod.POST)
+	@RequestMapping(value = "/dangxuat")
+	public String dangXuat(HttpServletRequest request) {
+		HttpSession session = request.getSession();
+		session.invalidate();
+		return "/ui/index";
+	}
+
+	@RequestMapping(value = "/trangchu/login/ajax", method = RequestMethod.POST)
 	public @ResponseBody String ajaxLogin(@RequestParam(value = "email") String email,
 			@RequestParam(value = "password") String password, HttpSession session) {
 		UsersEntity usersEntity = userService.getUsersName(email);
