@@ -21,21 +21,21 @@
 	href="<c:url value="/resources/admin/css/data-table/bootstrap-editable.css"/>">
 </head>
 <script
-    src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){
-	$.ajax({
-		type: 'GET',
-		url: '<c:url value="/admin/oplungdienthoai/sanpham/load"/>',
-		success: function(data){
-			console.log(data);
-		},
-		error: function(){
-			
-		}
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- <script type="text/javascript">
+	$(document).ready(function() {
+		$.ajax({
+			type : 'GET',
+			url : '<c:url value="/admin/oplungdienthoai/sanpham/load"/>',
+			success : function(data) {
+				console.log(data);
+			},
+			error : function() {
+
+			}
+		});
 	});
-});
-</script>
+</script> -->
 <body>
 	<!-- menu -->
 	<%@include file="menu_admin.jsp"%>
@@ -117,293 +117,33 @@ $(document).ready(function(){
 												<th data-field="state" data-checkbox="true"></th>
 												<th data-field="id">ID</th>
 												<th data-field="name" data-editable="true">Tên sản phẩm</th>
-												<th data-field="email" data-editable="true">Hình ảnh
-													SP1</th>
-												<th data-field="phone" data-editable="true">Hình ảnh
-													SP1_1</th>
-												<th data-field="task" data-editable="true">Màu sắc</th>
-												<th data-field="date" data-editable="true">Số lượng</th>
-												<th data-field="price" data-editable="true">Mô tả</th>
+												<th data-field="picture1" data-editable="true">Hình ảnh
+													SP</th>
+												<th data-field="color" data-editable="true">Màu sắc</th>
+												<th data-field="price" data-editable="true">Giá bán</th>
+												<th data-field="amount" data-editable="true">Số lượng</th>
 												<th data-field="action"></th>
 											</tr>
 										</thead>
 										<tbody>
-											<tr>
-												<td></td>
-												<td>1</td>
-												<td>Web Development</td>
-												<td>admin@uttara.com</td>
-												<td>+8801962067309</td>
-												<td>10%</td>
-												<td>Jul 14, 2017</td>
-												<td>$5455</td>
-												<td><a
-													href="<c:url value="/admin/oplungdienthoai/suasanpham"/>"><i
-														class="far fa-edit" title="Sửa sản phẩm"></i></a> &nbsp; <i
-													class="fas fa-trash-alt" title="Xóa sản phẩm"></i></td>
-											</tr>
-											<tr>
-												<td></td>
-												<td>2</td>
-												<td>Graphic Design</td>
-												<td>fox@itpark.com</td>
-												<td>+8801762067304</td>
-												<td>70%</td>
-												<td>fab 2, 2017</td>
-												<td>$8756</td>
-												<td><a
-													href="<c:url value="/admin/oplungdienthoai/suasanpham"/>"><i
-														class="far fa-edit" title="Sửa sản phẩm"></i></a> &nbsp; <i
-													class="fas fa-trash-alt" title="Xóa sản phẩm"></i></td>
-											</tr>
-											<tr>
-												<td></td>
-												<td>3</td>
-												<td>Software Development</td>
-												<td>gumre@hash.com</td>
-												<td>+8801862067308</td>
-												<td>5%</td>
-												<td>Seb 5, 2017</td>
-												<td>$9875</td>
-												<td><a
-													href="<c:url value="/admin/oplungdienthoai/suasanpham"/>"><i
-														class="far fa-edit" title="Sửa sản phẩm"></i></a> &nbsp; <i
-													class="fas fa-trash-alt" title="Xóa sản phẩm"></i></td>
-											</tr>
-											<tr>
-												<td></td>
-												<td>4</td>
-												<td>Woocommerce</td>
-												<td>kyum@frok.com</td>
-												<td>+8801962066547</td>
-												<td>15%</td>
-												<td>Oct 10, 2017</td>
-												<td>$3254</td>
-												<td><i class="far fa-edit" title="Sửa sản phẩm"></i>
-													&nbsp; <i class="fas fa-trash-alt" title="Xóa sản phẩm"></i>
-												</td>
-											</tr>
-											<tr>
-												<td></td>
-												<td>5</td>
-												<td>Joomla</td>
-												<td>jams@game.com</td>
-												<td>+8801962098745</td>
-												<td>80%</td>
-												<td>Nov 20, 2017</td>
-												<td>$58745</td>
-												<td><i class="far fa-edit" title="Sửa sản phẩm"></i>
-													&nbsp; <i class="fas fa-trash-alt" title="Xóa sản phẩm"></i>
-												</td>
-											</tr>
-											<tr>
-												<td></td>
-												<td>6</td>
-												<td>Wordpress</td>
-												<td>flat@yem.com</td>
-												<td>+8801962254781</td>
-												<td>30%</td>
-												<td>Aug 25, 2017</td>
-												<td>$789879</td>
-												<td><i class="far fa-edit" title="Sửa sản phẩm"></i>
-													&nbsp; <i class="fas fa-trash-alt" title="Xóa sản phẩm"></i>
-												</td>
-											</tr>
-											<tr>
-												<td></td>
-												<td>7</td>
-												<td>Ecommerce</td>
-												<td>hasan@wpm.com</td>
-												<td>+8801962254863</td>
-												<td>15%</td>
-												<td>July 17, 2017</td>
-												<td>$21424</td>
-												<td><i class="far fa-edit" title="Sửa sản phẩm"></i>
-													&nbsp; <i class="fas fa-trash-alt" title="Xóa sản phẩm"></i>
-												</td>
-											</tr>
-											<tr>
-												<td></td>
-												<td>8</td>
-												<td>Android Apps</td>
-												<td>ATM@devep.com</td>
-												<td>+8801962875469</td>
-												<td>15%</td>
-												<td>June 11, 2017</td>
-												<td>$78978</td>
-												<td><i class="far fa-edit" title="Sửa sản phẩm"></i>
-													&nbsp; <i class="fas fa-trash-alt" title="Xóa sản phẩm"></i>
-												</td>
-											</tr>
-											<tr>
-												<td></td>
-												<td>9</td>
-												<td>Prestashop</td>
-												<td>presta@Prest.com</td>
-												<td>+8801962067524</td>
-												<td>15%</td>
-												<td>May 9, 2017</td>
-												<td>$45645</td>
-												<td><i class="far fa-edit" title="Sửa sản phẩm"></i>
-													&nbsp; <i class="fas fa-trash-alt" title="Xóa sản phẩm"></i>
-												</td>
-											</tr>
-											<tr>
-												<td></td>
-												<td>10</td>
-												<td>Game Development</td>
-												<td>Dev@game.com</td>
-												<td>+8801962067457</td>
-												<td>15%</td>
-												<td>April 5, 2017</td>
-												<td>$4564545</td>
-												<td><i class="far fa-edit" title="Sửa sản phẩm"></i>
-													&nbsp; <i class="fas fa-trash-alt" title="Xóa sản phẩm"></i>
-												</td>
-											</tr>
-											<tr>
-												<td></td>
-												<td>11</td>
-												<td>Angular Js</td>
-												<td>gular@angular.com</td>
-												<td>+8801962067124</td>
-												<td>15%</td>
-												<td>Dec 1, 2017</td>
-												<td>$645455</td>
-												<td><i class="far fa-edit" title="Sửa sản phẩm"></i>
-													&nbsp; <i class="fas fa-trash-alt" title="Xóa sản phẩm"></i>
-												</td>
-											</tr>
-											<tr>
-												<td></td>
-												<td>12</td>
-												<td>Opencart</td>
-												<td>open@cart.com</td>
-												<td>+8801962067587</td>
-												<td>15%</td>
-												<td>Jan 6, 2017</td>
-												<td>$78978</td>
-												<td><i class="far fa-edit" title="Sửa sản phẩm"></i>
-													&nbsp; <i class="fas fa-trash-alt" title="Xóa sản phẩm"></i>
-												</td>
-											</tr>
-											<tr>
-												<td></td>
-												<td>13</td>
-												<td>Education</td>
-												<td>john@example.com</td>
-												<td>+8801962067471</td>
-												<td>15%</td>
-												<td>Feb 6, 2016</td>
-												<td>$456456</td>
-												<td><i class="far fa-edit" title="Sửa sản phẩm"></i>
-													&nbsp; <i class="fas fa-trash-alt" title="Xóa sản phẩm"></i>
-												</td>
-											</tr>
-											<tr>
-												<td></td>
-												<td>14</td>
-												<td>Construction</td>
-												<td>mary@example.com</td>
-												<td>+8801962012457</td>
-												<td>15%</td>
-												<td>Jan 6, 2016</td>
-												<td>$87978</td>
-												<td><i class="far fa-edit" title="Sửa sản phẩm"></i>
-													&nbsp; <i class="fas fa-trash-alt" title="Xóa sản phẩm"></i>
-												</td>
-											</tr>
-											<tr>
-												<td></td>
-												<td>15</td>
-												<td>Real Estate</td>
-												<td>july@example.com</td>
-												<td>+8801962067309</td>
-												<td>15%</td>
-												<td>Dec 1, 2016</td>
-												<td>$454554</td>
-												<td><i class="far fa-edit" title="Sửa sản phẩm"></i>
-													&nbsp; <i class="fas fa-trash-alt" title="Xóa sản phẩm"></i>
-												</td>
-											</tr>
-											<tr>
-												<td></td>
-												<td>16</td>
-												<td>Personal Regume</td>
-												<td>john@example.com</td>
-												<td>+8801962067306</td>
-												<td>15%</td>
-												<td>May 9, 2016</td>
-												<td>$564555</td>
-												<td><i class="far fa-edit" title="Sửa sản phẩm"></i>
-													&nbsp; <i class="fas fa-trash-alt" title="Xóa sản phẩm"></i>
-												</td>
-											</tr>
-											<tr>
-												<td></td>
-												<td>17</td>
-												<td>Admin Template</td>
-												<td>mary@example.com</td>
-												<td>+8801962067305</td>
-												<td>15%</td>
-												<td>June 11, 2016</td>
-												<td>$454565</td>
-												<td><i class="far fa-edit" title="Sửa sản phẩm"></i>
-													&nbsp; <i class="fas fa-trash-alt" title="Xóa sản phẩm"></i>
-												</td>
-											</tr>
-											<tr>
-												<td></td>
-												<td>18</td>
-												<td>FrontEnd</td>
-												<td>july@example.com</td>
-												<td>+8801962067304</td>
-												<td>15%</td>
-												<td>May 9, 2015</td>
-												<td>$456546</td>
-												<td><i class="far fa-edit" title="Sửa sản phẩm"></i>
-													&nbsp; <i class="fas fa-trash-alt" title="Xóa sản phẩm"></i>
-												</td>
-											</tr>
-											<tr>
-												<td></td>
-												<td>19</td>
-												<td>Backend</td>
-												<td>john@range.com</td>
-												<td>+8801962067303</td>
-												<td>15%</td>
-												<td>Feb 9, 2014</td>
-												<td>$564554</td>
-												<td><i class="far fa-edit" title="Sửa sản phẩm"></i>
-													&nbsp; <i class="fas fa-trash-alt" title="Xóa sản phẩm"></i>
-												</td>
-											</tr>
-											<tr>
-												<td></td>
-												<td>20</td>
-												<td>Java Advance</td>
-												<td>lamon@ghs.com</td>
-												<td>+8801962067302</td>
-												<td>15%</td>
-												<td>July 6, 2014</td>
-												<td>$789889</td>
-												<td><i class="far fa-edit" title="Sửa sản phẩm"></i>
-													&nbsp; <i class="fas fa-trash-alt" title="Xóa sản phẩm"></i>
-												</td>
-											</tr>
-											<tr>
-												<td></td>
-												<td>21</td>
-												<td>Jquery Advance</td>
-												<td>hasad@uth.com</td>
-												<td>+8801962067301</td>
-												<td>15%</td>
-												<td>Jun 6, 2013</td>
-												<td>$4565656</td>
-												<td><i class="far fa-edit" title="Sửa sản phẩm"></i>
-													&nbsp; <i class="fas fa-trash-alt" title="Xóa sản phẩm"></i>
-												</td>
-											</tr>
+											<c:forEach items="${listProducts}" var="item">
+												<tr>
+													<td></td>
+													<td>${item.productsId}</td>
+													<td>${item.productsName}</td>
+													<td>${item.productsImages1}</td>
+													<td>${item.productsColor}</td>
+													<td>${item.prices}</td>
+													<td>${item.amount}</td>
+													<td><a
+														href="<c:url value="/admin/oplungdienthoai/suasanpham"/>"
+														style="color: blue;"><i class="far fa-edit fa-2x"
+															title="Sửa sản phẩm"></i></a> &nbsp; <a
+														href="<c:url value="/admin/oplungdienthoai/xoasanpham/${item.productsId}"/>"
+														style="color: red;"><i class="fas fa-trash-alt fa-2x"
+															title="Xóa sản phẩm"></i></a></td>
+												</tr>
+											</c:forEach>
 										</tbody>
 									</table>
 								</div>

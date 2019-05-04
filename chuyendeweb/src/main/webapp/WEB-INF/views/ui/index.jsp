@@ -600,11 +600,12 @@
 														<del></del>
 														<i class="fas fa-caret-right"></i> Giá bán: <strong
 															style="color: red;"> <fmt:formatNumber
-																type="currency" value="${item.prices}" /></strong>
+																type="currency" value="${item.prices}"></fmt:formatNumber></strong>
 													</p>
 													<br>
 													<p class="buttons">
-														<a href="<c:url value="/oplungdienthoai/home/chitiet/${item.productsId}"/>"
+														<a
+															href="<c:url value="/oplungdienthoai/home/chitiet/${item.productsId}"/>"
 															class="btn btn-outline-secondary">Chi tiết</a><a
 															href="<c:url value="/oplungdienthoai/home/giohang/${item.productsId}"/>"
 															class="btn btn-primary5"><i
@@ -624,26 +625,10 @@
 								</div>
 								<!-- /.products-->
 							</div>
-							<tg:paging pagedListHolder="${pagedListHolder}"
-								pagedLink="${pagedLink}" />
-							<!-- <div class="pages">
-								<nav aria-label="Page navigation example"
-									class="d-flex justify-content-center">
-								<ul class="pagination">
-									<li class="page-item"><a href="#" aria-label="Previous"
-										class="page-link"><span aria-hidden="true">«</span><span
-											class="sr-only">Previous</span></a></li>
-									<li class="page-item active"><a href="#" class="page-link">1</a></li>
-									<li class="page-item"><a href="#" class="page-link">2</a></li>
-									<li class="page-item"><a href="#" class="page-link">3</a></li>
-									<li class="page-item"><a href="#" class="page-link">4</a></li>
-									<li class="page-item"><a href="#" class="page-link">5</a></li>
-									<li class="page-item"><a href="#" aria-label="Next"
-										class="page-link"><span aria-hidden="true">»</span><span
-											class="sr-only">Next</span></a></li>
-								</ul>
-								</nav>
-							</div> -->
+							<div style="margin-left: 55%;margin-top: 1%;">
+								<tg:paging pagedListHolder="${pagedListHolder}"
+									pagedLink="${pagedLink}" />
+							</div>
 						</div>
 						<!-- /.col-lg-9-->
 					</div>

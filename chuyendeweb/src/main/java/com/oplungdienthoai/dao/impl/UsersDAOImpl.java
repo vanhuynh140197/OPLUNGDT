@@ -36,7 +36,7 @@ public class UsersDAOImpl implements UsersDAO {
 	public UsersEntity getUsersName(String userName) {
 		@SuppressWarnings("rawtypes")
 		List list = sessionFactory.getCurrentSession()
-				.createQuery("from UsersEntity where userName='" + userName + "' and usersStatus=" + false + "").list();
+				.createQuery("from UsersEntity where userName='" + userName + "'").list();
 		return !list.isEmpty() ? (UsersEntity) list.get(0) : null;
 	}
 

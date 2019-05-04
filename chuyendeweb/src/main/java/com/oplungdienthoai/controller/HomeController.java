@@ -123,7 +123,7 @@ public class HomeController {
 	public String dangXuat(HttpServletRequest request) {
 		HttpSession session = request.getSession();
 		session.invalidate();
-		return "/ui/index";
+		return "redirect:/oplungdienthoai/home";
 	}
 
 	@RequestMapping(value = "/home/login/ajax", method = RequestMethod.POST)
@@ -156,7 +156,7 @@ public class HomeController {
 	@RequestMapping(value = "/xacnhandangki")
 	public String XacNhanDangKi(@RequestParam(value = "email") String email) {
 		userService.update(email, true);
-		return "/ui/login";
+		return "redirect:/oplungdienthoai/home/dangnhap";
 	}
 
 	@RequestMapping(value = "/home/register", method = RequestMethod.POST)

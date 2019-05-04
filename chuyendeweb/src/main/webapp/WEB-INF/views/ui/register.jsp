@@ -14,7 +14,8 @@
 	href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
 	rel="stylesheet">
 <script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+	type="text/javascript"></script>
 </head>
 <script type="text/javascript">
 	$(document)
@@ -35,50 +36,82 @@
 						var register = $('#register');
 
 						var check = function() {
-							email.on("blur", function() {
-								if (email.val() === "") {
-									email.css("border", "solid 1px red");
-									email_.css("color", "red");
-									email_.html("Nhập email");
-								} else {
-									email.removeAttr("style");
-									email_.removeAttr("style");
-									email_.html("Email");
-								}
-							});
-							name.on("blur", function() {
-								if (name.val() === "") {
-									name.css("border", "solid 1px red");
-									name_.css("color", "red");
-									name_.html("Nhập tên");
-								} else {
-									name.removeAttr("style");
-									name_.removeAttr("style");
-									name_.html("Tên");
-								}
-							});
-							pass.on("blur", function() {
-								if (pass.val() === "") {
-									pass.css("border", "solid 1px red");
-									pass_.css("color", "red");
-									pass_.html("Nhập mật khẩu");
-								} else {
-									pass.removeAttr("style");
-									pass_.removeAttr("style");
-									pass_.html("Mật khẩu");
-								}
-							});
-							re_pass.on("blur", function() {
-								if (re_pass.val() != pass.val()) {
-									re_pass.css("border", "solid 1px red");
-									re_pass_.css("color", "red");
-									re_pass_.html("Nhập mật khẩu chưa trùng");
-								} else {
-									re_pass.removeAttr("style");
-									re_pass_.removeAttr("style");
-									re_pass_.html("Nhập lại mật khẩu");
-								}
-							});
+							email
+									.on(
+											"blur",
+											function() {
+												if (email.val() === "") {
+													email.css("border",
+															"solid 1px red");
+													email_.css("color", "red");
+													email_.html("Nhập email");
+												} else {
+													email.removeAttr("style");
+													email_.removeAttr("style");
+													email_
+															.html("Email <strong style='color:red;'>*</strong>");
+												}
+											});
+							name
+									.on(
+											"blur",
+											function() {
+												if (name.val() === "") {
+													name.css("border",
+															"solid 1px red");
+													name_.css("color", "red");
+													name_.html("Nhập tên");
+												} else {
+													name.removeAttr("style");
+													name_.removeAttr("style");
+													name_
+															.html("Tên <strong style='color:red;'>*</strong>");
+												}
+											});
+							pass
+									.on(
+											"blur",
+											function() {
+												if (pass.val() === "") {
+													pass.css("border",
+															"solid 1px red");
+													pass_.css("color", "red");
+													pass_
+															.html("Nhập mật khẩu");
+												} else {
+													pass.removeAttr("style");
+													pass_.removeAttr("style");
+													pass_
+															.html("Mật khẩu <strong style='color:red;'>*</strong>");
+												}
+											});
+							re_pass
+									.on(
+											"blur",
+											function() {
+												if (re_pass.val() != pass.val()) {
+													re_pass.css("border",
+															"solid 1px red");
+													re_pass_
+															.css("color", "red");
+													re_pass_
+															.html("Nhập mật khẩu chưa trùng");
+												} else if (re_pass.val() === "") {
+													re_pass.css("border",
+															"solid 1px red");
+													re_pass_
+															.css("color", "red");
+													re_pass_
+															.html("Chưa nhập lại mật khẩu");
+												} else {
+													re_pass.removeAttr("style");
+													re_pass_
+															.removeAttr("style");
+													re_pass_
+															.html("Nhập lại mật khẩu <strong style='color:red;'>*</strong>");
+												}
+											});
+
 							phone
 									.on(
 											"blur",
@@ -89,13 +122,8 @@
 													phone_.css("color", "red");
 													phone_
 															.html("Nhập số điện thoại");
-												} else {
-													phone.removeAttr("style");
-													phone_.removeAttr("style");
-													phone_
-															.html("Số điện thoại");
-												}
-												if (!validatePhone(phone.val())) {
+												} else if (!validatePhone(phone
+														.val())) {
 													phone.css("border",
 															"solid 1px red");
 													phone_.css("color", "red");
@@ -105,7 +133,7 @@
 													phone.removeAttr("style");
 													phone_.removeAttr("style");
 													phone_
-															.html("Số điện thoại");
+															.html("Số điện thoại <strong style='color:red;'>*</strong>");
 												}
 											});
 						};
@@ -119,6 +147,9 @@
 								check = false;
 							}
 							if (pass.val() === "") {
+								check = false;
+							}
+							if (re_pass.val() === "") {
 								check = false;
 							}
 							if (re_pass.val() != pass.val()) {
@@ -147,7 +178,8 @@
 											if (validateEmail(email.val())) {
 												email.removeAttr("style");
 												email_.removeAttr("style");
-												email_.html("Email");
+												email_
+														.html("Email <strong style='color:red;'>*</strong>");
 												$
 														.ajax({
 															type : 'POST',
@@ -197,8 +229,6 @@
 											check();
 											if (checkAll()) {
 												if (isCheckBox.prop('checked') == true) {
-													register
-															.removeAttr("disabled");
 													$
 															.ajax({
 																type : 'POST',
@@ -212,6 +242,8 @@
 																		data) {
 																	if (data === 'success') {
 																		register
+																				.removeAttr("disabled");
+																		register
 																				.on(
 																						'click',
 																						function() {
@@ -219,6 +251,10 @@
 																									.submit();
 																						});
 																	} else {
+																		register
+																				.attr(
+																						"disabled",
+																						"disabled");
 																		email
 																				.css(
 																						"border",
@@ -290,7 +326,7 @@
 								</div>
 								<div class="col-md-6" align="right">
 									Bạn đã là thành viên? <i> <a
-										href="<c:url value="/oplungdienthoai/home/dangnhap"/>"
+										href='<c:url value="/oplungdienthoai/home/dangnhap"/>'
 										style="color: red;">Đăng nhập </a>
 									</i>&nbsp;tại đây
 								</div>
@@ -298,7 +334,7 @@
 
 							<hr>
 							<form id="formRegister"
-								action="<c:url value="/oplungdienthoai/home/register"/>"
+								action='<c:url value="/oplungdienthoai/home/register"/>'
 								method="post">
 								<div class="content py-3">
 									<div class="row">
@@ -307,7 +343,7 @@
 												<label id="email_" for="email">Email<strong
 													style="color: red;">*</strong></label> <input id="email"
 													placeholder="Vui lòng nhập email của bạn" name="email"
-													type="text" class="form-control" required=”required”>
+													type="text" class="form-control" required="”required”">
 											</div>
 										</div>
 										<div class="col-md-6">
@@ -315,7 +351,7 @@
 												<label id="name_" for="name">Tên<strong
 													style="color: red;">*</strong></label> <input id="name" name="name"
 													type="text" placeholder="Họ và tên" class="form-control"
-													required=”required”>
+													required="”required”">
 											</div>
 										</div>
 									</div>
@@ -327,7 +363,7 @@
 													style="color: red;">*</strong></label> <input id="pass"
 													type="password" name="pass"
 													placeholder="Tối đa 6 kí tự bao gồm cả chữ và số"
-													class="form-control" required=”required”>
+													class="form-control" required="”required”">
 											</div>
 										</div>
 										<div class="col-md-6">
@@ -347,7 +383,7 @@
 												<label id="re_pass_" for="re_pass">Nhập lại mật khẩu<strong
 													style="color: red;">*</strong></label> <input id="re_pass"
 													name="re_pass" type="password" class="form-control"
-													required=”required”>
+													required="”required”">
 											</div>
 										</div>
 										<div class="col-md-6">
@@ -364,7 +400,7 @@
 												<label id="phone_" for="phone">Số điện thoại<strong
 													style="color: red;">*</strong></label> <input id="phone"
 													type="number" name="phone" class="form-control"
-													required=”required”>
+													required="”required”">
 											</div>
 										</div>
 										<div class="col-md-6">
@@ -400,7 +436,8 @@
 	<!-- Return to Top|ScrollTop -->
 	<a href="javascript:" id="return-to-top" title="Về đầu trang"><i
 		class="icon-chevron-up"></i></a>
-	<script src="<c:url value="/resources/ui/js/scrollTop.js"/>"></script>
+	<script src='<c:url value="/resources/ui/js/scrollTop.js"/>'
+		type="text/javascript"></script>
 	<!-- Return to Top|ScrollTop -->
 </body>
 </html>

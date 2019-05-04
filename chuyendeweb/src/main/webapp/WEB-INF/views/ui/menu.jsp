@@ -69,21 +69,27 @@
 						<%
 							} else {
 						%>
-						<li class="list-inline-item"><a href="#"><i
-								class="fas fa-phone-volume"></i> Xin chào, <%=usersEntity.getUserName()%></a>
-							<ul class="menu list-inline mb-0">
-								<li><a href="#"> Thông tin</a></li>
-								<li><a href="#"> Đổi mật khẩu</a></li>
+						<li class="list-inline-item" class="dropdown"><a href="#"
+							id="dropdownMenuButton" data-toggle="dropdown"><i
+								class="fab fa-angellist"></i> Xin chào,<strong
+								style="color: red;"><%=usersEntity.getUserName()%></strong> <i
+								class="fas fa-caret-down"></i></a>
+							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 								<%
-									if (usersEntity.getRoleId().equals("0")) {
-								%>
-								<li><a href="<c:url value="/amin/oplungdienthoai"/>"> Quản Lý Admin</a></li>
+									if (usersEntity.getRoleId().equals("1")) {
+								%><a class="dropdown-item"
+									href="<c:url value="/admin/oplungdienthoai"/>"> <i
+									class="fas fa-angle-right"></i> Quản lý admin
+								</a>
 								<%
 									}
-								%>
-								<li><a href="<c:url value="/oplungdienthoai/home/logout"/>"><i
-										class="fa fa-sign-out pull-right"></i> Đăng xuất</a></li>
-							</ul></li>
+								%><a class="dropdown-item" href=""><i class="fas fa-angle-right"></i>
+									Thông tin tài khoản </a> <a class="dropdown-item" href="#"><i
+									class="fas fa-angle-right"></i> Đổi mật khẩu</a> <a
+									class="dropdown-item"
+									href="<c:url value="/oplungdienthoai/home/logout"/>"><i
+									class="fas fa-angle-right"></i> Đăng xuất</a>
+							</div></li>
 						<%
 							}
 						%>
