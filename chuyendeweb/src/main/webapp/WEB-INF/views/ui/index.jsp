@@ -598,8 +598,9 @@
 													<h3>${item.productsName}</h3>
 													<p class="price">
 														<del></del>
-														<i class="fas fa-caret-right"></i> Giá bán: <strong
-															style="color: red;"> <fmt:formatNumber
+														<i class="fas fa-caret-right"></i> Giá bán:
+														<del>70,000 đ</del>
+														<strong style="color: red;"> <fmt:formatNumber
 																type="currency" value="${item.prices}"></fmt:formatNumber></strong>
 													</p>
 													<br>
@@ -613,6 +614,10 @@
 													</p>
 												</div>
 												<!-- /.text-->
+												<div class="ribbon sale">
+													<div class="theribbon">SALE</div>
+													<div class="ribbon-background"></div>
+												</div>
 												<div class="ribbon new">
 													<div class="theribbon">NEW</div>
 													<div class="ribbon-background"></div>
@@ -625,7 +630,7 @@
 								</div>
 								<!-- /.products-->
 							</div>
-							<div style="margin-left: 55%;margin-top: 1%;">
+							<div style="margin-left: 55%; margin-top: 1%;">
 								<tg:paging pagedListHolder="${pagedListHolder}"
 									pagedLink="${pagedLink}" />
 							</div>

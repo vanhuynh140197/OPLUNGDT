@@ -21,14 +21,41 @@
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript">
-$(document).ready(function(e){
-	$("#soLuong").on('click', function(){
-		var soLuong = $('#soLuong').val();
-		var giaBan = $('#giaBan').html();
-		console.log(soLuong + " " + giaBan);
-	});
+$(document).ready(function() {
+var fadeTime = 300;
+/* Assign actions */
+$('.product-quantity input').change( function() {
+  updateQuantity(this);
 });
-</script>
+/* Update quantity */
+function updateQuantity(quantityInput)
+{
+  /* Calculate line price */
+  var productRow = $(quantityInput).parent().parent();
+  var price = parseFloat(productRow.children('.product-price').text());
+  var promotion = parseFloat(productRow.children('.product-promotion').text());
+  var quantity = $(quantityInput).val();
+  console.log(productRow.children('.product-price').text().split(','));
+  console.log(price);
+  var linePrice = (price * quantity) - (price * quantity * ( promotion / 100 ));
+  console.log(linePrice);
+  /* Update line price display and recalc cart totals */
+  productRow.children('.product-line-price').each(function () {
+    $(this).fadeOut(fadeTime, function() {
+      $(this).text(linePrice.toFixed(2));
+      var subtotal = 0;
+      /* Sum up row totals */
+      $('.product').each(function () {
+        subtotal += parseFloat($(this).children('.product-line-price').text());
+      });
+      $(this).fadeIn(fadeTime);
+    });
+  });  
+}
+ 
+});
+ 
+</script>   
 <body>
 	<%!public String formatNumberGiaBan(Double giaban) {
 		DecimalFormat decimalFormat = new DecimalFormat("###,###");
@@ -72,10 +99,10 @@ $(document).ready(function(e){
 											<tr>
 												<th>Hình ảnh</th>
 												<th>Tên sản phẩm</th>
-												<th>Số lượng</th>
-												<th>Đơn giá</th>
-												<th>Giảm giá</th>
-												<th colspan="2">Thành tiền</th>
+												<th class="product-quantity">Số lượng</th>
+												<th class="product-price">Đơn giá</th>
+												<th class="product-promotion">Giảm giá</th>
+												<th class="product-line-price" colspan="2">Thành tiền</th>
 											</tr>
 										</thead>
 										<tbody>
@@ -87,24 +114,12 @@ $(document).ready(function(e){
 														src="<c:url value="/resources/ui/<%=gh.getProductsEntity().getProductsImages1()%>"/>"
 														alt="White Blouse Armani"></a></td>
 												<td><a href="#"><%=gh.getProductsEntity().getProductsName()%></a></td>
-												<td><input id="soLuong<%=gh.getProductsEntity().getProductsId()%>" type="number"
-													value="<%=gh.getSoLuong()%>"></td>
-												<td id="giaBan<%=gh.getProductsEntity().getProductsId()%>"><%=formatNumberGiaBan(gh.getProductsEntity().getPrices())%></td>
-												<%
-													if (gh.getProductsEntity().getPromotionByPromotionsId() != null) {
-												%>
-												<td><%=(int) (gh.getProductsEntity().getPromotionByPromotionsId().getPromotionValues() * 100)%>%</td>
-												<td id="thanhTien<%=gh.getProductsEntity().getProductsId()%>"><%=formatNumberGiaBan((gh.getSoLuong() * gh.getProductsEntity().getPrices())
-							- (gh.getSoLuong() * gh.getProductsEntity().getPrices()
-									* gh.getProductsEntity().getPromotionByPromotionsId().getPromotionValues()))%></td>
-												<%
-													} else {
-												%>
-												<td>0%</td>
-												<td id="thanhTien"><%=formatNumberGiaBan((gh.getSoLuong() * gh.getProductsEntity().getPrices()))%></td>
-												<%
-													}
-												%>
+												<td class="product-quantity"><input type="number" value="<%=gh.getSoLuong()%>" min = "1"></td>
+												<td class="product-price"><%=formatNumberGiaBan(gh.getProductsEntity().getPrices())%></td>
+												<td class="product-promotion"><%=(int) (gh.getProductsEntity().getPromotionByPromotionsId().getPromotionValues() * 100)%>%</td>
+												<td class="product-line-price"><%=formatNumberGiaBan((gh.getSoLuong() * gh.getProductsEntity().getPrices())
+						- (gh.getSoLuong() * gh.getProductsEntity().getPrices()
+								* gh.getProductsEntity().getPromotionByPromotionsId().getPromotionValues()))%></td>
 												<td><a href="#"><i class="fa fa-trash-o"></i></a></td>
 											</tr>
 											<%

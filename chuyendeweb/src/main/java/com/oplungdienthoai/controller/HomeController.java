@@ -59,26 +59,28 @@ public class HomeController {
 	@RequestMapping(value = "/home/giohang/{productsId}", method = RequestMethod.GET)
 	public String gioHang(@PathVariable(value = "productsId") String productsId, HttpSession session,
 			ModelMap modelMap) {
-		ProductsEntity productsEntity = productService.getProducts(productsId);
-		if (session.getAttribute("gio_hang") == null) {
-			session.setAttribute("gio_hang", new LinkedList<>());
-		}
-		@SuppressWarnings("unchecked")
-		List<GioHang> gioHang = (List<GioHang>) session.getAttribute("gio_hang");
-		GioHang gh = productService.getProductInGioHang(gioHang, productsEntity);
-		if (gh != null) {
-			// lay 1 sp de tang so luong
-			gh.setSoLuong(gh.getSoLuong() + 1);
+		if (session.getAttribute("LoginSuccess") == null) {
+			return "redirect:/oplungdienthoai/home/dangnhap";
 		} else {
-			gioHang.add(new GioHang(productsEntity, 1));
+
+			ProductsEntity productsEntity = productService.getProducts(productsId);
+			if (session.getAttribute("gio_hang") == null) {
+				session.setAttribute("gio_hang", new LinkedList<>());
+			}
+			@SuppressWarnings("unchecked")
+			List<GioHang> gioHang = (List<GioHang>) session.getAttribute("gio_hang");
+			GioHang gh = productService.getProductInGioHang(gioHang, productsEntity);
+			if (gh != null) {
+				// lay 1 sp de tang so luong
+				gh.setSoLuong(gh.getSoLuong() + 1);
+			} else {
+				gioHang.add(new GioHang(productsEntity, 1));
+			}
+			return "/ui/basket";
+
 		}
-		return "/ui/basket";
 	}
-	
-	@RequestMapping(value = "/home/giohang/ajax", method = RequestMethod.POST)
-	public @ResponseBody List<GioHang> ajaxGioHang(HttpSession session){
-		return (List<GioHang>) session.getAttribute("gio_hang");
-	}
+
 	@RequestMapping(value = "/home/menu")
 	public String menu() {
 		return "/ui/menu";
