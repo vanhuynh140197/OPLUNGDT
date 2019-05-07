@@ -4,7 +4,7 @@
 <%@page import="com.oplungdienthoai.model.GioHang"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>z
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -20,42 +20,41 @@
 </head>
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script
+	src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+
 <script type="text/javascript">
-$(document).ready(function() {
-var fadeTime = 300;
-/* Assign actions */
-$('.product-quantity input').change( function() {
-  updateQuantity(this);
-});
-/* Update quantity */
-function updateQuantity(quantityInput)
-{
-  /* Calculate line price */
-  var productRow = $(quantityInput).parent().parent();
-  var price = parseFloat(productRow.children('.product-price').text());
-  var promotion = parseFloat(productRow.children('.product-promotion').text());
-  var quantity = $(quantityInput).val();
-  console.log(productRow.children('.product-price').text().split(','));
-  console.log(price);
-  var linePrice = (price * quantity) - (price * quantity * ( promotion / 100 ));
-  console.log(linePrice);
-  /* Update line price display and recalc cart totals */
-  productRow.children('.product-line-price').each(function () {
-    $(this).fadeOut(fadeTime, function() {
-      $(this).text(linePrice.toFixed(2));
-      var subtotal = 0;
-      /* Sum up row totals */
-      $('.product').each(function () {
-        subtotal += parseFloat($(this).children('.product-line-price').text());
-      });
-      $(this).fadeIn(fadeTime);
-    });
-  });  
-}
- 
-});
- 
-</script>   
+	$(document).ready(
+			function() {
+				var fadeTime = 300;
+				/* Assign actions */
+				$('.product-quantity input').change(function() {
+					updateQuantity(this);
+				});
+				/* Update quantity */
+				function updateQuantity(quantityInput) {
+					/* Calculate line price */
+					var productRow = $(quantityInput).parent().parent();
+					var price = numeral(
+							productRow.children('.product-price').text())
+							.value();
+					console.log(price);
+					var promotion = parseFloat(productRow.children(
+							'.product-promotion').text());
+					var quantity = $(quantityInput).val();
+					var linePrice = (price * quantity)
+							- (price * quantity * (promotion / 100));
+					/* Update line price display and recalc cart totals */
+					productRow.children('.product-line-price').each(function() {
+						$(this).fadeOut(fadeTime, function() {
+							$(this).text(numeral(linePrice).format('0,0')+ " đ");
+							$(this).fadeIn(fadeTime);
+						});
+					});
+				}
+
+			});
+</script>
 <body>
 	<%!public String formatNumberGiaBan(Double giaban) {
 		DecimalFormat decimalFormat = new DecimalFormat("###,###");
@@ -114,12 +113,13 @@ function updateQuantity(quantityInput)
 														src="<c:url value="/resources/ui/<%=gh.getProductsEntity().getProductsImages1()%>"/>"
 														alt="White Blouse Armani"></a></td>
 												<td><a href="#"><%=gh.getProductsEntity().getProductsName()%></a></td>
-												<td class="product-quantity"><input type="number" value="<%=gh.getSoLuong()%>" min = "1"></td>
-												<td class="product-price"><%=formatNumberGiaBan(gh.getProductsEntity().getPrices())%></td>
+												<td class="product-quantity"><input type="number"
+													value="<%=gh.getSoLuong()%>" min="1"></td>
+												<td class="product-price"><%=formatNumberGiaBan(gh.getProductsEntity().getPrices())%> đ</td>
 												<td class="product-promotion"><%=(int) (gh.getProductsEntity().getPromotionByPromotionsId().getPromotionValues() * 100)%>%</td>
 												<td class="product-line-price"><%=formatNumberGiaBan((gh.getSoLuong() * gh.getProductsEntity().getPrices())
 						- (gh.getSoLuong() * gh.getProductsEntity().getPrices()
-								* gh.getProductsEntity().getPromotionByPromotionsId().getPromotionValues()))%></td>
+								* gh.getProductsEntity().getPromotionByPromotionsId().getPromotionValues()))%> đ</td>
 												<td><a href="#"><i class="fa fa-trash-o"></i></a></td>
 											</tr>
 											<%

@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -16,12 +17,13 @@
 <!-- normalize CSS
         ============================================ -->
 <link rel="stylesheet"
-	href="<c:url value="/resources/admin/css/data-table/bootstrap-table.css"/>">
+	href='<c:url value="/resources/admin/css/data-table/bootstrap-table.css"/>'>
 <link rel="stylesheet"
-	href="<c:url value="/resources/admin/css/data-table/bootstrap-editable.css"/>">
+	href='<c:url value="/resources/admin/css/data-table/bootstrap-editable.css"/>'>
 </head>
 <script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+	type="text/javascript"></script>
 <!-- <script type="text/javascript">
 	$(document).ready(function() {
 		$.ajax({
@@ -47,7 +49,8 @@
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 					<div class="logo-pro">
 						<a href="index.html"><img class="main-logo"
-							src="/chuyendeweb/resources/admin/images/logo/logo.png" alt="" /></a>
+							src="<c:url value="/resources/admin/images/logo/logo.png"/>"
+							alt="" /></a>
 					</div>
 				</div>
 			</div>
@@ -64,7 +67,7 @@
 								<div class="row">
 									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 										<div class="breadcome-heading">
-											<form role="search" class="sr-input-func">
+											<form role="search" class="sr-input-func" action="">
 												<input type="text" placeholder="Search..."
 													class="search-int form-control"> <a href="#"><i
 													class="fa fa-search"></i></a>
@@ -100,7 +103,7 @@
 							<div class="sparkline13-graph">
 								<div class="datatable-dashv1-list custom-datatable-overright">
 									<div id="toolbar">
-										<a href="<c:url value="/admin/oplungdienthoai/themsanpham"/>"><button
+										<a href='<c:url value="/admin/oplungdienthoai/themsanpham"/>'><button
 												class="btn btn-primary" style="float: right;">
 												<i class="fas fa-plus"></i> Thêm sản phẩm
 											</button></a>
@@ -133,15 +136,16 @@
 													<td>${item.productsName}</td>
 													<td>${item.productsImages1}</td>
 													<td>${item.productsColor}</td>
-													<td>${item.prices}</td>
+													<td><fmt:formatNumber type="currency"
+															value="${item.prices}"></fmt:formatNumber></td>
 													<td>${item.amount}</td>
 													<td><a
-														href="<c:url value="/admin/oplungdienthoai/suasanpham"/>"
-														style="color: blue;"><i class="far fa-edit fa-2x"
-															title="Sửa sản phẩm"></i></a> &nbsp; <a
-														href="<c:url value="/admin/oplungdienthoai/xoasanpham/${item.productsId}"/>"
-														style="color: red;"><i class="fas fa-trash-alt fa-2x"
-															title="Xóa sản phẩm"></i></a></td>
+														href='<c:url value="/admin/oplungdienthoai/suasanpham"/>'
+														style="color: blue;"><i class="far fa-edit"
+															title="Sửa sản phẩm"></i></a> &nbsp; <a data-toggle="modal"
+														style="color: red;"
+														data-target="#xoasanpham${item.productsId.trim()}"><i
+															class="fas fa-trash-alt fa-1x" title="Xóa sản phẩm"></i></a></td>
 												</tr>
 											</c:forEach>
 										</tbody>
@@ -152,6 +156,39 @@
 					</div>
 				</div>
 			</div>
+		</div>
+		<div>
+			<c:forEach items="${listProducts}" var="item">
+				<div class="modal fade" id="xoasanpham${item.productsId.trim()}"
+					role="dialog">
+					<div class="modal-dialog">
+
+						<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h4 class="modal-title">Xóa sản phẩm</h4>
+							</div>
+							<div class="modal-body">
+								<h5>
+									Bạn có chắc muốn xóa sản phẩm <strong style="color: red">${item.productsName}</strong>
+									này ?
+								</h5>
+							</div>
+							<div class="modal-footer">
+								<a
+									href='<c:url value="/admin/oplungdienthoai/xoasanpham/${item.productsId}"/>'><button
+										class="btn btn-danger">
+										<span class="glyphicon glyphicon-ok"></span>&nbsp;Có
+									</button></a> <a><button type="button" class="btn btn-default"
+										data-dismiss="modal">
+										<span class="glyphicon glyphicon-remove"></span>&nbsp;Không
+									</button></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</c:forEach>
 		</div>
 		<!-- Static Table End -->
 		<div class="footer-copyright-area">
@@ -171,20 +208,28 @@
 	<!-- data table JS
         ============================================ -->
 	<script
-		src="<c:url value="/resources/admin/js/data-table/bootstrap-table.js"/>"></script>
+		src='<c:url value="/resources/admin/js/data-table/bootstrap-table.js"/>'
+		type="text/javascript"></script>
 	<script
-		src="<c:url value="/resources/admin/js/data-table/tableExport.js"/>"></script>
+		src='<c:url value="/resources/admin/js/data-table/tableExport.js"/>'
+		type="text/javascript"></script>
 	<script
-		src="<c:url value="/resources/admin/js/data-table/data-table-active.js"/>"></script>
+		src='<c:url value="/resources/admin/js/data-table/data-table-active.js"/>'
+		type="text/javascript"></script>
 	<script
-		src="<c:url value="/resources/admin/js/data-table/bootstrap-table-editable.js"/>"></script>
+		src='<c:url value="/resources/admin/js/data-table/bootstrap-table-editable.js"/>'
+		type="text/javascript"></script>
 	<script
-		src="<c:url value="/resources/admin/js/data-table/bootstrap-editable.js"/>"></script>
+		src='<c:url value="/resources/admin/js/data-table/bootstrap-editable.js"/>'
+		type="text/javascript"></script>
 	<script
-		src="<c:url value="/resources/admin/js/data-table/bootstrap-table-resizable.js"/>"></script>
+		src='<c:url value="/resources/admin/js/data-table/bootstrap-table-resizable.js"/>'
+		type="text/javascript"></script>
 	<script
-		src="<c:url value="/resources/admin/js/data-table/colResizable-1.5.source.js"/>"></script>
+		src='<c:url value="/resources/admin/js/data-table/colResizable-1.5.source.js"/>'
+		type="text/javascript"></script>
 	<script
-		src="<c:url value="/resources/admin/js/data-table/bootstrap-table-export.js"/>"></script>
+		src='<c:url value="/resources/admin/js/data-table/bootstrap-table-export.js"/>'
+		type="text/javascript"></script>
 </body>
 </html>

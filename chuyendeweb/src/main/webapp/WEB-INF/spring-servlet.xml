@@ -47,7 +47,9 @@
 		</property>
 		<property name="packagesToScan" value="com.oplungdienthoai.model"></property>
 	</bean>
-
+	<bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+	</bean>
 	<!-- Transaction -->
 	<bean id="transactionManager"
 		class="org.springframework.orm.hibernate5.HibernateTransactionManager">

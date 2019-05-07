@@ -161,15 +161,11 @@ public class HomeController {
 		return "redirect:/oplungdienthoai/home/dangnhap";
 	}
 
-	@RequestMapping(value = "/home/register", method = RequestMethod.POST)
-	public String register(HttpServletRequest request) throws UnsupportedEncodingException, NoSuchAlgorithmException {
-		request.setCharacterEncoding("UTF-8");
+	@RequestMapping(value = "/home/register", method = RequestMethod.POST, produces = "text/plain;charset=UTF-8")
+	public String register(@RequestParam(value = "email") String email, @RequestParam(value = "name") String name,
+			@RequestParam(value = "pass") String pass, @RequestParam(value = "phone") String phone)
+			throws UnsupportedEncodingException, NoSuchAlgorithmException {
 		String userID = Long.toString(System.currentTimeMillis());
-		String email = request.getParameter("email");
-		String name = request.getParameter("name");
-		String pass = request.getParameter("pass");
-		String phone = request.getParameter("phone");
-
 		String subject = "Register Obaju";
 		String text = "<h2><b>Hello," + name + "</b></h2></br>"
 				+ "<p>Cảm ơn bạn đã đăng ký tài khoản shop Obaju. Vui lòng xác nhận tài khoản để kích hoạt tài khoản. Cảm ơn bạn.</p></br>"
