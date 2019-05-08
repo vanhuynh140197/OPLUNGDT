@@ -26,11 +26,6 @@
 		var images1 = $("#images1");
 		var images2 = $("#images2");
 		var prices = $("#prices");
-		console.log(productname.val());
-		console.log(amount.val());
-		console.log(images1.val());
-		console.log(images2.val());
-		console.log(prices.val());
 		
 		var formAddProduct = $("#formAddProduct");
 		var buttonAdd = $("#buttonAdd");

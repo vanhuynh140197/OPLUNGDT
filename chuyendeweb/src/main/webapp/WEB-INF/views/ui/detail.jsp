@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -52,7 +53,7 @@
 											class="badge badge-secondary">42</span> </a>
 										<ul class="list-unstyled">
 											<li><a
-												href=<c:url value="/oplungdienthoai/home/sanpham"/>
+												href='<c:url value="/oplungdienthoai/home/sanpham"/>'
 												class="nav-link">Iphone XS Max</a></li>
 											<li><a href="#" class="nav-link">Iphone XS/X</a></li>
 											<li><a href="#" class="nav-link">Iphone 8 plus</a></li>
@@ -102,15 +103,11 @@
 								<div data-slider-id="1"
 									class="owl-carousel shop-detail-carousel">
 									<div class="item">
-										<img src="<c:url value="/resources/ui/img/detailbig1.jpg"/>"
+										<img src='<c:url value="${detailProduct.productsImages1}"/>'
 											alt="" class="img-fluid">
 									</div>
 									<div class="item">
-										<img src="<c:url value="/resources/ui/img/detailbig2.jpg"/>"
-											alt="" class="img-fluid">
-									</div>
-									<div class="item">
-										<img src="<c:url value="/resources/ui/img/detailbig3.jpg"/>"
+										<img src='<c:url value="${detailProduct.productsImages2}"/>'
 											alt="" class="img-fluid">
 									</div>
 								</div>
@@ -127,24 +124,24 @@
 							</div>
 							<div class="col-md-6">
 								<div class="box">
-									<h3 class="text-center">Ốp lưng Iphone 7 plus</h3>
+									<h3 class="text-center">${detailProduct.productsName}</h3>
 									<p align="center" style="margin-left: 3%;">
-										<i class="fas fa-angle-double-right"></i> Mã sản phẩm: COP178
-									</p>
-									<p align="center">
-										<i class="fas fa-angle-double-right"></i> Tình trạng: <strong
-											style="color: red;">Còn hàng</strong>
+										<i class="fas fa-angle-double-right"></i> Mã sản phẩm:
+										${detailProduct.productsId}
 									</p>
 									<h4 align="center">
 										<i class="fas fa-caret-right"></i> Giá bán: <strong
-											style="color: red;"> 90,000 đ </strong>
+											style="color: red;"> <fmt:formatNumber
+												type="currency" value="${detailProduct.prices}" />
+										</strong>
 									</h4>
 									<p class="goToDescription">
 										<a href="#details" class="scroll-to"><h4 align="center">Xem
 												thông tin chi tiết sản phẩm</h4></a>
 									</p>
 									<p class="text-center buttons" style="margin-left: 20%;">
-										<a href="<c:url value="/oplungdienthoai/home/giohang"/>"
+										<a
+											href='<c:url value="/oplungdienthoai/home/giohang/${detailProduct.productsId.trim()}"/>'
 											class="btn btn-primary5"><i class="fa fa-shopping-cart"></i>
 											Đặt hàng nhanh</a>
 									</p>
@@ -161,17 +158,11 @@
 								</div>
 								<div data-slider-id="1" class="owl-thumbs">
 									<button class="owl-thumb-item">
-										<img src="<c:url value="/resources/ui/img/detailsquare.jpg"/>"
+										<img src='<c:url value="${detailProduct.productsImages1}"/>'
 											alt="" class="img-fluid">
 									</button>
 									<button class="owl-thumb-item">
-										<img
-											src="<c:url value="/resources/ui/img/detailsquare2.jpg"/>"
-											alt="" class="img-fluid">
-									</button>
-									<button class="owl-thumb-item">
-										<img
-											src="<c:url value="/resources/ui/img/detailsquare3.jpg"/>"
+										<img src='<c:url value="${detailProduct.productsImages2}"/>'
 											alt="" class="img-fluid">
 									</button>
 								</div>
@@ -182,20 +173,8 @@
 								<i class="fas fa-bell"></i> Thông tin sản phẩm
 							</h3>
 							<hr>
-							<h4>Ốp lưng iPhone Xs Max Ringke Fusion kèm bộ Kit tiện lợi</h4>
-							<p>
-								Trọn bộ bao gồm: <br> - Dây đeo cổ tay màu ngẫu nhiên. Trên
-								ốp lưng Ringke Fusion có chỗ móc dây, đây là thiết kế đặc trưng
-								của Ringke. Dây đeo này sẽ giúp bạn cầm điện thoại trên tay chắc
-								chắn hơn. <br> - Miếng dán đựng card có thể dán trực tiếp
-								mặt lưng của ốp. <br> - Ốp lưng Ringke Fusion Thiết kế siêu
-								mỏng và hoàn toàn phù hợp từng chi tiết nhỏ trên iPhone Xs Max.
-								<br>- Dễ dàng tháo lắp không làm trầy máy nhờ thiết kế viền
-								TPU dẻo. <br> - Chất liệu nhựa cao cấp có cảm giác như bạn
-								cầm chính cái điện thoại mà không có bất gì cản trở nào. <br>
-								- Chống va đập và ảnh hưởng tuyệt đối. <br> - Chống trầy
-								màn hình iPhone Xs Max khi để trên mặt phẵng nhờ phần ốp mặt
-								trước nhô cao.
+							<h4>${detailProduct.productsName}</h4>
+							<p>${detailProduct.description}</p>
 							<hr>
 							<div class="social">
 								<h4>
@@ -217,127 +196,42 @@
 							<hr>
 						</div>
 						<div class="row same-height-row">
-							<div class="col-md-3 col-sm-6">
-								<div class="product same-height">
-									<div class="flip-container">
-										<div class="flipper">
-											<div class="front">
-												<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"><img
-													src="<c:url value="/resources/ui/img/SP YeuThich/iphone10.jpg"/>"
-													alt="" class="img-fluid"></a>
-											</div>
-											<div class="back">
-												<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"><img
-													src="<c:url value="/resources/ui/img/SP YeuThich/iphone11.jpg"/>"
-													alt="" class="img-fluid"></a>
-											</div>
-										</div>
-									</div>
-									<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"
-										class="invisible"><img
-										src="<c:url value="/resources/ui/img/SP YeuThich/iphone10.jpg"/>"
-										alt="" class="img-fluid"></a>
-									<div class="text">
-										<h3>Ốp lưng đính đá Iphone 7 Plus</h3>
-										<p class="price">
-											<i class="fas fa-caret-right"></i> Giá bán: <strong
-												style="color: red;"> 120,000 đ </strong>
-										</p>
-									</div>
-								</div>
-								<!-- /.product-->
-							</div>
-							<div class="col-md-3 col-sm-6">
-								<div class="product same-height">
-									<div class="flip-container">
-										<div class="flipper">
-											<div class="front">
-												<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"><img
-													src="<c:url value="/resources/ui/img/SP YeuThich/iphone12.jpg"/>"
-													alt="" class="img-fluid"></a>
-											</div>
-											<div class="back">
-												<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"><img
-													src="<c:url value="/resources/ui/img/SP YeuThich/iphone13.jpg"/>"
-													alt="" class="img-fluid"></a>
+							<c:forEach items="${listProductDetail}" var="listProductDetails">
+								<div class="col-md-3 col-sm-6">
+									<div class="product same-height">
+										<div class="flip-container">
+											<div class="flipper">
+												<div class="front">
+													<a
+														href='<c:url value="/oplungdienthoai/home/chitiet/${listProductDetails.productsId.trim()}"/>'><img
+														src='<c:url value="${listProductDetails.productsImages1}"/>'
+														alt="" class="img-fluid"></a>
+												</div>
+												<div class="back">
+													<a
+														href='<c:url value="/oplungdienthoai/home/chitiet/${listProductDetails.productsId.trim()}"/>'><img
+														src='<c:url value="${listProductDetails.productsImages2}"/>'
+														alt="" class="img-fluid"></a>
+												</div>
 											</div>
 										</div>
-									</div>
-									<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"
-										class="invisible"><img
-										src="<c:url value="/resources/ui/img/SP YeuThich/iphone12.jpg"/>"
-										alt="" class="img-fluid"></a>
-									<div class="text">
-										<h3>Ốp lưng dẻo chống sốc Iphone 7 Plus</h3>
-										<p class="price">
-											<i class="fas fa-caret-right"></i> Giá bán: <strong
-												style="color: red;"> 90,000 đ </strong>
-										</p>
-									</div>
-								</div>
-								<!-- /.product-->
-							</div>
-							<div class="col-md-3 col-sm-6">
-								<div class="product same-height">
-									<div class="flip-container">
-										<div class="flipper">
-											<div class="front">
-												<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"><img
-													src="<c:url value="/resources/ui/img/SP YeuThich/huawei novo 3i.jpg"/>"
-													alt="" class="img-fluid"></a>
-											</div>
-											<div class="back">
-												<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"><img
-													src="<c:url value="/resources/ui/img/SP YeuThich/huawei novo 3i1.jpg"/>"
-													alt="" class="img-fluid"></a>
-											</div>
+										<a
+											href='<c:url value="/oplungdienthoai/home/chitiet/${listProductDetails.productsId.trim()}"/>'
+											class="invisible"><img
+											src='<c:url value="${listProductDetails.productsImages1}"/>'
+											alt="" class="img-fluid"></a>
+										<div class="text">
+											<h3>${listProductDetails.productsName}</h3>
+											<p class="price">
+												<i class="fas fa-caret-right"></i> Giá bán: <strong
+													style="color: red;"><fmt:formatNumber
+														type="currency" value="${listProductDetails.prices}" /> </strong>
+											</p>
 										</div>
 									</div>
-									<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"
-										class="invisible"><img
-										src="<c:url value="/resources/ui/img/SP YeuThich/huawei novo 3i.jpg"/>"
-										alt="" class="img-fluid"></a>
-									<div class="text">
-										<h3>Ốp lưng Huawei Novo 3e</h3>
-										<p class="price">
-											<i class="fas fa-caret-right"></i> Giá bán: <strong
-												style="color: red;"> 120,000 đ </strong>
-										</p>
-									</div>
+									<!-- /.product-->
 								</div>
-								<!-- /.product-->
-							</div>
-							<div class="col-md-3 col-sm-6">
-								<div class="product same-height">
-									<div class="flip-container">
-										<div class="flipper">
-											<div class="front">
-												<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"><img
-													src="<c:url value="/resources/ui/img/SP YeuThich/oppo1.jpg"/>"
-													alt="" class="img-fluid"></a>
-											</div>
-											<div class="back">
-												<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"><img
-													src="<c:url value="/resources/ui/img/SP YeuThich/oppo2.jpg"/>"
-													alt="" class="img-fluid"></a>
-											</div>
-										</div>
-									</div>
-									<a
-										href="detail.html<c:url value="/oplungdienthoai/home/chitiet"/>"
-										class="invisible"><img
-										src="<c:url value="/resources/ui/img/SP YeuThich/oppo1.jpg"/>"
-										alt="" class="img-fluid"></a>
-									<div class="text">
-										<h3>Ốp lưng Oppo F9 Full màu</h3>
-										<p class="price">
-											<i class="fas fa-caret-right"></i> Giá bán: <strong
-												style="color: red;"> 100,000 đ </strong>
-										</p>
-									</div>
-								</div>
-								<!-- /.product-->
-							</div>
+							</c:forEach>
 						</div>
 					</div>
 					<!-- /.col-md-9-->
@@ -350,7 +244,8 @@
 	<!-- Return to Top|ScrollTop -->
 	<a href="javascript:" id="return-to-top" title="Về đầu trang"><i
 		class="icon-chevron-up"></i></a>
-	<script src="<c:url value="/resources/ui/js/scrollTop.js"/>"></script>
+	<script src='<c:url value="/resources/ui/js/scrollTop.js"/>'
+		type="text/javascript"></script>
 	<!-- Return to Top|ScrollTop -->
 </body>
 </html>

@@ -606,9 +606,9 @@
 													<br>
 													<p class="buttons">
 														<a
-															href="<c:url value="/oplungdienthoai/home/chitiet/${item.productsId}"/>"
+															href="<c:url value="/oplungdienthoai/home/chitiet/${item.productsId.trim()}"/>"
 															class="btn btn-outline-secondary">Chi tiết</a><a
-															href="<c:url value="/oplungdienthoai/home/giohang/${item.productsId}"/>"
+															href="<c:url value="/oplungdienthoai/home/giohang/${item.productsId.trim()}"/>"
 															class="btn btn-primary5"><i
 															class="fa fa-shopping-cart"></i>Đặt hàng nhanh</a>
 													</p>

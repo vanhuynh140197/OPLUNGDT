@@ -140,7 +140,7 @@
 															value="${item.prices}"></fmt:formatNumber></td>
 													<td>${item.amount}</td>
 													<td><a
-														href='<c:url value="/admin/oplungdienthoai/suasanpham"/>'
+														href='<c:url value="/admin/oplungdienthoai/suasanpham/${item.productsId.trim()}"/>'
 														style="color: blue;"><i class="far fa-edit"
 															title="Sửa sản phẩm"></i></a> &nbsp; <a data-toggle="modal"
 														style="color: red;"

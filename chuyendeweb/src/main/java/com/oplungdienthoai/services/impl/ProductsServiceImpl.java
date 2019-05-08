@@ -27,6 +27,11 @@ public class ProductsServiceImpl implements ProductsService {
 	}
 
 	@Override
+	public List<ProductsEntity> getProductsUseProductType(String productTypesId) {
+		return productsDAO.getProductsUseProductType(productTypesId);
+	}
+
+	@Override
 	public boolean add(ProductsEntity products) {
 		return productsDAO.add(products);
 	}

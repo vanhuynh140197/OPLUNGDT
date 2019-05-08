@@ -51,8 +51,14 @@ public class HomeController {
 		return "/ui/index";
 	}
 
-	@RequestMapping(value = "/home/chitiet")
-	public String chiTiet() {
+	@RequestMapping(value = "/home/chitiet/{productsId}", method = RequestMethod.GET)
+	public String chiTiet(@PathVariable(value = "productsId") String productsId, ModelMap modelMap) {
+		System.out.println(productsId);
+		ProductsEntity productsEntity = productService.getProducts(productsId);
+		List<ProductsEntity> productsEntities = productService
+				.getProductsUseProductType(productsEntity.getProductTypesId());
+		modelMap.put("detailProduct", productsEntity);
+		modelMap.put("listProductDetail", productsEntities);
 		return "/ui/detail";
 	}
 

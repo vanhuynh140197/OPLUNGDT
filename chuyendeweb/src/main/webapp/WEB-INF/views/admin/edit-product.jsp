@@ -14,9 +14,95 @@
         ============================================ -->
 <link rel="stylesheet"
 	href="<c:url value="/resources/admin/css/form/all-type-forms.css"/>">
-
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+	type="text/javascript"></script>
 </head>
+<script type="text/javascript">
+	$(document).ready(function() {
+		var productname = $("#productname");
+		var color = $("#color").val();
+		var amount = $("#amount");
+		var images1 = $("#images1");
+		var images2 = $("#images2");
+		var prices = $("#prices");
 
+		var formEditProduct = $("#formEditProduct");
+		var buttonEdit = $("#buttonEdit");
+		var checkAll = function() {
+			var check = true;
+			if (productname.val() === "") {
+				check = false;
+			}
+			if (amount.val() === "") {
+				check = false;
+			}
+			if (prices.val() === "") {
+				check = false;
+			}
+			if (images1.val().length <= 0) {
+				check = false;
+			}
+			if (images2.val().length <= 0) {
+				check = false;
+			}
+			return check;
+		};
+		var check = function() {
+			productname.on("blur", function() {
+				if (productname.val() === "") {
+					productname.css("border", "solid 1px red");
+				} else {
+					productname.removeAttr("style");
+				}
+			});
+			amount.on("blur", function() {
+				if (amount.val() === "") {
+					amount.css("border", "solid 1px red");
+				} else {
+					amount.removeAttr("style");
+				}
+			});
+			prices.on("blur", function() {
+				if (prices.val() === "") {
+					prices.css("border", "solid 1px red");
+				} else {
+					prices.removeAttr("style");
+				}
+			});
+			images1.on("blur", function() {
+				if (images1.val().length <= 0) {
+					images1.css("border", "solid 1px red");
+				} else {
+					images1.removeAttr("style");
+				}
+			});
+			images2.on("blur", function() {
+				if (images2.val().length <= 0) {
+					images2.css("border", "solid 1px red");
+				} else {
+					images2.removeAttr("style");
+				}
+			});
+		};
+		formEditProduct.on('keyup', function(e) {
+			e.preventDefault();
+			check();
+			if (checkAll()) {
+				if (images1.val().length > 0 && images2.val().length > 0) {
+					buttonEdit.removeAttr("disabled");
+					buttonEdit.on('click', function() {
+						formEditProduct.submit();
+					});
+				} else {
+					buttonEdit.attr("disabled", "disabled");
+				}
+			} else {
+				buttonEdit.attr("disabled", "disabled");
+			}
+		});
+	});
+</script>
 <body>
 	<!-- menu -->
 	<%@include file="menu_admin.jsp"%>
@@ -28,7 +114,8 @@
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 					<div class="logo-pro">
 						<a href="index.html"><img class="main-logo"
-							src="img/logo/logo.png" alt="" /></a>
+							src="<c:url value="/resources/admin/images/logo/logo.png"/>"
+							alt="" /></a>
 					</div>
 				</div>
 			</div>
@@ -86,65 +173,103 @@
 										<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 											<div class="review-content-section">
 												<div id="dropzone1" class="pro-ad">
-													<form action="<c:url value="../upload"/>"
-														class="dropzone dropzone-custom needsclick add-professors"
-														id="demo1-upload">
+													<form
+														action='<c:url value="/admin/oplungdienthoai/suasanpham/xuLySua"/>'
+														method="POST" enctype="multipart/form-data"
+														id="formEditProduct"
+														class="dropzone dropzone-custom needsclick add-professors">
 														<div class="row">
 															<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 																<div class="form-group">
-																	<input name="firstname" type="text"
-																		class="form-control" placeholder="Tên sản phẩm">
-																</div>
-																<div class="file-upload-inner ts-forms">
-																	<div class="input prepend-big-btn">
-																		<label class="icon-right" for="prepend-big-btn">
-																			<i class="fa fa-download"></i>
-																		</label>
-																		<div class="file-button">
-																			Hình ảnh SP1<input type="file"
-																				onchange="document.getElementById('prepend-big-btn').value = this.value;">
-																		</div>
-																		<input type="text" id="prepend-big-btn"
-																			placeholder="Chọn hình ảnh">
-																	</div>
-																</div>
-																<div class="file-upload-inner ts-forms">
-																	<div class="input prepend-big-btn">
-																		<label class="icon-right" for="prepend-big-btn">
-																			<i class="fa fa-download"></i>
-																		</label>
-																		<div class="file-button">
-																			Hình ảnh SP1_1<input type="file"
-																				onchange="document.getElementById('prepend-big-btn').value = this.value;">
-																		</div>
-																		<input type="text" id="prepend-big-btn"
-																			placeholder="Chọn hình ảnh">
-																	</div>
+																	<input id="productid" name="productid" type="text"
+																		class="form-control" placeholder="Product ID"
+																		value="${editProductEnTity.productsId}"
+																		readonly="readonly">
 																</div>
 																<div class="form-group">
-																	<select name="color" class="form-control">
+																	<input id="productname" name="productname" type="text"
+																		class="form-control" placeholder="Product name"
+																		value="${editProductEnTity.productsName}">
+																</div>
+																<div class="file-upload-inner ts-forms">
+																	<div class="input prepend-big-btn">
+																		<label class="icon-right" for="images1"> <i
+																			class="fa fa-download"></i>
+																		</label>
+																		<div class="file-button">
+																			Images 1<input type="file" name="images1"
+																				onchange="document.getElementById('images1').value = this.value;">
+																		</div>
+																		<input type="text" id="images1"
+																			placeholder="Choose images">
+																	</div>
+																</div>
+																<div class="file-upload-inner ts-forms">
+																	<div class="input prepend-big-btn">
+																		<label class="icon-right" for="images2"> <i
+																			class="fa fa-download"></i>
+																		</label>
+																		<div class="file-button">
+																			Images 2<input type="file" name="images2"
+																				onchange="document.getElementById('images2').value = this.value;">
+																		</div>
+																		<input type="text" id="images2"
+																			placeholder="Choose images">
+																	</div>
+																</div>
+
+																<div class="form-group">
+																	<input id="amount" name="amount" type="number" min="1"
+																		class="form-control" placeholder="Amount"
+																		value="${editProductEnTity.amount}">
+																</div>
+																<div class="form-group">
+																	<input id="prices" name="prices" type="number" min="1"
+																		class="form-control" placeholder="Prices"
+																		value="${editProductEnTity.prices}">
+																</div>
+
+															</div>
+															<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+																<div class="form-group">
+																	<select id="color" name="color" class="form-control" >
+																		<option value="khongmau">Chọn màu sắc...</option>
 																		<%
-																			String[] mauSacc = { "Màu sắc", "Đỏ", "Tím", "Vàng", "Trắng", "Đen", "Xám", "Hồng", "Nâu", "Xanh" };
+																			String[] mauSacc = { "Đỏ", "Tím", "Vàng", "Trắng", "Đen", "Xám", "Hồng", "Nâu", "Xanh" };
 																			for (String mauSac : mauSacc)
 																				out.print("<option value=\"" + mauSac + "\">" + mauSac + "</option>");
 																		%>
 																	</select>
 																</div>
-															</div>
-															<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 																<div class="form-group">
-																	<input name="number" type="number" class="form-control"
-																		placeholder="Số lượng">
+																	<select id="producttype" name="producttype"
+																		class="form-control">
+																		<c:forEach items="${listProductType}"
+																			var="listProductTypes">
+																			<option value="${listProductTypes.productTypesId}">${listProductTypes.productTypesName}</option>
+																		</c:forEach>
+																	</select>
+																</div>
+																<div class="form-group">
+																	<select id="promotions" name="promotions"
+																		class="form-control">
+																		<c:forEach items="${listPromotions}"
+																			var="listPromotion">
+																			<option value="${listPromotion.promotionsId}">${listPromotion.promotionsName}</option>
+																		</c:forEach>
+																	</select>
 																</div>
 																<div class="form-group res-mg-t-15">
-																	<textarea name="description" placeholder="Mô tả"></textarea>
+																	<textarea name="description" placeholder="Description"
+																		cols="" rows="">${editProductEnTity.description}</textarea>
 																</div>
 															</div>
 														</div>
 														<div class="row">
 															<div class="col-lg-12">
 																<div class="payment-adress">
-																	<button type="submit"
+																	<button type="submit" disabled="disabled"
+																		id="buttonEdit"
 																		class="btn btn-primary waves-effect waves-light">Sửa</button>
 																</div>
 															</div>

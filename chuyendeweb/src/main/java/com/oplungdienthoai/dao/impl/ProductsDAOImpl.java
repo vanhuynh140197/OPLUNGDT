@@ -32,6 +32,13 @@ public class ProductsDAOImpl implements ProductsDAO {
 		return !list.isEmpty() ? (ProductsEntity) list.get(0) : null;
 	}
 
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<ProductsEntity> getProductsUseProductType(String productTypesId) {
+		return sessionFactory.getCurrentSession()
+				.createQuery("from ProductsEntity where productTypesId='" + productTypesId + "'").list();
+	}
+
 	@Override
 	public boolean add(ProductsEntity products) {
 		try {
