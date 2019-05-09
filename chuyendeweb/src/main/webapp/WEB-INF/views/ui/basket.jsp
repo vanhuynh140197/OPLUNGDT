@@ -83,7 +83,7 @@
 					<div id="basket" class="col-lg-9">
 						<div class="box">
 							<form method="post"
-								action='<c:url value="/oplungdienthoai/home/thanhtoan"/>'>
+								action='<c:url value="/oplungdienthoai/thanhtoan"/>'>
 								<h2>
 									<i class="fas fa-shopping-cart"></i> Giỏ hàng của bạn
 								</h2>
@@ -110,7 +110,7 @@
 											%>
 											<tr>
 												<td><a href="#"><img
-														src="<c:url value="/resources/ui/<%=gh.getProductsEntity().getProductsImages1()%>"/>"
+														src="<c:url value="<%=gh.getProductsEntity().getProductsImages1()%>"/>"
 														alt="White Blouse Armani"></a></td>
 												<td><a href="#"><%=gh.getProductsEntity().getProductsName()%></a></td>
 												<td class="product-quantity"><input type="number"
@@ -183,7 +183,7 @@
 							<div class="box-header">
 								<h4 class="mb-0">Lời nhắn</h4>
 							</div>
-							<p class="text-muted">Để lại lời nhắn cho người b.</p>
+							<p class="text-muted">Để lại lời nhắn cho người bán.</p>
 							<form action="">
 								<div class="input-group">
 									<input type="text" class="form-control"><span

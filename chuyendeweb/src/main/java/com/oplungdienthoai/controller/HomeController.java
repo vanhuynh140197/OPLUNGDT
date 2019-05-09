@@ -51,7 +51,7 @@ public class HomeController {
 		return "/ui/index";
 	}
 
-	@RequestMapping(value = "/home/chitiet/{productsId}", method = RequestMethod.GET)
+	@RequestMapping(value = "/chitiet/{productsId}", method = RequestMethod.GET)
 	public String chiTiet(@PathVariable(value = "productsId") String productsId, ModelMap modelMap) {
 		System.out.println(productsId);
 		ProductsEntity productsEntity = productService.getProducts(productsId);
@@ -62,11 +62,11 @@ public class HomeController {
 		return "/ui/detail";
 	}
 
-	@RequestMapping(value = "/home/giohang/{productsId}", method = RequestMethod.GET)
+	@RequestMapping(value = "/giohang/{productsId}", method = RequestMethod.GET)
 	public String gioHang(@PathVariable(value = "productsId") String productsId, HttpSession session,
 			ModelMap modelMap) {
 		if (session.getAttribute("LoginSuccess") == null) {
-			return "redirect:/oplungdienthoai/home/dangnhap";
+			return "redirect:/oplungdienthoai/dangnhap";
 		} else {
 
 			ProductsEntity productsEntity = productService.getProducts(productsId);
@@ -87,54 +87,54 @@ public class HomeController {
 		}
 	}
 
-	@RequestMapping(value = "/home/menu")
+	@RequestMapping(value = "/menu")
 	public String menu() {
 		return "/ui/menu";
 	}
 
-	@RequestMapping(value = "/home/thanhtoan")
+	@RequestMapping(value = "/thanhtoan")
 	public String thanhToan() {
 		return "/ui/checkout1";
 	}
 
-	@RequestMapping(value = "/home/thanhtoan2")
+	@RequestMapping(value = "/thanhtoan2")
 	public String thanhToan2() {
 		return "/ui/checkout2";
 	}
 
-	@RequestMapping(value = "/home/thanhtoan3")
+	@RequestMapping(value = "/thanhtoan3")
 	public String thanhToan3() {
 		return "/ui/checkout3";
 	}
 
-	@RequestMapping(value = "/home/thanhtoan4")
+	@RequestMapping(value = "/thanhtoan4")
 	public String thanhToan4() {
 		return "/ui/checkout4";
 	}
 
-	@RequestMapping(value = "/home/sanpham")
+	@RequestMapping(value = "/sanpham")
 	public String sanPham() {
 		return "/ui/category-right";
 	}
 
-	@RequestMapping(value = "/home/dangky")
+	@RequestMapping(value = "/dangky")
 	public String dangKy() {
 		return "/ui/register";
 	}
 
-	@RequestMapping(value = "/home/dangnhap")
+	@RequestMapping(value = "/dangnhap")
 	public String dangNhap() {
 		return "/ui/login";
 	}
 
-	@RequestMapping(value = "/home/logout")
+	@RequestMapping(value = "/logout")
 	public String dangXuat(HttpServletRequest request) {
 		HttpSession session = request.getSession();
 		session.invalidate();
 		return "redirect:/oplungdienthoai/home";
 	}
 
-	@RequestMapping(value = "/home/login/ajax", method = RequestMethod.POST)
+	@RequestMapping(value = "/login/ajax", method = RequestMethod.POST)
 	public @ResponseBody String ajaxLogin(@RequestParam(value = "email") String email,
 			@RequestParam(value = "password") String password, HttpSession session) throws NoSuchAlgorithmException {
 		UsersEntity usersEntity = userService.getUsersName(email);
@@ -149,7 +149,7 @@ public class HomeController {
 		}
 	}
 
-	@RequestMapping(value = "/home/register/ajax", method = RequestMethod.POST)
+	@RequestMapping(value = "/register/ajax", method = RequestMethod.POST)
 	public @ResponseBody String ajaxRegister(@RequestParam(value = "email") String email) {
 		UsersEntity usersEntity = userService.getUsersName(email);
 		if (usersEntity == null) {
@@ -164,10 +164,10 @@ public class HomeController {
 	@RequestMapping(value = "/xacnhandangki")
 	public String XacNhanDangKi(@RequestParam(value = "email") String email) {
 		userService.update(email, true);
-		return "redirect:/oplungdienthoai/home/dangnhap";
+		return "redirect:/oplungdienthoai/dangnhap";
 	}
 
-	@RequestMapping(value = "/home/register", method = RequestMethod.POST, produces = "text/plain;charset=UTF-8")
+	@RequestMapping(value = "/register", method = RequestMethod.POST, produces = "text/plain;charset=UTF-8")
 	public String register(@RequestParam(value = "email") String email, @RequestParam(value = "name") String name,
 			@RequestParam(value = "pass") String pass, @RequestParam(value = "phone") String phone)
 			throws UnsupportedEncodingException, NoSuchAlgorithmException {

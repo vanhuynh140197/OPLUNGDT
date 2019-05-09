@@ -183,7 +183,7 @@
 												$
 														.ajax({
 															type : 'POST',
-															url : '<c:url value="/oplungdienthoai/home/register/ajax"/>',
+															url : '<c:url value="/oplungdienthoai/register/ajax"/>',
 															data : {
 																email : email
 																		.val()
@@ -232,7 +232,7 @@
 													$
 															.ajax({
 																type : 'POST',
-																url : '<c:url value="/oplungdienthoai/home/register/ajax"/>',
+																url : '<c:url value="/oplungdienthoai/register/ajax"/>',
 																data : {
 																	email : email
 																			.val()
@@ -326,7 +326,7 @@
 								</div>
 								<div class="col-md-6" align="right">
 									Bạn đã là thành viên? <i> <a
-										href='<c:url value="/oplungdienthoai/home/dangnhap"/>'
+										href='<c:url value="/oplungdienthoai/dangnhap"/>'
 										style="color: red;">Đăng nhập </a>
 									</i>&nbsp;tại đây
 								</div>
@@ -334,7 +334,7 @@
 
 							<hr>
 							<form id="formRegister"
-								action='<c:url value="/oplungdienthoai/home/register"/>'
+								action='<c:url value="/oplungdienthoai/register"/>'
 								method="post">
 								<div class="content py-3">
 									<div class="row">

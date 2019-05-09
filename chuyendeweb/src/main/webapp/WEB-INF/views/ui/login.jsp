@@ -28,7 +28,7 @@
 			e.preventDefault();
 			$.ajax({
 				type : 'POST',
-				url : '<c:url value="/oplungdienthoai/home/login/ajax"/>',
+				url : '<c:url value="/oplungdienthoai/login/ajax"/>',
 				data : {
 					email : $('#email').val(),
 					password : $('#password').val()
@@ -79,7 +79,7 @@
 								</div>
 								<div class="col-md-6" align="right">
 									Thành viên mới? <i> <a
-										href="<c:url value="/oplungdienthoai/home/dangky"/>"
+										href="<c:url value="/oplungdienthoai/dangky"/>"
 										style="color: red;">Đăng ký </a>
 									</i>&nbsp;tại đây
 								</div>

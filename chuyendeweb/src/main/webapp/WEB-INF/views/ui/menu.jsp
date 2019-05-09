@@ -60,10 +60,10 @@
 							if (usersEntity == null) {
 						%>
 						<li class="list-inline-item"><a
-							href="<c:url value="/oplungdienthoai/home/dangky"/>"><i
+							href="<c:url value="/oplungdienthoai/dangky"/>"><i
 								class="fas fa-user-edit"></i> Đăng ký</a></li>
 						<li class="list-inline-item"><a
-							href="<c:url value="/oplungdienthoai/home/dangnhap"/>"> <i
+							href="<c:url value="/oplungdienthoai/dangnhap"/>"> <i
 								class="fas fa-user-tag"></i> Đăng nhập
 						</a></li>
 						<%
@@ -87,7 +87,7 @@
 									Thông tin tài khoản </a> <a class="dropdown-item" href="#"><i
 									class="fas fa-angle-right"></i> Đổi mật khẩu</a> <a
 									class="dropdown-item"
-									href="<c:url value="/oplungdienthoai/home/logout"/>"><i
+									href="<c:url value="/oplungdienthoai/logout"/>"><i
 									class="fas fa-angle-right"></i> Đăng xuất</a>
 							</div></li>
 						<%
@@ -133,7 +133,7 @@
 						</form>
 
 						<p class="text-center text-muted">
-							<a href="<c:url value="/oplungdienthoai/home/dangky"/>"><strong>Đăng
+							<a href="<c:url value="/oplungdienthoai/dangky"/>"><strong>Đăng
 									ký ngay!</strong></a>
 						</p>
 					</div>
@@ -146,7 +146,7 @@
 	</div>
 	<nav class="navbar navbar-expand-lg">
 	<div class="container">
-		<a href="index.html" class="navbar-brand home"><img
+		<a href="<c:url value="/oplungdienthoai/home"/>" class="navbar-brand home"><img
 			src="<c:url value="/resources/ui/img/logo.png"/>" alt="Obaju logo"
 			class="d-none d-md-inline-block"><img
 			src="<c:url value="/resources/ui/img/logo-small.png"/>"
@@ -182,7 +182,7 @@
 									</h5>
 									<ul class="list-unstyled mb-3">
 										<li class="nav-item"><a
-											href="<c:url value="/oplungdienthoai/home/sanpham"/>"
+											href="<c:url value="/oplungdienthoai/sanpham"/>"
 											class="nav-link">Iphone XS Max</a></li>
 										<li class="nav-item"><a href="#" class="nav-link">Iphone
 												XS/X</a></li>
@@ -299,7 +299,7 @@
 									</h5>
 									<ul class="list-unstyled mb-3">
 										<li class="nav-item"><a
-											href="<c:url value="/oplungdienthoai/home/sanpham"/>"
+											href="<c:url value="/oplungdienthoai/sanpham"/>"
 											class="nav-link">Galaxy S10 Plus</a></li>
 										<li class="nav-item"><a href="#" class="nav-link">Samsung
 												Galaxy S10</a></li>
@@ -768,7 +768,7 @@
 					class="sr-only">Toggle search</span><i class="fa fa-search"></i></a>
 				<div id="basket-overview"
 					class="navbar-collapse collapse d-none d-lg-block">
-					<a href="<c:url value="/oplungdienthoai/home/giohang"/>"
+					<a href="<c:url value="/oplungdienthoai/giohang"/>"
 						class="btn btn-primary5 navbar-btn"><i
 						class="fa fa-shopping-cart"></i></a>
 				</div>

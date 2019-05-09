@@ -34,19 +34,19 @@
 					<div id="checkout" class="col-lg-9">
 						<div class="box">
 							<form method="get"
-								action="<c:url value="/oplungdienthoai/home/thanhtoan2"/>">
+								action="<c:url value="/oplungdienthoai/thanhtoan2"/>">
 								<h3>Thanh toán</h3>
 								<div class="nav flex-column flex-md-row nav-pills text-center">
-									<a href="<c:url value="/oplungdienthoai/home/thanhtoan"/>"
+									<a href="<c:url value="/oplungdienthoai/thanhtoan"/>"
 										class="nav-link flex-sm-fill text-sm-center active"> <i
 										class="fa fa-map-marker"> </i>Địa chỉ nhận hàng
-									</a><a href="<c:url value="/oplungdienthoai/home/thanhtoan2"/>"
+									</a><a href="<c:url value="/oplungdienthoai/thanhtoan2"/>"
 										class="nav-link flex-sm-fill text-sm-center disabled"> <i
 										class="fa fa-truck"> </i>Đơn vị vận chuyển
-									</a><a href="<c:url value="/oplungdienthoai/home/thanhtoan3"/>"
+									</a><a href="<c:url value="/oplungdienthoai/thanhtoan3"/>"
 										class="nav-link flex-sm-fill text-sm-center disabled"> <i
 										class="fa fa-money"> </i>Phương thức thanh toán
-									</a><a href="<c:url value="/oplungdienthoai/home/thanhtoan4"/>"
+									</a><a href="<c:url value="/oplungdienthoai/thanhtoan4"/>"
 										class="nav-link flex-sm-fill text-sm-center disabled"> <i
 										class="fa fa-eye"> </i>Tổng hóa đơn
 									</a>
@@ -98,7 +98,7 @@
 								</div>
 
 								<div class="box-footer d-flex justify-content-between">
-									<a href="<c:url value="/oplungdienthoai/home/giohang"/>"
+									<a href="<c:url value="/oplungdienthoai/giohang"/>"
 										class="btn btn-outline-secondary"><i
 										class="fa fa-chevron-left"></i>Quay lại</a>
 									<button type="submit" class="btn btn-primary5">

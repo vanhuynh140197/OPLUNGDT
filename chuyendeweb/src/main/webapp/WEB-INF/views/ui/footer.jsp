@@ -11,7 +11,7 @@
 <!--   *** FOOTER ***
     _________________________________________________________ -->
 
-    <div id="footer">
+    <div id="footer" style="padding-left: 10%;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">

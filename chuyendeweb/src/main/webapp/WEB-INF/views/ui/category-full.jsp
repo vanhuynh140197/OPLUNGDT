@@ -25,7 +25,7 @@
 						<!-- breadcrumb-->
 						<nav aria-label="breadcrumb">
 						<ol class="breadcrumb">
-							<li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+							<li class="breadcrumb-item"><a href="<c:url value="/oplungdienthoai/home"/>">Trang chủ</a></li>
 							<li aria-current="page" class="breadcrumb-item active">Ốp
 								lưng IPhone XS Max</li>
 						</ol>
@@ -67,18 +67,18 @@
 									<div class="flip-container">
 										<div class="flipper">
 											<div class="front">
-												<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"><img
+												<a href="<c:url value="/oplungdienthoai/chitiet"/>"><img
 													src="<c:url value="/resources/ui/img/Iphone XS Max/SP/7Ikzwu.jpg"/>"
 													alt="" class="img-fluid"></a>
 											</div>
 											<div class="back">
-												<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"><img
+												<a href="<c:url value="/oplungdienthoai/chitiet"/>"><img
 													src="<c:url value="/resources/ui/img/Iphone XS Max/SP/ty7kpt_1.jpg"/>"
 													alt="" class="img-fluid"></a>
 											</div>
 										</div>
 									</div>
-									<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"
+									<a href="<c:url value="/oplungdienthoai/chitiet"/>"
 										class="invisible"><img
 										src="<c:url value="/resources/ui/img/Iphone XS Max/SP/7Ikzwu.jpg"/>"
 										alt="" class="img-fluid"></a>
@@ -91,9 +91,9 @@
 										</p>
 										<br>
 										<p class="buttons" style="margin-top: -3px;">
-											<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"
+											<a href="<c:url value="/oplungdienthoai/chitiet"/>"
 												class="btn btn-outline-secondary">Chi tiết</a><a
-												href="<c:url value="/oplungdienthoai/home/giohang"/>"
+												href="<c:url value="/oplungdienthoai/giohang"/>"
 												class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Đặt
 												hàng nhanh</a>
 										</p>
@@ -107,18 +107,18 @@
 									<div class="flip-container">
 										<div class="flipper">
 											<div class="front">
-												<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"><img
+												<a href="<c:url value="/oplungdienthoai/chitiet"/>"><img
 													src="<c:url value="/resources/ui/img/Iphone XS Max/SP/Iphone XSMAx1.jpg"/>"
 													alt="" class="img-fluid"></a>
 											</div>
 											<div class="back">
-												<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"><img
+												<a href="<c:url value="/oplungdienthoai/chitiet"/>"><img
 													src="<c:url value="/resources/ui/img/Iphone XS Max/SP/Iphone XSMAx.jpg"/>"
 													alt="" class="img-fluid"></a>
 											</div>
 										</div>
 									</div>
-									<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"
+									<a href="<c:url value="/oplungdienthoai/chitiet"/>"
 										class="invisible"><img
 										src="<c:url value="/resources/ui/img/Iphone XS Max/SP/Iphone XSMAx1.jpg"/>"
 										alt="" class="img-fluid"></a>
@@ -130,9 +130,9 @@
 											<br> <strong style="color: red;"> 150,000 đ </strong>
 										</p>
 										<p class="buttons" style="margin-top: -9px;">
-											<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"
+											<a href="<c:url value="/oplungdienthoai/chitiet"/>"
 												class="btn btn-outline-secondary">Chi tiết</a><a
-												href="<c:url value="/oplungdienthoai/home/giohang"/>"
+												href="<c:url value="/oplungdienthoai/giohang"/>"
 												class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Đặt
 												hàng nhanh</a>
 										</p>
@@ -156,18 +156,18 @@
 									<div class="flip-container">
 										<div class="flipper">
 											<div class="front">
-												<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"><img
+												<a href="<c:url value="/oplungdienthoai/chitiet"/>"><img
 													src="<c:url value="/resources/ui/img/Iphone XS Max/SP/op_lung_mikki_iphone_x_mau _05.jpg"/>"
 													alt="" class="img-fluid"></a>
 											</div>
 											<div class="back">
-												<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"><img
+												<a href="<c:url value="/oplungdienthoai/chitiet"/>"><img
 													src="<c:url value="/resources/ui/img/Iphone XS Max/SP/iphone.jpg"/>"
 													alt="" class="img-fluid"></a>
 											</div>
 										</div>
 									</div>
-									<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"
+									<a href="<c:url value="/oplungdienthoai/chitiet"/>"
 										class="invisible"><img
 										src="<c:url value="/resources/ui/img/Iphone XS Max/SP/op_lung_mikki_iphone_x_mau _05.jpg"/>"
 										alt="" class="img-fluid"></a>
@@ -180,9 +180,9 @@
 										</p>
 										<br>
 										<p class="buttons" style="margin-top: -3px;">
-											<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"
+											<a href="<c:url value="/oplungdienthoai/chitiet"/>"
 												class="btn btn-outline-secondary">Chi tiết</a><a
-												href="<c:url value="/oplungdienthoai/home/giohang"/>"
+												href="<c:url value="/oplungdienthoai/giohang"/>"
 												class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Đặt
 												hàng nhanh</a>
 										</p>
@@ -196,18 +196,18 @@
 									<div class="flip-container">
 										<div class="flipper">
 											<div class="front">
-												<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"><img
+												<a href="<c:url value="/oplungdienthoai/chitiet"/>"><img
 													src="<c:url value="/resources/ui/img/Iphone XS Max/SP/op-lung-vai-da-iphone-x-polo-racquet-usa-16.jpg"/>"
 													alt="" class="img-fluid"></a>
 											</div>
 											<div class="back">
-												<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"><img
+												<a href="<c:url value="/oplungdienthoai/chitiet"/>"><img
 													src="<c:url value="/resources/ui/img/Iphone XS Max/SP/op_iphone_x_polo_racquet_usa_2.jpg"/>"
 													alt="" class="img-fluid"></a>
 											</div>
 										</div>
 									</div>
-									<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"
+									<a href="<c:url value="/oplungdienthoai/chitiet"/>"
 										class="invisible"><img
 										src="<c:url value="/resources/ui/img/Iphone XS Max/SP/op-lung-vai-da-iphone-x-polo-racquet-usa-16.jpg"/>"
 										alt="" class="img-fluid"></a>
@@ -220,9 +220,9 @@
 										</p>
 										<br>
 										<p class="buttons" style="margin-top: -3px;">
-											<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"
+											<a href="<c:url value="/oplungdienthoai/chitiet"/>"
 												class="btn btn-outline-secondary">Chi tiết</a><a
-												href="<c:url value="/oplungdienthoai/home/giohang"/>"
+												href="<c:url value="/oplungdienthoai/giohang"/>"
 												class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Đặt
 												hàng nhanh</a>
 										</p>
@@ -241,18 +241,18 @@
 									<div class="flip-container">
 										<div class="flipper">
 											<div class="front">
-												<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"><img
+												<a href="<c:url value="/oplungdienthoai/chitiet"/>"><img
 													src="<c:url value="/resources/ui/img/Iphone XS Max/SP/Iphone2.jpg"/>"
 													alt="" class="img-fluid"></a>
 											</div>
 											<div class="back">
-												<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"><img
+												<a href="<c:url value="/oplungdienthoai/chitiet"/>"><img
 													src="<c:url value="/resources/ui/img/Iphone XS Max/SP/iphone3.jpg"/>"
 													alt="" class="img-fluid"></a>
 											</div>
 										</div>
 									</div>
-									<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"
+									<a href="<c:url value="/oplungdienthoai/chitiet"/>"
 										class="invisible"><img
 										src="<c:url value="/resources/ui/img/Iphone XS Max/SP/Iphone2.jpg"/>"
 										alt="" class="img-fluid"></a>
@@ -265,9 +265,9 @@
 										</p>
 										<br>
 										<p class="buttons">
-											<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"
+											<a href="<c:url value="/oplungdienthoai/chitiet"/>"
 												class="btn btn-outline-secondary">Chi tiết</a><a
-												href="<c:url value="/oplungdienthoai/home/giohang"/>"
+												href="<c:url value="/oplungdienthoai/giohang"/>"
 												class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Đặt
 												hàng nhanh</a>
 										</p>
@@ -286,18 +286,18 @@
 									<div class="flip-container">
 										<div class="flipper">
 											<div class="front">
-												<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"><img
+												<a href="<c:url value="/oplungdienthoai/chitiet"/>"><img
 													src="<c:url value="/resources/ui/img/Iphone XS Max/SP/iphone4.jpg"/>"
 													alt="" class="img-fluid"></a>
 											</div>
 											<div class="back">
-												<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"><img
+												<a href="<c:url value="/oplungdienthoai/chitiet"/>"><img
 													src="<c:url value="/resources/ui/img/Iphone XS Max/SP/iphone5.jpg"/>"
 													alt="" class="img-fluid"></a>
 											</div>
 										</div>
 									</div>
-									<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"
+									<a href="<c:url value="/oplungdienthoai/chitiet"/>"
 										class="invisible"><img
 										src="<c:url value="/resources/ui/img/Iphone XS Max/SP/iphone4.jpg"/>"
 										alt="" class="img-fluid"></a>
@@ -310,9 +310,9 @@
 										</p>
 										<br>
 										<p class="buttons">
-											<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"
+											<a href="<c:url value="/oplungdienthoai/chitiet"/>"
 												class="btn btn-outline-secondary">Chi tiết</a><a
-												href="<c:url value="/oplungdienthoai/home/giohang"/>"
+												href="<c:url value="/oplungdienthoai/giohang"/>"
 												class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Đặt
 												hàng nhanh</a>
 										</p>
@@ -326,18 +326,18 @@
 									<div class="flip-container">
 										<div class="flipper">
 											<div class="front">
-												<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"><img
+												<a href="<c:url value="/oplungdienthoai/chitiet"/>"><img
 													src="<c:url value="/resources/ui/img/Iphone XS Max/SP/iphone6.jpg"/>"
 													alt="" class="img-fluid"></a>
 											</div>
 											<div class="back">
-												<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"><img
+												<a href="<c:url value="/oplungdienthoai/chitiet"/>"><img
 													src="<c:url value="/resources/ui/img/Iphone XS Max/SP/iphone7.jpg"/>"
 													alt="" class="img-fluid"></a>
 											</div>
 										</div>
 									</div>
-									<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"
+									<a href="<c:url value="/oplungdienthoai/chitiet"/>"
 										class="invisible"><img
 										src="<c:url value="/resources/ui/img/Iphone XS Max/SP/iphone6.jpg"/>"
 										alt="" class="img-fluid"></a>
@@ -349,9 +349,9 @@
 										</p>
 										<br>
 										<p class="buttons">
-											<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"
+											<a href="<c:url value="/oplungdienthoai/chitiet"/>"
 												class="btn btn-outline-secondary">Chi tiết</a><a
-												href="<c:url value="/oplungdienthoai/home/giohang"/>"
+												href="<c:url value="/oplungdienthoai/giohang"/>"
 												class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Đặt
 												hàng nhanh</a>
 										</p>
@@ -370,18 +370,18 @@
 									<div class="flip-container">
 										<div class="flipper">
 											<div class="front">
-												<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"><img
+												<a href="<c:url value="/oplungdienthoai/chitiet"/>"><img
 													src="<c:url value="/resources/ui/img/Iphone XS Max/SP/iphone8.jpg"/>"
 													alt="" class="img-fluid"></a>
 											</div>
 											<div class="back">
-												<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"><img
+												<a href="<c:url value="/oplungdienthoai/chitiet"/>"><img
 													src="<c:url value="/resources/ui/img/Iphone XS Max/SP/iphone9.jpg"/>"
 													alt="" class="img-fluid"></a>
 											</div>
 										</div>
 									</div>
-									<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"
+									<a href="<c:url value="/oplungdienthoai/chitiet"/>"
 										class="invisible"><img
 										src="<c:url value="/resources/ui/img/Iphone XS Max/SP/iphone8.jpg"/>"
 										alt="" class="img-fluid"></a>
@@ -395,9 +395,9 @@
 										</p>
 										<br>
 										<p class="buttons">
-											<a href="<c:url value="/oplungdienthoai/home/chitiet"/>"
+											<a href="<c:url value="/oplungdienthoai/chitiet"/>"
 												class="btn btn-outline-secondary">Chi tiết</a><a
-												href="<c:url value="/oplungdienthoai/home/giohang"/>"
+												href="<c:url value="/oplungdienthoai/giohang"/>"
 												class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Đặt
 												hàng nhanh</a>
 										</p>
