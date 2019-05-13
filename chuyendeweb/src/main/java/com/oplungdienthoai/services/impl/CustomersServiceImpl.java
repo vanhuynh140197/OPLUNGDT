@@ -26,6 +26,11 @@ public class CustomersServiceImpl implements CustomersService {
 	}
 
 	@Override
+	public CustomersEntity getCustomersByEmail(String customersEmail) {
+		return customersDAO.getCustomersByEmail(customersEmail);
+	}
+
+	@Override
 	public boolean add(CustomersEntity customers) {
 		return customersDAO.add(customers);
 	}

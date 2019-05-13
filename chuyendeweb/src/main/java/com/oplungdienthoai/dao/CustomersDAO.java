@@ -9,6 +9,8 @@ public interface CustomersDAO {
 	public List<CustomersEntity> getAll();
 
 	public CustomersEntity getCustomers(String customersId);
+	
+	public CustomersEntity getCustomersByEmail(String customersEmail);
 
 	public boolean add(CustomersEntity customers);
 

@@ -1,3 +1,7 @@
+<%@page import="com.oplungdienthoai.model.ShippingMethodEntity"%>
+<%@page import="com.oplungdienthoai.model.GioHang"%>
+<%@page import="java.util.List"%>
+<%@page import="java.text.DecimalFormat"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -14,6 +18,14 @@
 	rel="stylesheet">
 </head>
 <body>
+	<%!public String formatNumberGiaBan(Double giaban) {
+		DecimalFormat decimalFormat = new DecimalFormat("###,###");
+		return decimalFormat.format(giaban);
+	}%>
+	<!-- menu -->
+	<%
+		List<GioHang> gioHang = (List<GioHang>) session.getAttribute("gio_hang");
+	%>
 	<!-- menu -->
 	<%@include file="menu.jsp"%>
 	<!-- menu -->
@@ -33,7 +45,7 @@
 					</div>
 					<div id="checkout" class="col-lg-9">
 						<div class="box">
-							<form method="get"
+							<form method="post"
 								action="<c:url value="/oplungdienthoai/thanhtoan4"/>">
 								<h3>Thanh toán</h3>
 								<div class="nav flex-column flex-sm-row nav-pills">
@@ -53,51 +65,24 @@
 								</div>
 								<div class="content py-3">
 									<div class="row">
-										<div class="col-md-6">
-											<div class="box payment-method">
-												<h4>Thẻ tín dụng: VISA, MASTER</h4>
-												<p>
-													<b>Hóa đơn VAT:</b> Quý khách vui lòng liên hệ hotline <br>
-													<strong style="color: red;">028 7300 2010</strong> để gửi
-													thông tin trong vòng 24 giờ kể từ khi đặt hàng thành công.
-												</p>
-												<div class="box-footer text-center">
-													<input type="radio" name="payment" value="payment1">
+										<c:forEach items="${listPayMent}" var="listPayMents">
+											<div class="col-md-6">
+												<div class="box payment-method">
+													<h4>${listPayMents.paymentsName}</h4>
+													<p>${listPayMents.paymentsDescription}</p>
+													<div class="box-footer text-center">
+														<input type="radio" checked="checked" name="payment"
+															value="${listPayMents.paymentsId}">
+													</div>
 												</div>
 											</div>
-										</div>
-										<div class="col-md-6">
-											<div class="box payment-method">
-												<h4>COD: Thanh toán khi nhận hàng</h4>
-												<p>
-													<b>Lưu ý:</b><br>Quý khách vui lòng kiểm tra sản phẩm
-													trước khi thanh toán.
-												</p>
-												<div class="box-footer text-center">
-													<input type="radio" name="payment" value="payment2">
-												</div>
-											</div>
-										</div>
-										<div class="col-md-6">
-											<div class="box payment-method">
-												<h4>Ví điện tử</h4>
-												<p>MoMo, ZaloPay, Gotit...</p>
-												<p>
-													<b>Hóa đơn VAT:</b> Quý khách vui lòng liên hệ hotline <br>
-													<strong style="color: red;">028 7300 2010</strong> để gửi
-													thông tin trong vòng 24 giờ kể từ khi đặt hàng thành công.
-												</p>
-												<div class="box-footer text-center">
-													<input type="radio" name="payment" value="payment3">
-												</div>
-											</div>
-										</div>
+										</c:forEach>
 									</div>
 									<!-- /.row-->
 								</div>
 								<!-- /.content-->
 								<div class="box-footer d-flex justify-content-between">
-									<a href="<c:url value="/oplungdienthoai/thanhtoan2"/>"
+									<a href="<c:url value="/oplungdienthoai/backthanhtoan2"/>"
 										class="btn btn-outline-secondary"><i
 										class="fa fa-chevron-left"></i>Quay lại</a>
 									<button type="submit" class="btn btn-primary5">
@@ -117,19 +102,33 @@
 							<p class="text-muted">Vận chuyển và chi phí bổ sung được tính
 								dựa trên các giá trị bạn đã nhập.</p>
 							<div class="table-responsive">
+								<%
+									double totalPrices = 0;
+									for (GioHang gh : gioHang) {
+										totalPrices += (gh.getSoLuong() * gh.getProductsEntity().getPrices())
+												- (gh.getSoLuong() * gh.getProductsEntity().getPrices()
+														* gh.getProductsEntity().getPromotionByPromotionsId().getPromotionValues());
+									}
+								%>
+								<%
+									ShippingMethodEntity shippingMethodEntity = (ShippingMethodEntity) session.getAttribute("shippingMethod");
+								%>
 								<table class="table">
 									<tbody>
 										<tr>
 											<td>Tổng tiền hàng:</td>
-											<th>$446.00</th>
+											<th class="totals-value" id="cart-total1" style="width: 60%"><%=formatNumberGiaBan(totalPrices)%>
+												đ</th>
 										</tr>
 										<tr>
 											<td>Phí vận chuyển:</td>
-											<th>$10.00</th>
+											<th><%=formatNumberGiaBan(shippingMethodEntity.getShippingValue())%>
+												đ</th>
 										</tr>
 										<tr>
 											<td>Tổng thanh toán:</td>
-											<th>$456.00</th>
+											<th class="totals-value" id="cart-total2"><%=formatNumberGiaBan(totalPrices + shippingMethodEntity.getShippingValue())%>
+												đ</th>
 										</tr>
 									</tbody>
 								</table>
@@ -140,7 +139,7 @@
 								<h4 class="mb-0">Lời nhắn</h4>
 							</div>
 							<p class="text-muted">Để lại lời nhắn cho người bán.</p>
-							<form>
+							<form action="">
 								<div class="input-group">
 									<input type="text" class="form-control"><span
 										class="input-group-append">

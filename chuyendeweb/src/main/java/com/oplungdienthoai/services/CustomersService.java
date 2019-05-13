@@ -10,6 +10,8 @@ public interface CustomersService {
 
 	public CustomersEntity getCustomers(String customersId);
 
+	public CustomersEntity getCustomersByEmail(String customersEmail);
+
 	public boolean add(CustomersEntity customers);
 
 	public boolean edit(CustomersEntity customers);

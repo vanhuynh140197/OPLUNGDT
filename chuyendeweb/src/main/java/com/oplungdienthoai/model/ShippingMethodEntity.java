@@ -12,6 +12,7 @@ public class ShippingMethodEntity {
 	private String shippingId;
 	private String shippingName;
 	private String shippingDescription;
+	private Double shippingValue;
 	private Collection<OrdersEntity> ordersByShippingId;
 
 	@Id
@@ -44,6 +45,16 @@ public class ShippingMethodEntity {
 		this.shippingDescription = shippingDescription;
 	}
 
+	@Basic
+	@Column(name = "shippingvalue")
+	public Double getShippingValue() {
+		return shippingValue;
+	}
+
+	public void setShippingValue(Double shippingValue) {
+		this.shippingValue = shippingValue;
+	}
+
 	@Override
 	public boolean equals(Object o) {
 		if (this == o)
@@ -60,6 +71,8 @@ public class ShippingMethodEntity {
 		if (shippingDescription != null ? !shippingDescription.equals(that.shippingDescription)
 				: that.shippingDescription != null)
 			return false;
+		if (shippingValue != null ? !shippingValue.equals(that.shippingValue) : that.shippingValue != null)
+			return false;
 
 		return true;
 	}
@@ -69,6 +82,7 @@ public class ShippingMethodEntity {
 		int result = shippingId != null ? shippingId.hashCode() : 0;
 		result = 31 * result + (shippingName != null ? shippingName.hashCode() : 0);
 		result = 31 * result + (shippingDescription != null ? shippingDescription.hashCode() : 0);
+		result = 31 * result + (shippingValue != null ? shippingValue.hashCode() : 0);
 		return result;
 	}
 

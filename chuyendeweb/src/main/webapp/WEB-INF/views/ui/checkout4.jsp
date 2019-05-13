@@ -1,5 +1,11 @@
+<%@page import="com.oplungdienthoai.model.PaymentsEntity"%>
+<%@page import="com.oplungdienthoai.model.ShippingMethodEntity"%>
+<%@page import="java.text.DecimalFormat"%>
+<%@page import="com.oplungdienthoai.model.GioHang"%>
+<%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -12,8 +18,123 @@
 <link
 	href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
 	rel="stylesheet">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script
+	src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
 </head>
+<script type="text/javascript">
+	$(document)
+			.ready(
+					function() {
+						var fadeTime = 300;
+						/* Assign actions */
+						$('.product-quantity input').change(function() {
+							updateQuantity(this);
+						});
+						$('.product-removal a').click(function() {
+							removeItem(this);
+						});
+						function recalculateCart() {
+							var subtotal = 0;
+
+							/* Sum up row totals */
+							$('.product').each(
+									function() {
+										subtotal += numeral(
+												$(this).children(
+														'.product-line-price')
+														.text()).value();
+									});
+
+							var total = subtotal;
+							/* Update totals display */
+							$('.totals-value').fadeOut(
+									fadeTime,
+									function() {
+										$('#cart-total').html(
+												numeral(total).format('0,0')
+														+ " đ");
+										$('#cart-total1').html(
+												numeral(total).format('0,0')
+														+ " đ");
+										$('#cart-total2').html(
+												numeral(total).format('0,0')
+														+ " đ");
+										$('.totals-value').fadeIn(fadeTime);
+									});
+						}
+						function removeItem(removeButton) {
+							/* Remove row from DOM and recalc cart total */
+							var productRow = $(removeButton).parent().parent();
+							productRow.slideUp(fadeTime, function() {
+								productRow.remove();
+								recalculateCart();
+							});
+						}
+						/* Update quantity */
+						function updateQuantity(quantityInput) {
+							/* Calculate line price */
+							var productRow = $(quantityInput).parent().parent();
+							var price = numeral(
+									productRow.children('.product-price')
+											.text()).value();
+							var promotion = parseFloat(productRow.children(
+									'.product-promotion').text());
+							var productid = productRow.children('.product-id')
+									.text();
+							var quantity = $(quantityInput).val();
+							var linePrice = (price * quantity)
+									- (price * quantity * (promotion / 100));
+							$
+									.ajax({
+										type : 'POST',
+										url : '<c:url value="/oplungdienthoai/giohang/capnhap"/>',
+										data : {
+											quantity : quantity,
+											productid : productid
+										},
+										success : function(data) {
+											if (data === 'updatesuccess') {
+												/* Update line price display and recalc cart totals */
+												productRow
+														.children(
+																'.product-line-price')
+														.each(
+																function() {
+																	$(this)
+																			.fadeOut(
+																					fadeTime,
+																					function() {
+																						$(
+																								this)
+																								.text(
+																										numeral(
+																												linePrice)
+																												.format(
+																														'0,0')
+																												+ " đ");
+																						recalculateCart();
+																						$(
+																								this)
+																								.fadeIn(
+																										fadeTime);
+																					});
+																});
+											}
+										},
+										error : function(error) {
+											console.log("error" + error);
+										}
+									})
+						}
+					});
+</script>
 <body>
+	<%!public String formatNumberGiaBan(Double giaban) {
+		DecimalFormat decimalFormat = new DecimalFormat("###,###");
+		return decimalFormat.format(giaban);
+	}%>
 	<!-- menu -->
 	<%@include file="menu.jsp"%>
 	<!-- menu -->
@@ -31,10 +152,13 @@
 						</ol>
 						</nav>
 					</div>
+					<%
+						List<GioHang> gioHang = (List<GioHang>) session.getAttribute("gio_hang");
+					%>
 					<div id="checkout" class="col-lg-9">
 						<div class="box">
-							<form method="get"
-								action="<c:url value="/oplungdienthoai/thanhtoan4"/>">
+							<form method="post"
+								action="<c:url value="/oplungdienthoai/hoadon"/>">
 								<h3>Thanh toán</h3>
 								<div class="nav flex-column flex-sm-row nav-pills">
 									<a href="<c:url value="/oplungdienthoai/thanhtoan"/>"
@@ -56,51 +180,67 @@
 										<table class="table">
 											<thead>
 												<tr>
-													<th colspan="2">Sản phẩm</th>
-													<th>Đơn giá</th>
-													<th>Số lượng</th>
-													<th>Giảm giá</th>
-													<th colspan="2">Thành tiền</th>
+													<th style="width: 18%">Hình ảnh</th>
+													<th style="width: 25%">Tên sản phẩm</th>
+													<th class="product-quantity">Số lượng</th>
+													<th class="product-price">Đơn giá</th>
+													<th class="product-promotion">Giảm giá</th>
+													<th class="product-line-price" colspan="2">Thành tiền</th>
+													<th class="product-removal"></th>
+													<th class="product-id" style="display: none"></th>
 												</tr>
 											</thead>
 											<tbody>
-												<tr>
+												<%
+													double totalPrices = 0;
+													for (GioHang gh : gioHang) {
+												%>
+												<tr class="product">
 													<td><a href="#"><img
-															src="<c:url value="/resources/ui/img/detailsquare.jpg"/>"
+															src="<c:url value="<%=gh.getProductsEntity().getProductsImages1()%>"/>"
 															alt="White Blouse Armani"></a></td>
-													<td><a href="#">White Blouse Armani</a></td>
-													<td><input type="number" value="2"
-														class="form-control"></td>
-													<td>$123.00</td>
-													<td>$0.00</td>
-													<td>$246.00</td>
-													<td><a href="#"><i class="fa fa-trash-o"></i></a></td>
+													<td><a href="#"><%=gh.getProductsEntity().getProductsName()%></a></td>
+													<td class="product-quantity"><input type="number"
+														value="<%=gh.getSoLuong()%>" min="1"></td>
+													<td class="product-price"><%=formatNumberGiaBan(gh.getProductsEntity().getPrices())%>
+														đ</td>
+													<td class="product-promotion"><%=(int) (gh.getProductsEntity().getPromotionByPromotionsId().getPromotionValues() * 100)%>%</td>
+													<td class="product-line-price"><%=formatNumberGiaBan((gh.getSoLuong() * gh.getProductsEntity().getPrices())
+						- (gh.getSoLuong() * gh.getProductsEntity().getPrices()
+								* gh.getProductsEntity().getPromotionByPromotionsId().getPromotionValues()))%>
+														đ</td>
+													<td class="product-removal"><a href="#"><i
+															class="fa fa-trash-o"></i></a></td>
+													<td class="product-id" style="display: none"><%=gh.getProductsEntity().getProductsId()%></td>
 												</tr>
-												<tr>
-													<td><a href="#"><img
-															src="<c:url value="/resources/ui/img/basketsquare.jpg"/>"
-															alt="Black Blouse Armani"></a></td>
-													<td><a href="#">Black Blouse Armani</a></td>
-													<td><input type="number" value="1"
-														class="form-control"></td>
-													<td>$200.00</td>
-													<td>$0.00</td>
-													<td>$200.00</td>
-													<td><a href="#"><i class="fa fa-trash-o"></i></a></td>
-												</tr>
+												<%
+													totalPrices += (gh.getSoLuong() * gh.getProductsEntity().getPrices())
+																- (gh.getSoLuong() * gh.getProductsEntity().getPrices()
+																		* gh.getProductsEntity().getPromotionByPromotionsId().getPromotionValues());
+												%>
+												<%
+													}
+												%>
+												<%
+													ShippingMethodEntity shippingMethodEntity = (ShippingMethodEntity) session.getAttribute("shippingMethod");
+												%>
+												<%
+													PaymentsEntity paymentsEntity = (PaymentsEntity) session.getAttribute("payment");
+												%>
 												<tr>
 													<td>Đơn vị vận chuyển:</td>
-													<td>abc</td>
+													<td><%=shippingMethodEntity.getShippingName()%></td>
 												</tr>
 												<tr>
 													<td>Phương thức thanh toán:</td>
-													<td>abc</td>
+													<td><%=paymentsEntity.getPaymentsName()%></td>
 												</tr>
 											</tbody>
 											<tfoot>
 												<tr>
 													<th colspan="5">Tổng</th>
-													<th colspan="2">$446.00</th>
+													<th colspan="2" class="totals-value" id="cart-total"><%=formatNumberGiaBan(totalPrices + shippingMethodEntity.getShippingValue())%>
+														đ</th>
 												</tr>
 											</tfoot>
 										</table>
@@ -109,7 +249,7 @@
 								</div>
 								<!-- /.content-->
 								<div class="box-footer d-flex justify-content-between">
-									<a href="<c:url value="/oplungdienthoai/thanhtoan3"/>"
+									<a href="<c:url value="/oplungdienthoai/backthanhtoan3"/>"
 										class="btn btn-outline-secondary"><i
 										class="fa fa-chevron-left"></i>Quay lại</a>
 									<button type="submit" class="btn btn-primary5">
@@ -133,15 +273,18 @@
 									<tbody>
 										<tr>
 											<td>Tổng tiền hàng:</td>
-											<th>$446.00</th>
+											<th class="totals-value" id="cart-total1" style="width: 60%"><%=formatNumberGiaBan(totalPrices)%>
+												đ</th>
 										</tr>
 										<tr>
 											<td>Phí vận chuyển:</td>
-											<th>$10.00</th>
+											<th><%=formatNumberGiaBan(shippingMethodEntity.getShippingValue())%>
+												đ</th>
 										</tr>
 										<tr>
 											<td>Tổng thanh toán:</td>
-											<th>$456.00</th>
+											<th class="totals-value" id="cart-total2"><%=formatNumberGiaBan(totalPrices + shippingMethodEntity.getShippingValue())%>
+												đ</th>
 										</tr>
 									</tbody>
 								</table>
@@ -152,7 +295,7 @@
 								<h4 class="mb-0">Lời nhắn</h4>
 							</div>
 							<p class="text-muted">Để lại lời nhắn cho người bán.</p>
-							<form>
+							<form action="">
 								<div class="input-group">
 									<input type="text" class="form-control"><span
 										class="input-group-append">

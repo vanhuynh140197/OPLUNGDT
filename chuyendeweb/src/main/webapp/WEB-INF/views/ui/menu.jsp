@@ -83,8 +83,9 @@
 								</a>
 								<%
 									}
-								%><a class="dropdown-item" href=""><i class="fas fa-angle-right"></i>
-									Thông tin tài khoản </a> <a class="dropdown-item" href="#"><i
+								%><a class="dropdown-item" href=""><i
+									class="fas fa-angle-right"></i> Thông tin tài khoản </a> <a
+									class="dropdown-item" href="#"><i
 									class="fas fa-angle-right"></i> Đổi mật khẩu</a> <a
 									class="dropdown-item"
 									href="<c:url value="/oplungdienthoai/logout"/>"><i
@@ -146,7 +147,8 @@
 	</div>
 	<nav class="navbar navbar-expand-lg">
 	<div class="container">
-		<a href="<c:url value="/oplungdienthoai/home"/>" class="navbar-brand home"><img
+		<a href="<c:url value="/oplungdienthoai/home"/>"
+			class="navbar-brand home"><img
 			src="<c:url value="/resources/ui/img/logo.png"/>" alt="Obaju logo"
 			class="d-none d-md-inline-block"><img
 			src="<c:url value="/resources/ui/img/logo-small.png"/>"
@@ -768,7 +770,7 @@
 					class="sr-only">Toggle search</span><i class="fa fa-search"></i></a>
 				<div id="basket-overview"
 					class="navbar-collapse collapse d-none d-lg-block">
-					<a href="<c:url value="/oplungdienthoai/giohang"/>"
+					<a href="<c:url value="/oplungdienthoai/giohangcuaban"/>"
 						class="btn btn-primary5 navbar-btn"><i
 						class="fa fa-shopping-cart"></i></a>
 				</div>

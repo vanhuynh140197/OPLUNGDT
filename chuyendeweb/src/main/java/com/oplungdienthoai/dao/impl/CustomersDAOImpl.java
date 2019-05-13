@@ -33,6 +33,14 @@ public class CustomersDAOImpl implements CustomersDAO {
 	}
 
 	@Override
+	public CustomersEntity getCustomersByEmail(String customersEmail) {
+		@SuppressWarnings("rawtypes")
+		List list = sessionFactory.getCurrentSession()
+				.createQuery("from CustomersEntity where email='" + customersEmail + "'").list();
+		return !list.isEmpty() ? (CustomersEntity) list.get(0) : null;
+	}
+
+	@Override
 	public boolean add(CustomersEntity customers) {
 		try {
 			sessionFactory.getCurrentSession().save(customers);

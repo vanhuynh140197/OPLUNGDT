@@ -1,5 +1,10 @@
+<%@page import="com.oplungdienthoai.model.GioHang"%>
+<%@page import="java.util.List"%>
+<%@page import="java.text.DecimalFormat"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -14,6 +19,14 @@
 	rel="stylesheet">
 </head>
 <body>
+	<%!public String formatNumberGiaBan(Double giaban) {
+		DecimalFormat decimalFormat = new DecimalFormat("###,###");
+		return decimalFormat.format(giaban);
+	}%>
+	<!-- menu -->
+	<%
+		List<GioHang> gioHang = (List<GioHang>) session.getAttribute("gio_hang");
+	%>
 	<!-- menu -->
 	<%@include file="menu.jsp"%>
 	<!-- menu -->
@@ -33,7 +46,7 @@
 					</div>
 					<div id="checkout" class="col-lg-9">
 						<div class="box">
-							<form method="get"
+							<form method="post"
 								action="<c:url value="/oplungdienthoai/thanhtoan3"/>">
 								<h3>Thanh toán</h3>
 								<div class="nav flex-column flex-sm-row nav-pills">
@@ -53,37 +66,25 @@
 								</div>
 								<div class="content py-3">
 									<div class="row">
-										<div class="col-md-6">
-											<div class="box shipping-method">
-												<h4>Giao hàng nhanh</h4>
-												<p>
-													Giao hàng trong 2-4 ngày <br> Cho phép Thanh toán khi
-													nhận hàng
-												</p>
-												<p>
-													<strong style="color: red;">đ 30.569</strong>
-												</p>
-
-												<div class="box-footer text-center">
-													<input type="radio" name="delivery" value="delivery1">
+										<c:forEach items="${listShippingMethod}"
+											var="listShippingMethods">
+											<div class="col-md-6">
+												<div class="box shipping-method">
+													<h4>${listShippingMethods.shippingName}</h4>
+													<p>${listShippingMethods.shippingDescription}</p>
+													<p>
+														<strong style="color: red;"> <fmt:formatNumber
+																type="currency"
+																value="${listShippingMethods.shippingValue}"></fmt:formatNumber></strong>
+													</p>
+													<div class="box-footer text-center">
+														<input type="radio" id="delivery" name="delivery"
+															checked="checked"
+															value="${listShippingMethods.shippingId}">
+													</div>
 												</div>
 											</div>
-										</div>
-										<div class="col-md-6">
-											<div class="box shipping-method">
-												<h4>Giao hàng tiết kiệm</h4>
-												<p>
-													Giao hàng trong 2-5 ngày<br> Cho phép Thanh toán khi
-													nhận hàng
-												</p>
-												<p>
-													<strong style="color: red;">đ 15.000</strong>
-												</p>
-												<div class="box-footer text-center">
-													<input type="radio" name="delivery" value="delivery2">
-												</div>
-											</div>
-										</div>
+										</c:forEach>
 									</div>
 								</div>
 								<div class="box-footer d-flex justify-content-between">
@@ -98,7 +99,6 @@
 						</div>
 						<!-- /.box-->
 					</div>
-					<!-- /.col-md-9-->
 					<div class="col-lg-3">
 						<div id="order-summary" class="box">
 							<div class="box-header">
@@ -107,19 +107,29 @@
 							<p class="text-muted">Vận chuyển và chi phí bổ sung được tính
 								dựa trên các giá trị bạn đã nhập.</p>
 							<div class="table-responsive">
+								<%
+									double totalPrices = 0;
+									for (GioHang gh : gioHang) {
+										totalPrices += (gh.getSoLuong() * gh.getProductsEntity().getPrices())
+												- (gh.getSoLuong() * gh.getProductsEntity().getPrices()
+														* gh.getProductsEntity().getPromotionByPromotionsId().getPromotionValues());
+									}
+								%>
 								<table class="table">
 									<tbody>
 										<tr>
 											<td>Tổng tiền hàng:</td>
-											<th>$446.00</th>
+											<th class="totals-value" id="cart-total1" style="width: 60%"><%=formatNumberGiaBan(totalPrices)%>
+												đ</th>
 										</tr>
 										<tr>
 											<td>Phí vận chuyển:</td>
-											<th>$10.00</th>
+											<th></th>
 										</tr>
 										<tr>
 											<td>Tổng thanh toán:</td>
-											<th>$456.00</th>
+											<th class="totals-value" id="cart-total2"><%=formatNumberGiaBan(totalPrices)%>
+												đ</th>
 										</tr>
 									</tbody>
 								</table>
@@ -130,7 +140,7 @@
 								<h4 class="mb-0">Lời nhắn</h4>
 							</div>
 							<p class="text-muted">Để lại lời nhắn cho người bán.</p>
-							<form>
+							<form action="">
 								<div class="input-group">
 									<input type="text" class="form-control"><span
 										class="input-group-append">

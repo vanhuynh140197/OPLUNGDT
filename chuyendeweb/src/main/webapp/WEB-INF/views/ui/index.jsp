@@ -186,15 +186,13 @@
 								<div class="flip-container">
 									<div class="flipper">
 										<div class="front">
-											<a href="<c:url value="/oplungdienthoai/chitiet"/>">
-												<img
+											<a href="<c:url value="/oplungdienthoai/chitiet"/>"> <img
 												src="<c:url value="/resources/ui/img/Xiaomi_Redmi_Note_3Pro/xiaomi1.jpg"/>"
 												alt="" class="img-fluid">
 											</a>
 										</div>
 										<div class="back">
-											<a href="<c:url value="/oplungdienthoai/chitiet"/>">
-												<img
+											<a href="<c:url value="/oplungdienthoai/chitiet"/>"> <img
 												src="<c:url value="/resources/ui/img/Xiaomi_Redmi_Note_3Pro/xiaomi2.jpg"/>"
 												alt="" class="img-fluid">
 											</a>
@@ -579,28 +577,30 @@
 												<div class="flip-container">
 													<div class="flipper">
 														<div class="front">
-															<a href="<c:url value="/oplungdienthoai/chitiet/${item.productsId.trim()}"/>"><img
-																src="<c:url value="${item.productsImages1}"/>"
-																alt="" class="img-fluid"></a>
+															<a
+																href="<c:url value="/oplungdienthoai/chitiet/${item.productsId.trim()}"/>"><img
+																src="<c:url value="${item.productsImages1}"/>" alt=""
+																class="img-fluid"></a>
 														</div>
 														<div class="back">
-															<a href="<c:url value="/oplungdienthoai/chitiet/${item.productsId.trim()}"/>"><img
-																src="<c:url value="${item.productsImages2}"/>"
-																alt="" class="img-fluid"></a>
+															<a
+																href="<c:url value="/oplungdienthoai/chitiet/${item.productsId.trim()}"/>"><img
+																src="<c:url value="${item.productsImages2}"/>" alt=""
+																class="img-fluid"></a>
 														</div>
 													</div>
 												</div>
-												<a href="<c:url value="/oplungdienthoai/chitiet/${item.productsId.trim()}"/>"
+												<a
+													href="<c:url value="/oplungdienthoai/chitiet/${item.productsId.trim()}"/>"
 													class="invisible"><img
-													src="<c:url value="${item.productsImages1}"/>"
-													alt="" class="img-fluid"></a>
+													src="<c:url value="${item.productsImages1}"/>" alt=""
+													class="img-fluid"></a>
 												<div class="text">
 													<h3>${item.productsName}</h3>
 													<p class="price">
 														<del></del>
-														<i class="fas fa-caret-right"></i> Giá bán:
-														<del>70,000 đ</del>
-														<strong style="color: red;"> <fmt:formatNumber
+														<i class="fas fa-caret-right"></i> Giá bán: <strong
+															style="color: red;"><fmt:formatNumber
 																type="currency" value="${item.prices}"></fmt:formatNumber></strong>
 													</p>
 													<br>
