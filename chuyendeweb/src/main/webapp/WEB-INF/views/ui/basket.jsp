@@ -67,10 +67,33 @@
 						function removeItem(removeButton) {
 							/* Remove row from DOM and recalc cart total */
 							var productRow = $(removeButton).parent().parent();
-							productRow.slideUp(fadeTime, function() {
-								productRow.remove();
-								recalculateCart();
-							});
+							var productid = productRow.children('.product-id')
+									.text();
+							$
+									.ajax({
+										type : 'POST',
+										url : '<c:url value="/oplungdienthoai/giohang/xoa"/>',
+										data : {
+											productid : productid
+										},
+										success : function(data) {
+											if (data === 'deletesuccess') {
+												productRow
+														.slideUp(
+																fadeTime,
+																function() {
+																	productRow
+																			.remove();
+																	recalculateCart();
+																});
+											}else {
+												window.location.href = '<%=application.getContextPath() + "/oplungdienthoai/giohangcuaban"%>';
+											}
+										},
+										error : function(error) {
+											console.log("error" + error);
+										}
+									})
 						}
 						/* Update quantity */
 						function updateQuantity(quantityInput) {
@@ -158,7 +181,7 @@
 					<div id="basket" class="col-lg-9">
 						<div class="box">
 							<%
-								if (gioHang == null || gioHang.equals("")) {
+								if (gioHang == null || gioHang.equals("") || gioHang.size() == 0) {
 							%>
 							<p>Hiện giỏ hàng của bạn chưa có sản phẩm nào.</p>
 							<%

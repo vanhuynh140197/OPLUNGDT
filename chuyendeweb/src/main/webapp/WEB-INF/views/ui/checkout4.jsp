@@ -19,9 +19,11 @@
 	href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
 	rel="stylesheet">
 <script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+	type="text/javascript"></script>
 <script
-	src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+	src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"
+	type="text/javascript"></script>
 </head>
 <script type="text/javascript">
 	$(document)
@@ -65,12 +67,35 @@
 									});
 						}
 						function removeItem(removeButton) {
-							/* Remove row from DOM and recalc cart total */
-							var productRow = $(removeButton).parent().parent();
-							productRow.slideUp(fadeTime, function() {
-								productRow.remove();
-								recalculateCart();
-							});
+                            /* Remove row from DOM and recalc cart total */
+                            var productRow = $(removeButton).parent().parent();
+                            var productid = productRow.children('.product-id')
+                                    .text();
+                            $
+                                    .ajax({
+                                        type : 'POST',
+                                        url : '<c:url value="/oplungdienthoai/giohang/xoa"/>',
+                                        data : {
+                                            productid : productid
+                                        },
+                                        success : function(data) {
+                                            if (data === 'deletesuccess') {
+                                                productRow
+                                                        .slideUp(
+                                                                fadeTime,
+                                                                function() {
+                                                                    productRow
+                                                                            .remove();
+                                                                    recalculateCart();
+                                                                });
+                                            }else {
+                                                window.location.href = '<%=application.getContextPath() + "/oplungdienthoai/giohangcuaban"%>';
+											}
+										},
+										error : function(error) {
+											console.log("error" + error);
+										}
+									})
 						}
 						/* Update quantity */
 						function updateQuantity(quantityInput) {
@@ -158,19 +183,19 @@
 					<div id="checkout" class="col-lg-9">
 						<div class="box">
 							<form method="post"
-								action="<c:url value="/oplungdienthoai/hoadon"/>">
+								action='<c:url value="/oplungdienthoai/hoadon"/>'>
 								<h3>Thanh toán</h3>
 								<div class="nav flex-column flex-sm-row nav-pills">
-									<a href="<c:url value="/oplungdienthoai/thanhtoan"/>"
+									<a href='<c:url value="/oplungdienthoai/thanhtoan"/>'
 										class="nav-link flex-sm-fill text-sm-center disabled"> <i
 										class="fa fa-map-marker"> </i>Địa chỉ nhận hàng
-									</a><a href="<c:url value="/oplungdienthoai/thanhtoan2"/>"
+									</a><a href='<c:url value="/oplungdienthoai/thanhtoan2"/>'
 										class="nav-link flex-sm-fill text-sm-center disabled"> <i
 										class="fa fa-truck"> </i>Đơn vị vận chuyển
-									</a><a href="<c:url value="/oplungdienthoai/thanhtoan3"/>"
+									</a><a href='<c:url value="/oplungdienthoai/thanhtoan3"/>'
 										class="nav-link flex-sm-fill text-sm-center disabled"> <i
 										class="fa fa-money"> </i>Phương thức thanh toán
-									</a><a href="<c:url value="/oplungdienthoai/thanhtoan4"/>"
+									</a><a href='<c:url value="/oplungdienthoai/thanhtoan4"/>'
 										class="nav-link flex-sm-fill text-sm-center active"> <i
 										class="fa fa-eye"> </i>Tổng hóa đơn
 									</a>
@@ -197,7 +222,7 @@
 												%>
 												<tr class="product">
 													<td><a href="#"><img
-															src="<c:url value="<%=gh.getProductsEntity().getProductsImages1()%>"/>"
+															src='<c:url value="<%=gh.getProductsEntity().getProductsImages1()%>"/>'
 															alt="White Blouse Armani"></a></td>
 													<td><a href="#"><%=gh.getProductsEntity().getProductsName()%></a></td>
 													<td class="product-quantity"><input type="number"
@@ -249,7 +274,7 @@
 								</div>
 								<!-- /.content-->
 								<div class="box-footer d-flex justify-content-between">
-									<a href="<c:url value="/oplungdienthoai/backthanhtoan3"/>"
+									<a href='<c:url value="/oplungdienthoai/backthanhtoan3"/>'
 										class="btn btn-outline-secondary"><i
 										class="fa fa-chevron-left"></i>Quay lại</a>
 									<button type="submit" class="btn btn-primary5">
@@ -319,7 +344,8 @@
 	<!-- Return to Top|ScrollTop -->
 	<a href="javascript:" id="return-to-top" title="Về đầu trang"><i
 		class="icon-chevron-up"></i></a>
-	<script src="<c:url value="/resources/ui/js/scrollTop.js"/>"></script>
+	<script src='<c:url value="/resources/ui/js/scrollTop.js"/>'
+		type="text/javascript"></script>
 	<!-- Return to Top|ScrollTop -->
 </body>
 </html>

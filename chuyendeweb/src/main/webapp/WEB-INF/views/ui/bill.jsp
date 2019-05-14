@@ -65,7 +65,9 @@
 					<td><%=formatNumberGiaBan(gh.getProductsEntity().getPrices())%>
 					</td>
 					<td><%=gh.getSoLuong()%></td>
-					<td><%=formatNumberGiaBan((gh.getSoLuong() * gh.getProductsEntity().getPrices()))%>
+					<td><%=formatNumberGiaBan((gh.getSoLuong() * gh.getProductsEntity().getPrices())
+						- (gh.getSoLuong() * gh.getProductsEntity().getPrices()
+								* gh.getProductsEntity().getPromotionByPromotionsId().getPromotionValues()))%>
 					</td>
 				</tr>
 				<%

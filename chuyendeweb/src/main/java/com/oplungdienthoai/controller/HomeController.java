@@ -122,6 +122,21 @@ public class HomeController {
 		return "updatesuccess";
 	}
 
+	@RequestMapping(value = "/giohang/xoa", method = RequestMethod.POST)
+	public @ResponseBody String gioHangXoa(@RequestParam(value = "productid") String productid, HttpSession session) {
+		ProductsEntity productsEntity = productService.getProducts(productid);
+		@SuppressWarnings("unchecked")
+		List<GioHang> gioHang = (List<GioHang>) session.getAttribute("gio_hang");
+		GioHang gh = productService.getProductInGioHang(gioHang, productsEntity);
+		gioHang.remove(gh);
+		System.out.println(gioHang.size());
+		if (gioHang == null || gioHang.equals("") || gioHang.size() == 0) {
+			return "cartempty";
+		} else {
+			return "deletesuccess";
+		}
+	}
+
 	@RequestMapping(value = "/giohangcuaban")
 	public String giohangcuaban(HttpSession session) {
 		session.getAttribute("gio_hang");
