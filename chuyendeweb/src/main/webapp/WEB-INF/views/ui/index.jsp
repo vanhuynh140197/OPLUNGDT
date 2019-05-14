@@ -135,19 +135,18 @@
 								<div class="flip-container">
 									<div class="flipper">
 										<div class="front">
-											<a href="<c:url value="/oplungdienthoai/chitiet"/>"><img
+											<a href="#"><img
 												src="<c:url value="/resources/ui/img/Iphone_XS_Max/iphone-xs-max-1.png"/>"
 												alt="" class="img-fluid"></a>
 										</div>
 										<div class="back">
-											<a href="<c:url value="/oplungdienthoai/chitiet"/>"><img
+											<a href="#"><img
 												src="<c:url value="/resources/ui/img/Iphone_XS_Max/iphone-xs-max-2.jpg"/>"
 												alt="" class="img-fluid"></a>
 										</div>
 									</div>
 								</div>
-								<a href="<c:url value="/oplungdienthoai/chitiet"/>"
-									class="invisible"><img
+								<a href="#" class="invisible"><img
 									src="<c:url value="/resources/ui/img/Iphone_XS_Max/iphone-xs-max-1.png" />"
 									alt="" class="img-fluid"></a>
 								<div class="text">
@@ -173,11 +172,6 @@
 									<div class="ribbon-background"></div>
 								</div>
 								<!-- /.ribbon-->
-								<!-- <div class="ribbon gift">
-									<div class="theribbon">GIFT</div>
-									<div class="ribbon-background"></div>
-								</div> -->
-								<!-- /.ribbon-->
 							</div>
 							<!-- /.product-->
 						</div>
@@ -186,21 +180,20 @@
 								<div class="flip-container">
 									<div class="flipper">
 										<div class="front">
-											<a href="<c:url value="/oplungdienthoai/chitiet"/>"> <img
+											<a href="#"> <img
 												src="<c:url value="/resources/ui/img/Xiaomi_Redmi_Note_3Pro/xiaomi1.jpg"/>"
 												alt="" class="img-fluid">
 											</a>
 										</div>
 										<div class="back">
-											<a href="<c:url value="/oplungdienthoai/chitiet"/>"> <img
+											<a href="#"> <img
 												src="<c:url value="/resources/ui/img/Xiaomi_Redmi_Note_3Pro/xiaomi2.jpg"/>"
 												alt="" class="img-fluid">
 											</a>
 										</div>
 									</div>
 								</div>
-								<a href="<c:url value="/oplungdienthoai/chitiet"/>"
-									class="invisible"><img
+								<a href="#" class="invisible"><img
 									src="<c:url value="/resources/ui/img/Xiaomi_Redmi_Note_3Pro/xiaomi1.jpg"/>"
 									alt="" class="img-fluid"></a>
 								<div class="text">
@@ -230,19 +223,18 @@
 								<div class="flip-container">
 									<div class="flipper">
 										<div class="front">
-											<a href="<c:url value="/oplungdienthoai/chitiet"/>"><img
+											<a href="#"><img
 												src="<c:url value="/resources/ui/img/Zenfone_Max/Zenfone_1.jpg"/>"
 												alt="" class="img-fluid"></a>
 										</div>
 										<div class="back">
-											<a href="<c:url value="/oplungdienthoai/chitiet"/>"><img
+											<a href="#"><img
 												src="<c:url value="/resources/ui/img/Zenfone_Max/Zenfone_2.jpg"/>"
 												alt="" class="img-fluid"></a>
 										</div>
 									</div>
 								</div>
-								<a href="<c:url value="/oplungdienthoai/chitiet"/>"
-									class="invisible"><img
+								<a href="#" class="invisible"><img
 									src="<c:url value="/resources/ui/img/Zenfone_Max/Zenfone_1.jpg"/>"
 									alt="" class="img-fluid"></a>
 								<div class="text">
@@ -263,19 +255,18 @@
 								<div class="flip-container">
 									<div class="flipper">
 										<div class="front">
-											<a href="<c:url value="/oplungdienthoai/chitiet"/>"><img
+											<a href="#"><img
 												src="<c:url value="/resources/ui/img/Huawei_Novo_3i/novo_1.jpg"/>"
 												alt="" class="img-fluid"></a>
 										</div>
 										<div class="back">
-											<a href="<c:url value="/oplungdienthoai/chitiet"/>"><img
+											<a href="#"><img
 												src="<c:url value="/resources/ui/img/Huawei_Novo_3i/novo_2.jpg"/>"
 												alt="" class="img-fluid"></a>
 										</div>
 									</div>
 								</div>
-								<a href="<c:url value="/oplungdienthoai/chitiet"/>"
-									class="invisible"><img
+								<a href="#" class="invisible"><img
 									src="<c:url value="/resources/ui/img/Huawei_Novo_3i/novo_1.jpg"/>"
 									alt="" class="img-fluid"></a>
 								<div class="text">
@@ -297,19 +288,18 @@
 								<div class="flip-container">
 									<div class="flipper">
 										<div class="front">
-											<a href="<c:url value="/oplungdienthoai/chitiet"/>"><img
+											<a href="#"><img
 												src="<c:url value="/resources/ui/img/Iphone7_Plus/iphone7_1.jpg"/>"
 												alt="" class="img-fluid"></a>
 										</div>
 										<div class="back">
-											<a href="<c:url value="/oplungdienthoai/chitiet"/>"><img
+											<a href="#"><img
 												src="<c:url value="/resources/ui/img/Iphone7_Plus/iphone7_2.jpg"/>"
 												alt="" class="img-fluid"></a>
 										</div>
 									</div>
 								</div>
-								<a href="<c:url value="/oplungdienthoai/chitiet"/>"
-									class="invisible"><img
+								<a href="#" class="invisible"><img
 									src="<c:url value="/resources/ui/img/Iphone7_Plus/iphone7_1.jpg"/>"
 									alt="" class="img-fluid"></a>
 								<div class="text">
@@ -336,19 +326,18 @@
 								<div class="flip-container">
 									<div class="flipper">
 										<div class="front">
-											<a href="<c:url value="/oplungdienthoai/chitiet"/>"><img
+											<a href="#"><img
 												src="<c:url value="/resources/ui/img/SamSungNote9/note_1.jpg"/>"
 												alt="" class="img-fluid"></a>
 										</div>
 										<div class="back">
-											<a href="<c:url value="/oplungdienthoai/chitiet"/>"><img
+											<a href="#"><img
 												src="<c:url value="/resources/ui/img/SamSungNote9/note_2.jpg"/>"
 												alt="" class="img-fluid"></a>
 										</div>
 									</div>
 								</div>
-								<a href="<c:url value="/oplungdienthoai/chitiet"/>"
-									class="invisible"><img
+								<a href="#" class="invisible"><img
 									src="<c:url value="/resources/ui/img/SamSungNote9/note_1.jpg"/>"
 									alt="" class="img-fluid"></a>
 								<div class="text">
@@ -370,19 +359,18 @@
 								<div class="flip-container">
 									<div class="flipper">
 										<div class="front">
-											<a href="<c:url value="/oplungdienthoai/chitiet"/>"><img
+											<a href="#"><img
 												src="<c:url value="/resources/ui/img/Sony_Xperia_XA1_Plus/sony_1.jpg"/>"
 												alt="" class="img-fluid"></a>
 										</div>
 										<div class="back">
-											<a href="<c:url value="/oplungdienthoai/chitiet"/>"><img
+											<a href="#"><img
 												src="<c:url value="/resources/ui/img/Sony_Xperia_XA1_Plus/sony_2.jpg"/>"
 												alt="" class="img-fluid"></a>
 										</div>
 									</div>
 								</div>
-								<a href="<c:url value="/oplungdienthoai/chitiet"/>"
-									class="invisible"><img
+								<a href="#" class="invisible"><img
 									src="<c:url value="/resources/ui/img/Sony_Xperia_XA1_Plus/sony_1.jpg"/>"
 									alt="" class="img-fluid"></a>
 								<div class="text">
@@ -413,19 +401,18 @@
 								<div class="flip-container">
 									<div class="flipper">
 										<div class="front">
-											<a href="<c:url value="/oplungdienthoai/chitiet"/>"><img
+											<a href="#"><img
 												src="<c:url value="/resources/ui/img/HTC_U11_Plus/htc_1.jpg"/>"
 												alt="" class="img-fluid"></a>
 										</div>
 										<div class="back">
-											<a href="<c:url value="/oplungdienthoai/chitiet"/>"><img
+											<a href="#"><img
 												src="<c:url value="/resources/ui/img/HTC_U11_Plus/htc_2.jpg"/>"
 												alt="" class="img-fluid"></a>
 										</div>
 									</div>
 								</div>
-								<a href="<c:url value="/oplungdienthoai/chitiet"/>"
-									class="invisible"><img
+								<a href="#" class="invisible"><img
 									src="<c:url value="/resources/ui/img/HTC_U11_Plus/htc_1.jpg"/>"
 									alt="" class="img-fluid"></a>
 								<div class="text">
