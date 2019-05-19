@@ -441,7 +441,7 @@
 									<a href="<c:url value="/oplungdienthoai/giohangcuaban"/>"
 										class="btn btn-outline-secondary"><i
 										class="fa fa-chevron-left"></i>Quay lại</a>
-									<button id="buttonCustomer" type="submit" disabled="disabled"
+									<button id="buttonCustomer" type="submit"
 										class="btn btn-primary5">
 										Tiếp tục phương thức giao hàng<i class="fa fa-chevron-right"></i>
 									</button>

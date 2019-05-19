@@ -1,7 +1,19 @@
 package com.oplungdienthoai.model;
 
-import javax.persistence.*;
 import java.util.Collection;
+
+import javax.persistence.Basic;
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 /**
  * Created by VanHuynh on 25/03/2019.
@@ -184,7 +196,7 @@ public class ProductsEntity {
 		result = 31 * result + (promotionsId != null ? promotionsId.hashCode() : 0);
 		return result;
 	}
-
+	@JsonIgnore
 	@OneToMany(mappedBy = "productsByProductsId", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
 	public Collection<OrderDetailsEntity> getOrderDetailsByProductsId() {
 		return orderDetailsByProductsId;
@@ -193,7 +205,7 @@ public class ProductsEntity {
 	public void setOrderDetailsByProductsId(Collection<OrderDetailsEntity> orderDetailsByProductsId) {
 		this.orderDetailsByProductsId = orderDetailsByProductsId;
 	}
-
+	@JsonIgnore
 	@ManyToOne
 	@JoinColumn(name = "producttypesid", referencedColumnName = "producttypesid", nullable = false, insertable = false, updatable = false)
 	public ProductTypesEntity getProductTypesByProductTypesId() {
@@ -203,7 +215,7 @@ public class ProductsEntity {
 	public void setProductTypesByProductTypesId(ProductTypesEntity productTypesByProductTypesId) {
 		this.productTypesByProductTypesId = productTypesByProductTypesId;
 	}
-
+	@JsonIgnore
 	@ManyToOne
 	@JoinColumn(name = "promotionsid", referencedColumnName = "promotionsid", nullable = false, insertable = false, updatable = false)
 	public PromotionsEntity getPromotionByPromotionsId() {

@@ -60,7 +60,7 @@
 					<td><%=gh.getProductsEntity().getProductsId()%></td>
 					<td><img
 						src="..<%=gh.getProductsEntity().getProductsImages1()%>" alt=""
-						style="height: 7%;"></td>
+						style="height: 10%;"></td>
 					<td><%=gh.getProductsEntity().getProductsName()%></td>
 					<td><%=formatNumberGiaBan(gh.getProductsEntity().getPrices())%>
 					</td>

@@ -77,6 +77,12 @@ public class HomeController {
 		return "/ui/index";
 	}
 
+	@RequestMapping(value = "/search/ajax", method = RequestMethod.POST)
+	public @ResponseBody List<ProductsEntity> ajaxSearch(@RequestParam(value = "inputsearch") String inputsearch) {
+		List<ProductsEntity> listProductsEntities = productService.search(inputsearch);
+		return listProductsEntities;
+	}
+
 	@RequestMapping(value = "/chitiet/{productsId}", method = RequestMethod.GET)
 	public String chiTiet(@PathVariable(value = "productsId") String productsId, ModelMap modelMap) {
 		System.out.println(productsId);

@@ -552,14 +552,14 @@
 										</div>
 									</div>
 								</div>
-								<div class="row products">
-									<jsp:useBean id="pagedListHolder" scope="request"
-										type="org.springframework.beans.support.PagedListHolder" />
-									<c:url value="/oplungdienthoai/home" var="pagedLink">
-										<c:param name="page" value="~" />
-									</c:url>
+								<jsp:useBean id="pagedListHolder" scope="request"
+									type="org.springframework.beans.support.PagedListHolder" />
+								<c:url value="/oplungdienthoai/home" var="pagedLink">
+									<c:param name="page" value="~" />
+								</c:url>
+								<div class="row products" id="viewproduct">
 									<c:forEach items="${pagedListHolder.pageList}" var="item">
-										<div class="col-lg-4 col-md-6">
+										<div class="col-lg-4 col-md-6" >
 											<div class="product">
 												<div class="flip-container">
 													<div class="flipper">
@@ -614,12 +614,12 @@
 											<!-- /.product            -->
 										</div>
 									</c:forEach>
+									<div style="margin-left: 42%; margin-top: -1%;">
+										<tg:paging pagedListHolder="${pagedListHolder}"
+											pagedLink="${pagedLink}" />
+									</div>
 								</div>
 								<!-- /.products-->
-							</div>
-							<div style="margin-left: 55%; margin-top: -1%;">
-								<tg:paging pagedListHolder="${pagedListHolder}"
-									pagedLink="${pagedLink}" />
 							</div>
 						</div>
 						<!-- /.col-lg-9-->

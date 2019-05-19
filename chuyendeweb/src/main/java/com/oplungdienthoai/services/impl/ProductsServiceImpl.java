@@ -60,4 +60,9 @@ public class ProductsServiceImpl implements ProductsService {
 		}
 		return null;
 	}
+
+	@Override
+	public List<ProductsEntity> search(String keyWork) {
+		return productsDAO.search(keyWork);
+	}
 }

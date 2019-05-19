@@ -11,6 +11,8 @@ public interface ProductsService {
 
 	public ProductsEntity getProducts(String productsId);
 
+	public List<ProductsEntity> search(String keyWork);
+
 	public List<ProductsEntity> getProductsUseProductType(String productTypesId);
 
 	public boolean add(ProductsEntity products);

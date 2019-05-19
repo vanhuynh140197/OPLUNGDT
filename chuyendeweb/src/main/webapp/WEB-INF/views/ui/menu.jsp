@@ -2,6 +2,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -11,29 +12,139 @@
 	href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
 <!-- Bootstrap CSS-->
 <link rel="stylesheet"
-	href="<c:url value="/resources/ui/vendor/bootstrap/css/bootstrap.min.css"/>">
+	href='<c:url value="/resources/ui/vendor/bootstrap/css/bootstrap.min.css"/>'>
 <!-- Font Awesome CSS-->
 <link rel="stylesheet"
-	href="<c:url value="/resources/ui/vendor/font-awesome/css/font-awesome.min.css"/>">
+	href='<c:url value="/resources/ui/vendor/font-awesome/css/font-awesome.min.css"/>'>
 <!-- Google fonts - Roboto -->
 <link rel="stylesheet"
 	href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700">
 <!-- owl carousel-->
 <link rel="stylesheet"
-	href="<c:url value="/resources/ui/vendor/owl.carousel/assets/owl.carousel.css"/>">
+	href='<c:url value="/resources/ui/vendor/owl.carousel/assets/owl.carousel.css"/>'>
 <link rel="stylesheet"
-	href="<c:url value="/resources/ui/vendor/owl.carousel/assets/owl.theme.default.css"/>">
+	href='<c:url value="/resources/ui/vendor/owl.carousel/assets/owl.theme.default.css"/>'>
 <!-- theme stylesheet-->
 <link rel="stylesheet"
-	href="<c:url value="/resources/ui/css/style.default.css"/>"
+	href='<c:url value="/resources/ui/css/style.default.css"/>'
 	id="theme-stylesheet">
 <!-- Custom stylesheet - for your changes-->
 <link rel="stylesheet"
-	href="<c:url value="/resources/ui/css/custom.css"/>">
+	href='<c:url value="/resources/ui/css/custom.css"/>'>
 <!-- Favicon-->
 <link rel="shortcut icon"
-	href="<c:url value="/resources/ui/img/favicon.png"/>">
+	href='<c:url value="/resources/ui/img/favicon.png"/>'>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+	type="text/javascript"></script>
+<script
+	src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
 </head>
+<script type="text/javascript">
+	$(document)
+			.ready(
+					function() {
+						$('#inputsearch')
+								.on(
+										'keyup',
+										function(e) {
+											e.preventDefault();
+											$
+													.ajax({
+														type : 'POST',
+														url : '<c:url value="/oplungdienthoai/search/ajax"/>',
+														dataType : 'json',
+														data : {
+															inputsearch : $(
+																	'#inputsearch')
+																	.val()
+																	.trim()
+														},
+														success : function(data) {
+															$('#viewproduct')
+																	.empty();
+															$
+																	.each(
+																			data,
+																			function(
+																					index,
+																					item) {
+																				$(
+																						'#viewproduct')
+																						.append(
+																								"<div class='col-lg-4 col-md-6'>"
+																										+ "<div class='product'>"
+																										+ "<div class='flip-container'>"
+																										+ "<div class='flipper'>"
+																										+ "<div class='front'>"
+																										+ "<a href='<c:url value='/oplungdienthoai/chitiet/"
+																										+ item.productsId
+																												.trim()
+																										+ "'/>'>"
+																										+ "<img src='<c:url value='/"+item.productsImages1+"'/>' alt='' class='img-fluid'></a>"
+																										+ "</div>"
+																										+ "<div class='back'>"
+																										+ "<a href='<c:url value='/oplungdienthoai/chitiet/"
+																										+ item.productsId
+																												.trim()
+																										+ "'/>'> <img src='<c:url value='/"
+																										+item.productsImages2
+																										+"'/>' alt='' class='img-fluid'></a>"
+																										+ "</div>"
+																										+ "</div>"
+																										+ "</div>"
+																										+ "<a href='<c:url value='/oplungdienthoai/chitiet/"
+																										+ item.productsId
+																												.trim()
+																										+ "'/>' class='invisible'>"
+																										+ "<img src='<c:url value='/"
+																										+item.productsImages1
+																										+"'/>' alt='' class='img-fluid'></a>"
+																										+ "<div class='text'>"
+																										+ "<h3>"
+																										+ item.productsName
+																										+ "</h3>"
+																										+ "<p class='price'>"
+																										+ "<del></del>"
+																										+ "<i class='fas fa-caret-right'></i> Giá bán: <strong style='color: red;'>"
+																										+ numeral(
+																												item.prices)
+																												.format(
+																														'0,0')
+																										+ " đ</strong>"
+																										+ "</p>"
+																										+ "<br>"
+																										+ "<p class='buttons'>"
+																										+ "<a href='<c:url value='/oplungdienthoai/chitiet/"
+																										+ item.productsId
+																												.trim()
+																										+ "'/>' class='btn btn-outline-secondary'>Chi tiết</a>"
+																										+ "<a href='<c:url value='/oplungdienthoai/giohang/"
+																										+ item.productsId
+																												.trim()
+																										+ "'/>' class='btn btn-primary5'><i class='fa fa-shopping-cart'></i>Đặt hàng nhanh</a>"
+																										+ "</p>"
+																										+ "</div>"
+																										+ "<div class='ribbon sale'>"
+																										+ "<div class='theribbon'>SALE</div>"
+																										+ "<div class='ribbon-background'></div>"
+																										+ "</div>"
+																										+ "<div class='ribbon new'>"
+																										+ "<div class='theribbon'>NEW</div>"
+																										+ "<div class='ribbon-background'></div>"
+																										+ "</div>"
+																										+ "</div>"
+																										+ "</div>")
+																			});
+														},
+														error : function(error) {
+															console.log("error"
+																	+ error);
+														}
+													})
+										});
+					});
+</script>
 <body>
 	<!-- navbar-->
 	<header class="header mb-5"> <!--
@@ -60,10 +171,10 @@
 							if (usersEntity == null) {
 						%>
 						<li class="list-inline-item"><a
-							href="<c:url value="/oplungdienthoai/dangky"/>"><i
+							href='<c:url value="/oplungdienthoai/dangky"/>'><i
 								class="fas fa-user-edit"></i> Đăng ký</a></li>
 						<li class="list-inline-item"><a
-							href="<c:url value="/oplungdienthoai/dangnhap"/>"> <i
+							href='<c:url value="/oplungdienthoai/dangnhap"/>'> <i
 								class="fas fa-user-tag"></i> Đăng nhập
 						</a></li>
 						<%
@@ -78,7 +189,7 @@
 								<%
 									if (usersEntity.getRoleId().equals("1")) {
 								%><a class="dropdown-item"
-									href="<c:url value="/admin/oplungdienthoai"/>"> <i
+									href='<c:url value="/admin/oplungdienthoai"/>'> <i
 									class="fas fa-angle-right"></i> Quản lý admin
 								</a>
 								<%
@@ -88,7 +199,7 @@
 									class="dropdown-item" href="#"><i
 									class="fas fa-angle-right"></i> Đổi mật khẩu</a> <a
 									class="dropdown-item"
-									href="<c:url value="/oplungdienthoai/logout"/>"><i
+									href='<c:url value="/oplungdienthoai/logout"/>'><i
 									class="fas fa-angle-right"></i> Đăng xuất</a>
 							</div></li>
 						<%
@@ -134,7 +245,7 @@
 						</form>
 
 						<p class="text-center text-muted">
-							<a href="<c:url value="/oplungdienthoai/dangky"/>"><strong>Đăng
+							<a href='<c:url value="/oplungdienthoai/dangky"/>'><strong>Đăng
 									ký ngay!</strong></a>
 						</p>
 					</div>
@@ -147,11 +258,11 @@
 	</div>
 	<nav class="navbar navbar-expand-lg">
 	<div class="container">
-		<a href="<c:url value="/oplungdienthoai/home"/>"
+		<a href='<c:url value="/oplungdienthoai/home"/>'
 			class="navbar-brand home"><img
-			src="<c:url value="/resources/ui/img/logo.png"/>" alt="Obaju logo"
+			src='<c:url value="/resources/ui/img/logo.png"/>' alt="Obaju logo"
 			class="d-none d-md-inline-block"><img
-			src="<c:url value="/resources/ui/img/logo-small.png"/>"
+			src='<c:url value="/resources/ui/img/logo-small.png"/>'
 			alt="Obaju logo" class="d-inline-block d-md-none"><span
 			class="sr-only">Obaju - go to homepage</span></a>
 		<div class="navbar-buttons">
@@ -184,7 +295,7 @@
 									</h5>
 									<ul class="list-unstyled mb-3">
 										<li class="nav-item"><a
-											href="<c:url value="/oplungdienthoai/sanpham"/>"
+											href='<c:url value="/oplungdienthoai/sanpham"/>'
 											class="nav-link">Iphone XS Max</a></li>
 										<li class="nav-item"><a href="#" class="nav-link">Iphone
 												XS/X</a></li>
@@ -301,7 +412,7 @@
 									</h5>
 									<ul class="list-unstyled mb-3">
 										<li class="nav-item"><a
-											href="<c:url value="/oplungdienthoai/sanpham"/>"
+											href='<c:url value="/oplungdienthoai/sanpham"/>'
 											class="nav-link">Galaxy S10 Plus</a></li>
 										<li class="nav-item"><a href="#" class="nav-link">Samsung
 												Galaxy S10</a></li>
@@ -770,7 +881,7 @@
 					class="sr-only">Toggle search</span><i class="fa fa-search"></i></a>
 				<div id="basket-overview"
 					class="navbar-collapse collapse d-none d-lg-block">
-					<a href="<c:url value="/oplungdienthoai/giohangcuaban"/>"
+					<a href='<c:url value="/oplungdienthoai/giohangcuaban"/>'
 						class="btn btn-primary5 navbar-btn"><i
 						class="fa fa-shopping-cart"></i></a>
 				</div>
@@ -780,9 +891,10 @@
 	</nav>
 	<div id="search" class="collapse">
 		<div class="container">
-			<form role="search" class="ml-auto">
+			<form role="search" class="ml-auto" action="">
 				<div class="input-group">
-					<input type="text" placeholder="Tìm kiếm" class="form-control">
+					<input type="text" id="inputsearch" name="inputsearch"
+						placeholder="Tìm kiếm" class="form-control">
 					<div class="input-group-append">
 						<button type="button" class="btn btn-primary5">
 							<i class="fa fa-search"></i>
@@ -795,17 +907,23 @@
 	</header>
 	<!-- JavaScript files-->
 	<script
-		src="<c:url value="/resources/ui/vendor/jquery/jquery.min.js"/>"></script>
+		src='<c:url value="/resources/ui/vendor/jquery/jquery.min.js"/>'
+		type="text/javascript"></script>
 	<script
-		src="<c:url value="/resources/ui/vendor/bootstrap/js/bootstrap.bundle.min.js"/>"></script>
+		src='<c:url value="/resources/ui/vendor/bootstrap/js/bootstrap.bundle.min.js"/>'
+		type="text/javascript"></script>
 	<script
-		src="<c:url value="/resources/ui/vendor/jquery.cookie/jquery.cookie.js"/>">
+		src='<c:url value="/resources/ui/vendor/jquery.cookie/jquery.cookie.js"/>'
+		type="text/javascript">
 		
 	</script>
 	<script
-		src="<c:url value="/resources/ui/vendor/owl.carousel/owl.carousel.min.js"/>"></script>
+		src='<c:url value="/resources/ui/vendor/owl.carousel/owl.carousel.min.js"/>'
+		type="text/javascript"></script>
 	<script
-		src="<c:url value="/resources/ui/vendor/owl.carousel2.thumbs/owl.carousel2.thumbs.js"/>"></script>
-	<script src="<c:url value="/resources/ui/js/front.js"/>"></script>
+		src='<c:url value="/resources/ui/vendor/owl.carousel2.thumbs/owl.carousel2.thumbs.js"/>'
+		type="text/javascript"></script>
+	<script src='<c:url value="/resources/ui/js/front.js"/>'
+		type="text/javascript"></script>
 </body>
 </html>
