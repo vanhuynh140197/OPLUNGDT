@@ -52,7 +52,8 @@ public class ProductsServiceImpl implements ProductsService {
 	}
 
 	@Override
-	public GioHang getProductInGioHang(List<GioHang> gioHang, ProductsEntity productsEntity) {
+	public GioHang getProductInGioHang(List<GioHang> gioHang,
+			ProductsEntity productsEntity) {
 		for (GioHang gh : gioHang) {
 			if (gh.getProductsEntity().getProductsId().equals(productsEntity.getProductsId())) {
 				return gh;

@@ -68,7 +68,7 @@ public class HomeController {
 	@RequestMapping(value = "/home", method = RequestMethod.GET)
 	public String index(HttpServletRequest request, ModelMap modelMap) {
 		List<ProductsEntity> productsEntities = productService.getAll();
-		@SuppressWarnings({ "rawtypes", "unchecked" })
+		@SuppressWarnings({"rawtypes", "unchecked"})
 		PagedListHolder pagedListHolder = new PagedListHolder(productsEntities);
 		int page = ServletRequestUtils.getIntParameter(request, "page", 0);
 		pagedListHolder.setPage(page);
@@ -78,14 +78,15 @@ public class HomeController {
 	}
 
 	@RequestMapping(value = "/search/ajax", method = RequestMethod.POST)
-	public @ResponseBody List<ProductsEntity> ajaxSearch(@RequestParam(value = "inputsearch") String inputsearch) {
+	public @ResponseBody List<ProductsEntity>
+			ajaxSearch(@RequestParam(value = "inputsearch") String inputsearch) {
 		List<ProductsEntity> listProductsEntities = productService.search(inputsearch);
 		return listProductsEntities;
 	}
 
-	@RequestMapping(value = "/chitiet/{productsId}", method = RequestMethod.GET)
-	public String chiTiet(@PathVariable(value = "productsId") String productsId, ModelMap modelMap) {
-		System.out.println(productsId);
+	@RequestMapping(value = "/chitiet/{productsId:.+}", method = RequestMethod.GET)
+	public String chiTiet(@PathVariable(value = "productsId") String productsId,
+			ModelMap modelMap) {
 		ProductsEntity productsEntity = productService.getProducts(productsId);
 		List<ProductsEntity> productsEntities = productService
 				.getProductsUseProductType(productsEntity.getProductTypesId());
@@ -94,9 +95,9 @@ public class HomeController {
 		return "/ui/detail";
 	}
 
-	@RequestMapping(value = "/giohang/{productsId}", method = RequestMethod.GET)
-	public String gioHang(@PathVariable(value = "productsId") String productsId, HttpSession session,
-			ModelMap modelMap) {
+	@RequestMapping(value = "/giohang/{productsId:.+}", method = RequestMethod.GET)
+	public String gioHang(@PathVariable(value = "productsId") String productsId,
+			HttpSession session, ModelMap modelMap) {
 		if (session.getAttribute("LoginSuccess") == null) {
 			return "redirect:/oplungdienthoai/dangnhap";
 		} else {
@@ -118,7 +119,8 @@ public class HomeController {
 	}
 
 	@RequestMapping(value = "/giohang/capnhap", method = RequestMethod.POST)
-	public @ResponseBody String gioHangCapNhap(@RequestParam(value = "quantity") int quantity,
+	public @ResponseBody String gioHangCapNhap(
+			@RequestParam(value = "quantity") int quantity,
 			@RequestParam(value = "productid") String productid, HttpSession session) {
 		ProductsEntity productsEntity = productService.getProducts(productid);
 		@SuppressWarnings("unchecked")
@@ -129,7 +131,8 @@ public class HomeController {
 	}
 
 	@RequestMapping(value = "/giohang/xoa", method = RequestMethod.POST)
-	public @ResponseBody String gioHangXoa(@RequestParam(value = "productid") String productid, HttpSession session) {
+	public @ResponseBody String gioHangXoa(
+			@RequestParam(value = "productid") String productid, HttpSession session) {
 		ProductsEntity productsEntity = productService.getProducts(productid);
 		@SuppressWarnings("unchecked")
 		List<GioHang> gioHang = (List<GioHang>) session.getAttribute("gio_hang");
@@ -159,10 +162,16 @@ public class HomeController {
 		return "/ui/checkout1";
 	}
 
-	@RequestMapping(value = "/thanhtoan2", method = RequestMethod.POST, produces = "text/plain;charset=UTF-8")
-	public String thanhToan2(@RequestParam(value = "email") String email, @RequestParam(value = "name") String name,
-			@RequestParam(value = "address") String address, @RequestParam(value = "phone") String phone,
-			@RequestParam(value = "dateofbirth") String dateofbirth, ModelMap modelMap, HttpSession session) {
+	@RequestMapping(
+			value = "/thanhtoan2",
+			method = RequestMethod.POST,
+			produces = "text/plain;charset=UTF-8")
+	public String thanhToan2(@RequestParam(value = "email") String email,
+			@RequestParam(value = "name") String name,
+			@RequestParam(value = "address") String address,
+			@RequestParam(value = "phone") String phone,
+			@RequestParam(value = "dateofbirth") String dateofbirth, ModelMap modelMap,
+			HttpSession session) {
 		CustomersEntity customersEntity = new CustomersEntity();
 		String cusID = Long.toString(System.currentTimeMillis());
 		Date dateBirth = Date.valueOf(dateofbirth);
@@ -179,11 +188,17 @@ public class HomeController {
 		return "/ui/checkout2";
 	}
 
-	@RequestMapping(value = "/thanhtoans2", method = RequestMethod.POST, produces = "text/plain;charset=UTF-8")
+	@RequestMapping(
+			value = "/thanhtoans2",
+			method = RequestMethod.POST,
+			produces = "text/plain;charset=UTF-8")
 	public String thanhToans2(@RequestParam(value = "customerid") String customerid,
-			@RequestParam(value = "email") String email, @RequestParam(value = "name") String name,
-			@RequestParam(value = "address") String address, @RequestParam(value = "phone") String phone,
-			@RequestParam(value = "dateofbirth") String dateofbirth, ModelMap modelMap, HttpSession session) {
+			@RequestParam(value = "email") String email,
+			@RequestParam(value = "name") String name,
+			@RequestParam(value = "address") String address,
+			@RequestParam(value = "phone") String phone,
+			@RequestParam(value = "dateofbirth") String dateofbirth, ModelMap modelMap,
+			HttpSession session) {
 		CustomersEntity customersEntity = new CustomersEntity();
 		Date dateBirth = Date.valueOf(dateofbirth);
 		customersEntity.setCustomersId(customerid);
@@ -205,10 +220,14 @@ public class HomeController {
 		return "/ui/checkout2";
 	}
 
-	@RequestMapping(value = "/thanhtoan3", method = RequestMethod.POST, produces = "text/plain;charset=UTF-8")
-	public String thanhToan3(@RequestParam(value = "delivery") String delivery, ModelMap modelMap,
-			HttpSession session) {
-		session.setAttribute("shippingMethod", shippingMethodService.getShippingMethod(delivery));
+	@RequestMapping(
+			value = "/thanhtoan3",
+			method = RequestMethod.POST,
+			produces = "text/plain;charset=UTF-8")
+	public String thanhToan3(@RequestParam(value = "delivery") String delivery,
+			ModelMap modelMap, HttpSession session) {
+		session.setAttribute("shippingMethod",
+				shippingMethodService.getShippingMethod(delivery));
 		modelMap.put("listPayMent", paymentsService.getAll());
 		return "/ui/checkout3";
 	}
@@ -219,8 +238,12 @@ public class HomeController {
 		return "/ui/checkout3";
 	}
 
-	@RequestMapping(value = "/thanhtoan4", method = RequestMethod.POST, produces = "text/plain;charset=UTF-8")
-	public String thanhToan4(@RequestParam(value = "payment") String payment, HttpSession session) {
+	@RequestMapping(
+			value = "/thanhtoan4",
+			method = RequestMethod.POST,
+			produces = "text/plain;charset=UTF-8")
+	public String thanhToan4(@RequestParam(value = "payment") String payment,
+			HttpSession session) {
 		session.setAttribute("payment", paymentsService.getPayments(payment));
 		return "/ui/checkout4";
 	}
@@ -230,10 +253,14 @@ public class HomeController {
 		return "/ui/category-right";
 	}
 
-	@RequestMapping(value = "/hoadon", method = RequestMethod.POST, produces = "text/plain;charset=UTF-8")
+	@RequestMapping(
+			value = "/hoadon",
+			method = RequestMethod.POST,
+			produces = "text/plain;charset=UTF-8")
 	public String hoaDon(HttpSession session, ModelMap modelMap) {
 		CustomersEntity customersEntity = (CustomersEntity) session.getAttribute("customer");
-		ShippingMethodEntity shippingMethodEntity = (ShippingMethodEntity) session.getAttribute("shippingMethod");
+		ShippingMethodEntity shippingMethodEntity = (ShippingMethodEntity) session
+				.getAttribute("shippingMethod");
 		PaymentsEntity paymentsEntity = (PaymentsEntity) session.getAttribute("payment");
 		@SuppressWarnings("unchecked")
 		List<GioHang> listGioHang = (List<GioHang>) session.getAttribute("gio_hang");
@@ -241,8 +268,8 @@ public class HomeController {
 		double totalPrice = 0;
 		for (GioHang gioHang : listGioHang) {
 			totalPrice += ((gioHang.getProductsEntity().getPrices() * gioHang.getSoLuong()
-					- (gioHang.getProductsEntity().getPrices() * gioHang.getSoLuong()
-							* gioHang.getProductsEntity().getPromotionByPromotionsId().getPromotionValues())));
+					- (gioHang.getProductsEntity().getPrices() * gioHang.getSoLuong() * gioHang
+							.getProductsEntity().getPromotionByPromotionsId().getPromotionValues())));
 		}
 
 		OrdersEntity ordersEntity = new OrdersEntity();
@@ -251,9 +278,10 @@ public class HomeController {
 		ordersEntity.setOrdersId(orderID);
 		ordersEntity.setDateStartOrder(new Date(System.currentTimeMillis()));
 		ordersEntity.setCustomersId(customersEntity.getCustomersId());
-		ordersEntity.setOrderDescriptions(
-				"Đơn hàng của: " + customersEntity.getCustomersName() + " ,Địa chỉ: " + customersEntity.getAddress()
-						+ " ,SĐT: " + customersEntity.getPhone() + " ,Email: " + customersEntity.getEmail());
+		ordersEntity
+				.setOrderDescriptions("Đơn hàng của: " + customersEntity.getCustomersName()
+						+ " ,Địa chỉ: " + customersEntity.getAddress() + " ,SĐT: "
+						+ customersEntity.getPhone() + " ,Email: " + customersEntity.getEmail());
 		ordersEntity.setTotalPrices((totalPrice + shippingMethodEntity.getShippingValue()));
 		ordersEntity.setShippingId(shippingMethodEntity.getShippingId());
 		ordersEntity.setPaymentsId(paymentsEntity.getPaymentsId());
@@ -265,9 +293,10 @@ public class HomeController {
 			orderDetailsEntity.setOrdersId(orderID);
 			orderDetailsEntity.setProductsId(gioHang.getProductsEntity().getProductsId());
 			orderDetailsEntity.setAmount(gioHang.getSoLuong());
-			orderDetailsEntity.setTotalPrices((gioHang.getProductsEntity().getPrices() * gioHang.getSoLuong()
-					- (gioHang.getProductsEntity().getPrices() * gioHang.getSoLuong()
-							* gioHang.getProductsEntity().getPromotionByPromotionsId().getPromotionValues())));
+			orderDetailsEntity.setTotalPrices((gioHang.getProductsEntity().getPrices()
+					* gioHang.getSoLuong()
+					- (gioHang.getProductsEntity().getPrices() * gioHang.getSoLuong() * gioHang
+							.getProductsEntity().getPromotionByPromotionsId().getPromotionValues())));
 			orderDetailsService.add(orderDetailsEntity);
 		}
 		modelMap.put("listBill", ordersService.getOrders(orderID));
@@ -302,7 +331,8 @@ public class HomeController {
 
 	@RequestMapping(value = "/login/ajax", method = RequestMethod.POST)
 	public @ResponseBody String ajaxLogin(@RequestParam(value = "email") String email,
-			@RequestParam(value = "password") String password, HttpSession session) throws NoSuchAlgorithmException {
+			@RequestParam(value = "password") String password, HttpSession session)
+			throws NoSuchAlgorithmException {
 		UsersEntity usersEntity = userService.getUsersName(email);
 		String passwordMD5 = MD5Library.convertHashToString(password);
 		if (usersEntity == null) {
@@ -333,16 +363,21 @@ public class HomeController {
 		return "redirect:/oplungdienthoai/dangnhap";
 	}
 
-	@RequestMapping(value = "/register", method = RequestMethod.POST, produces = "text/plain;charset=UTF-8")
-	public String register(@RequestParam(value = "email") String email, @RequestParam(value = "name") String name,
-			@RequestParam(value = "pass") String pass, @RequestParam(value = "phone") String phone)
+	@RequestMapping(
+			value = "/register",
+			method = RequestMethod.POST,
+			produces = "text/plain;charset=UTF-8")
+	public String register(@RequestParam(value = "email") String email,
+			@RequestParam(value = "name") String name,
+			@RequestParam(value = "pass") String pass,
+			@RequestParam(value = "phone") String phone)
 			throws UnsupportedEncodingException, NoSuchAlgorithmException {
 		String userID = Long.toString(System.currentTimeMillis());
 		String subject = "Register Obaju";
 		String text = "<h2><b>Hello," + name + "</b></h2></br>"
 				+ "<p>Cảm ơn bạn đã đăng ký tài khoản shop Obaju. Vui lòng xác nhận tài khoản để kích hoạt tài khoản. Cảm ơn bạn.</p></br>"
-				+ "<a href=\"http://localhost:8080/chuyendeweb/oplungdienthoai/xacnhandangki?email=" + email
-				+ "\"><button>Xác Nhận Đăng Kí</button></a>";
+				+ "<a href=\"http://localhost:8080/chuyendeweb/oplungdienthoai/xacnhandangki?email="
+				+ email + "\"><button>Xác Nhận Đăng Kí</button></a>";
 
 		UsersEntity usersEntity = new UsersEntity();
 		usersEntity.setUserId("USE" + userID);

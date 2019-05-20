@@ -22,8 +22,8 @@ public class ProductsDAOImpl implements ProductsDAO {
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<ProductsEntity> getAll() {
-		return sessionFactory.getCurrentSession().createQuery("from ProductsEntity where productsStatus=" + false + "")
-				.list();
+		return sessionFactory.getCurrentSession()
+				.createQuery("from ProductsEntity where productsStatus=" + false + "").list();
 	}
 
 	@Override
@@ -38,7 +38,8 @@ public class ProductsDAOImpl implements ProductsDAO {
 	@Override
 	public List<ProductsEntity> getProductsUseProductType(String productTypesId) {
 		return sessionFactory.getCurrentSession()
-				.createQuery("from ProductsEntity where productTypesId='" + productTypesId + "'").list();
+				.createQuery("from ProductsEntity where productTypesId='" + productTypesId + "'")
+				.list();
 	}
 
 	@Override
@@ -64,8 +65,9 @@ public class ProductsDAOImpl implements ProductsDAO {
 	@Override
 	public boolean remove(String productsId) {
 		try {
-			sessionFactory.getCurrentSession().createQuery(
-					"update ProductsEntity set productsStatus=" + true + " where productsId='" + productsId + "'")
+			sessionFactory.getCurrentSession()
+					.createQuery("update ProductsEntity set productsStatus=" + true
+							+ " where productsId='" + productsId + "'")
 					.executeUpdate();
 		} catch (Exception e) {
 			return false;
@@ -77,7 +79,8 @@ public class ProductsDAOImpl implements ProductsDAO {
 	@Override
 	public List<ProductsEntity> search(String keyWork) {
 		@SuppressWarnings("deprecation")
-		Criteria criteria = sessionFactory.getCurrentSession().createCriteria(ProductsEntity.class);
+		Criteria criteria = sessionFactory.getCurrentSession()
+				.createCriteria(ProductsEntity.class);
 		criteria.add(Restrictions.ilike("productsName", "%" + keyWork + "%"));
 		return criteria.list();
 	}

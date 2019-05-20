@@ -50,11 +50,16 @@ public class AdminController {
 		return "/admin/add-product";
 	}
 
-	@RequestMapping(value = "/oplungdienthoai/themsanpham/xuLyThem", method = RequestMethod.POST, produces = "text/plain;charset=UTF-8")
+	@RequestMapping(
+			value = "/oplungdienthoai/themsanpham/xuLyThem",
+			method = RequestMethod.POST,
+			produces = "text/plain;charset=UTF-8")
 	public String actionAddProduct(@RequestParam(value = "images1") MultipartFile images1,
 			@RequestParam(value = "images2") MultipartFile images2,
-			@RequestParam(value = "productname") String productname, @RequestParam(value = "color") String color,
-			@RequestParam(value = "amount") int amount, @RequestParam(value = "prices") Double prices,
+			@RequestParam(value = "productname") String productname,
+			@RequestParam(value = "color") String color,
+			@RequestParam(value = "amount") int amount,
+			@RequestParam(value = "prices") Double prices,
 			@RequestParam(value = "producttype") String producttype,
 			@RequestParam(value = "promotions") String promotions,
 			@RequestParam(value = "description") String description) {
@@ -93,8 +98,11 @@ public class AdminController {
 		return "redirect:/admin/oplungdienthoai/sanpham";
 	}
 
-	@RequestMapping(value = "/oplungdienthoai/suasanpham/{productsId}", method = RequestMethod.GET)
-	public String editProduct(@PathVariable(value = "productsId") String productsId, ModelMap modelMap) {
+	@RequestMapping(
+			value = "/oplungdienthoai/suasanpham/{productsId:.+}",
+			method = RequestMethod.GET)
+	public String editProduct(@PathVariable(value = "productsId") String productsId,
+			ModelMap modelMap) {
 		ProductsEntity productsEntity = productsService.getProducts(productsId);
 		modelMap.put("listProductType", producTypesServices.getAll());
 		modelMap.put("listPromotions", promotionServices.getAll());
@@ -102,11 +110,16 @@ public class AdminController {
 		return "/admin/edit-product";
 	}
 
-	@RequestMapping(value = "/oplungdienthoai/suasanpham/xuLySua", method = RequestMethod.POST, produces = "text/plain;charset=UTF-8")
+	@RequestMapping(
+			value = "/oplungdienthoai/suasanpham/xuLySua",
+			method = RequestMethod.POST,
+			produces = "text/plain;charset=UTF-8")
 	public String actionRditProduct(@RequestParam(value = "images1") MultipartFile images1,
 			@RequestParam(value = "images2") MultipartFile images2,
-			@RequestParam(value = "productname") String productname, @RequestParam(value = "color") String color,
-			@RequestParam(value = "amount") int amount, @RequestParam(value = "prices") Double prices,
+			@RequestParam(value = "productname") String productname,
+			@RequestParam(value = "color") String color,
+			@RequestParam(value = "amount") int amount,
+			@RequestParam(value = "prices") Double prices,
 			@RequestParam(value = "producttype") String producttype,
 			@RequestParam(value = "promotions") String promotions,
 			@RequestParam(value = "description") String description,
@@ -145,7 +158,9 @@ public class AdminController {
 		return "redirect:/admin/oplungdienthoai/sanpham";
 	}
 
-	@RequestMapping(value = "/oplungdienthoai/xoasanpham/{productsId}", method = RequestMethod.GET)
+	@RequestMapping(
+			value = "/oplungdienthoai/xoasanpham/{productsId:.+}",
+			method = RequestMethod.GET)
 	public String removeProduct(@PathVariable(value = "productsId") String productsId) {
 		productsService.remove(productsId);
 		return "redirect:/admin/oplungdienthoai/sanpham";
