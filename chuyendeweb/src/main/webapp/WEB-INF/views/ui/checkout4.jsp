@@ -39,7 +39,7 @@
 						});
 						function recalculateCart() {
 							var subtotal = 0;
-
+							var shippingValue = 0;
 							/* Sum up row totals */
 							$('.product').each(
 									function() {
@@ -48,8 +48,15 @@
 														'.product-line-price')
 														.text()).value();
 									});
-
-							var total = subtotal;
+							$('.shipping').each(
+                                    function() {
+                                    	shippingValue = numeral(
+                                                $(this).children(
+                                                        '.shippingValue')
+                                                        .text()).value();
+                                    });
+							var totalProduct = subtotal;
+							var total = totalProduct + shippingValue;
 							/* Update totals display */
 							$('.totals-value').fadeOut(
 									fadeTime,
@@ -58,7 +65,7 @@
 												numeral(total).format('0,0')
 														+ " đ");
 										$('#cart-total1').html(
-												numeral(total).format('0,0')
+												numeral(totalProduct).format('0,0')
 														+ " đ");
 										$('#cart-total2').html(
 												numeral(total).format('0,0')
@@ -229,36 +236,48 @@
 														value="<%=gh.getSoLuong()%>" min="1"></td>
 													<td class="product-price"><%=formatNumberGiaBan(gh.getProductsEntity().getPrices())%>
 														đ</td>
-													<td class="product-promotion"><%=(int) (gh.getProductsEntity().getPromotionByPromotionsId().getPromotionValues() * 100)%>%</td>
-													<td class="product-line-price"><%=formatNumberGiaBan((gh.getSoLuong() * gh.getProductsEntity().getPrices())
-						- (gh.getSoLuong() * gh.getProductsEntity().getPrices()
-								* gh.getProductsEntity().getPromotionByPromotionsId().getPromotionValues()))%>
-														đ</td>
+													<td class="product-promotion"><%=(int) (gh.getProductsEntity().getPromotionByPromotionsId()
+						.getPromotionValues() * 100)%>%</td>
+													<td class="product-line-price"><%=formatNumberGiaBan(
+						(gh.getSoLuong() * gh.getProductsEntity().getPrices()) - (gh.getSoLuong()
+								* gh.getProductsEntity().getPrices() * gh.getProductsEntity()
+										.getPromotionByPromotionsId().getPromotionValues()))%> đ</td>
 													<td class="product-removal"><a href="#"><i
 															class="fa fa-trash-o"></i></a></td>
 													<td class="product-id" style="display: none"><%=gh.getProductsEntity().getProductsId()%></td>
 												</tr>
 												<%
 													totalPrices += (gh.getSoLuong() * gh.getProductsEntity().getPrices())
-																- (gh.getSoLuong() * gh.getProductsEntity().getPrices()
-																		* gh.getProductsEntity().getPromotionByPromotionsId().getPromotionValues());
+																- (gh.getSoLuong() * gh.getProductsEntity().getPrices() * gh
+																		.getProductsEntity().getPromotionByPromotionsId().getPromotionValues());
 												%>
 												<%
 													}
 												%>
 												<%
-													ShippingMethodEntity shippingMethodEntity = (ShippingMethodEntity) session.getAttribute("shippingMethod");
+													ShippingMethodEntity shippingMethodEntity = (ShippingMethodEntity) session
+															.getAttribute("shippingMethod");
 												%>
 												<%
 													PaymentsEntity paymentsEntity = (PaymentsEntity) session.getAttribute("payment");
 												%>
-												<tr>
+												<tr class="shipping">
 													<td>Đơn vị vận chuyển:</td>
 													<td><%=shippingMethodEntity.getShippingName()%></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td class="shippingValue"><%=formatNumberGiaBan(shippingMethodEntity.getShippingValue())%>
+														đ</td>
 												</tr>
 												<tr>
 													<td>Phương thức thanh toán:</td>
 													<td><%=paymentsEntity.getPaymentsName()%></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td></td>
 												</tr>
 											</tbody>
 											<tfoot>

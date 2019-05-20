@@ -61,6 +61,7 @@
 																	.trim()
 														},
 														success : function(data) {
+															if(data.length != 0) {
 															$('#viewproduct')
 																	.empty();
 															$
@@ -136,6 +137,10 @@
 																										+ "</div>"
 																										+ "</div>")
 																			});
+															} else {
+																$('#viewproduct')
+                                                                .empty().append("<div class='col-lg-12 col-md-12'><h5>Sản phẩm bạn tìm hiện tại chưa có</h5></div>");
+															}
 														},
 														error : function(error) {
 															console.log("error"
