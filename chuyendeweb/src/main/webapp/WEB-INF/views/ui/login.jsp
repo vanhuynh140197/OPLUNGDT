@@ -65,7 +65,8 @@
 						<!-- breadcrumb-->
 						<nav aria-label="breadcrumb">
 						<ol class="breadcrumb">
-							<li class="breadcrumb-item"><a href="<c:url value="/oplungdienthoai/home"/>">Trang chủ</a></li>
+							<li class="breadcrumb-item"><a
+								href="<c:url value="/oplungdienthoai/home"/>">Trang chủ</a></li>
 							<li aria-current="page" class="breadcrumb-item active">Đăng
 								nhập</li>
 						</ol>
@@ -84,6 +85,15 @@
 									</i>&nbsp;tại đây
 								</div>
 							</div>
+							<div class="row">
+								<div class="col-md-6"></div>
+								<div class="col-md-6" align="right">
+									Bạn quên mật khẩu? <i> <a
+										href="<c:url value="/oplungdienthoai/quenmatkhau"/>"
+										style="color: red;">Lấy lại mật khẩu </a>
+									</i>&nbsp;tại đây
+								</div>
+							</div>
 							<hr>
 							<form id="formLogin" action="" method="post">
 								<div class="content py-3">
@@ -93,7 +103,8 @@
 											<div class="form-group">
 												<label for="email">Email<strong style="color: red;">*</strong></label>
 												<input id="email" placeholder="Vui lòng nhập email của bạn"
-													type="text" tabindex="1" class="form-control" required=”required”>
+													type="text" tabindex="1" class="form-control"
+													required=”required”>
 											</div>
 										</div>
 										<div class="col-md-1"></div>

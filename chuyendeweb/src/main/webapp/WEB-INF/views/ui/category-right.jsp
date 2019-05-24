@@ -25,7 +25,8 @@
 						<!-- breadcrumb-->
 						<nav aria-label="breadcrumb">
 						<ol class="breadcrumb">
-							<li class="breadcrumb-item"><a href="<c:url value="/oplungdienthoai/home"/>">Trang chủ</a></li>
+							<li class="breadcrumb-item"><a
+								href="<c:url value="/oplungdienthoai/home"/>">Trang chủ</a></li>
 							<li aria-current="page" class="breadcrumb-item active">Ốp
 								lưng IPhone XS Max</li>
 						</ol>
@@ -360,8 +361,7 @@
 											class="fas fa-caret-right"></i> Apple <span
 											class="badge badge-secondary">42</span></a>
 										<ul class="list-unstyled">
-											<li><a
-												href="<c:url value="/oplungdienthoai/sanpham"/>"
+											<li><a href="<c:url value="/oplungdienthoai/sanpham"/>"
 												class="nav-link">Iphone XS Max</a></li>
 											<li><a href="#" class="nav-link">Iphone XS/X</a></li>
 											<li><a href="#" class="nav-link">Iphone 8 plus</a></li>

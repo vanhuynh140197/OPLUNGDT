@@ -155,7 +155,8 @@
 						<li><a title="Quản lý sản phẩm"
 							href="<c:url value="/admin/oplungdienthoai/sanpham"/>"><span
 								class="mini-sub-pro">Quản lý sản phẩm</span></a></li>
-						<li><a title="Thêm sản phẩm" href="<c:url value="/admin/oplungdienthoai/themsanpham"/>"><span
+						<li><a title="Thêm sản phẩm"
+							href="<c:url value="/admin/oplungdienthoai/themsanpham"/>"><span
 								class="mini-sub-pro">Thêm sản phẩm</span></a></li>
 					</ul></li>
 				<li><a class="has-arrow" href="#" aria-expanded="false"><span

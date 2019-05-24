@@ -253,7 +253,8 @@
 						</nav>
 					</div>
 					<%
-						CustomersEntity customersEntity = session.getAttribute("customer") == null ? null
+						CustomersEntity customersEntity = session.getAttribute("customer") == null
+								? null
 								: (CustomersEntity) session.getAttribute("customer");
 						if (customersEntity == null) {
 					%>
@@ -466,8 +467,8 @@
 									double totalPrices = 0;
 									for (GioHang gh : gioHang) {
 										totalPrices += (gh.getSoLuong() * gh.getProductsEntity().getPrices())
-												- (gh.getSoLuong() * gh.getProductsEntity().getPrices()
-														* gh.getProductsEntity().getPromotionByPromotionsId().getPromotionValues());
+												- (gh.getSoLuong() * gh.getProductsEntity().getPrices() * gh
+														.getProductsEntity().getPromotionByPromotionsId().getPromotionValues());
 									}
 								%>
 								<table class="table">

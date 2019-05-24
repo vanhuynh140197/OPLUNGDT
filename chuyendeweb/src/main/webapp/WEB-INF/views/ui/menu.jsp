@@ -61,85 +61,89 @@
 																	.trim()
 														},
 														success : function(data) {
-															if(data.length != 0) {
-															$('#viewproduct')
-																	.empty();
-															$
-																	.each(
-																			data,
-																			function(
-																					index,
-																					item) {
-																				$(
-																						'#viewproduct')
-																						.append(
-																								"<div class='col-lg-4 col-md-6'>"
-																										+ "<div class='product'>"
-																										+ "<div class='flip-container'>"
-																										+ "<div class='flipper'>"
-																										+ "<div class='front'>"
-																										+ "<a href='<c:url value='/oplungdienthoai/chitiet/"
-																										+ item.productsId
-																												.trim()
-																										+ "'/>'>"
-																										+ "<img src='<c:url value='/"+item.productsImages1+"'/>' alt='' class='img-fluid'></a>"
-																										+ "</div>"
-																										+ "<div class='back'>"
-																										+ "<a href='<c:url value='/oplungdienthoai/chitiet/"
-																										+ item.productsId
-																												.trim()
-																										+ "'/>'> <img src='<c:url value='/"
+															if (data.length != 0) {
+																$(
+																		'#viewproduct')
+																		.empty();
+																$
+																		.each(
+																				data,
+																				function(
+																						index,
+																						item) {
+																					$(
+																							'#viewproduct')
+																							.append(
+																									"<div class='col-lg-4 col-md-6'>"
+																											+ "<div class='product'>"
+																											+ "<div class='flip-container'>"
+																											+ "<div class='flipper'>"
+																											+ "<div class='front'>"
+																											+ "<a href='<c:url value='/oplungdienthoai/chitiet/"
+																											+ item.productsId
+																													.trim()
+																											+ "'/>'>"
+																											+ "<img src='<c:url value='/"+item.productsImages1+"'/>' alt='' class='img-fluid'></a>"
+																											+ "</div>"
+																											+ "<div class='back'>"
+																											+ "<a href='<c:url value='/oplungdienthoai/chitiet/"
+																											+ item.productsId
+																													.trim()
+																											+ "'/>'> <img src='<c:url value='/"
 																										+item.productsImages2
 																										+"'/>' alt='' class='img-fluid'></a>"
-																										+ "</div>"
-																										+ "</div>"
-																										+ "</div>"
-																										+ "<a href='<c:url value='/oplungdienthoai/chitiet/"
-																										+ item.productsId
-																												.trim()
-																										+ "'/>' class='invisible'>"
-																										+ "<img src='<c:url value='/"
+																											+ "</div>"
+																											+ "</div>"
+																											+ "</div>"
+																											+ "<a href='<c:url value='/oplungdienthoai/chitiet/"
+																											+ item.productsId
+																													.trim()
+																											+ "'/>' class='invisible'>"
+																											+ "<img src='<c:url value='/"
 																										+item.productsImages1
 																										+"'/>' alt='' class='img-fluid'></a>"
-																										+ "<div class='text'>"
-																										+ "<h3>"
-																										+ item.productsName
-																										+ "</h3>"
-																										+ "<p class='price'>"
-																										+ "<del></del>"
-																										+ "<i class='fas fa-caret-right'></i> Giá bán: <strong style='color: red;'>"
-																										+ numeral(
-																												item.prices)
-																												.format(
-																														'0,0')
-																										+ " đ</strong>"
-																										+ "</p>"
-																										+ "<br>"
-																										+ "<p class='buttons'>"
-																										+ "<a href='<c:url value='/oplungdienthoai/chitiet/"
-																										+ item.productsId
-																												.trim()
-																										+ "'/>' class='btn btn-outline-secondary'>Chi tiết</a>"
-																										+ "<a href='<c:url value='/oplungdienthoai/giohang/"
-																										+ item.productsId
-																												.trim()
-																										+ "'/>' class='btn btn-primary5'><i class='fa fa-shopping-cart'></i>Đặt hàng nhanh</a>"
-																										+ "</p>"
-																										+ "</div>"
-																										+ "<div class='ribbon sale'>"
-																										+ "<div class='theribbon'>SALE</div>"
-																										+ "<div class='ribbon-background'></div>"
-																										+ "</div>"
-																										+ "<div class='ribbon new'>"
-																										+ "<div class='theribbon'>NEW</div>"
-																										+ "<div class='ribbon-background'></div>"
-																										+ "</div>"
-																										+ "</div>"
-																										+ "</div>")
-																			});
+																											+ "<div class='text'>"
+																											+ "<h3>"
+																											+ item.productsName
+																											+ "</h3>"
+																											+ "<p class='price'>"
+																											+ "<del></del>"
+																											+ "<i class='fas fa-caret-right'></i> Giá bán: <strong style='color: red;'>"
+																											+ numeral(
+																													item.prices)
+																													.format(
+																															'0,0')
+																											+ " đ</strong>"
+																											+ "</p>"
+																											+ "<br>"
+																											+ "<p class='buttons'>"
+																											+ "<a href='<c:url value='/oplungdienthoai/chitiet/"
+																											+ item.productsId
+																													.trim()
+																											+ "'/>' class='btn btn-outline-secondary'>Chi tiết</a>"
+																											+ "<a href='<c:url value='/oplungdienthoai/giohang/"
+																											+ item.productsId
+																													.trim()
+																											+ "'/>' class='btn btn-primary5'><i class='fa fa-shopping-cart'></i>Đặt hàng nhanh</a>"
+																											+ "</p>"
+																											+ "</div>"
+																											+ "<div class='ribbon sale'>"
+																											+ "<div class='theribbon'>SALE</div>"
+																											+ "<div class='ribbon-background'></div>"
+																											+ "</div>"
+																											+ "<div class='ribbon new'>"
+																											+ "<div class='theribbon'>NEW</div>"
+																											+ "<div class='ribbon-background'></div>"
+																											+ "</div>"
+																											+ "</div>"
+																											+ "</div>")
+																				});
 															} else {
-																$('#viewproduct')
-                                                                .empty().append("<div class='col-lg-12 col-md-12'><h5>Sản phẩm bạn tìm hiện tại chưa có</h5></div>");
+																$(
+																		'#viewproduct')
+																		.empty()
+																		.append(
+																				"<div class='col-lg-12 col-md-12'><h5>Sản phẩm bạn tìm hiện tại chưa có</h5></div>");
 															}
 														},
 														error : function(error) {
@@ -199,9 +203,10 @@
 								</a>
 								<%
 									}
-								%><a class="dropdown-item" href=""><i
+								%><a class="dropdown-item" href="#"><i
 									class="fas fa-angle-right"></i> Thông tin tài khoản </a> <a
-									class="dropdown-item" href="#"><i
+									class="dropdown-item"
+									href="<%=application.getContextPath()%>/oplungdienthoai/doimatkhau/<%=usersEntity.getUserName()%>"><i
 									class="fas fa-angle-right"></i> Đổi mật khẩu</a> <a
 									class="dropdown-item"
 									href='<c:url value="/oplungdienthoai/logout"/>'><i

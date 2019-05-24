@@ -225,10 +225,12 @@
 													value="<%=gh.getSoLuong()%>" min="1"></td>
 												<td class="product-price"><%=formatNumberGiaBan(gh.getProductsEntity().getPrices())%>
 													đ</td>
-												<td class="product-promotion"><%=(int) (gh.getProductsEntity().getPromotionByPromotionsId().getPromotionValues() * 100)%>%</td>
-												<td class="product-line-price"><%=formatNumberGiaBan((gh.getSoLuong() * gh.getProductsEntity().getPrices())
-							- (gh.getSoLuong() * gh.getProductsEntity().getPrices()
-									* gh.getProductsEntity().getPromotionByPromotionsId().getPromotionValues()))%>
+												<td class="product-promotion"><%=(int) (gh.getProductsEntity().getPromotionByPromotionsId()
+							.getPromotionValues() * 100)%>%</td>
+												<td class="product-line-price"><%=formatNumberGiaBan(
+							(gh.getSoLuong() * gh.getProductsEntity().getPrices()) - (gh.getSoLuong()
+									* gh.getProductsEntity().getPrices() * gh.getProductsEntity()
+											.getPromotionByPromotionsId().getPromotionValues()))%>
 													đ</td>
 												<td class="product-removal"><a href="#"><i
 														class="fa fa-trash-o"></i></a></td>
@@ -236,8 +238,8 @@
 											</tr>
 											<%
 												totalPrices += (gh.getSoLuong() * gh.getProductsEntity().getPrices())
-																- (gh.getSoLuong() * gh.getProductsEntity().getPrices()
-																		* gh.getProductsEntity().getPromotionByPromotionsId().getPromotionValues());
+																- (gh.getSoLuong() * gh.getProductsEntity().getPrices() * gh
+																		.getProductsEntity().getPromotionByPromotionsId().getPromotionValues());
 											%>
 											<%
 												}

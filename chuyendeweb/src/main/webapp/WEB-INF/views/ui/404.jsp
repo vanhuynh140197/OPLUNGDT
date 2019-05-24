@@ -452,8 +452,8 @@
 					<h4 class="mb-3">Where to find us</h4>
 					<p>
 						<strong>Obaju Ltd.</strong><br>13/25 New Avenue<br>New
-						Heaven<br>45Y 73J<br>England<br>
-						<strong>Great Britain</strong>
+						Heaven<br>45Y 73J<br>England<br> <strong>Great
+							Britain</strong>
 					</p>
 					<a href="contact.html">Go to contact page</a>
 					<hr class="d-block d-md-none">
@@ -517,7 +517,9 @@
 	<!-- JavaScript files-->
 	<script src="vendor/jquery/jquery.min.js"></script>
 	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-	<script src="vendor/jquery.cookie/jquery.cookie.js"> </script>
+	<script src="vendor/jquery.cookie/jquery.cookie.js">
+		
+	</script>
 	<script src="vendor/owl.carousel/owl.carousel.min.js"></script>
 	<script src="vendor/owl.carousel2.thumbs/owl.carousel2.thumbs.js"></script>
 	<script src="js/front.js"></script>

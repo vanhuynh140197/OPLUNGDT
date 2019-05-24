@@ -22,7 +22,8 @@
 		List<GioHang> gioHang = (List<GioHang>) session.getAttribute("gio_hang");
 	%>
 	<%
-		ShippingMethodEntity shippingMethodEntity = (ShippingMethodEntity) session.getAttribute("shippingMethod");
+		ShippingMethodEntity shippingMethodEntity = (ShippingMethodEntity) session
+				.getAttribute("shippingMethod");
 	%>
 	<%
 		PaymentsEntity paymentsEntity = (PaymentsEntity) session.getAttribute("payment");
@@ -65,15 +66,16 @@
 					<td><%=formatNumberGiaBan(gh.getProductsEntity().getPrices())%>
 					</td>
 					<td><%=gh.getSoLuong()%></td>
-					<td><%=formatNumberGiaBan((gh.getSoLuong() * gh.getProductsEntity().getPrices())
-						- (gh.getSoLuong() * gh.getProductsEntity().getPrices()
-								* gh.getProductsEntity().getPromotionByPromotionsId().getPromotionValues()))%>
+					<td><%=formatNumberGiaBan(
+						(gh.getSoLuong() * gh.getProductsEntity().getPrices()) - (gh.getSoLuong()
+								* gh.getProductsEntity().getPrices() * gh.getProductsEntity()
+										.getPromotionByPromotionsId().getPromotionValues()))%>
 					</td>
 				</tr>
 				<%
 					totalPrices += (gh.getSoLuong() * gh.getProductsEntity().getPrices())
-								- (gh.getSoLuong() * gh.getProductsEntity().getPrices()
-										* gh.getProductsEntity().getPromotionByPromotionsId().getPromotionValues());
+								- (gh.getSoLuong() * gh.getProductsEntity().getPrices() * gh
+										.getProductsEntity().getPromotionByPromotionsId().getPromotionValues());
 				%>
 				<%
 					}

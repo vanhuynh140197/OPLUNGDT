@@ -11,7 +11,8 @@
 	<ul class="pagination">
 		<c:if test="${!pagedListHolder.firstPage}">
 			<li class="previous"><a
-				href="<%=StringUtils.replace(pagedLink, "~", String.valueOf(pagedListHolder.getPage() - 1))%>"><</a></li>
+				href="<%=StringUtils.replace(pagedLink, "~",
+							String.valueOf(pagedListHolder.getPage() - 1))%>"><</a></li>
 		</c:if>
 		<c:if test="${pagedListHolder.firstLinkedPage > 0}">
 			<li><a href="<%=StringUtils.replace(pagedLink, "~", "0")%>">1</a></li>
@@ -28,7 +29,8 @@
 				</c:when>
 				<c:otherwise>
 					<li><a
-						href="<%=StringUtils.replace(pagedLink, "~", String.valueOf(jspContext.getAttribute("i")))%>">${i+1}</a>
+						href="<%=StringUtils.replace(pagedLink, "~",
+									String.valueOf(jspContext.getAttribute("i")))%>">${i+1}</a>
 					</li>
 				</c:otherwise>
 			</c:choose>
@@ -40,11 +42,13 @@
 		<c:if
 			test="${pagedListHolder.lastLinkedPage < pagedListHolder.pageCount - 1}">
 			<li><a
-				href="<%=StringUtils.replace(pagedLink, "~", String.valueOf(pagedListHolder.getPageCount() - 1))%>">${pagedListHolder.pageCount}</a></li>
+				href="<%=StringUtils.replace(pagedLink, "~",
+							String.valueOf(pagedListHolder.getPageCount() - 1))%>">${pagedListHolder.pageCount}</a></li>
 		</c:if>
 		<c:if test="${!pagedListHolder.lastPage}">
 			<li class="next"><a
-				href="<%=StringUtils.replace(pagedLink, "~", String.valueOf(pagedListHolder.getPage() + 1))%>">></a></li>
+				href="<%=StringUtils.replace(pagedLink, "~",
+							String.valueOf(pagedListHolder.getPage() + 1))%>">></a></li>
 		</c:if>
 	</ul>
 </c:if>

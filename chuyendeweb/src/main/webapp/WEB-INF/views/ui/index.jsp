@@ -559,7 +559,7 @@
 								</c:url>
 								<div class="row products" id="viewproduct">
 									<c:forEach items="${pagedListHolder.pageList}" var="item">
-										<div class="col-lg-4 col-md-6" >
+										<div class="col-lg-4 col-md-6">
 											<div class="product">
 												<div class="flip-container">
 													<div class="flipper">

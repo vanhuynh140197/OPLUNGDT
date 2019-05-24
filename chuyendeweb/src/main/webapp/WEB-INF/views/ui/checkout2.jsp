@@ -111,8 +111,8 @@
 									double totalPrices = 0;
 									for (GioHang gh : gioHang) {
 										totalPrices += (gh.getSoLuong() * gh.getProductsEntity().getPrices())
-												- (gh.getSoLuong() * gh.getProductsEntity().getPrices()
-														* gh.getProductsEntity().getPromotionByPromotionsId().getPromotionValues());
+												- (gh.getSoLuong() * gh.getProductsEntity().getPrices() * gh
+														.getProductsEntity().getPromotionByPromotionsId().getPromotionValues());
 									}
 								%>
 								<table class="table">

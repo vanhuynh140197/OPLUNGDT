@@ -106,12 +106,13 @@
 									double totalPrices = 0;
 									for (GioHang gh : gioHang) {
 										totalPrices += (gh.getSoLuong() * gh.getProductsEntity().getPrices())
-												- (gh.getSoLuong() * gh.getProductsEntity().getPrices()
-														* gh.getProductsEntity().getPromotionByPromotionsId().getPromotionValues());
+												- (gh.getSoLuong() * gh.getProductsEntity().getPrices() * gh
+														.getProductsEntity().getPromotionByPromotionsId().getPromotionValues());
 									}
 								%>
 								<%
-									ShippingMethodEntity shippingMethodEntity = (ShippingMethodEntity) session.getAttribute("shippingMethod");
+									ShippingMethodEntity shippingMethodEntity = (ShippingMethodEntity) session
+											.getAttribute("shippingMethod");
 								%>
 								<table class="table">
 									<tbody>

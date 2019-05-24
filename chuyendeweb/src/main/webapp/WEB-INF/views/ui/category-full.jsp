@@ -25,7 +25,8 @@
 						<!-- breadcrumb-->
 						<nav aria-label="breadcrumb">
 						<ol class="breadcrumb">
-							<li class="breadcrumb-item"><a href="<c:url value="/oplungdienthoai/home"/>">Trang chủ</a></li>
+							<li class="breadcrumb-item"><a
+								href="<c:url value="/oplungdienthoai/home"/>">Trang chủ</a></li>
 							<li aria-current="page" class="breadcrumb-item active">Ốp
 								lưng IPhone XS Max</li>
 						</ol>

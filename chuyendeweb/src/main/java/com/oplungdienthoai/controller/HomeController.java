@@ -322,6 +322,37 @@ public class HomeController {
 		return "/ui/login";
 	}
 
+	@RequestMapping(value = "/doimatkhau/{userName:.+}")
+	public String doiMatKhau(@PathVariable(value = "userName") String userName,
+			ModelMap modelMap) {
+		modelMap.put("doiMatKhauUserName", userService.getUsersName(userName.trim()));
+		return "/ui/repass";
+	}
+
+	@RequestMapping(value = "/xulydoimatkhau", method = RequestMethod.POST)
+	public String xuLyDoiMatKhau(@RequestParam(value = "username") String username,
+			@RequestParam(value = "matkhaumoi") String matkhaumoi, HttpSession session)
+			throws NoSuchAlgorithmException {
+		UsersEntity usersEntity = userService.getUsersName(username);
+		usersEntity.setPasswords(MD5Library.convertHashToString(matkhaumoi));
+		userService.edit(usersEntity);
+		session.setAttribute("LoginSuccess", usersEntity);
+		return "redirect:/oplungdienthoai/home";
+	}
+
+	@RequestMapping(value = "/doimatkhau/ajax", method = RequestMethod.POST)
+	public @ResponseBody String ajaxDoimatkhau(
+			@RequestParam(value = "matkhaucu") String matkhaucu,
+			@RequestParam(value = "username") String username) throws NoSuchAlgorithmException {
+		UsersEntity usersEntity = userService.getUsersName(username);
+		String passwordMD5 = MD5Library.convertHashToString(matkhaucu);
+		if (!usersEntity.getPasswords().trim().equals(passwordMD5)) {
+			return "error";
+		} else {
+			return "success";
+		}
+	}
+
 	@RequestMapping(value = "/logout")
 	public String dangXuat(HttpServletRequest request) {
 		HttpSession session = request.getSession();
@@ -392,6 +423,31 @@ public class HomeController {
 
 		userService.add(usersEntity);
 		return "/ui/registerSuccess";
+	}
 
+	@RequestMapping(value = "/quenmatkhau")
+	public String quenMatKhau() {
+		return "/ui/forgotpassword";
+	}
+
+	@RequestMapping(
+			value = "/xulylaylaimatkhau",
+			method = RequestMethod.POST,
+			produces = "text/plain;charset=UTF-8")
+	public String xuLyLayLaiMatKhau(@RequestParam(value = "email") String email)
+			throws NoSuchAlgorithmException {
+		String passwordNew = RandomString.randomString(10);
+		String subject = "Forgot Password Obaju";
+		String text = "<h2><b>Hello," + email + "</b></h2></br>"
+				+ "<p>Mật khẩu của bạn đã được thay đổi. Mật khẩu hiện tại của bạn là: "
+				+ passwordNew
+				+ " . Vui lòng đăng nhập để đổi lại mật khẩu.Cảm ơn quý khách.</p></br>"
+				+ "<a href=\"http://localhost:8080/chuyendeweb/oplungdienthoai/dangnhap\"><button>Đăng nhập ngay</button></a>";
+		UsersEntity usersEntity = userService.getUsersName(email);
+		usersEntity.setPasswords(MD5Library.convertHashToString(passwordNew));
+		SendMail.sendMail(email, subject, text);
+
+		userService.edit(usersEntity);
+		return "/ui/forgotsuccess";
 	}
 }
