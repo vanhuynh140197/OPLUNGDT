@@ -1,37 +1,34 @@
-package com.oplungdienthoai.controller;
+package com.oplungdienthoai.service;
 
 import static org.mockito.Matchers.anyString;
 import static org.mockito.Mockito.atLeastOnce;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import java.util.LinkedList;
+import java.util.ArrayList;
 import java.util.List;
 
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.mockito.Spy;
-import org.springframework.ui.ModelMap;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import com.oplungdienthoai.dao.ProductsDAO;
 import com.oplungdienthoai.model.ProductsEntity;
-import com.oplungdienthoai.services.ProductsService;
+import com.oplungdienthoai.services.impl.ProductsServiceImpl;
 
-public class AdminControllerTest {
+public class ProductServiceImplTest {
 	@Mock
-	ProductsService service;
+	ProductsDAO dao;
 
 	@InjectMocks
-	AdminController adminController;
+	ProductsServiceImpl productsServiceImpl;
 
 	@Spy
-	List<ProductsEntity> productsEntities = new LinkedList<ProductsEntity>();
-
-	@Spy
-	ModelMap model;
+	List<ProductsEntity> productsEntities = new ArrayList<ProductsEntity>();
 
 	@BeforeClass
 	public void setUp() {
@@ -40,19 +37,32 @@ public class AdminControllerTest {
 	}
 
 	@Test
-	public void listProduct() {
-		when(service.getAll()).thenReturn(productsEntities);
-		Assert.assertEquals(adminController.product(model), "/admin/product");
-		Assert.assertEquals(model.get("listProducts"), productsEntities);
-		verify(service, atLeastOnce()).getAll();
+	public void findById() {
+		ProductsEntity productsEntity = productsEntities.get(0);
+		when(dao.getProducts(anyString())).thenReturn(productsEntity);
+		Assert.assertEquals(productsServiceImpl.getProducts(productsEntity.getProductsId()),
+				productsEntity);
 	}
-
+	@Test
+	public void updateProduct() {
+		ProductsEntity productsEntity = productsEntities.get(0);
+		when(dao.getProducts(anyString())).thenReturn(productsEntity);
+		productsServiceImpl.edit(productsEntity);
+		verify(dao, atLeastOnce()).getProducts(anyString());
+	}
 	@Test
 	public void deleteProduct() {
-		when(service.remove(anyString())).thenReturn(true);
-		Assert.assertEquals(adminController.removeProduct("123"),
-				"redirect:/admin/oplungdienthoai/sanpham");
+		when(dao.remove(anyString())).thenReturn(true);
+		productsServiceImpl.remove(anyString());
+		verify(dao, atLeastOnce()).remove(anyString());
 	}
+	@Test
+	public void findAllProduct() {
+		when(dao.getAll()).thenReturn(productsEntities);
+		Assert.assertEquals(productsServiceImpl.getAll(), productsEntities);
+		Assert.assertEquals(productsServiceImpl.getAll().size(), 2);
+	}
+
 	public List<ProductsEntity> getProductList() {
 		ProductsEntity productsEntity = new ProductsEntity();
 		productsEntity.setAmount(2);
