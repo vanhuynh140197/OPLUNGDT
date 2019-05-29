@@ -416,7 +416,7 @@ public class HomeController {
 		usersEntity.setPasswords(MD5Library.convertHashToString(pass));
 		usersEntity.setName(name);
 		usersEntity.setPhone(phone);
-		usersEntity.setRoleId("2");
+		usersEntity.setRoleId(UsersEntity.ROLE_USER);
 		usersEntity.setValidateEmail(false);
 		usersEntity.setUsersStatus(false);
 		SendMail.sendMail(email, subject, text);

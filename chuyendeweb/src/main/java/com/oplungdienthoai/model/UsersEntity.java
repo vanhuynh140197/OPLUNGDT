@@ -1,6 +1,12 @@
 package com.oplungdienthoai.model;
 
-import javax.persistence.*;
+import javax.persistence.Basic;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
 
 /**
  * Created by VanHuynh on 25/03/2019.
@@ -8,6 +14,8 @@ import javax.persistence.*;
 @Entity
 @Table(name = "users", schema = "public", catalog = "oplungdienthoai")
 public class UsersEntity {
+	public static final String ROLE_USER = "2";
+	public static final String ROLE_ADMIN = "1";
 	private String userId;
 	private String userName;
 	private String passwords;
@@ -117,11 +125,15 @@ public class UsersEntity {
 			return false;
 		if (phone != null ? !phone.equals(that.phone) : that.phone != null)
 			return false;
-		if (validateEmail != null ? !validateEmail.equals(that.validateEmail) : that.validateEmail != null)
+		if (validateEmail != null
+				? !validateEmail.equals(that.validateEmail)
+				: that.validateEmail != null)
 			return false;
 		if (roleId != null ? !roleId.equals(that.roleId) : that.roleId != null)
 			return false;
-		if (usersStatus != null ? !usersStatus.equals(that.usersStatus) : that.usersStatus != null)
+		if (usersStatus != null
+				? !usersStatus.equals(that.usersStatus)
+				: that.usersStatus != null)
 			return false;
 
 		return true;
@@ -141,7 +153,12 @@ public class UsersEntity {
 	}
 
 	@ManyToOne
-	@JoinColumn(name = "roleid", referencedColumnName = "roleid", nullable = false, insertable = false, updatable = false)
+	@JoinColumn(
+			name = "roleid",
+			referencedColumnName = "roleid",
+			nullable = false,
+			insertable = false,
+			updatable = false)
 	public RoleEntity getRoleByRoleId() {
 		return roleByRoleId;
 	}
