@@ -11,6 +11,10 @@ import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.support.PagedListHolder;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.ServletRequestUtils;
@@ -66,7 +70,7 @@ public class HomeController {
 	OrderDetailsService orderDetailsService;
 
 	@RequestMapping(value = "/home", method = RequestMethod.GET)
-	public String index(HttpServletRequest request, ModelMap modelMap) {
+	public String getIndexPage(HttpServletRequest request, ModelMap modelMap) {
 		List<ProductsEntity> productsEntities = productService.getAll();
 		@SuppressWarnings({"rawtypes", "unchecked"})
 		PagedListHolder pagedListHolder = new PagedListHolder(productsEntities);
@@ -79,13 +83,13 @@ public class HomeController {
 
 	@RequestMapping(value = "/search/ajax", method = RequestMethod.POST)
 	public @ResponseBody List<ProductsEntity>
-			ajaxSearch(@RequestParam(value = "inputsearch") String inputsearch) {
+			getAjaxSearch(@RequestParam(value = "inputsearch") String inputsearch) {
 		List<ProductsEntity> listProductsEntities = productService.search(inputsearch);
 		return listProductsEntities;
 	}
 
 	@RequestMapping(value = "/chitiet/{productsId:.+}", method = RequestMethod.GET)
-	public String chiTiet(@PathVariable(value = "productsId") String productsId,
+	public String getChiTietPage(@PathVariable(value = "productsId") String productsId,
 			ModelMap modelMap) {
 		ProductsEntity productsEntity = productService.getProducts(productsId);
 		List<ProductsEntity> productsEntities = productService
@@ -96,9 +100,12 @@ public class HomeController {
 	}
 
 	@RequestMapping(value = "/giohang/{productsId:.+}", method = RequestMethod.GET)
-	public String gioHang(@PathVariable(value = "productsId") String productsId,
+	public String getGioHangPage(@PathVariable(value = "productsId") String productsId,
 			HttpSession session, ModelMap modelMap) {
-		if (session.getAttribute("LoginSuccess") == null) {
+		Authentication authentication = SecurityContextHolder.getContext()
+				.getAuthentication();
+		UsersEntity user = userService.getUsersName(authentication.getName());
+		if (user == null) {
 			return "redirect:/oplungdienthoai/dangnhap";
 		} else {
 			ProductsEntity productsEntity = productService.getProducts(productsId);
@@ -119,7 +126,7 @@ public class HomeController {
 	}
 
 	@RequestMapping(value = "/giohang/capnhap", method = RequestMethod.POST)
-	public @ResponseBody String gioHangCapNhap(
+	public @ResponseBody String getAjaxGioHangCapNhap(
 			@RequestParam(value = "quantity") int quantity,
 			@RequestParam(value = "productid") String productid, HttpSession session) {
 		ProductsEntity productsEntity = productService.getProducts(productid);
@@ -131,14 +138,13 @@ public class HomeController {
 	}
 
 	@RequestMapping(value = "/giohang/xoa", method = RequestMethod.POST)
-	public @ResponseBody String gioHangXoa(
+	public @ResponseBody String getAjaxGioHangXoa(
 			@RequestParam(value = "productid") String productid, HttpSession session) {
 		ProductsEntity productsEntity = productService.getProducts(productid);
 		@SuppressWarnings("unchecked")
 		List<GioHang> gioHang = (List<GioHang>) session.getAttribute("gio_hang");
 		GioHang gh = productService.getProductInGioHang(gioHang, productsEntity);
 		gioHang.remove(gh);
-		System.out.println(gioHang.size());
 		if (gioHang == null || gioHang.equals("") || gioHang.size() == 0) {
 			return "cartempty";
 		} else {
@@ -147,18 +153,18 @@ public class HomeController {
 	}
 
 	@RequestMapping(value = "/giohangcuaban")
-	public String giohangcuaban(HttpSession session) {
+	public String hetGioHangCuaBanPage(HttpSession session) {
 		session.getAttribute("gio_hang");
 		return "/ui/basket";
 	}
 
 	@RequestMapping(value = "/menu")
-	public String menu() {
+	public String getMenuPage() {
 		return "/ui/menu";
 	}
 
 	@RequestMapping(value = "/thanhtoan")
-	public String thanhToan() {
+	public String getThanhToanPage() {
 		return "/ui/checkout1";
 	}
 
@@ -166,7 +172,7 @@ public class HomeController {
 			value = "/thanhtoan2",
 			method = RequestMethod.POST,
 			produces = "text/plain;charset=UTF-8")
-	public String thanhToan2(@RequestParam(value = "email") String email,
+	public String getThanhToan2Page(@RequestParam(value = "email") String email,
 			@RequestParam(value = "name") String name,
 			@RequestParam(value = "address") String address,
 			@RequestParam(value = "phone") String phone,
@@ -192,7 +198,7 @@ public class HomeController {
 			value = "/thanhtoans2",
 			method = RequestMethod.POST,
 			produces = "text/plain;charset=UTF-8")
-	public String thanhToans2(@RequestParam(value = "customerid") String customerid,
+	public String getThanhToans2Page(@RequestParam(value = "customerid") String customerid,
 			@RequestParam(value = "email") String email,
 			@RequestParam(value = "name") String name,
 			@RequestParam(value = "address") String address,
@@ -215,7 +221,7 @@ public class HomeController {
 	}
 
 	@RequestMapping(value = "/backthanhtoan2", produces = "text/plain;charset=UTF-8")
-	public String backThanhToan2(ModelMap modelMap, HttpSession session) {
+	public String getBackThanhToan2Page(ModelMap modelMap, HttpSession session) {
 		modelMap.put("listShippingMethod", shippingMethodService.getAll());
 		return "/ui/checkout2";
 	}
@@ -224,7 +230,7 @@ public class HomeController {
 			value = "/thanhtoan3",
 			method = RequestMethod.POST,
 			produces = "text/plain;charset=UTF-8")
-	public String thanhToan3(@RequestParam(value = "delivery") String delivery,
+	public String getThanhToan3Page(@RequestParam(value = "delivery") String delivery,
 			ModelMap modelMap, HttpSession session) {
 		session.setAttribute("shippingMethod",
 				shippingMethodService.getShippingMethod(delivery));
@@ -233,7 +239,7 @@ public class HomeController {
 	}
 
 	@RequestMapping(value = "/backthanhtoan3", produces = "text/plain;charset=UTF-8")
-	public String backThanhToan3(ModelMap modelMap, HttpSession session) {
+	public String getBackThanhToan3Page(ModelMap modelMap, HttpSession session) {
 		modelMap.put("listPayMent", paymentsService.getAll());
 		return "/ui/checkout3";
 	}
@@ -242,14 +248,14 @@ public class HomeController {
 			value = "/thanhtoan4",
 			method = RequestMethod.POST,
 			produces = "text/plain;charset=UTF-8")
-	public String thanhToan4(@RequestParam(value = "payment") String payment,
+	public String getThanhToan4Page(@RequestParam(value = "payment") String payment,
 			HttpSession session) {
 		session.setAttribute("payment", paymentsService.getPayments(payment));
 		return "/ui/checkout4";
 	}
 
 	@RequestMapping(value = "/sanpham")
-	public String sanPham() {
+	public String getSanPhamPage() {
 		return "/ui/category-right";
 	}
 
@@ -257,7 +263,7 @@ public class HomeController {
 			value = "/hoadon",
 			method = RequestMethod.POST,
 			produces = "text/plain;charset=UTF-8")
-	public String hoaDon(HttpSession session, ModelMap modelMap) {
+	public String getHoaDonPage(HttpSession session, ModelMap modelMap) {
 		CustomersEntity customersEntity = (CustomersEntity) session.getAttribute("customer");
 		ShippingMethodEntity shippingMethodEntity = (ShippingMethodEntity) session
 				.getAttribute("shippingMethod");
@@ -304,7 +310,7 @@ public class HomeController {
 	}
 
 	@RequestMapping(value = "/tieptucmuahang")
-	public String tiepTucMuaHang(HttpSession session) {
+	public String getTiepTucMuaHangPage(HttpSession session) {
 		session.removeAttribute("payment");
 		session.removeAttribute("shippingMethod");
 		session.removeAttribute("customer");
@@ -313,40 +319,40 @@ public class HomeController {
 	}
 
 	@RequestMapping(value = "/dangky")
-	public String dangKy() {
+	public String getDangKyPage() {
 		return "/ui/register";
 	}
 
 	@RequestMapping(value = "/dangnhap")
-	public String dangNhap() {
+	public String getDangNhapPage() {
 		return "/ui/login";
 	}
 
 	@RequestMapping(value = "/doimatkhau/{userName:.+}")
-	public String doiMatKhau(@PathVariable(value = "userName") String userName,
+	public String getDoiMatKhauPage(@PathVariable(value = "userName") String userName,
 			ModelMap modelMap) {
 		modelMap.put("doiMatKhauUserName", userService.getUsersName(userName.trim()));
 		return "/ui/repass";
 	}
 
 	@RequestMapping(value = "/xulydoimatkhau", method = RequestMethod.POST)
-	public String xuLyDoiMatKhau(@RequestParam(value = "username") String username,
+	public String getXuLyDoiMatKhau(@RequestParam(value = "username") String username,
 			@RequestParam(value = "matkhaumoi") String matkhaumoi, HttpSession session)
 			throws NoSuchAlgorithmException {
 		UsersEntity usersEntity = userService.getUsersName(username);
-		usersEntity.setPasswords(MD5Library.convertHashToString(matkhaumoi));
+		PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+		usersEntity.setPasswords(passwordEncoder.encode(matkhaumoi));
 		userService.edit(usersEntity);
-		session.setAttribute("LoginSuccess", usersEntity);
 		return "redirect:/oplungdienthoai/home";
 	}
 
 	@RequestMapping(value = "/doimatkhau/ajax", method = RequestMethod.POST)
-	public @ResponseBody String ajaxDoimatkhau(
+	public @ResponseBody String getCheckAjaxDoimatkhau(
 			@RequestParam(value = "matkhaucu") String matkhaucu,
 			@RequestParam(value = "username") String username) throws NoSuchAlgorithmException {
 		UsersEntity usersEntity = userService.getUsersName(username);
-		String passwordMD5 = MD5Library.convertHashToString(matkhaucu);
-		if (!usersEntity.getPasswords().trim().equals(passwordMD5)) {
+		PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+		if (!passwordEncoder.matches(matkhaucu, usersEntity.getPasswords().trim())) {
 			return "error";
 		} else {
 			return "success";
@@ -354,30 +360,14 @@ public class HomeController {
 	}
 
 	@RequestMapping(value = "/logout")
-	public String dangXuat(HttpServletRequest request) {
-		HttpSession session = request.getSession();
-		session.invalidate();
+	public String getDangXuatPage(HttpServletRequest request) {
+		SecurityContextHolder.getContext().setAuthentication(null);
 		return "redirect:/oplungdienthoai/home";
 	}
 
-	@RequestMapping(value = "/login/ajax", method = RequestMethod.POST)
-	public @ResponseBody String ajaxLogin(@RequestParam(value = "email") String email,
-			@RequestParam(value = "password") String password, HttpSession session)
-			throws NoSuchAlgorithmException {
-		UsersEntity usersEntity = userService.getUsersName(email);
-		String passwordMD5 = MD5Library.convertHashToString(password);
-		if (usersEntity == null) {
-			return "error";
-		} else if (!usersEntity.getPasswords().trim().equals(passwordMD5)) {
-			return "error";
-		} else {
-			session.setAttribute("LoginSuccess", usersEntity);
-			return "success";
-		}
-	}
-
 	@RequestMapping(value = "/register/ajax", method = RequestMethod.POST)
-	public @ResponseBody String ajaxRegister(@RequestParam(value = "email") String email) {
+	public @ResponseBody String
+			getAjaxRegister(@RequestParam(value = "email") String email) {
 		UsersEntity usersEntity = userService.getUsersName(email);
 		if (usersEntity == null) {
 			return "success";
@@ -389,7 +379,7 @@ public class HomeController {
 	}
 
 	@RequestMapping(value = "/xacnhandangki")
-	public String XacNhanDangKi(@RequestParam(value = "email") String email) {
+	public String getXacNhanDangKi(@RequestParam(value = "email") String email) {
 		userService.update(email, true);
 		return "redirect:/oplungdienthoai/dangnhap";
 	}
@@ -398,7 +388,7 @@ public class HomeController {
 			value = "/register",
 			method = RequestMethod.POST,
 			produces = "text/plain;charset=UTF-8")
-	public String register(@RequestParam(value = "email") String email,
+	public String getActionRegister(@RequestParam(value = "email") String email,
 			@RequestParam(value = "name") String name,
 			@RequestParam(value = "pass") String pass,
 			@RequestParam(value = "phone") String phone)
@@ -409,11 +399,11 @@ public class HomeController {
 				+ "<p>Cảm ơn bạn đã đăng ký tài khoản shop Obaju. Vui lòng xác nhận tài khoản để kích hoạt tài khoản. Cảm ơn bạn.</p></br>"
 				+ "<a href=\"http://localhost:8080/chuyendeweb/oplungdienthoai/xacnhandangki?email="
 				+ email + "\"><button>Xác Nhận Đăng Kí</button></a>";
-
+		PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
 		UsersEntity usersEntity = new UsersEntity();
 		usersEntity.setUserId("USE" + userID);
 		usersEntity.setUserName(email);
-		usersEntity.setPasswords(MD5Library.convertHashToString(pass));
+		usersEntity.setPasswords(passwordEncoder.encode(pass));
 		usersEntity.setName(name);
 		usersEntity.setPhone(phone);
 		usersEntity.setRoleId(UsersEntity.ROLE_USER);
@@ -426,7 +416,7 @@ public class HomeController {
 	}
 
 	@RequestMapping(value = "/quenmatkhau")
-	public String quenMatKhau() {
+	public String getQuenMatKhauPage() {
 		return "/ui/forgotpassword";
 	}
 
@@ -434,7 +424,7 @@ public class HomeController {
 			value = "/xulylaylaimatkhau",
 			method = RequestMethod.POST,
 			produces = "text/plain;charset=UTF-8")
-	public String xuLyLayLaiMatKhau(@RequestParam(value = "email") String email)
+	public String getXuLyLayLaiMatKhau(@RequestParam(value = "email") String email)
 			throws NoSuchAlgorithmException {
 		String passwordNew = RandomString.randomString(10);
 		String subject = "Forgot Password Obaju";
@@ -444,7 +434,8 @@ public class HomeController {
 				+ " . Vui lòng đăng nhập để đổi lại mật khẩu.Cảm ơn quý khách.</p></br>"
 				+ "<a href=\"http://localhost:8080/chuyendeweb/oplungdienthoai/dangnhap\"><button>Đăng nhập ngay</button></a>";
 		UsersEntity usersEntity = userService.getUsersName(email);
-		usersEntity.setPasswords(MD5Library.convertHashToString(passwordNew));
+		PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+		usersEntity.setPasswords(passwordEncoder.encode(passwordNew));
 		SendMail.sendMail(email, subject, text);
 
 		userService.edit(usersEntity);

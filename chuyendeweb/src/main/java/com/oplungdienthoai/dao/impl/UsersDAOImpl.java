@@ -20,15 +20,16 @@ public class UsersDAOImpl implements UsersDAO {
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<UsersEntity> getAll() {
-		return sessionFactory.getCurrentSession().createQuery("from UsersEntity where usersStatus=" + false + "")
-				.list();
+		return sessionFactory.getCurrentSession()
+				.createQuery("from UsersEntity where usersStatus=" + false + "").list();
 	}
 
 	@Override
 	public UsersEntity getUsers(String userId) {
 		@SuppressWarnings("rawtypes")
-		List list = sessionFactory.getCurrentSession()
-				.createQuery("from UsersEntity where userId='" + userId + "' and usersStatus=" + false + "").list();
+		List list = sessionFactory.getCurrentSession().createQuery(
+				"from UsersEntity where userId='" + userId + "' and usersStatus=" + false + "")
+				.list();
 		return !list.isEmpty() ? (UsersEntity) list.get(0) : null;
 	}
 
@@ -36,7 +37,9 @@ public class UsersDAOImpl implements UsersDAO {
 	public UsersEntity getUsersName(String userName) {
 		@SuppressWarnings("rawtypes")
 		List list = sessionFactory.getCurrentSession()
-				.createQuery("from UsersEntity where userName='" + userName + "'").list();
+				.createQuery("from UsersEntity where userName='" + userName + "' and usersStatus="
+						+ false + "")
+				.list();
 		return !list.isEmpty() ? (UsersEntity) list.get(0) : null;
 	}
 
@@ -63,8 +66,8 @@ public class UsersDAOImpl implements UsersDAO {
 	@Override
 	public boolean remove(String userId) {
 		try {
-			sessionFactory.getCurrentSession()
-					.createQuery("update UsersEntity set usersStatus=" + true + " where userId='" + userId + "'")
+			sessionFactory.getCurrentSession().createQuery(
+					"update UsersEntity set usersStatus=" + true + " where userId='" + userId + "'")
 					.executeUpdate();
 		} catch (Exception e) {
 			return false;
@@ -76,8 +79,8 @@ public class UsersDAOImpl implements UsersDAO {
 	public boolean update(String email, Boolean daxacnhan) {
 		try {
 			sessionFactory.getCurrentSession()
-					.createQuery(
-							"update UsersEntity set validateEmail=" + daxacnhan + " where userName='" + email + "'")
+					.createQuery("update UsersEntity set validateEmail=" + daxacnhan
+							+ " where userName='" + email + "'")
 					.executeUpdate();
 		} catch (Exception e) {
 			return false;

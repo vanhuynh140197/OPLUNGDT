@@ -1,6 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib uri="http://www.springframework.org/security/tags"
+	prefix="security"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -34,12 +36,13 @@
 											class="nav-link dropdown-toggle"><i
 												class="educate-icon educate-bell"></i><span
 												class="indicator-nt"></span></a></li>
+										<security:authentication property="principal" var="user" />
 										<li class="nav-item"><a href="#" data-toggle="dropdown"
 											role="button" aria-expanded="false"
 											class="nav-link dropdown-toggle"> <img
 												src="<c:url value="/resources/admin/images/product/pro4.jpg"/>"
-												alt="" /> <span class="admin-name">Xin chào, Huỳnh
-													đẹp trai</span> <i
+												alt="" /> <span class="admin-name">Xin chào,<strong
+													style="color: red;">${user.username}</strong></span> <i
 												class="fa fa-angle-down edu-icon edu-down-arrow"></i>
 										</a>
 											<ul role="menu"
@@ -49,7 +52,7 @@
 														tin tài khoản</a></li>
 												<li><a href="#"><span
 														class="edu-icon edu-settings author-log-ic"></span>Cài đặt</a></li>
-												<li><a href="#"><span
+												<li><a href='<c:url value="/oplungdienthoai/logout"/>'><span
 														class="edu-icon edu-locked author-log-ic"></span>Đăng xuất</a></li>
 											</ul></li>
 										<li class="nav-item nav-setting-open"><a href="#"

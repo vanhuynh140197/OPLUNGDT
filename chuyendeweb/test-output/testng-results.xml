@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="338" started-at="2019-05-26T04:39:58Z" finished-at="2019-05-26T04:39:58Z">
+  <suite name="Default suite" duration-ms="273" started-at="2019-06-01T16:56:25Z" finished-at="2019-06-01T16:56:26Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="338" started-at="2019-05-26T04:39:58Z" finished-at="2019-05-26T04:39:58Z">
+    <test name="Default test" duration-ms="273" started-at="2019-06-01T16:56:25Z" finished-at="2019-06-01T16:56:26Z">
       <class name="com.oplungdienthoai.service.ProductServiceImplTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.oplungdienthoai.service.ProductServiceImplTest@d8355a8]" name="setUp" is-config="true" duration-ms="276" started-at="2019-05-26T11:39:58Z" finished-at="2019-05-26T11:39:58Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.oplungdienthoai.service.ProductServiceImplTest@68c4039c]" name="setUp" is-config="true" duration-ms="220" started-at="2019-06-01T23:56:25Z" finished-at="2019-06-01T23:56:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="deleteProduct()[pri:0, instance:com.oplungdienthoai.service.ProductServiceImplTest@d8355a8]" name="deleteProduct" duration-ms="19" started-at="2019-05-26T11:39:58Z" finished-at="2019-05-26T11:39:58Z">
+        <test-method status="PASS" signature="deleteProduct()[pri:0, instance:com.oplungdienthoai.service.ProductServiceImplTest@68c4039c]" name="deleteProduct" duration-ms="17" started-at="2019-06-01T23:56:26Z" finished-at="2019-06-01T23:56:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteProduct -->
-        <test-method status="PASS" signature="findAllProduct()[pri:0, instance:com.oplungdienthoai.service.ProductServiceImplTest@d8355a8]" name="findAllProduct" duration-ms="7" started-at="2019-05-26T11:39:58Z" finished-at="2019-05-26T11:39:58Z">
+        <test-method status="PASS" signature="findAllProduct()[pri:0, instance:com.oplungdienthoai.service.ProductServiceImplTest@68c4039c]" name="findAllProduct" duration-ms="6" started-at="2019-06-01T23:56:26Z" finished-at="2019-06-01T23:56:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findAllProduct -->
-        <test-method status="PASS" signature="findById()[pri:0, instance:com.oplungdienthoai.service.ProductServiceImplTest@d8355a8]" name="findById" duration-ms="9" started-at="2019-05-26T11:39:58Z" finished-at="2019-05-26T11:39:58Z">
+        <test-method status="PASS" signature="findById()[pri:0, instance:com.oplungdienthoai.service.ProductServiceImplTest@68c4039c]" name="findById" duration-ms="5" started-at="2019-06-01T23:56:26Z" finished-at="2019-06-01T23:56:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findById -->
-        <test-method status="PASS" signature="updateProduct()[pri:0, instance:com.oplungdienthoai.service.ProductServiceImplTest@d8355a8]" name="updateProduct" duration-ms="3" started-at="2019-05-26T11:39:58Z" finished-at="2019-05-26T11:39:58Z">
+        <test-method status="PASS" signature="updateProduct()[pri:0, instance:com.oplungdienthoai.service.ProductServiceImplTest@68c4039c]" name="updateProduct" duration-ms="2" started-at="2019-06-01T23:56:26Z" finished-at="2019-06-01T23:56:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateProduct -->

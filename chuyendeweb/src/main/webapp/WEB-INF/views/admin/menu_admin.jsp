@@ -89,11 +89,12 @@
 	<div class="left-sidebar-pro">
 		<nav id="sidebar" class="">
 		<div class="sidebar-header">
-			<a href="index.html"><img class="main-logo"
-				src="<c:url value="/resources/admin/images/logo/logo.png"/>" alt="" /></a>
-			<strong><a href="index.html"><img
-					src="<c:url value="/resources/admin/images/logo/logosn.png"/>"
-					alt="" /></a></strong>
+			<a href="<c:url value="/oplungdienthoai/home"/>"><img
+				src='<c:url value="/resources/ui/img/logo.png"/>' alt="Obaju logo"
+				class="d-none d-md-inline-block"></a> <strong><a
+				href="<c:url value="/oplungdienthoai/home"/>"><img
+					src='<c:url value="/resources/ui/img/logo-small.png"/>'
+					alt="Obaju logo" class="d-inline-block d-md-none"></a></strong>
 		</div>
 		<div class="left-custom-menu-adp-wrap comment-scrollbar">
 			<nav class="sidebar-nav left-sidebar-menu-pro">

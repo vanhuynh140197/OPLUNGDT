@@ -3,6 +3,8 @@
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<%@ taglib uri="http://www.springframework.org/security/tags"
+	prefix="security"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -49,108 +51,115 @@
 										'keyup',
 										function(e) {
 											e.preventDefault();
-											$
-													.ajax({
-														type : 'POST',
-														url : '<c:url value="/oplungdienthoai/search/ajax"/>',
-														dataType : 'json',
-														data : {
-															inputsearch : $(
-																	'#inputsearch')
-																	.val()
-																	.trim()
-														},
-														success : function(data) {
-															if (data.length != 0) {
-																$(
-																		'#viewproduct')
-																		.empty();
-																$
-																		.each(
-																				data,
-																				function(
-																						index,
-																						item) {
-																					$(
-																							'#viewproduct')
-																							.append(
-																									"<div class='col-lg-4 col-md-6'>"
-																											+ "<div class='product'>"
-																											+ "<div class='flip-container'>"
-																											+ "<div class='flipper'>"
-																											+ "<div class='front'>"
-																											+ "<a href='<c:url value='/oplungdienthoai/chitiet/"
-																											+ item.productsId
-																													.trim()
-																											+ "'/>'>"
-																											+ "<img src='<c:url value='/"+item.productsImages1+"'/>' alt='' class='img-fluid'></a>"
-																											+ "</div>"
-																											+ "<div class='back'>"
-																											+ "<a href='<c:url value='/oplungdienthoai/chitiet/"
-																											+ item.productsId
-																													.trim()
-																											+ "'/>'> <img src='<c:url value='/"
+											if ($('#inputsearch').val() === "") {
+												window.location.reload();
+											} else {
+												$
+														.ajax({
+															type : 'POST',
+															url : '<c:url value="/oplungdienthoai/search/ajax"/>',
+															dataType : 'json',
+															data : {
+																inputsearch : $(
+																		'#inputsearch')
+																		.val()
+																		.trim()
+															},
+															success : function(
+																	data) {
+																if (data.length != 0) {
+																	$(
+																			'#viewproduct')
+																			.empty();
+																	$
+																			.each(
+																					data,
+																					function(
+																							index,
+																							item) {
+																						$(
+																								'#viewproduct')
+																								.append(
+																										"<div class='col-lg-4 col-md-6'>"
+																												+ "<div class='product'>"
+																												+ "<div class='flip-container'>"
+																												+ "<div class='flipper'>"
+																												+ "<div class='front'>"
+																												+ "<a href='<c:url value='/oplungdienthoai/chitiet/"
+																												+ item.productsId
+																														.trim()
+																												+ "'/>'>"
+																												+ "<img src='<c:url value='/"+item.productsImages1+"'/>' alt='' class='img-fluid'></a>"
+																												+ "</div>"
+																												+ "<div class='back'>"
+																												+ "<a href='<c:url value='/oplungdienthoai/chitiet/"
+																												+ item.productsId
+																														.trim()
+																												+ "'/>'> <img src='<c:url value='/"
 																										+item.productsImages2
 																										+"'/>' alt='' class='img-fluid'></a>"
-																											+ "</div>"
-																											+ "</div>"
-																											+ "</div>"
-																											+ "<a href='<c:url value='/oplungdienthoai/chitiet/"
-																											+ item.productsId
-																													.trim()
-																											+ "'/>' class='invisible'>"
-																											+ "<img src='<c:url value='/"
+																												+ "</div>"
+																												+ "</div>"
+																												+ "</div>"
+																												+ "<a href='<c:url value='/oplungdienthoai/chitiet/"
+																												+ item.productsId
+																														.trim()
+																												+ "'/>' class='invisible'>"
+																												+ "<img src='<c:url value='/"
 																										+item.productsImages1
 																										+"'/>' alt='' class='img-fluid'></a>"
-																											+ "<div class='text'>"
-																											+ "<h3>"
-																											+ item.productsName
-																											+ "</h3>"
-																											+ "<p class='price'>"
-																											+ "<del></del>"
-																											+ "<i class='fas fa-caret-right'></i> Giá bán: <strong style='color: red;'>"
-																											+ numeral(
-																													item.prices)
-																													.format(
-																															'0,0')
-																											+ " đ</strong>"
-																											+ "</p>"
-																											+ "<br>"
-																											+ "<p class='buttons'>"
-																											+ "<a href='<c:url value='/oplungdienthoai/chitiet/"
-																											+ item.productsId
-																													.trim()
-																											+ "'/>' class='btn btn-outline-secondary'>Chi tiết</a>"
-																											+ "<a href='<c:url value='/oplungdienthoai/giohang/"
-																											+ item.productsId
-																													.trim()
-																											+ "'/>' class='btn btn-primary5'><i class='fa fa-shopping-cart'></i>Đặt hàng nhanh</a>"
-																											+ "</p>"
-																											+ "</div>"
-																											+ "<div class='ribbon sale'>"
-																											+ "<div class='theribbon'>SALE</div>"
-																											+ "<div class='ribbon-background'></div>"
-																											+ "</div>"
-																											+ "<div class='ribbon new'>"
-																											+ "<div class='theribbon'>NEW</div>"
-																											+ "<div class='ribbon-background'></div>"
-																											+ "</div>"
-																											+ "</div>"
-																											+ "</div>")
-																				});
-															} else {
-																$(
-																		'#viewproduct')
-																		.empty()
-																		.append(
-																				"<div class='col-lg-12 col-md-12'><h5>Sản phẩm bạn tìm hiện tại chưa có</h5></div>");
+																												+ "<div class='text'>"
+																												+ "<h3>"
+																												+ item.productsName
+																												+ "</h3>"
+																												+ "<p class='price'>"
+																												+ "<del></del>"
+																												+ "<i class='fas fa-caret-right'></i> Giá bán: <strong style='color: red;'>"
+																												+ numeral(
+																														item.prices)
+																														.format(
+																																'0,0')
+																												+ " đ</strong>"
+																												+ "</p>"
+																												+ "<br>"
+																												+ "<p class='buttons'>"
+																												+ "<a href='<c:url value='/oplungdienthoai/chitiet/"
+																												+ item.productsId
+																														.trim()
+																												+ "'/>' class='btn btn-outline-secondary'>Chi tiết</a>"
+																												+ "<a href='<c:url value='/oplungdienthoai/giohang/"
+																												+ item.productsId
+																														.trim()
+																												+ "'/>' class='btn btn-primary5'><i class='fa fa-shopping-cart'></i>Đặt hàng nhanh</a>"
+																												+ "</p>"
+																												+ "</div>"
+																												+ "<div class='ribbon sale'>"
+																												+ "<div class='theribbon'>SALE</div>"
+																												+ "<div class='ribbon-background'></div>"
+																												+ "</div>"
+																												+ "<div class='ribbon new'>"
+																												+ "<div class='theribbon'>NEW</div>"
+																												+ "<div class='ribbon-background'></div>"
+																												+ "</div>"
+																												+ "</div>"
+																												+ "</div>")
+																					});
+																} else {
+																	$(
+																			'#viewproduct')
+																			.empty()
+																			.append(
+																					"<div class='col-lg-12 col-md-12'><h5>Sản phẩm bạn tìm hiện tại chưa có</h5></div>");
+																}
+															},
+															error : function(
+																	error) {
+																console
+																		.log("error"
+																				+ error);
 															}
-														},
-														error : function(error) {
-															console.log("error"
-																	+ error);
-														}
-													})
+														});
+											}
 										});
 					});
 </script>
@@ -173,98 +182,44 @@
 								class="fas fa-map-marker-alt"></i> Địa chỉ cửa hàng</a></li>
 						<li class="list-inline-item"><a href="#"><i
 								class="fas fa-phone-volume"></i> Chăm sóc khách hàng</a></li>
-						<%
-							UsersEntity usersEntity = session.getAttribute("LoginSuccess") == null
-									? null
-									: ((UsersEntity) session.getAttribute("LoginSuccess"));
-							if (usersEntity == null) {
-						%>
-						<li class="list-inline-item"><a
-							href='<c:url value="/oplungdienthoai/dangky"/>'><i
-								class="fas fa-user-edit"></i> Đăng ký</a></li>
-						<li class="list-inline-item"><a
-							href='<c:url value="/oplungdienthoai/dangnhap"/>'> <i
-								class="fas fa-user-tag"></i> Đăng nhập
-						</a></li>
-						<%
-							} else {
-						%>
-						<li class="list-inline-item" class="dropdown"><a href="#"
-							id="dropdownMenuButton" data-toggle="dropdown"><i
-								class="fab fa-angellist"></i> Xin chào,<strong
-								style="color: red;"><%=usersEntity.getUserName()%></strong> <i
-								class="fas fa-caret-down"></i></a>
-							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-								<%
-									if (usersEntity.getRoleId().equals("1")) {
-								%><a class="dropdown-item"
-									href='<c:url value="/admin/oplungdienthoai"/>'> <i
-									class="fas fa-angle-right"></i> Quản lý admin
-								</a>
-								<%
-									}
-								%><a class="dropdown-item" href="#"><i
-									class="fas fa-angle-right"></i> Thông tin tài khoản </a> <a
-									class="dropdown-item"
-									href="<%=application.getContextPath()%>/oplungdienthoai/doimatkhau/<%=usersEntity.getUserName()%>"><i
-									class="fas fa-angle-right"></i> Đổi mật khẩu</a> <a
-									class="dropdown-item"
-									href='<c:url value="/oplungdienthoai/logout"/>'><i
-									class="fas fa-angle-right"></i> Đăng xuất</a>
-							</div></li>
-						<%
-							}
-						%>
+						<security:authorize access="!isAuthenticated()">
+							<li class="list-inline-item"><a
+								href='<c:url value="/oplungdienthoai/dangky"/>'><i
+									class="fas fa-user-edit"></i> Đăng ký</a></li>
+							<li class="list-inline-item"><a
+								href='<c:url value="/oplungdienthoai/dangnhap"/>'> <i
+									class="fas fa-user-tag"></i> Đăng nhập
+							</a></li>
+						</security:authorize>
+						<security:authorize access="isAuthenticated()">
+							<security:authentication property="principal" var="user" />
+							<li class="list-inline-item" class="dropdown"><a href="#"
+								id="dropdownMenuButton" data-toggle="dropdown"><i
+									class="fab fa-angellist"></i> Xin chào,<strong
+									style="color: red;">${user.username}</strong> <i
+									class="fas fa-caret-down"></i></a>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<security:authorize access="hasRole('ROLE_1')">
+										<a class="dropdown-item"
+											href='<c:url value="/admin/oplungdienthoai"/>'> <i
+											class="fas fa-angle-right"></i> Quản lý admin
+										</a>
+									</security:authorize>
+									<a class="dropdown-item" href="#"><i
+										class="fas fa-angle-right"></i> Thông tin tài khoản </a> <a
+										class="dropdown-item"
+										href="<%=application.getContextPath()%>/oplungdienthoai/doimatkhau/${user.username}"><i
+										class="fas fa-angle-right"></i> Đổi mật khẩu</a> <a
+										class="dropdown-item"
+										href='<c:url value="/oplungdienthoai/logout"/>'><i
+										class="fas fa-angle-right"></i> Đăng xuất</a>
+								</div></li>
+						</security:authorize>
 					</ul>
 				</div>
 			</div>
 		</div>
-		<div id="login-modal" tabindex="-1" role="dialog"
-			aria-labelledby="Login" aria-hidden="true" class="modal fade">
-			<div class="modal-dialog modal-sm">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h4 class="modal-title">
-							<i class="fas fa-user-tag"></i> Đăng nhập
-						</h4>
-						<button type="button" data-dismiss="modal" aria-label="Close"
-							class="close">
-							<span aria-hidden="true">×</span>
-						</button>
-					</div>
-					<div class="modal-body">
-						<form action="" method="post">
-							<div class="form-group">
-								<label class="text-muted" style="margin-left: -2%"><i
-									class="fas fa-users"></i> Email/Số điện thoại/Tên đăng nhập</label> <br>
-								<input id="email-modal" type="text" class="form-control">
-							</div>
-							<div class="form-group">
-								<label class="text-muted" style="margin-left: -2%"><i
-									class="fas fa-key"></i> Mật khẩu</label><br> <input
-									id="password-modal" type="password" class="form-control">
-							</div>
-							<p class="text-muted" style="margin-left: 39%;">
-								<b>Quên mật khẩu</b>| Trợ giúp?
-							</p>
-							<p class="text-center">
-								<button class="btn btn-primary2">
-									<i class="fa fa-sign-in"></i> Đăng nhập
-								</button>
-							</p>
-						</form>
-
-						<p class="text-center text-muted">
-							<a href='<c:url value="/oplungdienthoai/dangky"/>'><strong>Đăng
-									ký ngay!</strong></a>
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
 		<!-- *** TOP BAR END ***-->
-
-
 	</div>
 	<nav class="navbar navbar-expand-lg">
 	<div class="container">

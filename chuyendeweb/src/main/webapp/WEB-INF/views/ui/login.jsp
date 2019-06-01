@@ -22,37 +22,6 @@
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
-<script type="text/javascript">
-	$(document).ready(function() {
-		$('#formLogin').on('submit', function(e) {
-			e.preventDefault();
-			$.ajax({
-				type : 'POST',
-				url : '<c:url value="/oplungdienthoai/login/ajax"/>',
-				data : {
-					email : $('#email').val(),
-					password : $('#password').val()
-				},
-				success : function(data) {
-					if(data === 'error'){
-						alertify.alert('Tên đăng nhập hoặc mật khẩu không chính xác.');
-						setTimeout(function(){
-							alertify.closeAll();
-							$('#email').css('border','0.5px solid red');
-							$('#password').css('border','0.5px solid red');
-						}, 2000);
-					}else{
-						window.location = '<c:url value="/oplungdienthoai/home"/>';
-					}
-				},
-				error : function(error) {
-
-				}
-			});
-
-		});
-	});
-</script>
 <body>
 	<!-- menu -->
 	<%@include file="menu.jsp"%>
@@ -95,7 +64,20 @@
 								</div>
 							</div>
 							<hr>
-							<form id="formLogin" action="" method="post">
+							<div class="row">
+								<div class="col-md-1"></div>
+								<div class="col-md-5">
+									<!-- /login?error=true -->
+									<c:if test="${param.error == 'true'}">
+										<div style="color: red; margin: 10px 0px;">
+											Login Failed!!!<br />
+										</div>
+									</c:if>
+								</div>
+							</div>
+							<form id="formLogin"
+								action="${pageContext.request.contextPath}/j_spring_security_check"
+								method="post">
 								<div class="content py-3">
 									<div class="row">
 										<div class="col-md-1"></div>
@@ -103,7 +85,7 @@
 											<div class="form-group">
 												<label for="email">Email<strong style="color: red;">*</strong></label>
 												<input id="email" placeholder="Vui lòng nhập email của bạn"
-													type="text" tabindex="1" class="form-control"
+													type="text" tabindex="1" class="form-control" name="email"
 													required=”required”>
 											</div>
 										</div>
@@ -122,7 +104,7 @@
 											<div class="form-group">
 												<label for="password">Mật khẩu<strong
 													style="color: red;">*</strong></label> <input id="password"
-													type="password" tabindex="2"
+													type="password" tabindex="2" name="password"
 													placeholder="Tối đa 6 kí tự bao gồm cả chữ và số"
 													class="form-control" required=”required”>
 											</div>

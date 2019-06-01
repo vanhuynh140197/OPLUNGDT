@@ -82,6 +82,7 @@ public class ProductsDAOImpl implements ProductsDAO {
 		Criteria criteria = sessionFactory.getCurrentSession()
 				.createCriteria(ProductsEntity.class);
 		criteria.add(Restrictions.ilike("productsName", "%" + keyWork + "%"));
+		criteria.add(Restrictions.eq("productsStatus", false));
 		return criteria.list();
 	}
 }

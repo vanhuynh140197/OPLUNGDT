@@ -23,7 +23,7 @@
 	</bean>
 
 	<!-- DataSource -->
-	<bean class="org.apache.commons.dbcp.BasicDataSource" id="dataSource">
+	<bean class="org.springframework.jdbc.datasource.DriverManagerDataSource" id="dataSource">
 		<property name="driverClassName" value="${database.driver}"></property>
 		<property name="url" value="${database.url}"></property>
 		<property name="username" value="${database.user}"></property>

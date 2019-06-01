@@ -558,62 +558,64 @@
 									<c:param name="page" value="~" />
 								</c:url>
 								<div class="row products" id="viewproduct">
-									<c:forEach items="${pagedListHolder.pageList}" var="item">
-										<div class="col-lg-4 col-md-6">
-											<div class="product">
-												<div class="flip-container">
-													<div class="flipper">
-														<div class="front">
-															<a
-																href="<c:url value="/oplungdienthoai/chitiet/${item.productsId.trim()}"/>"><img
-																src="<c:url value="${item.productsImages1}"/>" alt=""
-																class="img-fluid"></a>
-														</div>
-														<div class="back">
-															<a
-																href="<c:url value="/oplungdienthoai/chitiet/${item.productsId.trim()}"/>"><img
-																src="<c:url value="${item.productsImages2}"/>" alt=""
-																class="img-fluid"></a>
+									<div class="row products">
+										<c:forEach items="${pagedListHolder.pageList}" var="item">
+											<div class="col-lg-4 col-md-6">
+												<div class="product">
+													<div class="flip-container">
+														<div class="flipper">
+															<div class="front">
+																<a
+																	href="<c:url value="/oplungdienthoai/chitiet/${item.productsId.trim()}"/>"><img
+																	src="<c:url value="${item.productsImages1}"/>" alt=""
+																	class="img-fluid"></a>
+															</div>
+															<div class="back">
+																<a
+																	href="<c:url value="/oplungdienthoai/chitiet/${item.productsId.trim()}"/>"><img
+																	src="<c:url value="${item.productsImages2}"/>" alt=""
+																	class="img-fluid"></a>
+															</div>
 														</div>
 													</div>
+													<a
+														href="<c:url value="/oplungdienthoai/chitiet/${item.productsId.trim()}"/>"
+														class="invisible"><img
+														src="<c:url value="${item.productsImages1}"/>" alt=""
+														class="img-fluid"></a>
+													<div class="text">
+														<h3>${item.productsName}</h3>
+														<p class="price">
+															<del></del>
+															<i class="fas fa-caret-right"></i> Giá bán: <strong
+																style="color: red;"><fmt:formatNumber
+																	type="currency" value="${item.prices}"></fmt:formatNumber></strong>
+														</p>
+														<br>
+														<p class="buttons">
+															<a
+																href="<c:url value="/oplungdienthoai/chitiet/${item.productsId.trim()}"/>"
+																class="btn btn-outline-secondary">Chi tiết</a><a
+																href="<c:url value="/oplungdienthoai/giohang/${item.productsId.trim()}"/>"
+																class="btn btn-primary5"><i
+																class="fa fa-shopping-cart"></i>Đặt hàng nhanh</a>
+														</p>
+													</div>
+													<!-- /.text-->
+													<div class="ribbon sale">
+														<div class="theribbon">SALE</div>
+														<div class="ribbon-background"></div>
+													</div>
+													<div class="ribbon new">
+														<div class="theribbon">NEW</div>
+														<div class="ribbon-background"></div>
+													</div>
+													<!-- /.ribbon-->
 												</div>
-												<a
-													href="<c:url value="/oplungdienthoai/chitiet/${item.productsId.trim()}"/>"
-													class="invisible"><img
-													src="<c:url value="${item.productsImages1}"/>" alt=""
-													class="img-fluid"></a>
-												<div class="text">
-													<h3>${item.productsName}</h3>
-													<p class="price">
-														<del></del>
-														<i class="fas fa-caret-right"></i> Giá bán: <strong
-															style="color: red;"><fmt:formatNumber
-																type="currency" value="${item.prices}"></fmt:formatNumber></strong>
-													</p>
-													<br>
-													<p class="buttons">
-														<a
-															href="<c:url value="/oplungdienthoai/chitiet/${item.productsId.trim()}"/>"
-															class="btn btn-outline-secondary">Chi tiết</a><a
-															href="<c:url value="/oplungdienthoai/giohang/${item.productsId.trim()}"/>"
-															class="btn btn-primary5"><i
-															class="fa fa-shopping-cart"></i>Đặt hàng nhanh</a>
-													</p>
-												</div>
-												<!-- /.text-->
-												<div class="ribbon sale">
-													<div class="theribbon">SALE</div>
-													<div class="ribbon-background"></div>
-												</div>
-												<div class="ribbon new">
-													<div class="theribbon">NEW</div>
-													<div class="ribbon-background"></div>
-												</div>
-												<!-- /.ribbon-->
+												<!-- /.product            -->
 											</div>
-											<!-- /.product            -->
-										</div>
-									</c:forEach>
+										</c:forEach>
+									</div>
 									<div style="margin-left: 42%; margin-top: -1%;">
 										<tg:paging pagedListHolder="${pagedListHolder}"
 											pagedLink="${pagedLink}" />
