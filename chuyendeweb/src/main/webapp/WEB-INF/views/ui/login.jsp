@@ -72,6 +72,20 @@
 										<div style="color: red; margin: 10px 0px;">
 											Login Failed!!!<br />
 										</div>
+										<script type="text/javascript">
+											$(document)
+													.ready(
+															function() {
+																$("#email")
+																		.css(
+																				"border",
+																				"solid 1px red");
+																$("#password")
+																		.css(
+																				"border",
+																				"solid 1px red");
+															})
+										</script>
 									</c:if>
 								</div>
 							</div>
