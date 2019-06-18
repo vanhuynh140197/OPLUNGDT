@@ -20,15 +20,17 @@ public class UsersDAOImpl implements UsersDAO {
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<UsersEntity> getAll() {
-		return sessionFactory.getCurrentSession()
-				.createQuery("from UsersEntity where usersStatus=" + false + "").list();
+		return sessionFactory.getCurrentSession().createQuery(
+				"from UsersEntity where usersStatus=" + false + " and validateEmail=" + true + "")
+				.list();
 	}
 
 	@Override
 	public UsersEntity getUsers(String userId) {
 		@SuppressWarnings("rawtypes")
-		List list = sessionFactory.getCurrentSession().createQuery(
-				"from UsersEntity where userId='" + userId + "' and usersStatus=" + false + "")
+		List list = sessionFactory.getCurrentSession()
+				.createQuery("from UsersEntity where userId='" + userId + "' and validateEmail="
+						+ true + " and usersStatus=" + false + "")
 				.list();
 		return !list.isEmpty() ? (UsersEntity) list.get(0) : null;
 	}
@@ -37,8 +39,8 @@ public class UsersDAOImpl implements UsersDAO {
 	public UsersEntity getUsersName(String userName) {
 		@SuppressWarnings("rawtypes")
 		List list = sessionFactory.getCurrentSession()
-				.createQuery("from UsersEntity where userName='" + userName + "' and usersStatus="
-						+ false + "")
+				.createQuery("from UsersEntity where userName='" + userName
+						+ "' and validateEmail=" + true + " and usersStatus=" + false + "")
 				.list();
 		return !list.isEmpty() ? (UsersEntity) list.get(0) : null;
 	}
