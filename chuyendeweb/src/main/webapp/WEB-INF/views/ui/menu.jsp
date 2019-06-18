@@ -200,7 +200,7 @@
 									class="fas fa-caret-down"></i></a>
 								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 									<security:authorize access="hasRole('ROLE_1')">
-										<a class="dropdown-item"
+										<a class="dropdown-item" target="_blank"
 											href='<c:url value="/admin/oplungdienthoai"/>'> <i
 											class="fas fa-angle-right"></i> Quản lý admin
 										</a>

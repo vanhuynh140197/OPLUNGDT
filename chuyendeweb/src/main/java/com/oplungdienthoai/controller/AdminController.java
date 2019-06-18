@@ -89,12 +89,12 @@ public class AdminController {
 				images2.transferTo(new File(fileDir + File.separator + nameFile2));
 				productsEntity.setProductsImages1(dir + "/" + nameFile1);
 				productsEntity.setProductsImages2(dir + "/" + nameFile2);
+				productsService.add(productsEntity);
 			} catch (Exception e) {
 				System.out.println(e.getMessage());
 				System.out.println("Upload file thất bại!");
 			}
 		}
-		productsService.add(productsEntity);
 		return "redirect:/admin/oplungdienthoai/sanpham";
 	}
 

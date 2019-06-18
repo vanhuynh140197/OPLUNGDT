@@ -99,7 +99,7 @@
 		<div class="left-custom-menu-adp-wrap comment-scrollbar">
 			<nav class="sidebar-nav left-sidebar-menu-pro">
 			<ul class="metismenu" id="menu1">
-				<li class="active"><a class="has-arrow" href="index.html">
+				<li class=""><a class="has-arrow" href="index.html">
 						<span class="educate-icon educate-home icon-wrap"></span> <span
 						class="mini-click-non">Thống kê</span>
 				</a>

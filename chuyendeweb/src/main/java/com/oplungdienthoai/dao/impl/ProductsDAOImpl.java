@@ -38,7 +38,8 @@ public class ProductsDAOImpl implements ProductsDAO {
 	@Override
 	public List<ProductsEntity> getProductsUseProductType(String productTypesId) {
 		return sessionFactory.getCurrentSession()
-				.createQuery("from ProductsEntity where productTypesId='" + productTypesId + "'")
+				.createQuery("from ProductsEntity where productTypesId='" + productTypesId
+						+ "' and productsStatus=" + false + "")
 				.list();
 	}
 
