@@ -9,7 +9,7 @@
 	<name>chuyendeweb Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<properties>
-		<spring.version>5.1.4.RELEASE</spring.version>
+		<spring.version>6.0.0</spring.version>
 		<spring.security.version>4.0.4.RELEASE</spring.security.version>
 		<hibernate.version>5.3.7.Final</hibernate.version>
 		<postgresql.version>42.2.5</postgresql.version>
